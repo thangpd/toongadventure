@@ -2,3 +2,5 @@ wp-content/uploads/*
 wp-config.php
 wp-content/updraft/*
 
+
+\.idea/
