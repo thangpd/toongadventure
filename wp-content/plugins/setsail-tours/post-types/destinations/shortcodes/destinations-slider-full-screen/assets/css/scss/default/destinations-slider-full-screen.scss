@@ -1,0 +1,104 @@
+.qodef-destinations-slider-full-screen {
+	@include qodefRelativeHolderLayout();
+	
+	.qodef-tdi-content {
+		@include qodefRelativeHolderLayout();
+		width: 100%;
+		
+		.touch & {
+			cursor: pointer;
+		}
+		
+		&:hover {
+			
+			.qodef-td-item {
+				
+				img {
+					@include qodefTransform(translateZ(0) scale(1.03));
+				}
+				
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	
+	.qodef-td-item {
+		@include qodefRelativeHolderLayout();
+		height: 100vh;
+		width: calc(100% + 1px);
+		overflow: hidden;
+		box-sizing: border-box;
+		
+		.admin-bar & {
+			height: calc(100vh - 32px);
+		}
+
+		&:hover {
+			.qodef-tdi-text {
+				&:after {
+					opacity: 1;
+				}
+			}
+
+			.qodef-dsfs-image {
+				@include qodefTransform(scale(1.03));
+			}
+		}
+	}
+	
+	.qodef-dsfs-link {
+		@include qodefAbsoluteHolderLayout();
+	}
+	
+	.qodef-dsfs-image {
+		@include qodefRelativeHolderLayout();
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		@include qodefTransition(.7s);
+	}
+
+	.qodef-tdi-text {
+		@include qodefAbsoluteHolderLayout();
+
+		&:after {
+			content:'';
+			@include qodefAbsoluteHolderLayout;
+			@include qodefDefaultLinearGradient;
+			z-index: 10;
+			@include qodefTransition(.5s);
+		}
+	}
+	
+	.qodef-tdi-text-outer {
+		@include qodefTableLayout();
+	}
+	
+	.qodef-tdi-text-inner {
+		@include qodefTableCellLayout(bottom);
+		text-align: center;
+		padding: 76px 20px;
+		position: relative;
+		z-index: 123;
+	}
+	
+	.qodef-tdi-title {
+		margin: 0;
+	}
+	
+	.qodef-tdi-subtitle {
+		margin: 0 0 6px;
+		font-family: $custom-text-font;
+		font-size: 30px;
+		font-weight: 100;
+	}
+	
+	.qodef-tdi-title,
+	.qodef-tdi-subtitle {
+		display: block;
+		color: $default-background-color;
+	}
+}

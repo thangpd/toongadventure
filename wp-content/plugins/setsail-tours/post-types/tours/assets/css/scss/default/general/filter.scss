@@ -1,0 +1,35 @@
+
+/* Filter styles
+   ========================================================================== */
+.qodef-tours-list-holder {
+
+	.qodef-tours-list-filter-holder {
+		margin-bottom: 64px;
+
+		ul {
+			list-style-type: none;
+			text-align: center;
+			margin: 0;
+
+			li {
+				display: inline-block;
+				margin: 0 13px;
+
+				a {
+					color: #999;
+					text-transform: uppercase;
+					font-weight: 700;
+					font-size: 13px;
+				}
+			}
+		}
+	}
+
+	.qodef-tour-list-filter-item.qodef-tour-list-current-filter a {
+		color: $first-main-color;
+	}
+
+}
+
+/* Filter styles end
+   ========================================================================== */

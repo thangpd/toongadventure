@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+
+.qodef-testimonials-holder {
+    @include qodefRelativeHolderLayout(top);
+	
+	&.qodef-testimonials-light {
+		
+		.qodef-testimonial-text,
+		.qodef-testimonial-author {
+			color: #fff;
+        }
+        
+        .qodef-owl-slider {
+
+            .owl-nav {
+	            
+                .owl-next,
+                .owl-prev {
+                    color: #fff;
+
+                    &:hover {
+                        color: $first-main-color;
+                    }
+                }
+            }
+        }
+	}
+
+    .qodef-testimonials {
+        @include qodefRelativeHolderLayout(top);
+        padding: 0 50px;
+        box-sizing: border-box;
+	    
+	    @include phone-landscape {
+		    padding: 0 20px;
+	    }
+		
+        .owl-nav {
+	        
+            .owl-next,
+            .owl-prev {
+	            font-size: 55px;
+                color: #000;
+                background-color: transparent;
+
+                &:hover {
+                    color: $first-main-color;
+                }
+            }
+	        
+	        @include ipad-landscape {
+		        display: none;
+	        }
+        }
+	    
+	    .owl-dots {
+		    
+		    @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+			    display: none;
+		    }
+	    }
+    }
+    
+    .qodef-testimonial-content {
+        @include qodefRelativeHolderLayout(top);
+        text-align: center;
+    }
+
+    .qodef-testimonial-image {
+        @include qodefRelativeHolderLayout(top);
+        margin-bottom: 29px;
+        
+        img {
+            display: block;
+            width: auto !important;
+            margin: 0 auto;
+            border-radius: 100%;
+        }
+    }
+    
+    .qodef-testimonial-text {
+        display: block;
+	    font-size: 20px;
+	    line-height: 1.5em;
+	    
+	    @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+		    max-width: 80%;
+		    margin-left: auto;
+		    margin-right: auto;
+	    }
+    }
+    
+    .qodef-testimonial-author {
+	    display: block;
+        margin: 8px 0 0;
+	    font-family: $custom-text-font;
+	    font-size: 24px;
+	    line-height: 2.625em;
+	    color: $default-heading-color;
+    }
+	
+	.qodef-owl-slider {
+		
+		.owl-nav {
+			
+			@include phone-landscape {
+				display: none;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */

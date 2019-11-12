@@ -1,0 +1,120 @@
+
+/* Standard type styles
+========================================================================== */
+
+.qodef-tours-row {
+	
+	&.standard {
+		
+		@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+			
+			> * {
+				padding: 0 10px;
+			}
+		}
+		
+		@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+			
+			.qodef-tours-row-inner-holder {
+				margin: 0 -25px;
+				
+				> * {
+					padding: 0 15px;
+				}
+			}
+		}
+	}
+}
+
+.qodef-tours-standard-item {
+	
+	.qodef-tour-standard-item-holder {
+		position: relative;
+	}
+	
+	.qodef-tour-standard-item-holder-inner {
+		border-bottom-left-radius: $default-border-radius;
+		border-bottom-right-radius: $default-border-radius;
+		box-shadow: $additional-box-shadow;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	.qodef-tours-standard-item-image-holder {
+		position: relative;
+
+		> a {
+			@include qodefRelativeHolderLayout();
+			overflow: hidden;
+			height: 100%;
+		    
+			&:hover {
+				img {
+					@include qodefTransform(scale(1.03));
+				}
+			}
+		}
+
+		img {
+			vertical-align: middle;
+			line-height: 0;
+			display: block;
+			@include qodefTransition(.7s);
+			backface-visibility: hidden;
+		}
+	}
+
+	.qodef-tours-standard-item-content-inner {
+		padding: 31px 25px 33px;
+		background-color: $default-background-color;
+	}
+
+	.qodef-tours-standard-item-title-holder {
+		position: relative;
+		
+		.qodef-tour-title {
+			margin: 0 0 10px;
+			color: $default-heading-color;
+		}
+	}
+	
+	.qodef-tours-standard-item-price-and-rating-holder {
+		margin-top: 10px;
+		
+		.qodef-tours-item-rating {
+			color: $default-heading-color;
+			
+			.qodef-item-reviews-average-rating,
+			.qodef-item-reviews-rating-description {
+				font-size: 14px;
+				line-height: 1.428571428571429em;
+				font-weight: 600;
+			}
+		}
+	}
+	
+	.qodef-tours-item-price-holder {
+		margin-right: 15px;
+		
+		.qodef-tours-item-price {
+			font-size: 14px;
+			line-height: 1.428571428571429em;
+			font-weight: 600;
+			color: $default-heading-color;
+		}
+	}
+	
+	.qodef-tour-min-age-icon {
+		
+		&.qodef-tour-info-icon {
+			margin: 0 5px 0 0;
+		}
+	}
+	
+	.qodef-tour-info-icon {
+		margin: 0 8px 0 0;
+	}
+}
+
+/* Standard type styles end
+   ========================================================================== */

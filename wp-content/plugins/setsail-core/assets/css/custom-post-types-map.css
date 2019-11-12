@@ -1,0 +1,127 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Custom Post Types styles
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+.qodef-testimonials-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-light .qodef-testimonial-text,
+.qodef-testimonials-holder.qodef-testimonials-light .qodef-testimonial-author {
+  color: #fff;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-light .qodef-owl-slider .owl-nav .owl-next,
+.qodef-testimonials-holder.qodef-testimonials-light .qodef-owl-slider .owl-nav .owl-prev {
+  color: #fff;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-light .qodef-owl-slider .owl-nav .owl-next:hover,
+.qodef-testimonials-holder.qodef-testimonials-light .qodef-owl-slider .owl-nav .owl-prev:hover {
+  color: #3fd0d4;
+}
+
+.qodef-testimonials-holder .qodef-testimonials {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-testimonials-holder .qodef-testimonials {
+    padding: 0 20px;
+  }
+}
+
+.qodef-testimonials-holder .qodef-testimonials .owl-nav .owl-next,
+.qodef-testimonials-holder .qodef-testimonials .owl-nav .owl-prev {
+  font-size: 55px;
+  color: #000;
+  background-color: transparent;
+}
+
+.qodef-testimonials-holder .qodef-testimonials .owl-nav .owl-next:hover,
+.qodef-testimonials-holder .qodef-testimonials .owl-nav .owl-prev:hover {
+  color: #3fd0d4;
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-testimonials-holder .qodef-testimonials .owl-nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .qodef-testimonials-holder .qodef-testimonials .owl-dots {
+    display: none;
+  }
+}
+
+.qodef-testimonials-holder .qodef-testimonial-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  text-align: center;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  margin-bottom: 29px;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-image img {
+  display: block;
+  width: auto !important;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-text {
+  display: block;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+@media only screen and (min-width: 1025px) {
+  .qodef-testimonials-holder .qodef-testimonial-text {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.qodef-testimonials-holder .qodef-testimonial-author {
+  display: block;
+  margin: 8px 0 0;
+  font-family: "Satisfy", cursive;
+  font-size: 24px;
+  line-height: 2.625em;
+  color: #212121;
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-testimonials-holder .qodef-owl-slider .owl-nav {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/setsail-core/assets/css/custom-post-types-map.css.map */

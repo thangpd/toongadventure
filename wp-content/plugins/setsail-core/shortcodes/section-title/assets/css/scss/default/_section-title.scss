@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.qodef-section-title-holder {
+    @include qodefRelativeHolderLayout();
+	box-sizing: border-box;
+	
+	.qodef-st-tagline {
+		margin: 0;
+	}
+	
+	span.qodef-st-tagline {
+		display: block;
+		font-family: $custom-text-font;
+		font-size: 33px;
+		line-height: 1.8em;
+		color: $first-main-color;
+	}
+	
+    .qodef-st-title {
+        margin: 0;
+    }
+    
+    .qodef-st-text {
+        margin: 12px 0 0;
+    }
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

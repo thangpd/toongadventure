@@ -1,0 +1,234 @@
+.qodef-tours-dwt-holder {
+	
+	.qodef-td-item-inner {
+		@include qodefFlexBoxLayout();
+		margin: 0 -15px;
+	}
+	
+	.qodef-td-items {
+		position: relative;
+		width: 100%;
+		padding: 0 15px;
+		box-sizing: border-box;
+		
+		.qodef-tdi-link {
+			@include qodefAbsoluteHolderLayout();
+			line-height: 0;
+			z-index: 2;
+		}
+		
+		&.destination {
+			
+			.qodef-tdi-link {
+				@include qodefAbsoluteHolderLayout();
+				line-height: 0;
+				z-index: 2;
+				border-radius: 100%;
+				box-sizing: border-box;
+			}
+			
+			.qodef-tdi-title {
+				padding: 0 20px;
+				font-family: $custom-text-font;
+				font-size: 48px;
+				font-weight: 100;
+				letter-spacing: 0;
+			}
+
+			&:hover {
+
+				img {
+					@include qodefTransform(scale(1.03));
+				}
+			}
+			
+			.qodef-tdi-image {
+				border-radius: 100%;
+				overflow: hidden;
+				-webkit-transform: translateZ(0);
+				
+				img {
+					@include qodefTransition(.7s);
+					backface-visibility: hidden;
+					position: relative;
+				}
+				
+				&:before {
+					content: '';
+					@include qodefAbsoluteHolderLayout();
+					background-color: rgba(0, 0, 0, 0.25);
+					
+				}
+				
+				&:after {
+					content: '';
+					@include qodefAbsoluteHolderLayout();
+					@include qodefDefaultRadialGradient;
+					@include qodefTransition(.5s);
+				}
+			}
+		}
+		
+		&.tour {
+			
+			.qodef-tdi-title {
+				letter-spacing: -.05em;
+				font-weight: 600;
+			}
+			.qodef-tdi-price-holder {
+				
+				.qodef-tours-item-price {
+					font-weight: 600;
+				}
+			}
+			
+			.qodef-tdi-title,
+			.qodef-tdi-price-holder {
+				font-size: 18px;
+			}
+			
+			.qodef-tour-has-featured-mark {
+				right: 35px;
+			}
+			
+			.qodef-tdi-image {
+				overflow: hidden;
+
+				&:hover {
+					&:after {
+						opacity: 1;
+					}
+
+					img {
+						@include qodefTransform(scale(1.03));
+					}
+				}
+
+				img {
+					@include qodefTransition(.7s);
+					backface-visibility: hidden;
+				}
+				
+				&:after {
+					content:'';
+					@include qodefAbsoluteHolderLayout;
+					@include qodefDefaultLinearGradient;
+					z-index: 1;
+					@include qodefTransition(.5s);
+				}
+			}
+		}
+		
+		.qodef-destination-has-featured-mark {
+			position: absolute;
+			display: inline-block;
+			top: 5%;
+			right: 14%;
+			@include qodefTransform(translateX(14%));
+			height: 47px;
+			width: 47px;
+			text-align: center;
+			line-height: 47px;
+			background-color: $first-main-color;
+			border-radius: 50%;
+			box-sizing: border-box;
+			z-index: 2;
+			
+			> span {
+				color: #fff;
+			}
+		}
+		
+		.qodef-tdi-image {
+			position: relative;
+			
+			img {
+				display: block;
+			}
+		}
+		
+		.qodef-tdi-text {
+			@include qodefAbsoluteHolderLayout();
+		}
+		
+		.qodef-tdi-text-inner {
+			@include qodefTableLayout();
+			text-align: center;
+		}
+		
+		.qodef-tdi-title {
+			@include qodefTableCellLayout();
+			margin: 0;
+			color: #fff;
+		}
+		
+		.qodef-tdi-content-holder {
+			@include qodefAbsoluteHolderLayout();
+			z-index: 1;
+		}
+		
+		.qodef-tdi-content-holder-outer {
+			@include qodefTableLayout();
+		}
+		
+		.qodef-tdi-content-holder-inner {
+			@include qodefTableCellLayout(bottom);
+			padding: 17px 35px;
+			
+			@include phone-landscape {
+				padding: 18px 20px;
+			}
+		}
+	}
+	
+	.qodef-tdi-title-holder {
+		display: block;
+		width: 100%;
+		line-height: 1;
+	}
+	
+	.qodef-tdi-rating-and-price-holder {
+		@include qodefFlexBoxLayout(relative, flex-end, flex-end);
+		margin-top: 1px;
+		
+		.qodef-tdi-price-holder {
+			position: relative;
+			width: 50%;
+			top: 1px;
+			text-align: right;
+			line-height: 1;
+			
+			> * {
+				color: #fff;
+			}
+		}
+	}
+	
+	.qodef-tdi-rating {
+		@include qodefFlexBoxLayout(relative, center);
+		width: 50%;
+		line-height: 1;
+		
+		> * {
+			color: #fff;
+			margin-right: 5px;
+			font-weight: 500;
+		}
+		
+		> span {
+			margin-right: 10px;
+		}
+		
+		.qodef-item-reviews-rating-icon {
+			margin-top: -1px;
+			
+			> span {
+				font-size: 13px;
+			}
+		}
+	}
+	
+	.qodef-outer-space .qodef-item-space:nth-child(even) .qodef-td-item-inner {
+		flex-direction: row-reverse;
+	}
+}

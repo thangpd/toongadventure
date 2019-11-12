@@ -1,0 +1,52 @@
+.qodef-reviews-per-criteria {
+	
+	@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+		
+		.qodef-grid-row {
+			@include qodefFlexBoxLayout(relative, stretch);
+		}
+		
+		.qodef-item-reviews-average-wrapper {
+			@include qodefTableLayout();
+		}
+		
+		.qodef-item-reviews-average-inner {
+			@include qodefTableCellLayout();
+			padding-left: 16px;
+		}
+	}
+	
+    .qodef-item-reviews-average-rating {
+        color: $default-heading-color;
+        font-size: 65px;
+        line-height: 1em;
+        font-weight: 600;
+    }
+
+    .qodef-item-reviews-verbal-description {
+        vertical-align: middle;
+        margin: 2px 0 0;
+        font-weight: 500;
+        color: $first-main-color;
+    }
+
+    .qodef-item-reviews-rating-icon {
+        vertical-align: middle;
+        font-size: 13px;
+	    margin-right: 7px;
+    }
+
+    .qodef-item-reviews-display-right {
+        vertical-align: middle;
+        padding-left: 200px;
+        box-sizing: border-box;
+
+        .qodef-item-reviews-display-bar {
+            line-height: 28px;
+
+            .qodef-item-reviews-display-bar-inner {
+                padding: 6px 0;
+            }
+        }
+    }
+}

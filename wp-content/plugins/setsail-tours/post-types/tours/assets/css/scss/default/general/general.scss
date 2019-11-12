@@ -1,0 +1,287 @@
+/* General styles
+========================================================================== */
+.page-template-search-tour-item-template {
+	
+	&.qodef-page-content-is-boxed {
+		
+		.qodef-content {
+			
+			.qodef-content-inner {
+				
+				.qodef-container {
+					
+					.qodef-container-inner {
+						padding: 0 50px 42px;
+						background-color: #fff;
+						box-shadow: $boxed-template-shadow;
+						box-sizing: border-box;
+					}
+				}
+			}
+		}
+		
+		&.qodef-content-overlapping {
+			
+			.qodef-title-holder {
+				z-index: 100;
+				
+				.qodef-title-inner {
+					padding-bottom: 80px;
+				}
+			}
+			
+			.qodef-content {
+				
+				.qodef-content-inner {
+					
+					.qodef-container {
+						
+						.qodef-container-inner {
+							@include qodefTransform(translateY(-80px));
+						}
+					}
+				}
+			}
+		}
+		
+		.qodef-search-ordering-holder {
+			
+			.qodef-search-ordering-list {
+				margin: 0 -65px 50px;
+			}
+		}
+	}
+}
+
+.qodef-tours-standard-item-top-content {
+	@include qodefFlexBoxLayout(relative, center);
+	color: #fff;
+	background-color: $first-main-color;
+	
+	> * {
+		width: auto;
+		padding: 8px 10px;
+		
+		&:first-child {
+			padding-left: 26px;
+		}
+	}
+	
+	.qodef-tour-cat-item-custom-image {
+		display: inline-block;
+	}
+}
+
+.qodef-tours-tour-categories-item {
+	
+	.qodef-tour-cat-item-icon {
+		position: relative;
+		top: 1px;
+		margin-right: 4px;
+	}
+	
+	a {
+		color: #fff;
+		position: relative;
+		display: block;
+		
+		
+		.qodef-tour-cat-item-text {
+			position: relative;
+			display: inline-block;
+			
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 2px;
+				width: 0;
+				background-color: currentColor;
+				@include qodefTransition(width .3s ease-out);
+			}
+		}
+		
+		&:hover {
+			
+			.qodef-tour-cat-item-text {
+				
+				&:after {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.qodef-tour-title {
+	margin: 0;
+}
+
+.qodef-tours-price-holder {
+	
+	.qodef-tours-item-price {
+		font-size: 18px;
+		font-weight: 600;
+	}
+	
+}
+
+.qodef-tours-list-item-price-holder {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.qodef-tours-price-with-discount {
+	
+	.qodef-tours-price-old {
+		text-decoration: line-through;
+	}
+}
+
+.qodef-tours-item-rating {
+	display: inline-block;
+	color: $default-heading-color;
+	
+	> * {
+		display: inline-block;
+		margin-right: 5px;
+	}
+	
+	.qodef-tour-item-rating {
+		color: #999;
+		margin-bottom: 16px;
+	}
+}
+
+.qodef-tour-rating-rate {
+	vertical-align: middle;
+}
+
+.qodef-tour-rating-label {
+	vertical-align: middle;
+}
+
+.qodef-tour-has-featured-mark {
+	position: absolute;
+	display: inline-block;
+	top: -18px;
+	right: 20px;
+	height: 47px;
+	width: 47px;
+	text-align: center;
+	line-height: 49px;
+	background-color: $first-main-color;
+	border-radius: 50%;
+	box-sizing: border-box;
+	z-index: 130;
+	
+	> span {
+		color: #fff;
+	}
+}
+
+.qodef-boxed-widget {
+	padding: 40px 20px 76px;
+	
+	@include phone-landscape {
+		padding: 45px 10px 50px;
+	}
+	
+	&.qodef-tours-search-main-filters-holder {
+		position: relative;
+		margin: 0 0 28px;
+		background-color: $first-main-color;
+		
+		.qodef-btn {
+			position: relative;
+			bottom: 0;
+			margin: 12px 0 0;
+			width: 100%;
+			font-family: $default-text-font;
+			color: #000;
+			background: #fff;
+			@include qodefTransform(translateY(50%));
+			border-radius: 0;
+			-webkit-border-radius:0;
+			-webkit-appearance: none;
+		}
+	}
+}
+
+%booking-input-style {
+	position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 16px 24px 16px 43px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: inherit;
+    color: #fff;
+    background-color: rgba(255,255,255,.25);
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    -webkit-appearance: none;
+	cursor: text;
+    box-sizing: border-box;
+    @include qodefTransition(border-color 0.2s ease-in-out);
+    
+    @include qodefPlaceholder {
+        color: inherit;
+    }
+}
+
+.qodef-tours-input-with-icon {
+	position: relative;
+	margin-bottom: 5px;
+
+	textarea,
+	select,
+	input[type='text'],
+	input[type='email'],
+	input[type='password'],
+	input[type='number']{
+	    @extend %booking-input-style;
+	}
+
+	textarea {
+	    display: block;
+	    padding: 15px 24px;
+	}
+	
+	input[type=text].qodef-tours-price-range-field {
+		background-color: transparent;
+		padding: 0;
+	}
+
+	select {
+		-moz-appearance: none;
+	}
+}
+
+.qodef-tours-input-icon {
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: auto;
+	font-size: 14px;
+	line-height: 54px;
+	color: #fff;
+	z-index: 1;
+}
+
+.qodef-tour-categories-widget {
+	
+	.qodef-widget-title {
+		margin: 0 0 22px;
+	}
+	
+	.qodef-tour-categories-list-title {
+		margin: 13px 0 18px;
+	}
+}
+
+/* General styles end
+========================================================================== */

@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+	
+	.qodef-tabs {
+		
+		&.qodef-tabs-standard {
+			
+			.qodef-tabs-nav {
+				
+				li {
+					margin-right: 28px;
+				}
+			}
+		}
+	}
+}
+
+@include phone-landscape {
+	
+	.qodef-tabs {
+		
+		&.qodef-tabs-standard {
+			
+			.qodef-tabs-nav {
+				
+				li {
+					display: block;
+					float: none;
+					margin-right: 0;
+					margin-bottom: 10px;
+					
+					&:last-child {
+						margin-bottom: 0;
+					}
+					
+					a {
+						width: 100%;
+					}
+				}
+			}
+		}
+		
+		&.qodef-tabs-boxed {
+			
+			.qodef-tabs-nav {
+				
+				li {
+					display: block;
+					float: none;
+					
+					a {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */

@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+
+.qodef-banner-holder {
+	
+	&.qodef-banner-info-right {
+		
+		@include phone-landscape {
+			
+			.qodef-banner-text-holder {
+				padding: 15px 55px;
+			}
+			
+			.qodef-banner-subtitle {
+				font-size: 38px;
+			}
+			
+			.qodef-banner-title {
+				font-size: 28px;
+			}
+		}
+	}
+	
+	&.qodef-banner-info-top {
+		
+		@include phone-landscape {
+			
+			.qodef-banner-text-holder {
+				padding: 15px 35px;
+			}
+		}
+	}
+	
+		
+	@include ipad-portrait {
+		
+		.qodef-banner-text-holder {
+			padding: 25px;
+		}
+	}
+}
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */

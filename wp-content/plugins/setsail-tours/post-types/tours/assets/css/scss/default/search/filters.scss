@@ -1,0 +1,267 @@
+
+/* #Tour type filters styles - start
+   ========================================================================== */
+.qodef-tours-type-filter-item {
+	@include qodefFlexBoxLayout(relative, center, flex-start);
+	margin-bottom: 9px;
+}
+
+/* #Tour type filters styles - end
+   ========================================================================== */
+
+/* #Main filters styles - start
+   ========================================================================== */
+.qodef-tours-search-main-filters-holder {
+	
+	&.qodef-boxed-widget {
+		
+		.qodef-tours-input-with-icon {
+			padding: 0;
+			
+			input[type=text],
+			input[type=number],
+			select,
+			.select2-container--default {
+				padding-left: 45px;
+			}
+		}
+		
+		.select2-container--default {
+			margin: 0;
+			height: 52px;
+			background-color: rgba(255,255,255,.25);
+			width: 100% !important;
+			
+			.select2-selection--single {
+				padding: 0 20px 0 0;
+				height: 52px;
+				line-height: 52px;
+				cursor: text;
+				color: #fff;
+				background: none;
+				
+				.select2-selection__rendered {
+					padding: 0;
+				}
+			}
+			
+			&.select2-container--open {
+				
+				.select2-selection--single {
+					color: #fff;
+				}
+			}
+		}
+		
+		.select2-container--default .select2-selection--single .select2-selection__arrow {
+			display: none;
+		}
+	}
+	
+	.qodef-tours-input-with-icon {
+		padding: 0 20px;
+		
+		input[type=text],
+		input[type=number],
+		select {
+			padding-left: 23px;
+		}
+		
+		input[type=text].qodef-tours-price-range-field {
+			width: 60%;
+			padding-left: 0;
+		}
+		
+		&.qodef-tpl-holder {
+			margin-bottom: 28px;
+		}
+	}
+	
+	* {
+		color: #fff;
+		box-sizing: border-box;
+	}
+	
+	.qodef-tours-filter-label {
+		margin: 37px 0 0;
+	}
+
+	input[type=checkbox] {
+		display: none;
+	}
+
+	label {
+		vertical-align: middle;
+		font-size: 14px;
+
+		-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none;   /* Chrome/Safari/Opera */
+		-khtml-user-select: none;    /* Konqueror */
+		-moz-user-select: none;      /* Firefox */
+		-ms-user-select: none;       /* IE/Edge */
+		user-select: none;
+
+		cursor: pointer;
+	}
+
+	label:before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 10px;
+		font-family: 'Font Awesome\ 5 Free';
+		font-size: 5px;
+		text-align: center;
+		width: 14px;
+		height: 14px;
+		line-height: 15px;
+		background-color: #fff;
+		border-radius: 50%;
+		box-sizing: border-box;
+	}
+
+	input[type=checkbox]:checked + label:before {
+		content: '\f111';
+		font-weight: 900;
+		color: $second-main-color;
+	}
+	
+	@supports (-ms-ime-align: auto) {
+		
+		input[type=checkbox]:checked + label:before {
+			border-radius: 14px;
+			line-height: 14px;
+		}
+	}
+
+	.qodef-tours-search-main-filters-title {
+		
+		h4 {
+			margin: 0;
+			color: #fff;
+		}
+	}
+	
+	.qodef-tours-search-main-filters-text {
+		
+		p {
+			margin: 6px 0 22px;
+			white-space: normal;
+		}
+	}
+
+	.qodef-tours-range-input {
+		height: 22px;
+		border: none;
+		margin-bottom: 16px;
+		margin-top: 19px;
+		box-shadow: none;
+
+		.noUi-base,
+		.noUi-background {
+			background-color: $second-main-color;
+			box-shadow: none;
+			border-radius: 0;
+		}
+
+		.noUi-connect {
+			background-color: #f0ede8;
+			box-shadow: none;
+		}
+
+		.noUi-handle {
+			width: 22px;
+			height: 22px;
+			top: 0;
+			left: 0;
+			border: none;
+			border-radius: 0;
+			box-shadow: none;
+
+			&:after,
+			&:before {
+				content: none;
+			}
+
+			&:hover {
+				cursor: move;
+			}
+			
+			&.noUi-handle-upper {
+				left: -22px;
+			}
+		}
+	}
+	
+	.qodef-btn {
+		width: 100%;
+		display: block;
+		margin-top: 19px;
+	}
+	
+	select option {
+		color: #000;
+	}
+}
+
+.typeahead {
+	background-color: #fff;
+}
+
+.typeahead:focus {
+	border: 2px solid #0097cf;
+}
+
+.tt-hint {
+	color: #999
+}
+
+.tt-menu {
+	width: 100%;
+	margin: 0;
+	padding: 8px 0;
+	background-color: #fff;
+	box-shadow: $menu-drop-down-box-shadow;
+	box-sizing: border-box;
+	font-size: 13px;
+	
+	* {
+		color: $additional-text-color;
+	}
+}
+
+.twitter-typeahead {
+	width: 100%;
+}
+
+.tt-suggestion {
+	padding: 3px 20px 3px 23px;
+	font-size: 14px;
+	@include qodefTransition(color .2s ease-out);
+	
+	strong {
+		font-weight: 400;
+		@include qodefTransition(color .2s ease-out);
+	}
+}
+
+.tt-suggestion:hover {
+	cursor: pointer;
+	color: $first-main-color;
+	
+	strong {
+		color: $first-main-color;
+	}
+}
+
+.tt-suggestion.tt-cursor {
+	color: #fff;
+	background-color: $first-main-color;
+}
+
+.tt-suggestion p {
+	margin: 0;
+}
+
+/* #Main filters styles - end
+   ========================================================================== */

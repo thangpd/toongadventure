@@ -1,0 +1,33 @@
+.qodef-tours-carousel-holder {
+
+	ul li {
+		list-style-type: none;
+	}
+	
+	.qodef-owl-slider {
+		
+		&.owl-drag {
+			
+			.owl-item {
+				padding-top: 20px;
+			}
+			
+			.owl-stage-outer {
+				padding: 0 10px;
+				margin: 0 -10px;
+			}
+		}
+		
+		.owl-dots {
+			margin: 2px 0 0;
+		}
+	}
+	
+	.qodef-tours-item-price {
+		color: $default-heading-color;
+	}
+	
+	.qodef-tours-row .qodef-tours-row-item {
+		margin-bottom: 35px;
+	}
+}
