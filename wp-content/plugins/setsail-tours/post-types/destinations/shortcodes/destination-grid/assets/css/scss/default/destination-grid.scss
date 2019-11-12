@@ -1,0 +1,192 @@
+.qodef-tours-destination-holder {
+	@include qodefRelativeHolderLayout();
+	
+	.qodef-tdi-content {
+		@include qodefRelativeHolderLayout();
+
+		&:hover {
+
+			.qodef-tdi-image {
+				img {
+					@include qodefTransform(translateZ(0) scale(1.03));
+				}
+			}
+		}
+		
+		.touch & {
+			cursor: pointer;
+		}
+	}
+	
+	.qodef-tdi-image {
+		@include qodefRelativeHolderLayout();
+		overflow: hidden;
+		
+		img {
+			display: block;
+			@include qodefTransitionTransform(.5s ease-in-out);
+			@include qodefTransform(translateZ(0) scale(1));
+		}
+	}
+	
+	.qodef-tdi-text {
+		@include qodefAbsoluteHolderLayout();
+	}
+	
+	&.qodef-destination-standard {
+		
+		.qodef-tdi-content-link {
+			@include qodefAbsoluteHolderLayout();
+			z-index: 1;
+		}
+		
+		.qodef-tdi-text-inner {
+			@include qodefTableLayout();
+			text-align: center;
+		}
+		
+		.qodef-tdi-title {
+			padding: 0 20px;
+			font-family: $custom-text-font;
+			font-size: 48px;
+			font-weight: 100;
+			letter-spacing: 0;
+		}
+	}
+	
+	.qodef-tdi-title {
+		@include qodefTableCellLayout();
+		margin: 0;
+		color: $default-background-color;
+	}
+	
+	.qodef-destination-has-featured-mark {
+		position: absolute;
+		display: inline-block;
+		top: -18px;
+		right: 20px;
+		height: 47px;
+		width: 47px;
+		text-align: center;
+		line-height: 47px;
+		background-color: $first-main-color;
+		border-radius: 50%;
+		box-sizing: border-box;
+		z-index: 2;
+		
+		> span {
+			color: $default-background-color;
+		}
+	}
+	
+	&.qodef-has-rounded-style {
+		
+		.qodef-tdi-image {
+			-webkit-transform: translateZ(0);
+		}
+		
+		.qodef-tdi-content-link,
+		.qodef-tdi-image,
+		.qodef-tdi-image img {
+			border-radius: 100%;
+			box-sizing: border-box;
+		}
+		
+		.qodef-destination-has-featured-mark {
+			top: 15px;
+			right: 43px;
+		}
+		
+		&.qodef-has-overlay-style {
+			
+			.qodef-tdi-image {
+				
+				&:after {
+					border-radius: 100%;
+					box-sizing: border-box;
+				}
+			}
+		}
+	}
+	
+	&.qodef-has-overlay-style {
+		
+		.qodef-tdi-image {
+			
+			&:after {
+				@include qodefAbsoluteHolderLayout();
+				height: 100%;
+				content: '';
+				background-color: rgba(0, 0, 0, 0.25);
+			}
+		}
+	}
+	
+	&.qodef-destination-with-desc {
+		
+		.qodef-tdi-text-inner {
+			display: inline-block;
+			padding: 63px 0 67px 60px;
+			width: 70%;
+			color: $default-background-color;
+			
+			> * {
+				display: block;
+				color: $default-background-color;
+			}
+			
+			.qodef-tdi-title {
+				margin: 0 0 4px;
+			}
+			
+			.qodef-tours-item-price-holder {
+				font-weight: 600;
+			}
+			
+			.qodef-tdi-excerpt,
+			.qodef-tours-item-price-holder {
+				margin: 0 0 8px;
+			}
+			
+			.qodef-btn-text {
+				position: relative;
+				display: inline-block;
+				width: auto;
+				font-weight: 600;
+				
+				&:after {
+					content: '';
+					display: block;
+					width: 100%;
+					height: 2px;
+					margin-top: -3px;
+					background-color: currentColor;
+					@include qodefTransform(scaleX(1));
+					@include qodefTransformOrigin(0 50%);
+					-webkit-transition: -webkit-transform .2s ease-out;
+					transition: transform .2s ease-out;
+				}
+				
+				&:hover {
+					
+					&:after {
+						@include qodefTransformOrigin(100% 50%);
+						@include qodefTransform(scaleX(0));
+						@include qodefAnimation(animate-btn-line .5s .2s forwards);
+					}
+				}
+
+				@keyframes animate-btn-line {
+					0% {
+						@include qodefTransformOrigin(0 50%);
+						@include qodefTransform(scaleX(0));
+					}
+					100% {
+						@include qodefTransformOrigin(0 50%);
+						@include qodefTransform(scaleX(1));
+					}
+				}
+			}
+		}
+	}
+}

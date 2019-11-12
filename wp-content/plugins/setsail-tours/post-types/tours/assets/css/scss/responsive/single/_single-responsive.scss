@@ -1,0 +1,216 @@
+/* ==========================================================================
+# Tour single responsive style - begin
+========================================================================== */
+.qodef-tour-item-single-holder {
+	
+	@media only screen and (min-width: $ipad-portrait-plus-pixel) and (max-width: $ipad-landscape) {
+		
+		.qodef-page-content-is-boxed.qodef-content-overlapping & {
+			
+			.qodef-tabs .qodef-tabs-nav {
+				
+				li a {
+					padding: 29px 24px;
+				}
+			}
+		}
+	}
+	
+	@include ipad-landscape {
+		
+		.qodef-page-content-is-boxed.qodef-content-overlapping & {
+			
+			.qodef-tabs .qodef-tabs-nav {
+				left: -30px;
+				width: calc(100% + 60px);
+			}
+		}
+		
+		.qodef-tabs {
+			
+			.qodef-tabs-nav {
+				
+				li a {
+					padding: 29px 30px;
+				}
+			}
+		}
+		
+		.qodef-tour-item-section {
+			
+			.qodef-comment-holder {
+				
+				.qodef-review-rating {
+					
+					.qodef-rating-inner {
+						width: 50%;
+					}
+				}
+			}
+			
+			.qodef-comment-form {
+				
+				.qodef-comment-form-rating {
+					width: 50%;
+				}
+			}
+		}
+		
+		aside.qodef-sidebar {
+			margin: 60px 0 0;
+		}
+	}
+	
+	@include ipad-portrait {
+		
+		.qodef-tabs {
+			
+			.qodef-tabs-nav {
+				
+				.qodef-page-content-is-boxed.qodef-content-overlapping & {
+					left: -30px;
+					width: calc(100% + 60px);
+				}
+				
+				li {
+					width: 100%;
+					
+					a {
+						@include qodefFlexJustifyContent(left);
+					}
+				}
+			}
+			
+			.qodef-tab-container {
+				padding-top: 52px;
+			}
+		}
+		
+		.qodef-tour-item-section {
+			
+			.qodef-tour-main-info-holder {
+				
+				.qodef-info,
+				.qodef-tour-main-info-attr {
+					width: 50%;
+					padding-right: 0;
+				}
+			}
+		}
+		
+		.qodef-tour-item-section {
+			
+			.qodef-tour-item-main-info {
+				
+				li {
+					display: block;
+					
+					&:not(:last-child) {
+						padding-bottom: 16px;
+					}
+				}
+			}
+			
+			.qodef-tour-main-info-holder {
+				
+				.qodef-info,
+				.qodef-tour-main-info-attr {
+					display: block;
+					width: 100%;
+				}
+				
+				.qodef-info {
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+	
+	@include phone-landscape {
+		
+		.qodef-tour-item-section {
+			
+			.qodef-tour-item-short-info {
+				
+				> * {
+					display: block;
+					width: 100%;
+					margin-right: 0;
+					float: none;
+					
+					.qodef-tours-tour-categories-item {
+						display: block;
+						margin-bottom: 5px;
+						float: none;
+					}
+				}
+			}
+			
+			.qodef-info-section-part {
+				
+				.qodef-title-wrapper {
+					display: block;
+					
+					.qodef-tour-item-title {
+						margin: 0 0 12px 0;
+					}
+				}
+			}
+			
+			.qodef-tour-gallery {
+				
+				.qodef-tour-gallery-item {
+					width: 100%;
+					margin-bottom: 30px;
+					
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+			
+			.qodef-comment-holder {
+				
+				.qodef-review-rating {
+					
+					.qodef-rating-inner {
+						width: 100%;
+					}
+				}
+			}
+			
+			.qodef-comment-form {
+				
+				.qodef-comment-form-rating {
+					width: 100%;
+				}
+			}
+			
+			.qodef-route-top-holder {
+				
+				.qodef-route-id {
+					height: 35px;
+					width: 35px;
+					line-height: 35px;
+					font-size: 16px;
+				}
+				
+				.qodef-line-between-icons {
+					width: 35px;
+				}
+				
+				.qodef-tour-item-plan-part-title {
+					padding-left: 10px;
+				}
+			}
+			
+			.qodef-tour-item-plan-part-description {
+				padding-left: 45px;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+# Tour single responsive style - end
+========================================================================== */

@@ -1,0 +1,160 @@
+.qodef-page-content-is-boxed {
+	
+	.qodef-membership-dashboard-nav-holder {
+		left: -50px;
+		padding: 0 50px;
+		
+		.qodef-membership-dashboard-nav {
+			width: calc(100% + 100px);
+			margin: 0 -50px;
+		}
+	}
+	
+	@include ipad-landscape {
+		
+		.qodef-membership-dashboard-nav-holder {
+			left: -30px;
+			padding: 0 30px;
+			
+			.qodef-membership-dashboard-nav {
+				width: calc(100% + 60px);
+				margin: 0 -30px;
+			}
+		}
+	}
+
+	&.qodef-content-overlapping {
+		
+		.qodef-membership-dashboard-nav-holder {
+			top: -50px;
+		}
+	}
+}
+
+.page-template-user-dashboard {
+	
+    .qodef-membership-dashboard-nav-holder {
+	    position: relative;
+	    width: 100%;
+	    background-color: $additional-background-color;
+	
+	    .qodef-membership-dashboard-nav {
+            @include qodefFlexBoxLayout(relative, center, flex-start);
+            
+            li {
+                display: inline-block;
+	            width: 100%;
+                background-color: #fafafa;
+                
+                &.qodef-active-dash{
+                    background-color: $default-background-color;
+	                
+                    .qodef-dash-icon{
+                        color: $first-main-color;
+                    }
+                }
+                
+                a {
+                    position: relative;
+	                display: block;
+                    margin: 0;
+	                padding: 28px 40px;
+	                font-family: $additional-text-font;
+	                font-weight: 900;
+	                letter-spacing: .1em;
+	                text-transform: uppercase;
+	                box-sizing: border-box;
+                    
+                    &:hover {
+	                    
+                        &,
+                        span{
+                            color: $first-main-color;
+                            background-color: $default-background-color;
+                        }
+                    }
+                    
+                    .qodef-dash-icon{
+                       margin-right: 7px;
+                    }
+	                
+	                .qodef-dash-label {
+		                font-size: 13px;
+	                }
+                }
+            }
+        }
+    }
+	 
+    .qodef-membership-dashboard-content-holder {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        margin: 35px 0 0;
+	
+	    #qodef-membership-update-profile-form {
+		    
+		    input[type=text],
+		    input[type=email],
+		    input[type=password] {
+			    padding: 12px 30px;
+		    }
+		
+		    button[type=submit] {
+			    font-family: $default-text-font;
+		    }
+	    }
+    }
+	
+	.qodef-membership-dashboard-page-content {
+		@include qodefFlexBoxLayout(relative, flex-start, flex-start);
+		
+		> * {
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+		}
+	}
+	
+	.qodef-profile-image {
+		margin-right: 30px;
+		width: 330px;
+	}
+	
+	.qodef-profile-info {
+		width: calc(100% - 360px);
+		
+		> p {
+			@include qodefFlexBoxLayout(relative, flex-start, flex-start);
+			margin: 0 0 24px;
+		}
+		
+		.qodef-pi-label {
+			width: 20%;
+			margin-right: 20px;
+			font-weight: 600;
+			color: $default-heading-color;
+		}
+		
+		.qodef-pi-content {
+			width: calc(80% - 20px);
+		}
+	}
+	
+	.qodef-pi-title {
+		margin: 0 0 43px;
+	}
+	
+	.qodef-ep-title {
+		margin: 0 0 47px;
+	}
+	
+	.qodef-mb-title {
+		margin: 0 0 52px;
+	}
+	
+	button.qodef-dashboard-form-button {
+		margin-bottom: 7px;
+	}
+}

@@ -1,0 +1,412 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+@media only screen and (max-width: 680px) {
+  .qodef-banner-holder.qodef-banner-info-right .qodef-banner-text-holder {
+    padding: 15px 55px;
+  }
+  .qodef-banner-holder.qodef-banner-info-right .qodef-banner-subtitle {
+    font-size: 38px;
+  }
+  .qodef-banner-holder.qodef-banner-info-right .qodef-banner-title {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-banner-holder.qodef-banner-info-top .qodef-banner-text-holder {
+    padding: 15px 35px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-banner-holder .qodef-banner-text-holder {
+    padding: 25px;
+  }
+}
+
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Button shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .qodef-btn.qodef-btn-large, .qodef-btn.qodef-btn-huge {
+    padding: 14px 42px;
+  }
+}
+
+/* ==========================================================================
+   Button shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Call To Action shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .qodef-call-to-action-holder.qodef-three-quarters-columns .qodef-cta-text-holder, .qodef-call-to-action-holder.qodef-four-fifths-columns .qodef-cta-text-holder {
+    width: 66.66666666666667%;
+  }
+  .qodef-call-to-action-holder.qodef-three-quarters-columns .qodef-cta-button-holder, .qodef-call-to-action-holder.qodef-four-fifths-columns .qodef-cta-button-holder {
+    width: 33.33333333333333%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-call-to-action-holder.qodef-normal-layout .qodef-cta-inner,
+  .qodef-call-to-action-holder.qodef-normal-layout .qodef-cta-text-holder,
+  .qodef-call-to-action-holder.qodef-normal-layout .qodef-cta-button-holder {
+    display: block;
+  }
+  .qodef-call-to-action-holder.qodef-normal-layout .qodef-cta-button-holder {
+    margin: 28px 0 0;
+    text-align: initial;
+  }
+  .qodef-call-to-action-holder.qodef-two-halves-columns .qodef-cta-text-holder,
+  .qodef-call-to-action-holder.qodef-two-halves-columns .qodef-cta-button-holder, .qodef-call-to-action-holder.qodef-two-thirds-columns .qodef-cta-text-holder,
+  .qodef-call-to-action-holder.qodef-two-thirds-columns .qodef-cta-button-holder, .qodef-call-to-action-holder.qodef-three-quarters-columns .qodef-cta-text-holder,
+  .qodef-call-to-action-holder.qodef-three-quarters-columns .qodef-cta-button-holder, .qodef-call-to-action-holder.qodef-four-fifths-columns .qodef-cta-text-holder,
+  .qodef-call-to-action-holder.qodef-four-fifths-columns .qodef-cta-button-holder {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Countdown shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .qodef-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-countdown .countdown-row.countdown-show4 .countdown-section, .qodef-countdown .countdown-row.countdown-show5 .countdown-section, .qodef-countdown .countdown-row.countdown-show6 .countdown-section {
+    width: 33.33333333333333%;
+  }
+  .qodef-countdown .countdown-row .countdown-section {
+    margin-bottom: 23px;
+  }
+  .qodef-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-countdown .countdown-row .countdown-section {
+    margin-bottom: 24px;
+  }
+  .qodef-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 40px;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Custom Font shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .qodef-custom-font-holder.qodef-disable-title-break br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1366px) {
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-two-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-three-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-four-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-five-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-six-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-one-column-alignment-left .qodef-eh-item .qodef-eh-item-content {
+    text-align: left;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-one-column-alignment-right .qodef-eh-item .qodef-eh-item-content {
+    text-align: right;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1366.qodef-one-column-alignment-center .qodef-eh-item .qodef-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-two-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-three-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-four-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-five-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-six-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-one-column-alignment-left .qodef-eh-item .qodef-eh-item-content {
+    text-align: left;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-one-column-alignment-right .qodef-eh-item .qodef-eh-item-content {
+    text-align: right;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-1024.qodef-one-column-alignment-center .qodef-eh-item .qodef-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-two-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-three-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-four-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-five-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-six-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-one-column-alignment-left .qodef-eh-item .qodef-eh-item-content {
+    text-align: left;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-one-column-alignment-right .qodef-eh-item .qodef-eh-item-content {
+    text-align: right;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-768.qodef-one-column-alignment-center .qodef-eh-item .qodef-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-two-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-three-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-four-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-five-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-six-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-one-column-alignment-left .qodef-eh-item .qodef-eh-item-content {
+    text-align: left;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-one-column-alignment-right .qodef-eh-item .qodef-eh-item-content {
+    text-align: right;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-680.qodef-one-column-alignment-center .qodef-eh-item .qodef-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-two-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-three-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-four-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-five-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-six-columns .qodef-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-one-column-alignment-left .qodef-eh-item .qodef-eh-item-content {
+    text-align: left;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-one-column-alignment-right .qodef-eh-item .qodef-eh-item-content {
+    text-align: right;
+  }
+  .qodef-elements-holder.qodef-responsive-mode-480.qodef-one-column-alignment-center .qodef-eh-item .qodef-eh-item-content {
+    text-align: center;
+  }
+  .qodef-elements-holder .qodef-eh-item-content {
+    padding: 0 10px;
+  }
+}
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Google Map shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .qodef-google-map-overlay {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Google Map shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Section Title shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .qodef-section-title-holder {
+    padding: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .qodef-tabs.qodef-tabs-standard .qodef-tabs-nav li {
+    margin-right: 28px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-tabs.qodef-tabs-standard .qodef-tabs-nav li {
+    display: block;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .qodef-tabs.qodef-tabs-standard .qodef-tabs-nav li:last-child {
+    margin-bottom: 0;
+  }
+  .qodef-tabs.qodef-tabs-standard .qodef-tabs-nav li a {
+    width: 100%;
+  }
+  .qodef-tabs.qodef-tabs-boxed .qodef-tabs-nav li {
+    display: block;
+    float: none;
+  }
+  .qodef-tabs.qodef-tabs-boxed .qodef-tabs-nav li a {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  body.qodef-vss-initialized {
+    overflow-y: visible !important;
+    height: auto !important;
+  }
+  .qodef-vertical-split-slider,
+  #multiscroll-nav {
+    display: none;
+  }
+  .qodef-vss-responsive {
+    display: block;
+  }
+  .qodef-vss-responsive .qodef-vss-ms-section .ms-tableCell {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/setsail-core/assets/css/shortcodes-map-responsive.css.map */

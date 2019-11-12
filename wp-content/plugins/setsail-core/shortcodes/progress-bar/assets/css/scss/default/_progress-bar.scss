@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Progress Bar shortcode style - begin
+   ========================================================================== */
+
+.qodef-progress-bar {
+    @include qodefRelativeHolderLayout();
+    
+    &.qodef-pb-percent-floating {
+        width: 100%;
+        height: 100%;
+        
+        .qodef-pb-percent {
+            position: absolute;
+            left: 0;
+            right: auto;
+            bottom: 0;
+            @include qodefTransform(translateX(-50%));
+        }
+    }
+    
+    .qodef-pb-title-holder {
+        position: relative;
+        margin: 29px 0 11px;
+        
+        .qodef-pb-title {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            z-index: 100;
+        }
+    }
+	
+    .qodef-pb-percent {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: auto;
+	    display: inline-block;
+	    vertical-align: middle;
+	    opacity: 0;
+	    z-index: 10;
+        
+        &:after {
+            content: '%';
+        }
+    }
+    
+    .qodef-pb-content-holder {
+        position: relative;
+        height: 22px;
+        overflow: hidden;
+        background-color: #f0ede8;
+        
+        .qodef-pb-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            max-width: 100%;
+            overflow: hidden;
+            background-color: $first-main-color;
+            
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 22px;
+                height: 100%;
+                background-color: $second-main-color;
+            }
+            
+            &:before {
+                left: 0;
+            }
+    
+            &:after {
+                right: 0;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Progress Bar shortcode style - end
+   ========================================================================== */

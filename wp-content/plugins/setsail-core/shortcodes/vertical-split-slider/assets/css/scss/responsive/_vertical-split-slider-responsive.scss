@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+	
+	body.qodef-vss-initialized {
+		overflow-y: visible !important;
+		height: auto !important;
+	}
+	
+	.qodef-vertical-split-slider,
+	#multiscroll-nav {
+		display: none;
+	}
+
+	.qodef-vss-responsive {
+		display: block;
+		
+		.qodef-vss-ms-section {
+			
+			.ms-tableCell {
+				@include qodefFlexBoxLayout(relative, center);
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - end
+   ========================================================================== */

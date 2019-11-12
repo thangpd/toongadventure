@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.qodef-tabs {
+	@include qodefRelativeHolderLayout();
+	
+	.qodef-tabs-nav {
+		@include qodefRelativeHolderLayout();
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			
+			a {
+				position: relative;
+				display: inline-block;
+				vertical-align: top;
+				font-size: 13px;
+				line-height: 30px;
+				font-weight: 600;
+				letter-spacing: .1em;
+				box-sizing: border-box;
+				@include qodefTransition(color .2s ease-out, background-color .2s ease-out);
+			}
+		}
+	}
+	
+	.qodef-tab-container {
+		@include qodefRelativeHolderLayout(top);
+        box-sizing: border-box;
+		
+		p {
+			margin: 0;
+		}
+	}
+	
+	&.qodef-tabs-standard {
+		
+		.qodef-tabs-nav {
+			
+			li {
+				margin-right: 48px;
+				
+				&:last-child {
+					margin-right: 0;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $first-main-color;
+				}
+			}
+		}
+		
+		.qodef-tab-container {
+			margin-top: 30px;
+		}
+	}
+	
+	&.qodef-tabs-boxed {
+		background-color: #fff;
+		box-shadow: $default-box-shadow;
+		
+		.qodef-tabs-nav {
+			background-color: $additional-background-color;
+			
+			li {
+				
+				a {
+					padding: 14px 36px;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+					background-color: #fff;
+				}
+			}
+		}
+		
+		.qodef-tab-container {
+			padding: 41px 36px 49px;
+		}
+	}
+}
+
+.ui-widget-content {
+	padding: 0;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	border: 0;
+	border-radius: 0;
+
+    .ui-widget-header {
+	    font-size: inherit;
+	    line-height: inherit;
+	    font-weight: inherit;
+	    color: initial;
+	    background: none;
+	    border: 0;
+        border-radius: 0;
+    }
+	
+    .ui-tabs-nav {
+	    
+        li {
+	        position: initial;
+	        font-weight: inherit;
+	        color: inherit;
+	        background: initial;
+	        border: 0;
+	        border-radius: 0;
+        }
+    }
+
+    .ui-widget-content {
+	    color: inherit;
+	    background: none;
+	    border: 0;
+        border-radius: 0;
+    }
+}
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

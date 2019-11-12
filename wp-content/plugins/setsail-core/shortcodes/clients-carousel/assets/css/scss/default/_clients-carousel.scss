@@ -1,0 +1,497 @@
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+
+.qodef-clients-carousel-holder {
+	@include qodefRelativeHolderLayout();
+	width: 96%;
+	
+	.qodef-cc-inner {
+		@include qodefRelativeHolderLayout();
+		width: 96%;
+	}
+
+	&.qodef-cc-light {
+
+		.qodef-owl-slider {
+			
+			.owl-nav {
+				
+				.owl-prev, .owl-next {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.qodef-owl-slider {
+			
+		.owl-nav {
+			
+			.owl-prev,
+			.owl-next {
+				top: calc(50% - 44px);
+				font-size: 55px;
+				color: #000;
+				background: transparent;
+
+				&:hover {
+					color: $first-main-color;
+				}
+				
+				@include phone-landscape {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&.qodef-cc-post-stamp-frame {
+
+		.qodef-cc-item {
+
+			.qodef-cc-link {
+				border-image: url(../img/stamp.png) 17 round;
+				border-width: 13px;
+				border-style: solid;
+				filter: drop-shadow(4px 5px 12px rgba(0, 0, 0, .07));
+				-webkit-transform: translateZ(0);
+			}
+		}
+	}
+	
+	.qodef-cc-item {
+		@include qodefRelativeHolderLayout();
+		
+		.touch & {
+			cursor: pointer;
+		}
+		
+		img {
+			display: block;
+		}
+		
+		.qodef-cc-info {
+			position: absolute;
+			right: -85px;
+			bottom: -103px;
+			width: 170px;
+			height: 170px;
+			display: none;
+			padding: 10px 15px;
+			text-align: center;
+			overflow: hidden;
+			box-sizing: border-box;
+			@include qodefTransition(opacity .4s, right .6s);
+
+			&:after {
+				content: "";
+				@include qodefAbsoluteHolderLayout();
+				background-color: #fff;
+				border-radius: 100%;	
+			}
+
+			@include phone-portrait {
+				right: -35px;
+			}
+			
+			> * {
+				margin: 0;
+			}
+
+			.qodef-cc-info-title, .qodef-cc-info-text {
+				opacity: 0;
+				@include qodefTransition(.2s);
+			}
+			
+			.qodef-cc-info-title {
+				color: $default-heading-color;
+				z-index: 123;
+			}
+			
+			.qodef-cc-info-text {
+				max-height: 50px;
+				margin-top: 7px;
+				color: $default-text-color;
+				z-index: 123;
+				font-size: 13px;;
+			}
+		}
+	}
+	
+	.qodef-cc-link {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+/***** Hover Types - begin *****/
+
+.qodef-cc-hover-hover-info {
+	
+	.qodef-owl-slider {
+		
+		.owl-stage-outer {
+			padding: 85px 0 115px 12px;
+			overflow: hidden;
+			clip-path: inset(0 132px 0 120px);
+			-webkit-clip-path: inset(0 132px 0 120px);
+
+			@supports (-ms-ime-align: auto) {
+				border-right: 120px solid transparent;
+			}
+
+			@include laptop-landscape-large {
+				padding:  85px 0 115px 184px;
+				clip-path: inset(0 118px 0 95px);
+				-webkit-clip-path: inset(0 118px 0 95px);
+			}
+
+			@include laptop-landscape-mac {
+				padding: 85px 0 115px 47px;
+				clip-path: inset(0 115px 0 120px);
+				-webkit-clip-path: inset(0 115px 0 120px);
+			}
+
+			@include ipad-landscape {
+				padding:  85px 0 115px 181px;
+			}
+
+			@include ipad-portrait {
+				padding: 85px 0 115px 16px;
+			}
+
+			@include phone-portrait {
+				clip-path: none;
+				-webkit-clip-path: none;
+				padding: 85px 0 115px 8px;
+			}
+
+			.qodef-row-grid-section & {
+				@include ipad-landscape {
+					padding: 85px 0 115px 153px;
+					clip-path: inset(0 100px 0 120px);
+					-webkit-clip-path: inset(0 100px 0 120px);
+				}
+				
+				@include ipad-portrait {
+					padding: 85px 0 115px 47px;
+				}
+				
+				@include phone-landscape {
+					clip-path: none;
+					-webkit-clip-path: none;
+				}
+			}
+		}
+		
+		.owl-stage {
+			@include qodefFlexBoxLayout(null, center);
+
+			.owl-item {
+				opacity: 0;
+				@include qodefTransition(.4s);
+
+				@include laptop-landscape-large {
+					margin-right: 70px !important;
+				}
+
+				@include ipad-landscape {
+					margin-right: 10px !important;
+				}
+
+				@include ipad-landscape {
+
+					.qodef-row-grid-section & {
+						margin-right: 60px !important;
+					}
+				}
+
+				@include ipad-portrait {
+
+					.qodef-row-grid-section & {
+						margin-right: 116px !important;
+					}
+				}
+
+				&.active {
+					opacity: 1;
+
+					.qodef-cc-item{
+
+						.qodef-cc-info {
+							@include ipad-landscape {
+								right: 55px;
+							}
+		
+							@include ipad-portrait {
+								right: -85px;
+							}
+
+							@include phone-portrait {
+								right: -35px;
+							}
+						}
+						
+						a {
+							
+							.qodef-cc-info {
+								@include ipad-landscape {
+									right: 55px;
+								}
+			
+								@include ipad-portrait {
+									right: -85px;
+								}
+
+								@include phone-portrait {
+									right: -35px;
+								}
+							}
+						}
+					}
+
+					@include phone-landscape {
+
+						.qodef-cc-info {
+							&:after {
+								opacity: 1;
+								@include qodefTransform(scale(1));
+								@include qodefTransition(transform .7s, opacity .3s);
+							}
+
+							.qodef-cc-info-title, .qodef-cc-info-text {
+								opacity: 1;
+								@include qodefTransition(.5s .1s);
+							}
+						}
+					}
+				}
+
+				&.qodef-cc-info-right {
+
+					.qodef-cc-info {
+						right: 55px;
+					}
+				}
+				
+				&.center {
+					z-index: 123;
+
+					.qodef-cc-item{
+
+						.qodef-cc-info {
+							&:after {
+								opacity: 1;
+								@include qodefTransform(scale(1));
+								@include qodefTransition(transform .7s, opacity .3s);
+							}
+
+							.qodef-cc-info-title, .qodef-cc-info-text {
+								opacity: 1;
+								@include qodefTransition(.5s .1s);
+							}
+						}
+			
+						a {
+							
+							.qodef-cc-info {
+								&:after {
+									opacity: 1;
+									@include qodefTransform(scale(1));
+									@include qodefTransition(transform .7s, opacity .3s);
+								}
+
+								.qodef-cc-info-title, .qodef-cc-info-text {
+									opacity: 1;
+									@include qodefTransition(.5s .1s);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.qodef-cc-item {
+		text-align: center;
+		
+		&.qodef-cci-has-link {
+			
+			a {
+				
+				&:hover {
+					
+					.qodef-cc-info {
+						&:after {
+							opacity: 1;
+							@include qodefTransform(scale(1));
+							@include qodefTransition(transform .7s, opacity .3s);
+						}
+
+						.qodef-cc-info-title, .qodef-cc-info-text {
+							opacity: 1;
+							@include qodefTransition(.5s .1s);
+						}
+					}
+				}
+			}
+		}
+		
+		&.qodef-cci-no-link {
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				.qodef-cc-info {
+					&:after {
+						opacity: 1;
+						@include qodefTransform(scale(1));
+						@include qodefTransition(transform .7s, opacity .3s);
+					}
+					
+					.qodef-cc-info-title, .qodef-cc-info-text {
+						opacity: 1;
+						@include qodefTransition(.5s .1s);
+					}
+				}
+			}
+		}
+		
+		.qodef-cc-info {
+			@include qodefFlexContainer(center, center, column);
+
+			&:after {
+				opacity: 0;
+				@include qodefTransform(scale(.6));
+				@include qodefTransition(.2s);
+			}
+		}
+	}
+}
+
+.qodef-cc-hover-switch-images {
+	
+	.qodef-cc-item {
+		@include qodefFlexBoxLayout(null, center, center);
+		
+		&.qodef-cci-has-link {
+			
+			a {
+				
+				&:hover {
+					
+					.qodef-cc-image {
+						opacity: 0;
+					}
+					
+					.qodef-cc-hover-image {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		
+		&.qodef-cci-no-link {
+			
+			&:hover {
+				
+				.qodef-cc-image {
+					opacity: 0;
+				}
+				
+				.qodef-cc-hover-image {
+					opacity: 1;
+				}
+			}
+			
+			.qodef-cc-hover-image {
+				left: 50%;
+				@include qodefTransform(translateX(-50%));
+			}
+		}
+		
+		.qodef-cc-image {
+			width: auto;
+			opacity: 1;
+			will-change: opacity;
+			@include qodefTransition(opacity .15s ease-out);
+		}
+		
+		.qodef-cc-hover-image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: auto;
+			opacity: 0;
+			will-change: opacity;
+			@include qodefTransition(opacity .15s ease-out);
+		}
+	}
+}
+
+.qodef-cc-hover-roll-over {
+	
+	.qodef-cc-item {
+		overflow: hidden;
+		
+		&.qodef-cci-has-link {
+			
+			a {
+				
+				&:hover {
+					
+					.qodef-cc-image {
+						@include qodefTransform(translateY(100%));
+					}
+					
+					.qodef-cc-hover-image {
+						@include qodefTransform(translate(-50%, 0));
+					}
+				}
+			}
+		}
+		
+		&.qodef-cci-no-link {
+			
+			&:hover {
+				
+				.qodef-cc-image {
+					@include qodefTransform(translateY(100%));
+				}
+				
+				.qodef-cc-hover-image {
+					@include qodefTransform(translate(-50%, 0));
+				}
+			}
+		}
+		
+		.qodef-cc-image {
+			position: relative;
+			display: block;
+			width: auto;
+			margin: 0 auto;
+			@include qodefTransitionTransform(.4s ease);
+		}
+		
+		.qodef-cc-hover-image {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: auto;
+			@include qodefTransform(translate(-50%, -100%));
+			@include qodefTransitionTransform(.4s ease);
+		}
+	}
+}
+
+/***** Hover Types - end *****/
+
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */

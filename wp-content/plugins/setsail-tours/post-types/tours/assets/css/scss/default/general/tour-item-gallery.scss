@@ -1,0 +1,304 @@
+
+/* Gallery type styles
+   ========================================================================== */
+
+
+.qodef-tours-list-holder {
+	
+	&.qodef-info-on-image {
+		
+		.qodef-tours-gi-image {
+			
+			&:after {
+				content: '';
+				@include qodefAbsoluteHolderLayout;
+				@include qodefDefaultLinearGradient;
+				z-index: 1;
+			}
+		}
+		
+		.qodef-tours-gi-content-holder {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			z-index: 2;
+		}
+		
+		.qodef-tours-gi-content-outer {
+			@include qodefTableLayout();
+		}
+		
+		.qodef-tours-gi-content-inner {
+			@include qodefTableCellLayout();
+			vertical-align: bottom;
+			padding: 30px;
+		}
+	}
+	
+	&.qodef-info-skin-light {
+		
+		.qodef-tour-title,
+		.qodef-tours-gi-excerpt,
+		.qodef-tours-price-holder,
+		.qodef-tours-item-rating {
+			color: $header-light-color;
+		}
+		
+		&.qodef-info-below-image {
+			
+			.qodef-tours-gallery-item-content-holder {
+				background-color: $first-main-color;
+			}
+		}
+	}
+	
+	&.qodef-info-skin-dark {
+		
+		.qodef-tour-title,
+		.qodef-tours-gi-excerpt,
+		.qodef-tours-price-holder,
+		.qodef-tours-item-rating {
+			color: $header-dark-color;
+		}
+	}
+}
+
+.qodef-tours-gallery-item {
+	@include qodefRelativeHolderLayout();
+	
+	.qodef-tours-gi-price-holder {
+		display: inline-block;
+	}
+	
+	.qodef-tours-item-rating {
+		display: inline-block;
+		margin-left: 10px;
+		
+		> * {
+			display: inline-block;
+			margin-right: 3px;
+			font-weight: 500;
+		}
+		
+		.qodef-item-reviews-rating-icon {
+			font-size: 13px;
+			margin-right: 7px;
+		}
+	}
+	
+	.touch & {
+		cursor: pointer;
+	}
+	
+	.qodef-gi-title-and-price-holder {
+		@include qodefFlexBoxLayout(relative, center, space-between);
+		line-height: 1;
+		
+		.qodef-tour-title {
+			width: 70%;
+			line-height: 1.1em;
+		}
+		
+		.qodef-tours-price-holder {
+			width: 30%;
+			text-align: right;
+		}
+	}
+	
+	.qodef-tours-gallery-item-image-holder {
+		@include qodefRelativeHolderLayout();
+	}
+
+	&:hover {
+		.qodef-tours-gallery-item-image {
+			&:after {
+				opacity: 1;
+			}
+
+			img {
+				@include qodefTransform(scale(1.03));
+			}
+		}
+	}
+	
+	.qodef-tours-gallery-item-image {
+		@include qodefRelativeHolderLayout();
+		overflow: hidden;
+		
+		img {
+			vertical-align: middle;
+			@include qodefTransition(.7s);
+			backface-visibility: hidden;
+		}
+
+		&:after {
+			content:'';
+			@include qodefAbsoluteHolderLayout;
+			@include qodefDefaultLinearGradient;
+			z-index: 10;
+			@include qodefTransition(.5s);
+		}
+	}
+	
+	.qodef-tours-gallery-item-content-holder {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 20;
+		height: auto;
+		padding: 18px 19px;
+		box-sizing: border-box;
+		@include qodefTransition(all .3s cubic-bezier(0.29, 0.22, 0.11, 1.33));
+	}
+	
+	.qodef-tours-gallery-item-content-inner {
+		@include qodefRelativeHolderLayout();
+		overflow: hidden;
+	}
+	
+	.qodef-tours-gallery-title-holder {
+		
+		.qodef-tours-type-gallery & {
+			padding: 10px 0;
+			text-align: center;
+		}
+		
+		.qodef-tour-title {
+			display: block;
+			margin: 0 0 6px;
+		}
+		
+		.qodef-tours-gallery-item-price-holder {
+			position: relative;
+			display: block;
+			white-space: nowrap;
+			color: $default-background-color;
+		}
+	}
+	
+	.qodef-tour-title {
+		color: $default-background-color;
+	}
+	
+	.qodef-tour-item-label {
+		position: absolute;
+		display: inline-block;
+		top: 0;
+		right: 0;
+		padding: 9px 30px;
+		letter-spacing: -.05em;
+		font-weight: 500;
+		color: $default-background-color;
+		background-color: $first-main-color;
+		z-index: 2;
+	}
+
+	.qodef-tours-gallery-item-link {
+		@include qodefAbsoluteHolderLayout();
+		z-index: 100;
+	}
+}
+
+/* Gallery type specific styles begin
+   ========================================================================== */
+
+.qodef-info-below-image {
+	
+	&.qodef-tours-type-gallery-with-description {
+		
+		.qodef-tours-gallery-item-image-holder {
+			box-shadow: 0 3px 20px 5px rgba(0,0,0,.05);
+			box-sizing: border-box;
+		}
+		
+		.qodef-tours-gi-image {
+			display: block;
+		}
+		
+		.qodef-tours-gallery-item-content-holder {
+			position: relative;
+			display: block;
+			padding: 43px 30px 38px;
+			overflow: hidden;
+			text-align: center;
+			background-color: $header-light-color;
+			border-bottom-left-radius: $default-border-radius;
+			border-bottom-right-radius: $default-border-radius;
+		}
+		
+		.qodef-tours-gallery-title-holder {
+			margin-bottom: 14px;
+		}
+		
+		.qodef-tours-gi-excerpt {
+			margin-bottom: 16px;
+		}
+	}
+}
+
+.qodef-info-on-image {
+	
+	&.qodef-tours-type-gallery-with-description {
+		
+		.qodef-tours-gallery-item-content-holder {
+			padding: 30px 30px 37px;
+		}
+		
+		.qodef-tours-gallery-title-holder {
+			margin-bottom: 9px;
+		}
+		
+		.qodef-tours-gi-excerpt {
+			margin-bottom: 14px;
+		}
+		
+		.qodef-tours-item-price {
+			font-size: 12px;
+			line-height: 24px;
+			font-weight: 400;
+		}
+		
+		.qodef-tours-gallery-item-image {
+			
+			&:after {
+				
+				background: -moz-linear-gradient(to bottom,rgba(0,0,0,0) 40%,rgba(0,0,0,.6) 75%,rgba(0,0,0,.8) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(to bottom,rgba(0,0,0,0) 40%,rgba(0,0,0,.6) 75%,rgba(0,0,0,.8) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom, rgba(0,0,0,0) 40%,rgba(0,0,0,.6) 75%,rgba(0,0,0,.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
+			}
+		}
+	}
+}
+
+.qodef-tours-type-gallery-simple {
+	
+	.qodef-tours-gallery-item-content-holder {
+		padding: 26px 40px 23px;
+		
+		@media only screen and (min-width: $ipad-portrait-plus-pixel) and (max-width: $ipad-landscape) {
+			padding: 26px 25px 23px;
+		}
+	}
+	
+	.qodef-tours-item-rating {
+		margin: 2px 0 0;
+		
+		.qodef-item-reviews-rating-icon {
+			position: relative;
+			top: -1px;
+		}
+	}
+}
+
+/* Gallery type specific styles end
+   ========================================================================== */
+
+
+/* Gallery type styles end
+	========================================================================== */

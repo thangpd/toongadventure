@@ -1,0 +1,72 @@
+@include ipad-landscape {
+	
+	.qodef-tours-my-booking-item {
+		
+		.qodef-tours-info-items {
+			
+			.qodef-membership-desc {
+				width: 100%;
+			}
+		}
+		
+		.qodef-tours-booking-info-item {
+			flex-direction: column;
+		}
+		
+		.qodef-membership-desc .qodef-tours-booking-info-title {
+			margin-bottom: 0;
+		}
+		
+		.qodef-tours-booking-info-title,
+		.qodef-tb-content {
+			width: 100%;
+		}
+	}
+}
+
+@include ipad-portrait {
+	
+	.qodef-tours-my-booking-item {
+		flex-direction: column;
+		
+		.qodef-tours-booking-info-item {
+			flex-direction: row;
+		}
+		
+		.qodef-tours-booking-item-image-holder {
+			width: 100%;
+			margin-right: 0;
+		}
+		
+		.qodef-tours-info-items {
+			margin-top: 30px;
+			width: 100%
+		}
+	}
+}
+
+@include phone-landscape {
+	
+	.qodef-tours-booking-form-holder {
+		
+		.qodef-boxed-widget {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+	
+	.qodef-tours-my-booking-item {
+		margin-bottom: 36px;
+		
+		.qodef-tours-info-items {
+			
+			.qodef-tours-booking-info-item {
+				margin-bottom: 10px;
+			}
+		}
+		
+		.qodef-tours-booking-info-item {
+			flex-direction: column;
+		}
+	}
+}

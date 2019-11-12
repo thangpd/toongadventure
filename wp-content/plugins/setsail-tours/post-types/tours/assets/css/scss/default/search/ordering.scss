@@ -1,0 +1,96 @@
+.qodef-tours-search-content .qodef-social-share-holder .qodef-icon-name {
+	display: none;
+}
+
+.qodef-search-ordering-holder {
+	@include qodefRelativeHolderLayout();
+	
+	.qodef-search-ordering-items-holder {
+		padding: 0 15px;
+	}
+	
+	.qodef-search-ordering-list {
+		position: relative;
+		display: block;
+		list-style: none;
+		margin: 0 -15px 50px;
+		overflow: hidden;
+		vertical-align: middle;
+		background-color: $additional-background-color;
+		
+		li {
+			float: left;
+			display: inline-block;
+			vertical-align: middle;
+			
+			&:first-child {
+				
+				a {
+					
+					&:before {
+						display: none;
+					}
+				}
+			}
+			
+			&:last-child {
+				
+				a {
+					border-right: none;
+				}
+			}
+			
+			&.qodef-search-ordering-item-active {
+				
+				a {
+					color: $first-main-color;
+					background-color: #fff;
+					border-color: #fff;
+					
+					&:before {
+						display: block;
+					}
+				}
+			}
+			
+			a {
+				position: relative;
+				display: block;
+				margin: 0;
+				padding: 27px 40px 26px;
+				width: auto;
+				font-family: $additional-text-font;
+				font-size: 13px;
+				font-weight: 800;
+				letter-spacing: .1em;
+				color: $default-heading-color;
+				border: none;
+				text-align: center;
+				box-sizing: border-box;
+				@include qodefTransition(color 0.2s ease-in-out, background-color 0.2s ease-in-out, margin 0.2s ease-in-out, padding 0.2s ease-in-out);
+				
+				&:before {
+					content: '';
+					position: absolute;
+					display: none;
+					bottom: 0;
+					left: -1px;
+					width: 1px;
+					height: 100%;
+					background-color: #fff;
+					z-index: 1;
+				}
+				
+				&:hover {
+					color: $first-main-color;
+				}
+				
+				.qodef-search-ordering-icon {
+					margin-right: 7px;
+					font-size: 14px;
+					line-height: 1.928571428571429em;
+				}
+			}
+		}
+	}
+}

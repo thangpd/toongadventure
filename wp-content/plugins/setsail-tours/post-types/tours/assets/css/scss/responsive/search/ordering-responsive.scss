@@ -1,0 +1,63 @@
+@include ipad-landscape {
+	
+	.qodef-search-ordering-holder {
+		
+		.qodef-search-ordering-list {
+			
+			li {
+				
+				a {
+					padding: 26px 27px;
+				}
+			}
+		}
+	}
+}
+
+@include ipad-portrait {
+	
+	.qodef-search-ordering-holder {
+		
+		.qodef-search-ordering-list {
+			padding: 0;
+			
+			li {
+				float: none;
+				width: 100%;
+				
+				&.qodef-search-ordering-item-active {
+					
+					a {
+						margin: 0;
+					}
+				}
+				
+				a {
+					width: 100%;
+					padding: 27px 20px 26px;
+					border: none;
+					text-align: left;
+					
+					&:before {
+						display: none;
+					}
+					
+					.qodef-search-ordering-icon,
+					.qodef-search-ordering-title {
+						display: inline-block;
+						vertical-align: middle;
+					}
+					
+					.qodef-search-ordering-icon {
+						position: relative;
+						top: -1px;
+					}
+					
+					.qodef-search-ordering-title {
+						margin: 0 0 0 4px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,132 @@
+.qodef-tours-search-content {
+	@include qodefRelativeHolderLayout();
+	
+	&.qodef-tours-searching {
+		opacity: 0.2;
+	}
+	
+	.qodef-tours-row .qodef-tours-row-item {
+		margin-bottom: 30px;
+	}
+
+	.qodef-tours-search-item {
+
+		&.qodef-tours-search-list-item {
+			margin-bottom: 60px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.qodef-tours-item-with-smaller-spacing {
+	
+	&.qodef-tours-search-item {
+		
+		.qodef-tours-standard-item {
+			
+			.qodef-tours-standard-item-content-inner {
+				padding: 21px 20px;
+				border: 1px solid #ebebeb;
+				border-top: none;
+				border-bottom: none;
+			}
+			
+			@media only screen and (min-width: 1025px) {
+				.qodef-tours-standard-item-title-price-holder {
+					padding-right: 80px;
+				}
+			}
+			
+			.qodef-tours-standard-item-title-price-holder .qodef-tour-title,
+			.qodef-tours-price-holder {
+				font-size: 15px;
+			}
+			
+			.qodef-tours-price-with-discount {
+				
+				.qodef-tours-item-price {
+					font-size: 12px;
+				}
+				
+				.qodef-tours-item-discount-price {
+					font-size: 15px;
+				}
+			}
+			
+			.qodef-tours-standard-item-excerpt {
+				@include qodefRelativeHolderLayout();
+				margin: 10px 0 0;
+			}
+		}
+		
+		.qodef-tours-gallery-item {
+			
+			.qodef-tours-gallery-item-image {
+				border: 1px solid #ebebeb;
+				border-top: none;
+				box-sizing: border-box;
+			}
+			
+			.qodef-tours-gallery-title-holder .qodef-tour-title,
+			.qodef-tours-price-holder {
+				font-size: 15px;
+			}
+			
+			.qodef-tours-price-with-discount {
+				
+				.qodef-tours-item-price {
+					font-size: 12px;
+				}
+				
+				.qodef-tours-item-discount-price {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}
+
+.qodef-tours-search-page-holder {
+
+	.qodef-tours-search-pagination {
+		@include qodefStandardPaginationStyle();
+		margin-top: 23px;
+		margin-bottom: 80px;
+		
+		ul {
+			
+			li {
+				margin: 0 7px;
+				
+				a {
+					font-weight: 500;
+				}
+				
+				&.active {
+					
+					span {
+						font-weight: 500;
+						color: $default-heading-color;
+					}
+				}
+				
+				&.qodef-pagination-prev,
+				&.qodef-pagination-next {
+					margin: 0 2px;
+					
+					a {
+						font-size: 24px;
+						color: $default-heading-color;
+						
+						&:hover {
+							color: $first-main-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}

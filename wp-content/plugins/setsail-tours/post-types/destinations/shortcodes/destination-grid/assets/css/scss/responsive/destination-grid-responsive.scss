@@ -1,0 +1,62 @@
+.qodef-tours-destination-holder {
+	
+	@include ipad-portrait {
+		
+		.qodef-tdi-title {
+			line-height: 0.96em;
+		}
+	}
+	
+	&.qodef-destination-standard {
+		
+		@include ipad-landscape {
+			
+			.qodef-tdi-title {
+				font-size: 38px;
+			}
+		}
+	}
+	
+	&.qodef-destination-with-desc {
+		
+		.qodef-tdi-text-inner {
+			
+			@media only screen and (min-width: $laptop-landscape-medium) and (max-width: $laptop-landscape-large) {
+				padding: 43px 0 67px 34px;
+			}
+			
+			@include ipad-landscape {
+				width: 60%;
+				padding: 43px 0 67px 42px;
+				
+				.qodef-tdi-excerpt {
+					display: none;
+				}
+			}
+			
+			@include ipad-portrait {
+				padding: 33px 0 67px 32px;
+			}
+		}
+	}
+	
+	&.qodef-has-rounded-style {
+		
+		@include ipad-landscape {
+			
+			.qodef-destination-has-featured-mark {
+				top: 15px;
+				right: 3px;
+			}
+		}
+		
+		@include ipad-portrait {
+		
+			.qodef-destination-has-featured-mark {
+				top: 40px;
+				right: 0px;
+			}
+		}
+	}
+	
+}

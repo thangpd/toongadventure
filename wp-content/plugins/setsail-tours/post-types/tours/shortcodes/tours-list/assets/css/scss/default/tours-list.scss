@@ -1,0 +1,28 @@
+.qodef-tours-list-holder {
+
+	.qodef-tours-list-holder-inner {
+		opacity: 0;
+		@include qodefTransition(opacity 0.2s ease-out);
+		
+		@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+			position: relative;
+			opacity: 1;
+		}
+	}
+	
+	$gallery_columns_number: ('1', '2', '3', '4', '5', '6');
+		
+	@for $i from 0 to length($gallery_columns_number) {
+		&.qodef-tours-columns-#{nth($gallery_columns_number,$i+1)} {
+			
+			.qodef-tours-list-grid-sizer {
+				width: 100% / ($i+1);
+			}
+		}
+	}
+
+	.qodef-tours-pagination-holder.qodef-tours-pagination-load-more {
+		text-align: center;
+		margin-top: 60px;
+	}
+}

@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Team shortcode style - begin
+   ========================================================================== */
+
+.qodef-team-holder {
+    @include qodefRelativeHolderLayout();
+	
+	&.qodef-team-info-on-image {
+		
+		.touch & {
+			cursor: pointer;
+		}
+
+		&:hover {
+			
+			.qodef-team-social-wrapper {
+				@include qodefTransform(translateY(0));
+			}
+		}
+		
+		.qodef-team-name,
+		.qodef-team-position,
+		.qodef-team-text {
+			color: #fff;
+		}
+		
+		.qodef-team-social-holder {
+			
+			.qodef-team-icon {
+				
+				a {
+					color: #fff;
+					
+					&:hover {
+						color: $solid-button-hover-bg-color;
+					}
+				}
+			}
+		}
+	}
+
+    .qodef-team-image {
+        @include qodefRelativeHolderLayout();
+		overflow: hidden;
+	    
+        img {
+            display: block;
+        }
+    }
+	
+	.qodef-team-info {
+		@include qodefRelativeHolderLayout();
+		text-align: center;
+		margin: 22px 0 0;
+	}
+
+    .qodef-team-name {
+        margin: 0;
+    }
+
+    .qodef-team-position {
+        margin: 4px 0 0;
+    }
+	
+	.qodef-team-text {
+		margin: 11px 0 0;
+	}
+	
+	.qodef-team-social-wrapper {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: auto;
+		bottom: 0;
+		left: 0;
+		background-color: $first-main-color;
+		z-index: 1;
+		@include qodefTransform(translateY(100%));
+		@include qodefTransitionTransform(.6s);
+	}
+	
+	.qodef-team-social-outer {
+		@include qodefTableLayout();
+	}
+	
+	.qodef-team-social-inner {
+		position: relative;
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		padding: 22px 25px 26px;
+		vertical-align: middle;
+		text-align: center;
+	}
+	
+	.qodef-team-social-holder {
+		@include qodefRelativeHolderLayout();
+		margin: 13px 0 0;
+		
+		.qodef-team-icon {
+			font-size: 16px;
+			margin: 0 24px 0 0;
+			
+			&:last-child {
+				margin-right: 0;
+			}
+			
+			.qodef-icon-element {
+				font-size: inherit;
+				@include qodefTransition(none);
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Team shortcode style - end
+   ========================================================================== */

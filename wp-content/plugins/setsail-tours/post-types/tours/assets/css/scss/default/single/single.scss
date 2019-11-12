@@ -1,0 +1,629 @@
+/* ==========================================================================
+# Tour single style - begin
+========================================================================== */
+
+.qodef-tour-item-single-holder {
+	
+	.qodef-page-content-is-boxed.qodef-content-overlapping & {
+		padding-top: 0 !important;
+		
+		.qodef-tabs .qodef-tabs-nav {
+			left: -50px;
+			width: calc(100% + 100px);
+		}
+		
+		.qodef-info-section-part {
+			
+			&:first-child {
+				
+				.qodef-route-top-holder {
+					margin-top: 17px;
+				}
+			}
+			
+			&:last-child {
+				
+				.qodef-tour-item-plan-part-description {
+					padding-bottom: 28px;
+				}
+			}
+		}
+		
+		.qodef-comment-form {
+			margin-bottom: 50px;
+		}
+		
+		.qodef-tour-item-title-holder {
+			margin-top: 24px
+		}
+	
+		.qodef-location-part {
+			margin: 24px 0 43px;
+		}
+		
+		.qodef-info-section-part {
+			
+			.qodef-tour-item-plan-part {
+				margin: 17px 0 0;
+			}
+		}
+		
+		.qodef-tour-plan-title {
+			margin: 24px 0 57px;
+		}
+		
+		.qodef-tour-gallery-title {
+			margin: 24px 0 13px;
+		}
+		
+		.qodef-tour-gallery-excerpt {
+			margin: 0 0 40px;
+		}
+	}
+	
+	.qodef-tabs {
+		
+		.qodef-tabs-nav {
+			background-color: #f8f8f8;
+			
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				
+				&.ui-state-active {
+					
+					a {
+						background-color: #fff;
+					}
+				}
+				
+				a {
+					@include qodefFlexBoxLayout(relative, center);
+					margin: 0;
+					padding: 29px 44px;
+					@include qodefH7();
+					color: $default-heading-color;
+					background-color: #f8f8f8;
+					@include qodefTransition(color .2s ease-in-out, background-color .2s ease-in-out);
+					
+					&:hover {
+						background-color: #fff;
+					}
+					
+					.qodef-tour-nav-section-icon {
+						margin-right: 10px;
+						font-size: 14px;
+						line-height: inherit;
+						font-weight: 700;
+						
+						&:before {
+							display: block;
+							line-height: inherit;
+						}
+					}
+					
+					.qodef-tour-nav-section-title {
+						position: relative;
+						top: 2px;
+					}
+				}
+			}
+		}
+		
+		.qodef-tab-container {
+			padding: 50px 0 0;
+		}
+	}
+	
+	@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+		
+		.qodef-sidebar-holder {
+			position: absolute;
+			right: 0;
+			top: 130px;
+			display: inline-block;
+			width: calc(25% - 37px);
+			padding: 0 25px;
+			margin: 0 -25px;
+		}
+	}
+	
+	.qodef-tour-item-section {
+		
+		&:not(:first-child) {
+			display: none;
+		}
+		
+		&.qodef-information-section {
+			
+			.qodef-title-wrapper {
+				@include qodefFlexBoxLayout(relative, flex-start);
+			}
+			
+			.qodef-tour-item-title {
+				margin: 0 26px 0 0;
+			}
+			
+			.qodef-tour-item-price-holder {
+				white-space: nowrap;
+			}
+			
+			.qodef-tours-price-holder {
+				margin-right: 6px;
+			}
+			
+			.qodef-tour-item-price {
+				@include qodefHeadingStyle('h3', false);
+				color: $first-main-color;
+			}
+			
+			.qodef-tours-price-old {
+				color: $additional-text-color;
+				text-decoration: line-through;
+			}
+			
+			.qodef-tour-item-price-text {
+				position: relative;
+				bottom: 2px;
+			}
+			
+			.qodef-reviews-list-info {
+				padding-top: 10px;
+				
+				.qodef-stars {
+					margin-right: 9px;
+					color: $first-main-color;
+				}
+			}
+			
+			.qodef-tour-item-content {
+				margin-top: 32px;
+			}
+		}
+		
+		.qodef-tour-item-short-info {
+			@include qodefRelativeHolderLayout(top);
+			margin-top: 38px;
+			clear: both;
+			
+			> * {
+				display: inline-block;
+				vertical-align: top;
+				float: left;
+				margin: 0 5px 5px 0;
+				
+				&:last-child {
+					margin-right: 0;
+				}
+				
+				> *:not(.qodef-tours-tour-categories-item) {
+					@include qodefFlexBoxLayout(relative, center);
+					padding: 8px 30px;
+					color: #fff;
+					background-color: $first-main-color;
+					box-sizing: border-box;
+				}
+				
+				.qodef-tours-tour-categories-item {
+					position: relative;
+					display: inline-block;
+					vertical-align: top;
+					float: left;
+					margin-right: 5px;
+					padding: 8px 30px;
+					background-color: $first-main-color;
+					
+					&:last-child {
+						margin-right: 0;
+					}
+					
+					a {
+						@include qodefFlexBoxLayout(relative, center);
+						color: #fff;
+						box-sizing: border-box;
+						@include qodefTransition(color .2s ease-out, background-color .2s ease-out);
+						
+						&:hover {
+							color: #fff;
+						}
+					}
+				}
+				
+				.qodef-tour-duration-icon {
+					margin-right: 11px;
+				}
+				
+				.qodef-tour-min-age-icon {
+					margin-right: 8px;
+				}
+				
+				.qodef-tour-cat-item-icon {
+					margin-right: 8px;
+				}
+			}
+		}
+		
+		.qodef-tour-item-main-info {
+			@include qodefRelativeHolderLayout(top);
+			margin-top: 28px;
+			
+			li:not(:last-child) {
+				padding-bottom: 23px;
+			}
+			.qodef-tour-main-info-attr {
+				&:before {
+					margin-right: 4px;
+				}
+			}
+			
+		}
+		
+		.qodef-tour-main-info-holder {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			
+			li {
+				display: inline-table;
+				width: 100%;
+				
+				&.qodef-tours-checked-attributes .qodef-tour-main-info-attr:before {
+					content: "\52";
+				}
+				
+				&.qodef-tours-unchecked-attributes .qodef-tour-main-info-attr:before {
+					content: "\51";
+				}
+			}
+			
+			.qodef-info {
+				display: table-cell;
+				vertical-align: middle;
+				width: 30%;
+				margin: 0;
+			}
+			
+			.qodef-value {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			
+			.qodef-tour-main-info-attr {
+				width: 40%;
+				float: left;
+				line-height: 38px;
+				
+				&:before {
+					position: relative;
+					top: 1px;
+					margin-right: 5px;
+					font-family: 'ElegantIcons';
+					font-size: 13px;
+				}
+			}
+		}
+		
+		.qodef-tour-gallery-item-holder {
+			@include qodefRelativeHolderLayout(top);
+			margin: 84px 0 50px;
+			
+			.qodef-gallery-title {
+				margin: 0;
+				font-size: 30px;
+			}
+			
+			p.qodef-tour-gallery-item-excerpt {
+				margin: 12px 0 0;
+			}
+		}
+		
+		&.qodef-gallery-section {
+			
+			.qodef-tour-gallery-item-excerpt {
+				margin: 0 0 38px;
+			}
+		}
+		
+		.qodef-tour-gallery {
+			margin: 42px -15px 0;
+			
+			.qodef-tour-gallery-item {
+				position: relative;
+				float: left;
+				width: 33.33333333333333%;
+				padding: 0 15px;
+				box-sizing: border-box;
+				
+				&:nth-child(3n+1) {
+					clear: both;
+				}
+				
+				a {
+					position: relative;
+					display: block;
+					
+					&:hover {
+						
+						&:after {
+							opacity: 1;
+						}
+					}
+					
+					&:after {
+						@include qodefAbsoluteHolderLayout();
+						height: 100%;
+						content: '';
+						z-index: 1;
+						opacity: 0;
+						background-color: rgba(255, 255, 255, .25);
+						@include qodefTransition(opacity 1s cubic-bezier(0.29, 0.22, 0.11, 1));
+					}
+					
+					img {
+						display: block;
+						width: 100%;
+					}
+				}
+			}
+		}
+		
+		.qodef-info-section-part.qodef-tour-item-plan-part:not(:last-child) {
+			position: relative;
+			z-index: 1;
+		}
+		
+		.qodef-route-top-holder {
+			display: table;
+			width: 100%;
+			margin-bottom: 9px;
+			
+			.qodef-route-id {
+				display: table-cell;
+				height: 50px;
+				width: 50px;
+				line-height: 50px;
+				font-size: 22px;
+				font-weight: 600;
+				border-radius: 0;
+				text-align: center;
+				
+				.qodef-route-id-inner {
+					position: relative;
+					display: inline-block;
+					width: 100%;
+					color: #fff;
+					background-color: $first-main-color;
+				}
+				
+				&:after {
+					color: red;
+				}
+				
+				&:before {
+				
+				}
+			}
+			
+			.qodef-line-between-icons {
+				height: 100%;
+				position: absolute;
+				z-index: -1;
+				width: 50px;
+				left: 0;
+			}
+			
+			.qodef-line-between-icons-inner {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				display: block;
+				width: 0;
+				height: 100%;
+				border-right: 2px dashed $first-main-color;
+				z-index: 8;
+				content: '';
+				@include qodefTransform(translateX(-50%));
+			}
+			
+			.qodef-tour-item-plan-part-title {
+				display: table-cell;
+				vertical-align: middle;
+				padding-left: 25px;
+			}
+		}
+		
+		.qodef-tour-item-plan-part-description {
+			padding: 4px 0 49px 76px;
+			
+			ul {
+				list-style-type: square;
+			}
+			
+			ul, ol, pre {
+				padding: 24px 0 3px;
+			}
+			
+			li {
+				padding-bottom: 11px;
+				
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+			
+			.eltd-iwt {
+				
+				ul {
+					list-style-type: square;
+					margin: 0;
+					padding: 0;
+				}
+				
+				li {
+					padding-bottom: 10px;
+					
+					&:last-child {
+						padding-bottom: 0;
+					}
+				}
+			}
+		}
+		
+		.qodef-location-part {
+			margin-bottom: 40px;
+			
+			.qodef-tour-location {
+				margin: 0 0 15px;
+			}
+			
+			p.qodef-location-excerpt {
+				font-size: 14px;
+			}
+			
+			.qodef-google-map {
+				height: 500px;
+			}
+			
+			.qodef-location-addresses {
+				padding-top: 43px;
+			}
+			
+			.qodef-location-content {
+				padding-top: 57px;
+			}
+		}
+		
+		.qodef-tour-masonry-gallery-holder {
+			@include qodefRelativeHolderLayout(top);
+			margin-bottom: 20px;
+			
+			.qodef-tour-gallery-item-inner {
+				@include qodefRelativeHolderLayout(top);
+				height: 100%;
+				overflow: hidden;
+				
+				a {
+					@include qodefRelativeHolderLayout(top);
+					height: 100%;
+					
+					&:hover {
+						
+						&:after {
+							opacity: 1;
+						}
+					}
+					
+					&:after {
+						@include qodefAbsoluteHolderLayout();
+						content: '';
+						z-index: 1;
+						opacity: 0;
+						background-color: rgba(255, 255, 255, 0.2);
+						@include qodefTransition(opacity 1s cubic-bezier(0.29, 0.22, 0.11, 1));
+					}
+					
+					img {
+						display: block;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+		
+		.qodef-comment-holder {
+			margin: 0;
+			
+			.qodef-comment-list {
+				
+				li {
+					padding-top: 73px;
+					margin-top: 73px;
+					border-top: 1px solid $default-border-color;
+				}
+			}
+			
+			.qodef-review-rating {
+				padding-top: 28px;
+				
+				.qodef-rating-inner {
+					width: 33.33%;
+					float: left;
+					margin: 0 0 16px;
+					
+					.qodef-rating-value {
+						color: $first-main-color;
+						padding-left: 10px;
+					}
+					
+					.qodef-rating-label {
+						font-weight: 500;
+						color: $default-heading-color;
+					}
+				}
+			}
+		}
+		
+		.qodef-comment-form {
+			
+			.qodef-comment-form-rating {
+				float: left;
+				width: 33.33%;
+				display: inline-block;
+				margin: 0 0 10px;
+				
+				label {
+					color: $default-background-color;
+				}
+				
+				.qodef-star-rating {
+					color: #6fdcdf;
+					
+					&.active {
+						color: $default-background-color;
+					}
+				}
+				
+				.qodef-comment-rating-box {
+					position: relative;
+					top: 2px;
+					margin-left: 12px;
+				}
+			}
+			
+			.qodef-comment-input-text {
+				margin-top: 23px;
+			}
+			
+			.comment-reply-title {
+				margin: 0 0 20px;
+			}
+			
+			.logged-in-as {
+				padding-bottom: 24px;
+			}
+			
+			.qodef-comment-input-text {
+				@include qodefRelativeHolderLayout(top);
+			}
+			
+			.qodef-comment-input-title {
+				padding-bottom: 20px;
+			}
+		}
+	}
+	
+	.qodef-course-reviews-list-top {
+		
+		.qodef-item-review-title {
+			margin: 24px 0 13px;
+		}
+		
+		.qodef-item-review-subtitle {
+			margin-bottom: 16px;
+		}
+	}
+}
+
+/* ==========================================================================
+# Tour single style - end
+========================================================================== */

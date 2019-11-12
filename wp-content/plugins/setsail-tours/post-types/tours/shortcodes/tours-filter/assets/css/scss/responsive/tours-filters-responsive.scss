@@ -1,0 +1,72 @@
+
+.qodef-tours-filter-horizontal {
+	
+	@include ipad-portrait {
+
+		.qodef-tours-filters-fields-holder {
+	
+			.qodef-tours-filter-submit-field-holder {
+				width: 100%;
+				
+				input[type="submit"] {
+					min-width: 100%;
+				}
+			}
+			
+			.qodef-tours-filter-field-holder:not(:last-child) {
+				border-bottom: 1px solid #f1f1f1;
+				
+				&:nth-child(3) {
+					border-bottom: 0;
+				}
+			}
+		}
+		
+		.qodef-tours-filters-fields-holder,
+		.qodef-tours-filter-col {
+			float: none;
+			width: 100%;
+		}
+		
+		.qodef-grid {
+			width: 100%;
+		}
+	}
+}
+
+@include phone-portrait {
+	
+	.qodef-tours-filter-vertical-small {
+		width: 100%;
+		
+		.qodef-tours-input-icon {
+			line-height: 50px;
+		}
+		
+		input[type=text],
+		input[type=email],
+		input[type=password],
+		input[type=number],
+		select,
+		textarea {
+			height: 50px;
+		}
+		
+		.select2-container--default {
+			height: 50px;
+			padding: 10px 0 10px 53px;
+			
+			.select2-selection--single {
+				height: 30px;
+				line-height: 30px;
+			}
+		}
+		
+		.qodef-tours-filter-submit-field-holder {
+			
+			input  {
+				height: 50px;
+			}
+		}
+	}
+}

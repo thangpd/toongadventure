@@ -1,0 +1,61 @@
+.qodef-tours-row{
+	position: relative;
+	width: 100%;
+
+	.qodef-tours-row-item{
+		display: inline-block;
+		margin-bottom: 50px;
+		vertical-align: top;
+		box-sizing: border-box;
+	}
+
+	/***** Columns - begin *****/
+
+	$gallery_columns_number: ('1', '2', '3', '4', '5', '6');
+		
+	@for $i from 0 to length($gallery_columns_number) {
+		&.qodef-tours-columns-#{nth($gallery_columns_number,$i+1)} {
+            $column_width: 100% / ($i+1);
+
+			.qodef-tours-row-item,
+            .qodef-tours-list-grid-sizer {
+				width: $column_width;
+			}
+
+            .qodef-tours-row-item {
+                &.qodef-size-large-width,
+                &.qodef-size-large-width-height {
+                    width: $column_width * 2;
+                }
+            }
+		}
+	}
+
+	/***** Columns - end *****/
+}
+
+#ui-datepicker-div{
+	background-color: $first-main-color;
+	z-index: 1000 !important;
+
+	.ui-datepicker-header{
+		position: relative;
+		text-align: center;
+		color: #fff;
+		background-color: $first-main-color;
+
+		a{
+			color: inherit;
+		}
+	}
+
+	.ui-datepicker-prev{
+		position: absolute;
+		left: 0;
+	}
+
+	.ui-datepicker-next{
+		position: absolute;
+		right: 0;
+	}
+}

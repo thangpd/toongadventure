@@ -1,0 +1,33 @@
+/* Login/Register form - start
+   ========================================================================== */
+
+.qodef-login-register-content.ui-tabs {
+	
+	@include phone-landscape {
+		width: 90%;
+		
+		&.qodef-user-not-logged-in {
+			width: 100%;
+			
+			ul li {
+				width: 100%;
+			}
+		}
+		
+		.qodef-login-content-inner,
+		.qodef-register-content-inner,
+		.qodef-reset-pass-content-inner{
+			padding: 30px 25px;
+		}
+		
+		.qodef-login-title,
+		.qodef-register-title,
+		.qodef-login-description,
+		.qodef-register-description {
+			display: none;
+		}
+	}
+}
+
+/* Login/Register form - end
+   ========================================================================== */

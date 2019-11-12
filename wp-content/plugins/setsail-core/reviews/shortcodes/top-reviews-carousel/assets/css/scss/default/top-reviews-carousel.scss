@@ -1,0 +1,148 @@
+.qodef-top-reviews-carousel-holder {
+	@include qodefRelativeHolderLayout();
+	
+	.qodef-top-reviews-carousel-inner {
+		@include qodefRelativeHolderLayout();
+		box-sizing: border-box;
+	}
+	
+	.qodef-top-reviews-carousel-title {
+		margin: 0 0 22px;
+	}
+	
+	.qodef-top-reviews-carousel {
+		@include qodefRelativeHolderLayout();
+		visibility: hidden;
+	}
+	
+	.qodef-top-reviews-carousel-item {
+		@include qodefRelativeHolderLayout();
+	}
+	
+	&.qodef-has-shadow {
+		
+		.qodef-top-reviews-carousel-item-wrapper {
+			margin: 25px 0;
+			box-shadow: $top-reviews-shadow;
+		}
+	}
+	
+	.qodef-top-reviews-carousel-item-wrapper {
+		
+		@include qodefFlexBoxLayout(relative, flex-start);
+		padding: 40px 9% 40px;
+		background-color: #fff;
+		border-radius: $default-border-radius;
+		box-sizing: border-box;
+		
+		@include ipad-landscape {
+			@include qodefRelativeHolderLayout();
+			text-align: center;
+		}
+		
+		@include phone-landscape {
+			padding: 51px 22px 33px;
+		}
+	}
+	
+	.qodef-tour-reviews-star-holder {
+		
+		.qodef-tour-reviews-star {
+			color: $first-main-color;
+			font-size: 13px;
+			margin-right: 2px;
+		}
+		
+		.icon_star_alt {
+			display: none;
+		}
+	}
+	
+	.qodef-top-reviews-item-title {
+		margin: 0 0 5px;
+	}
+	
+	.qodef-tour-reviews-criteria-holder {
+		display: block;
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+	
+	.qodef-top-reviews-item-content {
+		margin: 10px 0 0;
+		
+		p {
+			margin: 0;
+		}
+	}
+	
+	.qodef-top-reviews-item-author-info {
+		@include qodefRelativeHolderLayout();
+		margin: 11px 0 0;
+		box-sizing: border-box;
+	}
+	
+	.qodef-top-reviews-item-author-avatar {
+		position: relative;
+		display: inline-block;
+		width: 107px;
+		vertical-align: middle;
+		margin: 0 21px 0 0;
+		
+		@include ipad-landscape {
+			margin: 0 auto 20px auto;
+		}
+		
+		@include phone-landscape {
+			margin: 0 auto;
+			width: auto;
+		}
+		
+		img {
+			display: block;
+			border-radius: 50%;
+		}
+	}
+	
+	.qodef-tr-content-holder {
+		width: calc(100% - 128px);
+		
+		@include ipad-landscape {
+			width: 100%;
+		}
+	}
+	
+	.qodef-top-reviews-item-author-name {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+	}
+	
+	.qodef-owl-slider {
+		
+		.owl-dots {
+			margin: 12px 0 0;
+			
+			@include phone-landscape {
+				display: none;
+			}
+		}
+	}
+
+	.owl-nav {
+		position: absolute;
+		bottom: 10px;
+		right: 30px;
+		width: 60px;
+
+		.owl-prev{
+			left: 0;
+		}
+
+		.owl-next{
+			right: 0;
+		}
+	}
+}

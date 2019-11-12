@@ -1,0 +1,123 @@
+.page-template-user-dashboard {
+	
+	@include ipad-landscape {
+		
+		.qodef-profile-info {
+			
+			> p {
+				flex-direction: column;
+			}
+			
+			.qodef-pi-label {
+				width: 100%;
+				margin-right: 0;
+			}
+			
+			.qodef-pi-content {
+				width: 100%;
+			}
+		}
+	}
+    
+    @include ipad-portrait {
+        
+        .qodef-membership-dashboard-nav-holder {
+            width: 100%;
+            float: none;
+
+            .qodef-membership-dashboard-nav{
+                display: block;
+                li{
+                    display: block;
+                    a{
+                        padding: 15px 0;
+                        text-align: left;
+                        .qodef-dash-icon {
+                            min-width: 50px;
+                            text-align: center;
+                            font-size: 25px;
+                            display: inline-block;
+                            padding-bottom: 0;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+	    
+	    .qodef-membership-dashboard-page-content {
+		    flex-direction: column;
+		
+		    .qodef-profile-image {
+			    width: 100%;
+			    margin-right: 0;
+		    }
+		
+		    .qodef-profile-info {
+			    width: 100%;
+			    margin-top: 30px;
+			
+			    > p {
+				    flex-direction: row;
+			    }
+			
+			    .qodef-pi-label {
+				    width: 30%;
+				    margin-right: 20px;
+			    }
+			
+			    .qodef-pi-content {
+				    width: calc(70% - 20px);
+			    }
+		    }
+	    }
+
+        .qodef-membership-dashboard-content-holder {
+            width: 100%;
+            float: none;
+            padding: 0;
+        }
+    
+        &.qodef-page-content-is-boxed {
+        
+            .qodef-membership-dashboard-nav-holder {
+                left: 0;
+                padding: 0;
+            
+                .qodef-membership-dashboard-nav {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        
+            &.qodef-content-overlapping {
+            
+                .qodef-membership-dashboard-nav-holder {
+                    top: 0;
+                }
+            }
+        }
+    }
+	
+	@include phone-landscape {
+		
+		.qodef-membership-dashboard-page-content {
+			
+			.qodef-profile-info {
+				
+				> p {
+					flex-direction: column;
+				}
+				
+				.qodef-pi-label {
+					width: 100%;
+					margin-right: 0;
+				}
+				
+				.qodef-pi-content {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

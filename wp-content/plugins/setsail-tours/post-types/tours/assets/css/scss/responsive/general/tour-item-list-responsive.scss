@@ -1,0 +1,61 @@
+/* List type responsive styles start
+   ========================================================================== */
+
+@include ipad-landscape {
+	
+	.qodef-tours-list-item {
+		
+		.qodef-tours-list-item-content-holder {
+			display: block;
+			padding: 41px 20px 50px;
+			border-bottom-right-radius: $default-border-radius;
+			border-bottom-left-radius: $default-border-radius;
+		}
+	}
+}
+
+@include ipad-portrait {
+	
+	.qodef-tours-list-item {
+	
+		.qodef-tours-list-item-table {
+			display: block;
+		}
+	
+		.qodef-tours-list-item-image-holder {
+			display: block;
+			width: 100%;
+			padding-right: 0;
+	
+			a {
+				position: relative;
+			}
+			
+			img {
+				display: block;
+			}
+		}
+	}
+}
+
+@include phone-landscape {
+	
+	.qodef-tours-list-item {
+		
+		.qodef-tours-list-item-bottom-info {
+			flex-direction: column;
+			
+			> * {
+				margin: 0 0 5px;
+				width: 100%;
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+/* List type responsive styles end
+   ========================================================================== */

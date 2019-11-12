@@ -1,0 +1,28 @@
+.qodef-comment-rating-box {
+	display: inline-block;
+	margin-left: 18px;
+    vertical-align: middle;
+	line-height: 18px;
+	
+	.qodef-star-rating {
+		position: relative;
+		display: inline-block;
+		font-family: Font Awesome\ 5 Free;
+		color: #c8c8c8;
+		font-size: 11px;
+		font-weight: 100;
+		letter-spacing: 5px;
+		cursor: pointer;
+		overflow: hidden;
+		@include qodefTransition(all 0.3s ease);
+		
+		&.active {
+			color: #ffd740;
+			font-weight: 900;
+		}
+		
+		&:before {
+			content: "\f005";
+		}
+	}
+}

@@ -1,0 +1,502 @@
+/* Login/Register widget - start
+   ========================================================================== */
+
+/* User not logged in */
+.qodef-login-register-widget {
+    
+    &.qodef-user-not-logged-in {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+	    
+	    .qodef-top-bar & {
+		    width: 46px;
+		    height: 100%;
+		    background-color: $first-main-color;
+            text-align: center;
+	    }
+
+        .qodef-sidebar & {
+            width: 100%;
+        }
+
+        .qodef-login-opener {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            svg {
+                height: 24px;
+            }
+
+            /* Top bar */
+            .qodef-top-bar & {
+                color: #fff;
+	
+	            &:before {
+		            top: 50%;
+		            margin-right: 0;
+		            @include qodefTransform(TranslateY(-50%));
+		            font-size: 20px;
+	            }
+            }
+
+            /* Menu area */
+            .qodef-menu-area & {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                color: #9c9c9c;
+                font-size: 13px;
+                line-height: 23px;
+                margin: 0 10px;
+                font-weight: 600;
+                text-transform: uppercase;
+                
+                &:hover {
+                    color: #000;
+                }
+            }
+
+            .qodef-dark-header .qodef-menu-area:not(.fixed):not(.qodef-sticky-header) & {
+                color: #000 !important;
+                
+                &:hover {
+                    color: rgba(0, 0, 0, .8);
+                }
+            }
+
+            .qodef-light-header .qodef-menu-area:not(.fixed):not(.qodef-sticky-header) & {
+                color: #fff !important;
+                
+                &:hover {
+                    color: rgba(255, 255, 255, .8);
+                }
+            }
+
+            /* Sidebar */
+            .qodef-sidebar & {
+                color: #000;
+                font-size: 13px;
+                font-weight: 500;
+                text-transform: uppercase;
+                
+                &:hover {
+                    color: #ffec13;
+                }
+            }
+
+            /* Footer */
+            footer & {
+                color: #000;
+                font-size: 13px;
+                font-weight: 500;
+                text-transform: uppercase;
+                
+                &:hover {
+                    color: #ffec13;
+                }
+            }
+
+            /* Side area */
+            .qodef-side-menu & {
+                color: #000;
+                font-size: 13px;
+                font-weight: 500;
+                text-transform: uppercase;
+                
+                &:hover {
+                    color: #ffec13;
+                }
+            }
+        }
+    }
+}
+
+/* User logged in */
+
+.qodef-login-register-widget {
+    
+    &.qodef-user-logged-in {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        
+        .qodef-logged-in-user {
+            display: table;
+            height: 100%;
+            
+            .qodef-logged-in-user-inner {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 0 75px 0 15px;
+                background-color: $first-main-color;
+                
+                & > span {
+                    
+                    img {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 28px;
+                        height: 28px;
+                        margin: 0 5px 0 0;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+
+        /* Top bar and menu area dropdown position */
+        .qodef-menu-area &,
+        .qodef-top-bar & {
+            
+            .qodef-login-dropdown {
+                position: absolute;
+                top: 100%;
+                margin: 0;
+                left: 0;
+                list-style-type: none;
+                text-align: left;
+                padding: 0;
+                width: 193px;
+                box-shadow: $menu-drop-down-box-shadow;
+                box-sizing: border-box;
+                height: 0;
+                visibility: hidden;
+                z-index: 100;
+                @include qodefTransition(.2s ease);
+
+                li {
+	                @include qodefFlexBoxLayout(relative, center, flex-start);
+                    padding: 0;
+                    margin: 0;
+                    line-height: 1em;
+                    opacity: 0;
+                    @include qodefTransition(0s);
+
+                    a {
+                        display: block;
+                        position: relative;
+	                    letter-spacing: .01em;
+                        @include qodefTransition(color 0.3s ease);
+                    }
+                }
+            }
+
+            &:hover {
+
+                .qodef-login-dropdown {
+                    visibility: visible;
+                    height: 245px;
+                    padding: 15px 0;
+
+                    li {
+                        @include qodefTransition(.2s .1s);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        /* Menu area style */
+        .qodef-menu-area & {
+            cursor: pointer;
+            
+            /* User part */
+            .qodef-logged-in-user {
+                height: 100%;
+                display: table;
+                vertical-align: middle;
+
+                .qodef-logged-in-user-inner {
+                    display: table-cell;
+                    vertical-align: middle;
+                    height: 100%;
+                    
+                    & > span {
+                        color: #9c9c9c;
+                        font-size: 13px;
+                        line-height: 23px;
+	                    letter-spacing: .01em;
+                        margin: 0 10px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            
+            &:hover {
+                
+                .qodef-logged-in-user {
+                    
+                    .qodef-logged-in-user-inner {
+                        
+                        & > span {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+
+            /* Dropdown part */
+            .qodef-login-dropdown {
+                background-color: #fff;
+
+                li {
+                    
+                    a {
+                        font-size: 13px;
+                        line-height: 23px;
+                        font-weight: 600;
+	                    letter-spacing: .01em;
+                        color: #9c9c9c;
+                        padding: 5px 20px;
+                        
+                        &:hover {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+
+            &:hover .qodef-login-dropdown {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .qodef-dark-header .qodef-menu-area:not(.fixed):not(.qodef-sticky-header) & {
+            
+            .qodef-logged-in-user {
+                
+                .qodef-logged-in-user-inner {
+                    
+                    & > span span,
+                    & > span i {
+                        color: #000 !important;
+                        
+                        &:hover {
+                            color: rgba(0, 0, 0, .8);
+                        }
+                    }
+                }
+            }
+        }
+
+        .qodef-light-header .qodef-menu-area:not(.fixed):not(.qodef-sticky-header) & {
+            
+            .qodef-logged-in-user {
+                
+                .qodef-logged-in-user-inner {
+                    
+                    & > span span,
+                    & > span i {
+                        color: #fff !important;
+                        
+                        &:hover {
+                            color: rgba(#fff, .8);
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Top bar style */
+        .qodef-top-bar & {
+            cursor: pointer;
+            
+            /* User part */
+            .qodef-logged-in-user {
+                
+                .qodef-logged-in-user-inner {
+
+                    .qodef-logged-in-user-name {
+                        text-transform: capitalize;
+                    }
+                    
+                    & > span {
+                        color: #fff;
+                        font-weight: 500;
+                        line-height: 20px;
+	                    letter-spacing: .01em;
+
+                        span:last-of-type {
+                            position: absolute;
+                            top: calc(50% - 11px);
+                            right: 57px;
+                            display: block;
+                            font-size: 18px;
+                            line-height: 1;
+                        }
+                    }
+                }
+            }
+
+            /* Dropdown part */
+            .qodef-login-dropdown {
+                background-color: $second-main-color;
+                padding: 0;
+                
+                li {
+                    
+                    &:before {
+	                    position: relative;
+	                    display: inline-block;
+	                    top: -2px;
+	                    font-family: ElegantIcons;
+	                    font-size: 17px;
+	                    line-height: 1;
+	                    margin-left: 21px;
+                    }
+	
+	                @supports (-ms-ime-align: auto) {
+		
+		                &:before {
+			                top: -5px;
+		                }
+	                }
+	                
+                    a {
+                        color: #fff;
+                        font-weight: 500;
+                        margin: 14px 11px;
+                        padding-bottom: 2px;
+                        display: inline-block;
+                        vertical-align: super;
+                        position: relative;
+                        font-size: 13px;
+	                    letter-spacing: .01em;
+                            
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: -2px;
+                            height: 2px;
+                            width: 0;
+                            background-color: currentColor;
+                            @include qodefTransition(width .3s ease-out);
+                        }
+
+                        &:hover {
+                            &:after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                li:nth-of-type(1) {
+                    &:before {
+                        content: '\e001';
+                    }
+                }
+
+                li:nth-of-type(2) {
+                    &:before {
+                        content: '\e08a';
+                    }
+                }
+
+                li:nth-of-type(3) {
+                    &:before {
+                        content: '\6c';
+                    }
+                }
+
+                li:nth-of-type(4) {
+                    &:before {
+                        content: '\e022';
+                    }
+                }
+
+                li:nth-of-type(5) {
+                    &:before {
+                        content: '\e091';
+                    }
+                }
+            }
+
+            &:hover .qodef-login-dropdown {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        /* Sidebar style */
+        .qodef-sidebar & {
+            
+            .qodef-logged-in-user {
+                
+                .qodef-logged-in-user-inner {
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid $default-border-color;
+                    
+                    & > span {
+                        color: #000;
+                        font-size: 13px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Footer style */
+        footer & {
+            height: auto;
+            
+            .qodef-logged-in-user {
+                
+                .qodef-logged-in-user-inner {
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid $default-border-color;
+                    
+                    & > span {
+                        color: #000;
+                        font-size: 13px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Sidearea style */
+        .qodef-side-menu & {
+            height: auto;
+            
+            .qodef-logged-in-user {
+                
+                .qodef-logged-in-user-inner {
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid $default-border-color;
+                    
+                    & > span {
+                        color: #666;
+                        font-size: 13px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Login/Register widget - end
+   ========================================================================== */

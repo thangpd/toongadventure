@@ -1,0 +1,77 @@
+.qodef-tours-checkout-content-inner{
+	@include qodefFlexBoxLayout(relative, flex-start, flex-start);
+	margin-bottom: 10px;
+	
+	.qodef-tours-image-holder{
+		width: 250px;
+		margin-right: 30px;
+	}
+	
+	.qodef-tours-info-holder {
+		width: calc(100% - 280px);
+		
+		.qodef-tours-info-title {
+			margin: 0 0 6px;
+		}
+		
+		.qodef-tours-info-message {
+			margin: 0;
+			color: $first-main-color;
+		}
+		
+		> div {
+			margin: 0 0 24px;
+			
+			&.qodef-tci-item {
+				@include qodefFlexBoxLayout(relative, flex-start, flex-start);
+			}
+			
+			.qodef-tours-info-checkout-title{
+				display: inline-block;
+				width: 20%;
+				margin-right: 20px;
+				font-weight: 600;
+				color: $default-heading-color;
+			}
+			
+			.qodef-tours-info-checkout-content {
+				width: calc(80% - 209px);
+			}
+			
+			&.qodef-tours-info-description{
+				margin: 24px 0;
+			}
+		}
+		
+		.qodef-tours-booking-price {
+			font-family: $default-text-font;
+			font-size: 14px;
+			font-weight: 700;
+			color: $default-text-color;
+		}
+		
+		form {
+			margin-top: 33px;
+			
+			button[type=submit] {
+				font-family: $default-text-font;
+			}
+		}
+	}
+	
+	.qodef-tours-info-holder,
+	.qodef-tours-image-holder {
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+.page-template-tour-checkout {
+	
+	.qodef-content .qodef-content-inner {
+		
+		> .qodef-full-width > .qodef-full-width-inner{
+			padding: 100px 0;
+		}
+	}
+}
