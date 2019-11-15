@@ -84,7 +84,8 @@ if ( ! function_exists( 'setsail_select_get_main_menu' ) ) {
 	 *
 	 * @param string $additional_class addition class to pass to template
 	 */
-	function setsail_select_get_main_menu( $additional_class = 'qodef-default-nav' ) {
+	function
+    setsail_select_get_main_menu( $additional_class = 'qodef-default-nav' ) {
 		setsail_select_get_module_template_part( 'parts/navigation', 'header', '', array( 'additional_class' => $additional_class ) );
 	}
 }

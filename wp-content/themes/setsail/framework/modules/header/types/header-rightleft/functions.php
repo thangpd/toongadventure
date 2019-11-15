@@ -1,16 +1,15 @@
 <?php
 
-
-if ( ! function_exists('setsail_select_include_header_rightleft_menu')) {
-    function setsail_select_include_header_rightleft_menu($menus)
+if ( ! function_exists('setsail_select_include_rightleft_header_menu')) {
+    function setsail_select_include_rightleft_header_menu($menus)
     {
-        $menus['header-right'] = esc_html__('Right Menu', 'setsail');
-        $menus['header-left']  = esc_html__('Left Menu', 'setsail');
+        $menus['left-nav']  = esc_html__('Left Navigation', 'setsail');
+        $menus['right-nav'] = esc_html__('Right Navigation', 'setsail');
 
         return $menus;
     }
 
-    add_filter('setsail_select_filter_register_headers_menu', 'setsail_select_include_header_rightleft_menu');
+    add_filter('setsail_select_filter_register_headers_menu', 'setsail_select_include_rightleft_header_menu');
 }
 
 if ( ! function_exists('setsail_select_register_header_rightleft_type')) {

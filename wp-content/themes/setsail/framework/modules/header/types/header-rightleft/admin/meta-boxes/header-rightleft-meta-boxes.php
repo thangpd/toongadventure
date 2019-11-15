@@ -1,16 +1,16 @@
 <?php
 
-if ( ! function_exists( 'setsail_select_get_hide_dep_for_header_standard_meta_boxes' ) ) {
-	function setsail_select_get_hide_dep_for_header_standard_meta_boxes() {
-		$hide_dep_options = apply_filters( 'setsail_select_filter_header_standard_hide_meta_boxes', $hide_dep_options = array() );
+if ( ! function_exists( 'setsail_select_get_hide_dep_for_header_rightleft_meta_boxes' ) ) {
+	function setsail_select_get_hide_dep_for_header_rightleft_meta_boxes() {
+		$hide_dep_options = apply_filters( 'setsail_select_filter_header_rightleft_hide_meta_boxes', $hide_dep_options = array() );
 		
 		return $hide_dep_options;
 	}
 }
 
-if ( ! function_exists( 'setsail_select_header_standard_meta_map' ) ) {
-	function setsail_select_header_standard_meta_map( $parent ) {
-		$hide_dep_options = setsail_select_get_hide_dep_for_header_standard_meta_boxes();
+if ( ! function_exists( 'setsail_select_header_rightleft_meta_map' ) ) {
+	function setsail_select_header_rightleft_meta_map( $parent ) {
+		$hide_dep_options = setsail_select_get_hide_dep_for_header_rightleft_meta_boxes();
 		
 		setsail_select_create_meta_box_field(
 			array(
@@ -35,5 +35,5 @@ if ( ! function_exists( 'setsail_select_header_standard_meta_map' ) ) {
 		);
 	}
 	
-	add_action( 'setsail_select_action_additional_header_area_meta_boxes_map', 'setsail_select_header_standard_meta_map' );
+	add_action( 'setsail_select_action_additional_header_area_meta_boxes_map', 'setsail_select_header_rightleft_meta_map' );
 }
