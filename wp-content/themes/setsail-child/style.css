@@ -8,3 +8,8 @@ Version: 1.0.0
 Text Domain: setsail
 Template: setsail
 */
+
+
+.qodef-page-header .qodef-menu-area {
+    background-color: unset;
+}
