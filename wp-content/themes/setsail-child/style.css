@@ -13,3 +13,16 @@ Template: setsail
 .qodef-page-header .qodef-menu-area {
     background-color: unset;
 }
+
+.qodef-vertical-align-containers.header-rightleft .qodef-position-center{
+    position:unset;
+    width:unset;
+}
+
+
+
+.qodef-vertical-align-containers.header-rightleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

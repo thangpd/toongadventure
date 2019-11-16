@@ -7,32 +7,31 @@
         <div class="qodef-grid">
             <?php endif; ?>
             <div class="qodef-vertical-align-containers">
-                <div class="qodef-position-left"><!--
-                 --><div class="qodef-position-left-inner">
-                        <?php if(!$hide_logo) {
-                            setsail_select_get_logo('sticky');
-                        } ?>
-                        <?php if($menu_area_position === 'left') : ?>
-                            <?php setsail_select_get_sticky_menu('qodef-sticky-nav'); ?>
-                        <?php endif; ?>
+                <div class="qodef-position-left">
+                    <div class="qodef-position-left-inner">
+                        <nav class="qodef-main-menu qodef-drop-down <?php echo esc_attr('qodef-default-nav'); ?>">
+                            <?php setsail_theme_nav_menu('left-nav'); ?>
+                        </nav>
                     </div>
                 </div>
-                <?php if($menu_area_position === 'center') : ?>
-                    <div class="qodef-position-center"><!--
-                     --><div class="qodef-position-center-inner">
-                            <?php setsail_select_get_sticky_menu('qodef-sticky-nav'); ?>
-                        </div>
+                <div class="qodef-position-center">
+                    <div class="qodef-position-center-inner">
+                        <?php if ( ! $hide_logo) {
+                            setsail_select_get_logo();
+                        } ?>
                     </div>
-                <?php endif; ?>
-                <div class="qodef-position-right"><!--
-                 --><div class="qodef-position-right-inner">
-                        <?php if($menu_area_position === 'right') : ?>
-                            <?php setsail_select_get_sticky_menu('qodef-sticky-nav'); ?>
-                        <?php endif; ?>
-                        <?php setsail_select_get_sticky_header_widget_menu_area(); ?>
+                </div>
+                <div class="qodef-position-right">
+                    <div class="qodef-position-right-inner">
+                        <nav class="qodef-main-menu qodef-drop-down <?php echo esc_attr('qodef-default-nav'); ?>">
+                            <?php setsail_theme_nav_menu('right-nav'); ?>
+<!--                            --><?php //setsail_select_get_sticky_header_widget_menu_area(); ?>
+
+                        </nav>
                     </div>
                 </div>
             </div>
+
             <?php if($sticky_header_in_grid) : ?>
         </div>
         <?php endif; ?>

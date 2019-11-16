@@ -14,7 +14,7 @@
                 <div class="qodef-grid">
                     <?php endif; ?>
 
-                    <div class="qodef-vertical-align-containers">
+                    <div class="qodef-vertical-align-containers header-rightleft">
                         <div class="qodef-position-left">
                             <div class="qodef-position-left-inner">
                                 <nav class="qodef-main-menu qodef-drop-down <?php echo esc_attr('qodef-default-nav'); ?>">
@@ -33,6 +33,8 @@
                             <div class="qodef-position-right-inner">
                                 <nav class="qodef-main-menu qodef-drop-down <?php echo esc_attr('qodef-default-nav'); ?>">
                                     <?php setsail_theme_nav_menu('right-nav'); ?>
+<!--                                    --><?php //setsail_select_get_sticky_header_widget_menu_area(); ?>
+
                                 </nav>
                             </div>
                         </div>

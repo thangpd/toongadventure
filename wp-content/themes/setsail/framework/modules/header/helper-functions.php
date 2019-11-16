@@ -11,7 +11,7 @@ $setsail_menus = array(
         'theme_location' => apply_filters('setsail_theme_left_menu_key', 'left-nav'),
         'link_before'    => '<span>',
         'link_after'     => '</span>',
-        'after'          => '<span class="icon-dropdown-mobile fa fa-angle-down"></span>',
+//        'after'          => '<span class="icon-dropdown-mobile fa fa-angle-down"></span>',
     ),
     'right-nav' => array(
         'depth'          => 4,
@@ -20,7 +20,7 @@ $setsail_menus = array(
         'theme_location' => apply_filters('setsail_theme_right_menu_key', 'right-nav'),
         'link_before'    => '<span>',
         'link_after'     => '</span>',
-        'after'          => '<span class="icon-dropdown-mobile fa fa-angle-down"></span>',
+//        'after'          => '<span class="icon-dropdown-mobile fa fa-angle-down"></span>',
     ),
 );
 
