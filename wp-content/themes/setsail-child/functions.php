@@ -27,6 +27,7 @@ function my_styles_method()
                         padding-top:150px;
                         padding-bottom:150px;
                         background-position: top;
+                        background-size: cover;
                 }";
 
     wp_add_inline_style('setsail-select-child-style', $custom_css);
