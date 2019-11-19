@@ -14,12 +14,13 @@ Template: setsail
     background-color: unset;
 }
 
-.qodef-vertical-align-containers.header-rightleft .qodef-position-center{
-    position:unset;
-    width:unset;
+.qodef-vertical-align-containers.header-rightleft .qodef-position-center {
+    position: unset;
+    width: unset;
 }
-.qodef-fixed-header-appear .header-rightleft{
-    background-color:white;
+
+.qodef-fixed-header-appear .header-rightleft {
+    background-color: white;
 }
 
 
@@ -27,6 +28,10 @@ Template: setsail
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.qodef-vertical-align-containers.header-rightleft, .qodef-vertical-align-containers.header-rightleft .qodef-position-left,.qodef-vertical-align-containers.header-rightleft .qodef-position-center,.qodef-vertical-align-containers.header-rightleft .qodef-position-right {
+    height: unset;
 }
 
 .qodef-page-header .qodef-menu-area {
