@@ -13,3 +13,32 @@ License URI: licence/GPL.txt
 CSS changes can be made in files in the /css/ folder. This is a placeholder file required by WordPress, so do not delete it.
 
 */
+@font-face {
+    font-family: HelveticaNeue-CondensedBlack;
+    src: url('assets/fonts/HelveticaNeue-CondensedBlack.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: HelveticaNeue-Light;
+    src: url('assets/fonts/HelveticaNeue-Light.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: HelveticaNeue-Thin;
+    src: url('assets/fonts/HelveticaNeue-Thin.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: iCiel-Brush-Up;
+    src: url('assets/fonts/iCiel-Brush-Up.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: myriadpro-cond;
+    src: url('assets/fonts/myriadpro-cond.otf');
+    font-weight: normal;
+}

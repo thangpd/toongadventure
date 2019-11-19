@@ -12,7 +12,7 @@ if ( ! function_exists('setsail_select_styles')) {
 
         //include theme's core styles
         wp_enqueue_style('setsail-select-default-style', SELECT_ROOT . '/style.css');
-        wp_enqueue_style('setsail-select-modules', SELECT_ASSETS_ROOT . '/css/modules.min.css',
+        wp_enqueue_style('setsail-select-modules', SELECT_ASSETS_ROOT . '/css/modules.css',
             $modules_css_deps_array);
 
         setsail_select_icon_collections()->enqueueStyles();

@@ -26,3 +26,11 @@ Template: setsail
     align-items: center;
     justify-content: center;
 }
+
+.qodef-page-header .qodef-menu-area {
+    height: 120px;
+}
+
+.qodef-page-header .qodef-vertical-align-containers {
+    padding: 20px;
+}
