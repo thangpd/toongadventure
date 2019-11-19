@@ -204,7 +204,7 @@ class SectionTitle implements Lib\ShortcodeInterface {
 		$styles = array();
 		
 		if ( ! empty( $params['holder_padding'] ) ) {
-			$styles[] = 'padding: 0 ' . $params['holder_padding'];
+			$styles[] = 'padding: ' . $params['holder_padding'];
 		}
 		
 		if ( ! empty( $params['position'] ) ) {

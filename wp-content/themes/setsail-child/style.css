@@ -18,7 +18,9 @@ Template: setsail
     position:unset;
     width:unset;
 }
-
+.qodef-fixed-header-appear .header-rightleft{
+    background-color:white;
+}
 
 
 .qodef-vertical-align-containers.header-rightleft {
