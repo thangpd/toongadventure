@@ -56,12 +56,26 @@ class TourCategory implements ShortcodeInterface
             'category' => esc_html__('by SETSAIL TOURS', 'setsail - tours'),
             'icon'     => 'icon - wpb - tour - category extended - custom - tours - icon',
             'params'   => array(
-
                 array(
-                    'type'       => 'dropdown',
-                    'param_name' => 'slug_category',
-                    'heading'    => esc_html__('Choose Category', 'setsail - tours'),
-                    'value'      => $array_values,
+                    'type'        => 'param_group',
+                    'heading'     => esc_html__('Category', 'slz'),
+                    'param_name'  => 'list_category_gallery',
+                    'params'      => array(
+                        array(
+                            'type'        => 'dropdown',
+                            'admin_label' => true,
+                            'heading'     => esc_html__('Add Category', 'slz'),
+                            'param_name'  => 'category_slug',
+                            'value'       => $array_values,
+                            'description' => esc_html__('Choose special category to filter', 'slz')
+                        ),
+                    ),
+                    'value'       => '',
+                    'description' => esc_html__('Choose Gallery Category.', 'slz'),
+                    'dependency'  => array(
+                        'element' => 'method_gallery',
+                        'value'   => array('cat')
+                    ),
                 ),
 
             )
@@ -71,7 +85,7 @@ class TourCategory implements ShortcodeInterface
     public function render($atts, $content = null)
     {
         $args   = array(
-            'slug_category' => 'europe',
+            'list_category_gallery' => [],
         );
         $params = shortcode_atts($args, $atts);
 

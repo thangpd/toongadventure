@@ -9,7 +9,11 @@ Text Domain: setsail
 Template: setsail
 */
 
+/*
 
+Color text      #0b403b
+
+*/
 .qodef-page-header .qodef-menu-area {
     background-color: unset;
 }
@@ -30,7 +34,7 @@ Template: setsail
     justify-content: center;
 }
 
-.qodef-vertical-align-containers.header-rightleft, .qodef-vertical-align-containers.header-rightleft .qodef-position-left,.qodef-vertical-align-containers.header-rightleft .qodef-position-center,.qodef-vertical-align-containers.header-rightleft .qodef-position-right {
+.qodef-vertical-align-containers.header-rightleft, .qodef-vertical-align-containers.header-rightleft .qodef-position-left, .qodef-vertical-align-containers.header-rightleft .qodef-position-center, .qodef-vertical-align-containers.header-rightleft .qodef-position-right {
     height: unset;
 }
 
@@ -40,4 +44,15 @@ Template: setsail
 
 .qodef-page-header .qodef-vertical-align-containers {
     padding: 20px;
+}
+
+.qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link .qodef-tour-title {
+    font-family: iCiel-Brush-Up;
+    font-weight: 100;
+    color: #0b403b;
+}
+
+
+.qodef-tours-type-toong .qodef-gim-title-and-price-holder .qodef-tours-item-price, .qodef-tours-type-toong .qodef-tours-tour-categories-item a .qodef-tour-cat-item-text {
+    color: #0b403b;
 }
