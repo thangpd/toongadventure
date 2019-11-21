@@ -18,8 +18,17 @@ if ( ! function_exists('setsail_select_child_theme_enqueue_scripts')) {
 function my_styles_method()
 {
     $background_image = setsail_select_options()->getOptionValue('footer_background_container');
-
+    $image_pattern=get_stylesheet_directory_uri().'/assets/image/pattern.png';
     $custom_css = "
+    .qodef-tours-type-toong-2 .qodef-tours-gim-image:after {
+    content: \"\";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url({$image_pattern }) center/100% 100% no-repeat;
+    opacity: 1;
+}
                 .qodef-footer-top-holder{
                         background-image: url({$background_image });
                         background-color:unset!important;

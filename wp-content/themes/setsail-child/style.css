@@ -60,3 +60,52 @@ Color text      #0b403b
 .widget_icl_lang_sel_widget .wpml-ls-legacy-dropdown:hover .wpml-ls-sub-menu, .widget_icl_lang_sel_widget .wpml-ls-legacy-dropdown-click:hover .wpml-ls-sub-menu {
     height: auto;
 }
+
+.qodef-page-footer .widget a {
+    color: white;
+}
+
+
+
+.qodef-tours-tour-attributes-item {
+    padding: 3px 5px;
+    background: #0b4041;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.qodef-tours-tour-attributes-item a {
+    color: #fff;
+}
+
+.qodef-tours-list-item-attributes-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.qodef-tours-tour-attributes-item:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #0b4041;
+}
+
+.qodef-tours-tour-attributes-item:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 100%;
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+}

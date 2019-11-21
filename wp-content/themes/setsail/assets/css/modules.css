@@ -306,9 +306,10 @@ html {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "HelveticaNeue-Thin", sans-serif;
     font-size: 14px;
     line-height: 1.714285714285714em;
+    letter-spacing:1px;
     font-weight: 400;
     color: #505050;
     background-color: #fff;
@@ -317,11 +318,11 @@ body {
 }
 
 h1 {
-    font-family: "iCiel-Brush-Up", sans-serif;
+    font-family: "HelveticaNeue-CondensedBlack", sans-serif;
+    letter-spacing:2px;
     font-size: 65px;
     line-height: 1.092307692307692em;
     font-weight: 600;
-    letter-spacing: -0.05em;
 }
 
 h2 {

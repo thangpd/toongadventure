@@ -99,7 +99,6 @@ class DestinationWithTours implements ShortcodeInterface {
 		$params = shortcode_atts( $args, $atts );
 		
 		$query = $this->buildQueryObject( $params );
-		
 		$params['query']  = $query;
 		$params['caller'] = $this;
 		
