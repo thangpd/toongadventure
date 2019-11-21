@@ -56,3 +56,7 @@ Color text      #0b403b
 .qodef-tours-type-toong .qodef-gim-title-and-price-holder .qodef-tours-item-price, .qodef-tours-type-toong .qodef-tours-tour-categories-item a .qodef-tour-cat-item-text {
     color: #0b403b;
 }
+
+.widget_icl_lang_sel_widget .wpml-ls-legacy-dropdown:hover .wpml-ls-sub-menu, .widget_icl_lang_sel_widget .wpml-ls-legacy-dropdown-click:hover .wpml-ls-sub-menu {
+    height: auto;
+}
