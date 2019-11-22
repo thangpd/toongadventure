@@ -93,6 +93,9 @@ if ( ! function_exists('setsail_tours_scripts')) {
         wp_enqueue_script('bloodhound',
             plugins_url(SETSAIL_TOURS_REL_PATH) . '/assets/js/modules/plugins/bloodhound.min.js', array('jquery'),
             false, true);
+        wp_enqueue_script('circle-process',
+            plugins_url(SETSAIL_TOURS_REL_PATH) . '/assets/js/circle-progress.min.js', array('jquery'),
+            false, true);
 
         wp_enqueue_script('setsail-tours-script', plugins_url(SETSAIL_TOURS_REL_PATH . '/assets/js/tours.min.js'),
             $array_deps_js, false, true);
