@@ -131,7 +131,7 @@ Color text      #0b403b
     letter-spacing: 3px;
 }
 
-.qodef-ts-list-body .duration-item {
+.qodef-ts-list-body .duration-item, .qodef-ts-list-body .qodef-item-reviews-average-rating,.qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item {
     font-size: 20px;
     color: #0b4041;
     font-family: HelveticaNeue-CondensedBlack, sans-serif;
@@ -186,5 +186,33 @@ Color text      #0b403b
 }
 
 .qodef-tours-type-toong .qodef-tours-gim-image {
+
+}
+
+.qodef-tours-type-toong .qodef-tours-gim-holder-inner > a.qodef-tours-toong-item-link {
+    display: block;
+    border: 5px solid #fff;
+}
+
+.qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item{
+    display:inline-block;
+    float:right;
+
+}
+
+
+.qodef-tours-type-toong-2 a.qodef-tours-toong-item-link{
+    display:inline-block;
+}
+.qodef-tours-type-toong-2 .qodef-tours-tour-difficult-item{
+    display:inline-block;
+}
+
+
+.qodef-tours-type-toong-2 .qodef-tours-masonry-item {
+    padding:15px;
+    -webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 
 }
