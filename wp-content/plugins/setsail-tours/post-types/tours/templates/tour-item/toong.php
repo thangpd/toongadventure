@@ -50,32 +50,43 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
                             echo setsail_tours_get_tour_attributes_html();
                             ?>
                         </div>
-                        <div class="qodef-tours-list-item-duration-item">
-                            <?php
-                            $tour_duration = setsail_tours_get_tour_duration();
-                            ?>
-                            <span class="duration-text">Duration</span>
-                            <div class="duration-item">
-                                <?php echo $tour_duration . 'D<br>' . ($tour_duration - 1) . 'N'; ?>
-                            </div>
-                            <?php
-                            ?>
-                        </div>
-                        <?php if ($reviews === 'yes') {
-                            if ( ! empty(setsail_core_post_number_of_ratings())) :
-                                echo __('Grade', 'setsail-tours');
+                        <div class="qodef-ts-list-body">
+                            <div class="qodef-tours-list-item-duration-item">
+                                <?php
+                                $tour_duration = setsail_tours_get_tour_duration();
                                 ?>
-                                <div class="qodef-tours-gim-rating">
-                                    <?php if (setsail_select_core_plugin_installed()) {
-                                        $custom_criteria = setsail_core_list_review_details('toong-custom-criteria');
-                                        echo $custom_criteria;
-                                    }
-                                    ?>
+                                <span class="duration-text">Duration</span>
+                                <div class="duration-item">
+                                    <?php echo $tour_duration . 'D<br>' . ($tour_duration - 1) . 'N'; ?>
                                 </div>
-                            <?php endif;
-                        } ?>
+                                <?php
+                                ?>
+                            </div>
+                            <?php if ($reviews === 'yes') {
+                                if ( ! empty(setsail_core_post_number_of_ratings())) :
+                                    ?>
+                                    <div class="qodef-tours-list-item-duration-grade-item">
+                                        <div class="grade-text">
+                                            <?php
+                                            echo __('Grade', 'setsail-tours');
+                                            ?>
+                                        </div>
+                                        <div class="qodef-tours-gim-rating">
+                                            <?php if (setsail_select_core_plugin_installed()) {
+                                                $custom_criteria = setsail_core_list_review_details('toong-custom-criteria');
+                                                echo $custom_criteria;
+                                            }
+                                            ?>
+                                        </div>
+                                    </div>
+                                <?php endif;
+                            } ?></div>
+
+                    </div>
+
+                    <div class="qodef-tours-price">
                         <div class="from-price">
-                            <?php echo __('From', 'setsail-tours') ?>
+                            <?php echo __('From:', 'setsail-tours') ?>
                         </div>
                         <?php echo setsail_tours_get_tour_price_html(); ?>
                     </div>

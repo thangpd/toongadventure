@@ -66,7 +66,6 @@ Color text      #0b403b
 }
 
 
-
 .qodef-tours-tour-attributes-item {
     padding: 3px 5px;
     background: #0b4041;
@@ -74,10 +73,14 @@ Color text      #0b403b
     margin-right: 5px;
     margin-left: 15px;
     position: relative;
+    border-radius: 2px;
 }
 
-.qodef-tours-tour-attributes-item a {
-    color: #fff;
+.qodef-tours-type-toong .qodef-tours-viewmore a, .qodef-tours-tour-attributes-item a {
+    color: #DACEA2;
+    font-family: iCiel-Brush-Up;
+    font-weight: 100;
+    letter-spacing: 2px;
 }
 
 .qodef-tours-list-item-attributes-item {
@@ -108,4 +111,80 @@ Color text      #0b403b
     left: -6px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.qodef-ts-list-body {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.qodef-ts-list-body .duration-text, .qodef-ts-list-body .grade-text, .qodef-tours-price .from-price, .qodef-tours-list-item-attributes-item {
+    font-size: 16px;
+    color: #0b4041;
+    font-weight: 600;
+}
+
+.qodef-tours-price-holder .qodef-tours-item-price {
+    font-family: iCiel-Brush-Up;
+    font-weight: 100;
+    color: #0b403b;
+    letter-spacing: 3px;
+}
+
+.qodef-ts-list-body .duration-item {
+    font-size: 20px;
+    color: #0b4041;
+    font-family: HelveticaNeue-CondensedBlack, sans-serif;
+    text-align: center;
+}
+
+.qodef-tours-list-item-duration-item {
+    display: inline-block;
+    float: left;
+    border-right: 2px solid #0b4041;
+    padding: 10px;
+}
+
+.qodef-tours-list-item-duration-grade-item {
+    vertical-align: top;
+    display: inline-block;
+    padding: 10px;
+}
+
+.qodef-tours-type-toong .qodef-tours-viewmore {
+    background-color: #0b4041;
+    display: inline-block;
+    float: right;
+    padding: 11px 5px 4px 8px;
+    border-radius: 6px;
+    margin-top: 3px;
+}
+
+
+.qodef-tours-type-toong .qodef-tours-price {
+    display: inline-block;
+    float: left;
+}
+
+.qodef-tours-type-toong .qodef-tours-gim-holder-inner {
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.qodef-tours-gim-content-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.qodef-gim-title-and-price-holder {
+    width: 100%;
+}
+
+.qodef-tours-type-toong .qodef-tours-masonry-item {
+
+}
+
+.qodef-tours-type-toong .qodef-tours-gim-image {
+
 }

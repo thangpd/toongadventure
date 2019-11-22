@@ -224,7 +224,8 @@ if ( ! function_exists('setsail_tours_get_tour_price_html')) {
 
         <span class="<?php echo esc_attr(implode(' ', $holder_class)); ?>">
 			<?php if ($price) : ?>
-                <span class="qodef-tours-item-price <?php echo esc_attr($price_on_discount_class); ?>"><?php echo esc_html($price); ?></span>
+                <span class="qodef-tours-item-price <?php echo esc_attr($price_on_discount_class); ?>">
+                    <?php echo($price); ?></span>
             <?php endif; ?>
             <?php if ($discount_price) : ?>
                 <span class="qodef-tours-item-discount-price qodef-tours-item-price">
