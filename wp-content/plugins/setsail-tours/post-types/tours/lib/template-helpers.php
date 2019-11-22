@@ -869,7 +869,17 @@ if ( ! function_exists('setsail_tours_get_tour_difficult_html')) {
             <div class="difficult-text">
                 <?php echo __('Độ Khó', 'setsail-tours'); ?>
             </div>
-            <?php echo($duration); ?>
+            <div class="myLoading-indicator">
+                <div class="myLoading-indicator-circle-wrap">
+                    <div class="mask full">
+                        <div class="fill"></div>
+                    </div>
+                    <div class="mask half">
+                        <div class="fill"></div>
+                    </div>
+                    <div class="inside-circle" data-value="4"></div>
+                </div>
+            </div>
 
         </div>
 

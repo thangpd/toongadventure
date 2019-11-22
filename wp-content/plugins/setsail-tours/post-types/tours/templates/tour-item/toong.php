@@ -54,12 +54,22 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
                             <div class="qodef-tours-list-item-duration-item">
                                 <?php
                                 $tour_duration = setsail_tours_get_tour_duration();
-                                ?>
-                                <span class="duration-text">Duration</span>
-                                <div class="duration-item">
-                                    <?php echo $tour_duration . 'D<br>' . ($tour_duration - 1) . 'N'; ?>
-                                </div>
-                                <?php
+                                if ($tour_duration != 0) {
+                                    ?>
+                                    <span class="duration-text">Duration</span>
+                                    <div class="duration-item">
+                                        <?php
+                                        if ($tour_duration == 1) {
+                                            $text_night = ($tour_duration - 1) . 'N';
+                                        } else {
+                                            $text_night = ($tour_duration - 1) . 'N';
+                                        }
+
+
+                                        echo $tour_duration . 'D<br>' . $text_night; ?>
+                                    </div>
+                                    <?php
+                                }
                                 ?>
                             </div>
                             <?php if ($reviews === 'yes') {
@@ -68,15 +78,19 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
                                     <div class="qodef-tours-list-item-duration-grade-item">
                                         <div class="grade-text">
                                             <?php
-                                            echo __('Grade', 'setsail-tours');
+                                            echo __('Grading', 'setsail-tours');
                                             ?>
                                         </div>
-                                        <div class="qodef-tours-gim-rating">
-                                            <?php if (setsail_select_core_plugin_installed()) {
-                                                $custom_criteria = setsail_core_list_review_details('toong-custom-criteria');
-                                                echo $custom_criteria;
-                                            }
-                                            ?>
+                                        <div class="myLoading-indicator">
+                                            <div class="myLoading-indicator-circle-wrap">
+                                                <div class="mask full">
+                                                    <div class="fill"></div>
+                                                </div>
+                                                <div class="mask half">
+                                                    <div class="fill"></div>
+                                                </div>
+                                                <div class="inside-circle" data-value="4"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 <?php endif;
@@ -98,3 +112,6 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
         </div>
     </div>
 </div>
+
+
+
