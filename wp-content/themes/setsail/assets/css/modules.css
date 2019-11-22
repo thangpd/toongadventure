@@ -383,6 +383,10 @@ h6 a {
     letter-spacing: inherit;
     text-transform: inherit;
 }
+h4 a{
+    letter-spacing: 2px;
+}
+
 
 h1 a:hover,
 h2 a:hover,
