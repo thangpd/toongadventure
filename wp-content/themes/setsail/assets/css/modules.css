@@ -320,34 +320,35 @@ body {
 h1 {
     font-family: "HelveticaNeue-CondensedBlack", sans-serif;
     letter-spacing:2px;
-    font-size: 65px;
+    font-size: 50px;
     line-height: 1.092307692307692em;
     font-weight: 600;
 }
 
 h2 {
-    font-size: 40px;
+    font-family: "HelveticaNeue-CondensedBlack", sans-serif;
+    font-size: 37px;
     line-height: 1.15em;
     font-weight: 600;
     letter-spacing: -0.05em;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1.2em;
     font-weight: 600;
     letter-spacing: -0.05em;
 }
 
 h4 {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.272727272727273em;
     font-weight: 600;
     letter-spacing: -0.05em;
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.333333333333333em;
     font-weight: 600;
 }
