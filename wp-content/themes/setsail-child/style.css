@@ -316,6 +316,6 @@ h1.qodef-st-title {
     color: white;
 }
 
-.qodef-vertical-align-containers.header-rightleft .qodef-logo-wrapper a img{
+.qodef-vertical-align-containers.header-rightleft .qodef-logo-wrapper a {
     height:50px;
 }
