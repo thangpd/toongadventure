@@ -308,7 +308,7 @@ Color text      #0b403b
     padding: 10px;
 }
 
-h1.qodef-st-title {
+h1.qodef-st-title ,h2.qodef-st-title {
     text-transform: uppercase;
 }
 
