@@ -294,6 +294,13 @@ Color text      #0b403b
     z-index: 1;
 }
 
+.qodef-main-menu .menu-item-language.menu-item-language-current{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    white-space: nowrap;
+}
+
 .qodef-main-menu .menu-item-language.menu-item-language-current:hover ul.sub-menu {
     display: block;
     top: 25px;
