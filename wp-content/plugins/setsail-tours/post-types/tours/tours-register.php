@@ -89,13 +89,9 @@ class ToursRegister implements Lib\PostTypeInterface {
                 'show_ui'       => true,
                 'show_in_menu'  => true,
                 'supports'      => array(
-                    'author',
                     'title',
-                    'editor',
                     'thumbnail',
-                    'excerpt',
                     'page-attributes',
-                    'comments'
                 ),
                 'menu_icon'     => $menuIcon
             )
@@ -175,6 +171,7 @@ class ToursRegister implements Lib\PostTypeInterface {
     public function removeReviewCriteriaMetaBox() {
         //remove review criteria meta box from tour single page,
         //because we don't want user to check review criteria for each tour
+        remove_meta_box('review-criteriadiv', $this->base, 'side');
         remove_meta_box('review-criteriadiv', $this->base, 'side');
     }
 }

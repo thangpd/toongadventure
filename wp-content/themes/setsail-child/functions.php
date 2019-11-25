@@ -14,13 +14,12 @@ if ( ! function_exists('setsail_select_child_theme_enqueue_scripts')) {
     add_action('wp_enqueue_scripts', 'setsail_select_child_theme_enqueue_scripts');
 }
 
-
 function my_styles_method()
 {
     $background_image = setsail_select_options()->getOptionValue('footer_background_container');
-    $image_pattern=get_stylesheet_directory_uri().'/assets/image/pattern.png';
-    $image_toong=get_stylesheet_directory_uri().'/assets/image/background.png';
-    $custom_css = "
+    $image_pattern    = get_stylesheet_directory_uri() . '/assets/image/pattern.png';
+    $image_toong      = get_stylesheet_directory_uri() . '/assets/image/background.png';
+    $custom_css       = "
     .qodef-tours-type-toong .qodef-tours-gim-holder-inner{
         background: url({$image_toong }) center/100% 100%;
     }

@@ -24,7 +24,7 @@ Color text      #0b403b
 }
 
 .qodef-fixed-header-appear .header-rightleft {
-    background-color: white;
+    background-color: #0b4041;
 }
 
 
@@ -43,7 +43,7 @@ Color text      #0b403b
 }
 
 .qodef-page-header .qodef-vertical-align-containers {
-    padding: 20px;
+    padding: 14px;
 }
 
 .qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link .qodef-tour-title {
@@ -124,14 +124,14 @@ Color text      #0b403b
     font-weight: 600;
 }
 
-.qodef-tours-price-holder .qodef-tours-item-price {
+.qodef-tours-type-toong .qodef-tours-price-holder .qodef-tours-item-price, .qodef-tours-type-toong-2 .qodef-tours-price-holder .qodef-tours-item-price {
     font-family: iCiel-Brush-Up;
     font-weight: 100;
     color: #0b403b;
     letter-spacing: 3px;
 }
 
-.qodef-ts-list-body .duration-item, .qodef-ts-list-body .qodef-item-reviews-average-rating,.qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item {
+.qodef-ts-list-body .duration-item, .qodef-ts-list-body .qodef-item-reviews-average-rating, .qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item {
     font-size: 20px;
     color: #0b4041;
     font-family: HelveticaNeue-CondensedBlack, sans-serif;
@@ -194,26 +194,27 @@ Color text      #0b403b
     border: 5px solid #fff;
 }
 
-.qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item{
-    display:inline-block;
-    float:right;
+.qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item {
+    display: inline-block;
+    float: right;
 
 }
 
 
-.qodef-tours-type-toong-2 a.qodef-tours-toong-item-link{
-    display:inline-block;
+.qodef-tours-type-toong-2 a.qodef-tours-toong-item-link {
+    display: inline-block;
 }
-.qodef-tours-type-toong-2 .qodef-tours-tour-difficult-item{
-    display:inline-block;
+
+.qodef-tours-type-toong-2 .qodef-tours-tour-difficult-item {
+    display: inline-block;
 }
 
 
 .qodef-tours-type-toong-2 .qodef-tours-masonry-item {
-    padding:15px;
-    -webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    -moz-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    padding: 15px;
+    -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 
 }
 
@@ -279,8 +280,38 @@ Color text      #0b403b
     align-items: center;
     justify-content: center;
     font-size: 17px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     font-weight: 600;
     color: #0b4041;
 }
 
+.qodef-main-menu .menu-item-language.menu-item-language-current ul.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(25, 25, 25, 0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.qodef-main-menu .menu-item-language.menu-item-language-current:hover ul.sub-menu {
+    display: block;
+    top: 25px;
+    left: 30px;
+    padding: 10px;
+}
+
+h1.qodef-st-title {
+    text-transform: uppercase;
+}
+
+
+.icon-doitac .qodef-iwt-icon img {
+    width: 144px;
+}
+
+
+.qodef-vertical-align-containers.header-rightleft a {
+    font-family: HelveticaNeue-CondensedBlack, sans-serif;
+    color: white;
+}

@@ -23,7 +23,7 @@ if ( ! function_exists('setsail_tours_general_cpt_meta_boxes')) {
         );
     }
 
-    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_general_cpt_meta_boxes');
+//    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_general_cpt_meta_boxes');
 }
 
 if ( ! function_exists('setsail_tours_info_section_map')) {
@@ -281,7 +281,7 @@ if ( ! function_exists('setsail_tours_tour_plan_section_map')) {
         );
     }
 
-    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_tour_plan_section_map');
+//    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_tour_plan_section_map');
 }
 
 if ( ! function_exists('setsail_tours_location_section_map')) {
@@ -390,7 +390,7 @@ if ( ! function_exists('setsail_tours_location_section_map')) {
         );
     }
 
-    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_location_section_map');
+//    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_location_section_map');
 }
 
 if ( ! function_exists('setsail_tours_gallery_section_map')) {
@@ -474,7 +474,7 @@ if ( ! function_exists('setsail_tours_review_section_map')) {
         );
     }
 
-    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_review_section_map');
+//    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_review_section_map');
 }
 
 if ( ! function_exists('setsail_tours_custom_section_1_map')) {
@@ -533,7 +533,7 @@ if ( ! function_exists('setsail_tours_custom_section_1_map')) {
         );
     }
 
-    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_custom_section_1_map');
+//    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_custom_section_1_map');
 }
 
 if ( ! function_exists('setsail_tours_custom_section_2_map')) {
@@ -592,5 +592,5 @@ if ( ! function_exists('setsail_tours_custom_section_2_map')) {
         );
     }
 
-    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_custom_section_2_map');
+//    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_custom_section_2_map');
 }

@@ -25,7 +25,11 @@
 												<?php echo esc_attr( $destination_subtitle ); ?>
 											</span>
 										<?php } ?>
-										<<?php echo esc_attr( $title_tag ); ?> class="qodef-tdi-title"><?php the_title(); ?></<?php echo esc_attr( $title_tag ); ?>>
+										<<?php
+                                        echo '<pre>';
+                                        print_r($title_tag);
+                                        echo '</pre>';die;
+                                        echo esc_attr( $title_tag ); ?> class="qodef-tdi-title"><?php the_title(); ?></<?php echo esc_attr( $title_tag ); ?>>
 									</div>
 								</div>
 							</div>

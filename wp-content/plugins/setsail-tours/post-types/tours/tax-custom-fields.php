@@ -94,13 +94,14 @@ if ( ! function_exists('setsail_tours_tours_destination_quickedit_save')) {
         if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
             return $post_id;
         }
+        if (isset($_POST['post_type'])) {
+            if ( ! current_user_can('edit_post', $post_id) || 'tour-item' != $_POST['post_type']) {
+                return $post_id;
+            }
 
-        if ( ! current_user_can('edit_post', $post_id) || 'tour-item' != $_POST['post_type']) {
-            return $post_id;
-        }
-
-        if (! empty($_POST['destination_tour'])) {
-            update_post_meta($post_id, 'tour_destination', $_POST['destination_tour']);
+            if ( ! empty($_POST['destination_tour'])) {
+                update_post_meta($post_id, 'tour_destination', $_POST['destination_tour']);
+            }
         }
     }
 

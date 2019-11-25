@@ -87,13 +87,9 @@ class DestinationsRegister implements Lib\PostTypeInterface {
 				'show_ui'       => true,
 				'show_in_menu'  => true,
 				'supports'      => array(
-					'author',
 					'title',
-					'editor',
 					'thumbnail',
-					'excerpt',
 					'page-attributes',
-					'comments'
 				),
 				'menu_icon'     => $menuIcon
 			)
