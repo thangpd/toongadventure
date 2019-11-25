@@ -315,3 +315,7 @@ h1.qodef-st-title {
     font-family: HelveticaNeue-CondensedBlack, sans-serif;
     color: white;
 }
+
+.qodef-vertical-align-containers.header-rightleft .qodef-logo-wrapper a img{
+    height:50px;
+}
