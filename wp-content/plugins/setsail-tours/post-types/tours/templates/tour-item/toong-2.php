@@ -44,25 +44,30 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
                             <?php the_title(); ?>
                         </<?php echo esc_attr($title_tag); ?>>
                         </a>
-                        <div class="qodef-tours-list-item-difficult-item">
-                            <div class="qodef-tours-tour-difficult-item">
-                                <div class="difficult-text">
-                                    <?php echo __('Độ Khó', 'setsail-tours'); ?>
-                                </div>
-                                <div class="myLoading-indicator">
-                                    <div class="myLoading-indicator-circle-wrap">
-                                        <div class="mask full">
-                                            <div class="fill"></div>
-                                        </div>
-                                        <div class="mask half">
-                                            <div class="fill"></div>
-                                        </div>
-                                        <div class="inside-circle" data-value="4"></div>
+                        <?php $level_of_difficult = setsail_tours_get_tour_level_of_difficult();
+                        if ( ! empty($level_of_difficult)) {
+                            ?>
+                            <div class="qodef-tours-list-item-difficult-item">
+                                <div class="qodef-tours-tour-difficult-item">
+                                    <div class="difficult-text">
+                                        <?php echo __('Độ Khó', 'setsail-tours'); ?>
                                     </div>
-                                </div>
+                                    <div class="myLoading-indicator">
+                                        <div class="myLoading-indicator-circle-wrap">
+                                            <div class="mask full">
+                                                <div class="fill"></div>
+                                            </div>
+                                            <div class="mask half">
+                                                <div class="fill"></div>
+                                            </div>
+                                            <div class="inside-circle"
+                                                 data-value="<?php echo $level_of_difficult ?>"></div>
+                                        </div>
+                                    </div>
 
+                                </div>
                             </div>
-                        </div>
+                        <?php } ?>
 
                     </div>
                 </div>

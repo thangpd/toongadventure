@@ -24,6 +24,49 @@ if ( ! function_exists('setsail_tours_get_tour_duration')) {
         return $duration;
     }
 }
+if ( ! function_exists('setsail_tours_get_grading_tour')) {
+    /**
+     * Returns duration for single tour
+     *
+     * @param int $tour_id
+     *
+     * @return string
+     */
+    function setsail_tours_get_grading_tour($tour_id = null)
+    {
+        $tour_id = empty($tour_id) ? get_the_ID() : $tour_id;
+
+        $grading = get_post_meta($tour_id, 'grading_tour', true);
+
+        if ( ! $grading) {
+            return false;
+        }
+
+        return $grading;
+    }
+}
+
+if ( ! function_exists('setsail_tours_get_tour_level_of_difficult')) {
+    /**
+     * Returns duration for single tour
+     *
+     * @param int $tour_id
+     *
+     * @return string
+     */
+    function setsail_tours_get_tour_level_of_difficult($tour_id = null)
+    {
+        $tour_id = empty($tour_id) ? get_the_ID() : $tour_id;
+
+        $difficult = get_post_meta($tour_id, 'tour_level_of_difficult', true);
+
+        if ( ! $difficult) {
+            return false;
+        }
+
+        return $difficult;
+    }
+}
 
 if ( ! function_exists('setsail_tours_get_tour_min_age')) {
     /**

@@ -93,12 +93,22 @@ if ( ! function_exists('setsail_tours_info_section_map')) {
                 'parent'        => $info_section_container
             )
         );
+        setsail_select_create_meta_box_field(
+            array(
+                'name'          => 'grading_tour',
+                'type'          => 'select',
+                'default_value' => '1',
+                'options'       => array(1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5),
+                'label'         => esc_html__('Grading Tour', 'setsail-tours'),
+                'parent'        => $info_section_container
+            )
+        );
 
         setsail_select_create_meta_box_field(
             array(
                 'name'          => 'tour_duration',
                 'type'          => 'text',
-                'default_value' => '',
+                'default_value' => '1',
                 'label'         => esc_html__('Duration', 'setsail-tours'),
                 'parent'        => $info_section_container
             )
