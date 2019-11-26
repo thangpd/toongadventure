@@ -67,9 +67,10 @@
                                                                 ?>
                                                             </div>
                                                         <?php } ?>
-                                                        <div class="qodef-tdi-price-holder">
-                                                            <?php echo setsail_tours_get_tour_price_html($tour_id); ?>
-                                                        </div>
+
+                                                    </div>
+                                                    <div class="qodef-tdi-price-holder">
+                                                        <?php echo setsail_tours_get_tour_price_html($tour_id); ?>
                                                     </div>
                                                 </div>
                                             </div>
