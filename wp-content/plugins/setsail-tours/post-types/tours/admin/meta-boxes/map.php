@@ -65,6 +65,15 @@ if ( ! function_exists('setsail_tours_info_section_map')) {
 
         setsail_select_create_meta_box_field(
             array(
+                'name'          => 'tour_external_link',
+                'type'          => 'text',
+                'default_value' => '',
+                'label'         => esc_html__('External Link', 'setsail-tours'),
+                'parent'        => $info_section_container
+            )
+        );
+        setsail_select_create_meta_box_field(
+            array(
                 'name'          => 'tour_price',
                 'type'          => 'text',
                 'default_value' => '',

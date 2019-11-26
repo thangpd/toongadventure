@@ -67,6 +67,27 @@ if ( ! function_exists('setsail_tours_get_tour_level_of_difficult')) {
         return $difficult;
     }
 }
+if ( ! function_exists('setsail_tours_get_tour_tour_external_link')) {
+    /**
+     * Returns duration for single tour
+     *
+     * @param int $tour_id
+     *
+     * @return string
+     */
+    function setsail_tours_get_tour_tour_external_link($tour_id = null)
+    {
+        $tour_id = empty($tour_id) ? get_the_ID() : $tour_id;
+
+        $link = get_post_meta($tour_id, 'tour_external_link', true);
+
+        if ( ! $link) {
+            return '#';
+        }
+
+        return $link;
+    }
+}
 
 if ( ! function_exists('setsail_tours_get_tour_min_age')) {
     /**

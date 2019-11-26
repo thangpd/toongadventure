@@ -26,7 +26,7 @@
                                         </div>
                                     </div>
                                 <?php } ?>
-                                <a class="qodef-tdi-link" href="<?php the_permalink() ?>"></a>
+                                <a class="qodef-tdi-link" href="<?php echo setsail_tours_get_tour_tour_external_link(); ?>"></a>
                             </div>
                         </div>
                         <?php if ( ! empty($tour_items_id)) {
@@ -47,7 +47,7 @@
                                         <?php } ?>
                                         <div class="qodef-tdi-image">
                                             <?php echo get_the_post_thumbnail($tour_id, $thumb_size); ?>
-                                            <a class="qodef-tdi-link" href="<?php the_permalink($tour_id); ?>"></a>
+                                            <a class="qodef-tdi-link" href="<?php echo setsail_tours_get_tour_tour_external_link($tour_id); ?>"></a>
                                         </div>
 
                                         <div class="qodef-tdi-content-holder">
