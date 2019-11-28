@@ -359,4 +359,10 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 .icon-doitac .wpb_wrapper{
     display:flex;
+}#media_image-2{
+     max-width:100px;
+ }
+
+#media_image-11{
+    max-width:170px;
 }
