@@ -189,6 +189,20 @@ Color text      #0b403b
 
 }
 
+.qodef-tours-type-toong  li.qodef-tour-list-filter-item{
+    margin:0 !important;
+}
+.qodef-tours-type-toong  li.qodef-tour-list-filter-item a{
+    padding:10px 10px 5px 10px;
+    width:170px;
+}
+.qodef-tours-type-toong  li.qodef-tour-list-filter-item a .qodef-btn-text{
+    font-family: HelveticaNeue-CondensedBlack, sans-serif;
+    color: white;
+    font-size:20px
+}
+
+
 .qodef-tours-type-toong .qodef-tours-gim-holder-inner > a.qodef-tours-toong-item-link {
     display: block;
     border: 5px solid #fff;
