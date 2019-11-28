@@ -39,7 +39,7 @@ if ( ! function_exists('setsail_tours_get_grading_tour')) {
         $grading = get_post_meta($tour_id, 'grading_tour', true);
 
         if ( ! $grading) {
-            return false;
+            return 1;
         }
 
         return $grading;
