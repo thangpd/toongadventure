@@ -20,6 +20,15 @@ if ( ! function_exists( 'setsail_tours_destionation_cpt_meta_boxes' ) ) {
 				'parent'        => $destination_meta_box
 			)
 		);
+		setsail_select_create_meta_box_field (
+			array(
+				'name'          => 'qodef_destination_external_link_meta',
+				'type'          => 'text',
+				'default_value' => '#',
+				'label'         => esc_html__( 'External Link', 'setsail-tours' ),
+				'parent'        => $destination_meta_box
+			)
+		);
 		
 		setsail_select_create_meta_box_field (
 			array(
