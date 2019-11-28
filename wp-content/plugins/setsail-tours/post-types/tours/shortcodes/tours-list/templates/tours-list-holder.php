@@ -21,18 +21,16 @@
             <div class="qodef-tours-list-filter-holder clearfix">
                 <ul>
                     <li class="qodef-tour-list-current-filter qodef-tour-list-filter-item">
-                        <a itemprop="url" href="#" target="_self"
-                           class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-tours-load-more-button"
-                           data-loading-label="Loading...">
+                        <a  href="#"
+                           class="qodef-btn qodef-btn-medium qodef-btn-solid ">
                             <span class="qodef-btn-text"><?php esc_html_e('All', 'setsail-tours'); ?></span>
                         </a>
                     </li>
                     <?php foreach ($filter_categories as $category) : ?>
                         <li class="qodef-tour-list-filter-item"
                             data-type="tour-category-<?php echo esc_attr($category->slug); ?>">
-                            <a itemprop="url" href="#" target="_self"
-                               class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-tours-load-more-button"
-                               data-loading-label="Loading...">
+                            <a  href="#"
+                               class="qodef-btn qodef-btn-medium qodef-btn-solid">
                                 <span class="qodef-btn-text">
                                 <?php echo esc_html($category->name); ?>
                                 </span>
