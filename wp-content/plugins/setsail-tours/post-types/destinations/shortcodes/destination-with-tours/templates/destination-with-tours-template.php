@@ -26,7 +26,7 @@
                                         </div>
                                     </div>
                                 <?php } ?>
-                                <a class="qodef-tdi-link" href="<?php echo setsail_tours_get_tour_tour_external_link(); ?>"></a>
+                                <a class="qodef-tdi-link" href="<?php echo setsail_tours_get_destination_external_link_meta(); ?>"></a>
                             </div>
                         </div>
                         <?php if ( ! empty($tour_items_id)) {

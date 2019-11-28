@@ -88,6 +88,27 @@ if ( ! function_exists('setsail_tours_get_tour_tour_external_link')) {
         return $link;
     }
 }
+if ( ! function_exists('setsail_tours_get_destination_external_link_meta')) {
+    /**
+     * Returns duration for single tour
+     *
+     * @param int $tour_id
+     *
+     * @return string
+     */
+    function setsail_tours_get_destination_external_link_meta($tour_id = null)
+    {
+        $tour_id = empty($tour_id) ? get_the_ID() : $tour_id;
+
+        $link = get_post_meta($tour_id, 'qodef_destination_external_link_meta', true);
+
+        if ( ! $link) {
+            return '#';
+        }
+
+        return $link;
+    }
+}
 
 if ( ! function_exists('setsail_tours_get_tour_min_age')) {
     /**
