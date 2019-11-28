@@ -61,7 +61,7 @@ if ( ! function_exists('setsail_tours_get_tour_level_of_difficult')) {
         $difficult = get_post_meta($tour_id, 'tour_level_of_difficult', true);
 
         if ( ! $difficult) {
-            return false;
+            return 1;
         }
 
         return $difficult;
