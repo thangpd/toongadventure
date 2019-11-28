@@ -357,3 +357,6 @@ h1.qodef-st-title, h2.qodef-st-title {
     position:absolute;
 
 }
+.icon-doitac .wpb_wrapper{
+    display:flex;
+}
