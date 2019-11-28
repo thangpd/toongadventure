@@ -340,15 +340,16 @@ h1.qodef-st-title, h2.qodef-st-title {
     color: white;
     text-align: right;
 }
-.qodef-tours-type-toong-2 .qodef-tour-title{
-    padding:10px
+
+.qodef-tours-type-toong-2 .qodef-tour-title {
+    padding: 10px
 }
 
 .qodef-footer-column-2.widget_media_image a:first-child {
     max-width: 83%;
 }
 
-.qodef-footer-column-3.widget_custom_html h5{
-    margin: 71px 0 15px;
-    font-size:30px;
+.qodef-footer-column-3.widget_custom_html h5 {
+    margin: 71px 0 15px !important;
+    font-size: 30px;
 }
