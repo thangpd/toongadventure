@@ -194,15 +194,21 @@ Color text      #0b403b
     border: 5px solid #fff;
 }
 
-.qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item {
+.qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder .qodef-tours-list-item-difficult-item {
     display: inline-block;
     float: right;
-
+    width:65px;
 }
 
 
 .qodef-tours-type-toong-2 a.qodef-tours-toong-item-link {
     display: inline-block;
+
+}
+.qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link {
+    display: inline-block;
+
+    max-width: calc(100% - 65px);
 }
 
 .qodef-tours-type-toong-2 .qodef-tours-tour-difficult-item {
