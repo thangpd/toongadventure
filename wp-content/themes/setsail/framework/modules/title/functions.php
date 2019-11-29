@@ -135,7 +135,11 @@ if ( ! function_exists( 'setsail_select_get_title_holder_styles' ) ) {
 		if ( ! empty( $title_image ) && $title_image_behavior !== 'hide' ) {
 			$styles[] = 'background-image:url(' . esc_url( $title_image ) . ');';
 		}
-		
+
+		if ( ! empty( $title_image ) && $title_image_behavior !== 'hide' ) {
+			$styles[] = 'background-size: cover;';
+		}
+
 		return implode( ';', $styles );
 	}
 }
