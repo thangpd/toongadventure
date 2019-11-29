@@ -207,10 +207,12 @@ Color text      #0b403b
     display: block;
     border: 5px solid #fff;
 }
+
 .qodef-tours-type-toong .qodef-tour-title{
-    font-size:22px;
-    padding:10px 0 5px 0;
+    font-size:24px;
+    padding:15px 0 10px 0;
 }
+
 .qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder .qodef-tours-list-item-difficult-item {
     display: inline-block;
     float: right;
