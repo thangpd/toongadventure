@@ -28,32 +28,32 @@ function my_styles_method()
     content: \"\";
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 101%;
+    height: 101%;
     background: url({$image_pattern_toong2 }) center/100% 100% no-repeat;
     opacity: 1;
 }
-.qodef-tours-dwt-holder .qodef-td-items.destination .qodef-tdi-image{
-border-radius: unset;
-}
-.qodef-tours-dwt-holder .qodef-td-items.destination .qodef-tdi-image:after {
-    content: \"\";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url({$image_pattern_toong }) center/100% 100% no-repeat;
-    opacity: 1;
-}
-                .qodef-footer-top-holder{
-                        background-image: url({$background_image });
-                        background-color:unset!important;
-                        background-repeat: no-repeat, repeat;
-                        padding-top:150px;
-                        padding-bottom:150px;
-                        background-position: top;
-                        background-size: cover;
-                }";
+    .qodef-tours-dwt-holder .qodef-td-items.destination .qodef-tdi-image{
+    border-radius: unset;
+    }
+    .qodef-tours-dwt-holder .qodef-td-items.destination .qodef-tdi-image:after {
+        content: \"\";
+        top: 0;
+        left: 0;
+        width: 101%;
+        height: 101%;
+        background: url({$image_pattern_toong }) center/100% 100% no-repeat;
+        opacity: 1;
+    }
+    .qodef-footer-top-holder{
+            background-image: url({$background_image });
+            background-color:unset!important;
+            background-repeat: no-repeat, repeat;
+            padding-top:150px;
+            padding-bottom:150px;
+            background-position: top;
+            background-size: cover;
+    }";
 
     wp_add_inline_style('setsail-select-child-style', $custom_css);
 }
