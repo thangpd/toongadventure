@@ -427,12 +427,12 @@ h1.qodef-st-title, h2.qodef-st-title {
     height: unset;
 }
 
-.qodef-sticky-header.header-appear  .qodef-sticky-holder {
+.qodef-sticky-header  .qodef-sticky-holder.qodef-menu-center {
     background-color: #0b4041 !important;
 
 }
 
-.qodef-sticky-header.header-appear  .qodef-sticky-holder a{
+.qodef-sticky-header  .qodef-sticky-holder a{
     font-family: HelveticaNeue-CondensedBlack, sans-serif !important;;
     color: white !important;;
 }
