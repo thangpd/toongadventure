@@ -215,11 +215,18 @@ Color text      #0b403b
 
 /*shortcode tour destination*/
 
+.qodef-tours-type-toong .qodef-tours-tour-attributes-item a{
+    font-size:13px;
+}
+
 .qodef-tours-type-toong .qodef-tour-list-filter-item.qodef-tour-list-current-filter a{
     border-color: #23a9af ;
     background-color:#23a9af ;
     color: #fff ;
 }
+
+
+
 /*end shortcode tourdes*/
 
 .qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder .qodef-tours-list-item-difficult-item {
