@@ -411,3 +411,7 @@ h1.qodef-st-title, h2.qodef-st-title {
 #media_image-11 {
     max-width: 189px;
 }
+
+.qodef-page-header{
+    display:block;
+}
