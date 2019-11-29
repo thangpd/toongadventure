@@ -443,3 +443,7 @@ h1.qodef-st-title, h2.qodef-st-title {
     justify-content: center;
 }
 
+/* testimoinal SC*/
+.qodef-testimonials-holder .qodef-testimonial-text{
+    font-size:18px !important;
+}
