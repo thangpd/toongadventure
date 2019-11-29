@@ -74,6 +74,7 @@ Color text      #0b403b
     margin-left: 15px;
     position: relative;
     border-radius: 2px;
+    line-height:1;
 }
 
 .qodef-tours-type-toong .qodef-tours-viewmore a, .qodef-tours-tour-attributes-item a {
@@ -92,24 +93,24 @@ Color text      #0b403b
 .qodef-tours-tour-attributes-item:before {
     content: "";
     position: absolute;
-    left: -15px;
+    left: -12px;
     top: 0;
     width: 0;
     height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid #0b4041;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #0b4041;
 }
 
 .qodef-tours-tour-attributes-item:after {
     content: "";
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
     background: #fff;
     border-radius: 100%;
     position: absolute;
-    left: -6px;
-    top: 50%;
+    left: -4px;
+    top: 44%;
     transform: translateY(-50%);
 }
 
