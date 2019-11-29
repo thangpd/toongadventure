@@ -132,9 +132,9 @@ if ( ! function_exists( 'setsail_select_get_title_holder_styles' ) ) {
 			$styles[] = 'background-color: ' . $title_bg_color;
 		}
 		
-		if ( ! empty( $title_image ) && $title_image_behavior !== 'hide' ) {
+		/*if ( ! empty( $title_image ) && $title_image_behavior !== 'hide' ) {
 			$styles[] = 'background-image:url(' . esc_url( $title_image ) . ');';
-		}
+		}*/
 		
 		return implode( ';', $styles );
 	}
