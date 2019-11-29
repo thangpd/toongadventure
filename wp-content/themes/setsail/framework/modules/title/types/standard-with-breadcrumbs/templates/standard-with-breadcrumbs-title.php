@@ -1,7 +1,7 @@
 <?php do_action('setsail_select_action_before_page_title'); ?>
 
 <div class="qodef-title-holder <?php echo esc_attr($holder_classes); ?>" <?php setsail_select_inline_style($holder_styles); ?> <?php echo setsail_select_get_inline_attrs($holder_data); ?>>
-	<?php if(!empty($title_image)) { ?>
+	<?php if(!empty($title_image) && is_front_page()) { ?>
 		<div class="qodef-title-image">
 			<img itemprop="image" src="<?php echo esc_url($title_image['src']); ?>" alt="<?php echo esc_attr($title_image['alt']); ?>" />
 		</div>
