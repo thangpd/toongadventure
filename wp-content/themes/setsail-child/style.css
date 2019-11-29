@@ -43,7 +43,7 @@ Color text      #0b403b
 }
 
 .qodef-page-header .qodef-vertical-align-containers {
-    padding: 14px;
+    padding: 16px 0 16px;
 }
 
 .qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link .qodef-tour-title {
@@ -189,17 +189,19 @@ Color text      #0b403b
 
 }
 
-.qodef-tours-type-toong  li.qodef-tour-list-filter-item{
-    margin:0 !important;
+.qodef-tours-type-toong li.qodef-tour-list-filter-item {
+    margin: 0 !important;
 }
-.qodef-tours-type-toong  li.qodef-tour-list-filter-item a{
-    padding:10px 10px 5px 10px;
-    width:170px;
+
+.qodef-tours-type-toong li.qodef-tour-list-filter-item a {
+    padding: 10px 10px 5px 10px;
+    width: 170px;
 }
-.qodef-tours-type-toong  li.qodef-tour-list-filter-item a .qodef-btn-text{
+
+.qodef-tours-type-toong li.qodef-tour-list-filter-item a .qodef-btn-text {
     font-family: HelveticaNeue-CondensedBlack, sans-serif;
     color: white;
-    font-size:20px
+    font-size: 20px
 }
 
 
@@ -208,23 +210,22 @@ Color text      #0b403b
     border: 5px solid #fff;
 }
 
-.qodef-tours-type-toong .qodef-tour-title{
-    font-size:24px;
-    padding:15px 0 10px 0;
+.qodef-tours-type-toong .qodef-tour-title {
+    font-size: 24px;
+    padding: 15px 0 10px 0;
 }
 
 /*shortcode tour destination*/
 
-.qodef-tours-type-toong .qodef-tours-tour-attributes-item a{
-    font-size:13px;
+.qodef-tours-type-toong .qodef-tours-tour-attributes-item a {
+    font-size: 13px;
 }
 
-.qodef-tours-type-toong .qodef-tour-list-filter-item.qodef-tour-list-current-filter a{
-    border-color: #23a9af ;
-    background-color:#23a9af ;
-    color: #fff ;
+.qodef-tours-type-toong .qodef-tour-list-filter-item.qodef-tour-list-current-filter a {
+    border-color: #23a9af;
+    background-color: #23a9af;
+    color: #fff;
 }
-
 
 
 /*end shortcode tourdes*/
@@ -232,7 +233,7 @@ Color text      #0b403b
 .qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder .qodef-tours-list-item-difficult-item {
     display: inline-block;
     float: right;
-    width:65px;
+    width: 65px;
 }
 
 
@@ -240,6 +241,7 @@ Color text      #0b403b
     display: inline-block;
 
 }
+
 .qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link {
     display: inline-block;
 
@@ -412,6 +414,30 @@ h1.qodef-st-title, h2.qodef-st-title {
     max-width: 189px;
 }
 
-.qodef-page-header{
-    display:block;
+.qodef-page-header {
+    display: block;
 }
+
+
+/*sticky header*/
+.qodef-sticky-header .qodef-vertical-align-containers .qodef-position-center {
+    position: unset;
+    width: unset;
+    height: unset;
+}
+
+.qodef-sticky-header.header-appear .qodef-sticky-header .qodef-sticky-holder {
+    background-color: #0b4041;
+}
+
+.qodef-sticky-header.header-appear  .qodef-sticky-holder a{
+    font-family: HelveticaNeue-CondensedBlack, sans-serif;
+    color: white;
+}
+
+.qodef-sticky-header .qodef-sticky-holder .qodef-vertical-align-containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
