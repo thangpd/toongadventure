@@ -426,13 +426,14 @@ h1.qodef-st-title, h2.qodef-st-title {
     height: unset;
 }
 
-.qodef-sticky-header.header-appear .qodef-sticky-header .qodef-sticky-holder {
-    background-color: #0b4041;
+.qodef-sticky-header.header-appear  .qodef-sticky-holder {
+    background-color: #0b4041 !important;
+
 }
 
 .qodef-sticky-header.header-appear  .qodef-sticky-holder a{
-    font-family: HelveticaNeue-CondensedBlack, sans-serif;
-    color: white;
+    font-family: HelveticaNeue-CondensedBlack, sans-serif !important;;
+    color: white !important;;
 }
 
 .qodef-sticky-header .qodef-sticky-holder .qodef-vertical-align-containers {
