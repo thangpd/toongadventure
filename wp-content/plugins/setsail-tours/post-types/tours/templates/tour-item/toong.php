@@ -55,13 +55,14 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
                             <div class="qodef-tours-list-item-duration-item">
                                 <?php
                                 $tour_duration = setsail_tours_get_tour_duration();
-                                if ($tour_duration != 0) {
                                     ?>
                                     <span class="duration-text">Duration</span>
                                     <div class="duration-item">
                                         <?php
                                         if ($tour_duration == 1) {
-                                            $text_night = ($tour_duration - 1) . 'N';
+                                            $text_night = 0 . 'N';
+                                        } elseif ($tour_duration == 0) {
+                                            $text_night = ($tour_duration) . 'N';
                                         } else {
                                             $text_night = ($tour_duration - 1) . 'N';
                                         }
@@ -70,7 +71,6 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
                                         echo $tour_duration . 'D<br>' . $text_night; ?>
                                     </div>
                                     <?php
-                                }
                                 ?>
                             </div>
                             <?php if ($reviews === 'yes') {
