@@ -452,16 +452,16 @@ h1.qodef-st-title, h2.qodef-st-title {
 /* image gallery SC*/
 
 
-.qodef-grid-list.qodef-five-columns .qodef-item-space:not(:first-child) {
+.qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space:not(:first-child) {
     margin-left: -20px;
 }
 
-.qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(2n) {
+.qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(2n) {
     transform: translateY(-20px);
 }
 
 @media only screen and (max-width: 1024px) {
-    .qodef-grid-list.qodef-five-columns .qodef-item-space {
+    .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space {
         transform: translate(0) !important;
         margin-left: 0 !important;
         clear: unset !important;
@@ -470,25 +470,25 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 
 @media only screen and (max-width: 1366px) {
-    .qodef-grid-list.qodef-five-columns .qodef-item-space {
+    .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space {
         width: 21.6%
     }
 }
 
 @media only screen and (max-width: 1366px) and (min-width: 1025px) {
-    .qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(4n+1) {
+    .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(4n+1) {
         clear: unset
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .qodef-grid-list.qodef-five-columns .qodef-item-space {
+    .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space {
         width: 50%;
     }
 }
 
 @media only screen and (max-width: 575px) {
-    .qodef-grid-list.qodef-five-columns .qodef-item-space {
+    .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space {
         width: 100%;
     }
 }
