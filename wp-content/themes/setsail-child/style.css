@@ -329,7 +329,7 @@ Color text      #0b403b
     color: #0b4041;
 }
 
-.qodef-main-menu .menu-item-language.menu-item-language-current ul.sub-menu {
+.qodef-main-menu .menu-item-language ul.sub-menu {
     display: none;
     position: absolute;
     background-color: rgba(25, 25, 25, 0.5);
@@ -338,14 +338,14 @@ Color text      #0b403b
     z-index: 1;
 }
 
-.qodef-main-menu .menu-item-language.menu-item-language-current {
+.qodef-main-menu .menu-item-language {
     position: absolute;
     top: 0;
     left: 100%;
     white-space: nowrap;
 }
 
-.qodef-main-menu .menu-item-language.menu-item-language-current:hover ul.sub-menu {
+.qodef-main-menu .menu-item-language:hover ul.sub-menu {
     display: block;
     top: 25px;
     left: 30px;
@@ -459,14 +459,16 @@ h1.qodef-st-title, h2.qodef-st-title {
 .qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(2n) {
     transform: translateY(-20px);
 }
+
 @media only screen and (max-width: 1024px) {
     .qodef-grid-list.qodef-five-columns .qodef-item-space {
         transform: translate(0) !important;
-        margin-left: 0!important;
-        clear: unset!important;
+        margin-left: 0 !important;
+        clear: unset !important;
         width: 20%;
     }
 }
+
 @media only screen and (max-width: 1366px) {
     .qodef-grid-list.qodef-five-columns .qodef-item-space {
         width: 21.6%
@@ -478,6 +480,7 @@ h1.qodef-st-title, h2.qodef-st-title {
         clear: unset
     }
 }
+
 @media only screen and (max-width: 767px) {
     .qodef-grid-list.qodef-five-columns .qodef-item-space {
         width: 50%;
