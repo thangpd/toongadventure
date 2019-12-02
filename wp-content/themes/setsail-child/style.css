@@ -469,7 +469,28 @@ h1.qodef-st-title, h2.qodef-st-title {
 .qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(2n) {
     transform: translateY(-20px);
 }
+@media only screen and (max-width: 1024px) {
+    .qodef-grid-list.qodef-five-columns .qodef-item-space {
+        transform: translate(0) !important;
+        margin-left: 0!important;
+        clear: unset!important;
+        width: 20%;
+    }
+}
 
+@media only screen and (max-width: 767px) {
+    .qodef-grid-list.qodef-five-columns .qodef-item-space {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .qodef-grid-list.qodef-five-columns .qodef-item-space {
+        width: 100%;
+    }
+}
+
+/*-------------------------*/
 @media only screen and (max-width: 768px) {
     .qodef-vertical-align-containers.header-rightleft {
         display: none;
