@@ -17525,10 +17525,6 @@ nav.qodef-fullscreen-menu > ul > li.qodef-active-item > a:after {
     box-sizing: border-box;
 }
 
-.qodef-title-holder.qodef-bg-responsive {
-    height: auto !important;
-}
-
 .qodef-title-holder.qodef-bg-responsive .qodef-title-image {
     display: block;
 }
