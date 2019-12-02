@@ -69,7 +69,6 @@ function wp_nav_menu( $args = array() ) {
 	);
 
 	$args = wp_parse_args( $args, $defaults );
-
 	if ( ! in_array( $args['item_spacing'], array( 'preserve', 'discard' ), true ) ) {
 		// invalid value, fall back to default.
 		$args['item_spacing'] = $defaults['item_spacing'];

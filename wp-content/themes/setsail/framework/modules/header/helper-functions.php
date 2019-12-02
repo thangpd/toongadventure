@@ -43,6 +43,24 @@ if ( ! function_exists('setsail_theme_nav_menu')) :
             }
         }
     }
+endif;if ( ! function_exists('setsail_theme_nav_menu')) :
+    /**
+     * Display the nav menu
+     */
+    function setsail_theme_nav_menu($menu_type)
+    {
+        global $setsail_menus;
+        if ( ! isset($setsail_menus[$menu_type])) {
+            return;
+        }
+        if (has_nav_menu($menu_type)) {
+            if (isset ($setsail_menus[$menu_type]['echo']) && $setsail_menus[$menu_type]['echo'] == false) {
+                return wp_nav_menu($setsail_menus[$menu_type]);
+            } else {
+                wp_nav_menu($setsail_menus[$menu_type]);
+            }
+        }
+    }
 endif;
 
 
