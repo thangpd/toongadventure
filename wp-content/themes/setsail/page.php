@@ -4,6 +4,12 @@ $qodef_grid_space_meta = setsail_select_get_meta_field_intersect( 'page_grid_spa
 $qodef_holder_classes  = ! empty( $qodef_grid_space_meta ) ? 'qodef-grid-' . $qodef_grid_space_meta . '-gutter' : '';
 
 get_header();
+
+if ( ! empty($show_title_meta) && is_singular('page')) {
+    $show_title = $show_title_meta === 'yes' ? true : false;
+} else {
+    $show_title = false;
+}
 setsail_select_get_title();
 get_template_part( 'slider' );
 do_action('setsail_select_action_before_main_content');

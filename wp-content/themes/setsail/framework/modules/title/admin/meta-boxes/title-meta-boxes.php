@@ -59,6 +59,17 @@ if ( ! function_exists( 'setsail_select_map_title_meta' ) ) {
 						'options'       => $title_type_meta_boxes
 					)
 				);
+				setsail_select_create_meta_box_field(
+					array(
+						'name'          => 'qodef_show_title_meta',
+						'type'          => 'select',
+						'default_value' => '',
+						'label'         => esc_html__( 'Show Title', 'setsail' ),
+						'description'   => esc_html__( 'Choose Show Title', 'setsail' ),
+						'parent'        => $show_title_area_meta_container,
+						'options'       => setsail_select_get_yes_no_select_array()
+					)
+				);
 		
 				setsail_select_create_meta_box_field(
 					array(
