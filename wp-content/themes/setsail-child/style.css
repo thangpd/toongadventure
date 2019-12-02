@@ -450,17 +450,7 @@ h1.qodef-st-title, h2.qodef-st-title {
 
 
 /* image gallery SC*/
-@media only screen and (max-width: 1366px) {
-    .qodef-grid-list.qodef-five-columns .qodef-item-space {
-        width: 21.6%
-    }
-}
 
-@media only screen and (max-width: 1366px) and (min-width: 1025px) {
-    .qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(4n+1) {
-        clear: unset
-    }
-}
 
 .qodef-grid-list.qodef-five-columns .qodef-item-space:not(:first-child) {
     margin-left: -20px;
@@ -477,7 +467,17 @@ h1.qodef-st-title, h2.qodef-st-title {
         width: 20%;
     }
 }
+@media only screen and (max-width: 1366px) {
+    .qodef-grid-list.qodef-five-columns .qodef-item-space {
+        width: 21.6%
+    }
+}
 
+@media only screen and (max-width: 1366px) and (min-width: 1025px) {
+    .qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(4n+1) {
+        clear: unset
+    }
+}
 @media only screen and (max-width: 767px) {
     .qodef-grid-list.qodef-five-columns .qodef-item-space {
         width: 50%;
@@ -492,6 +492,13 @@ h1.qodef-st-title, h2.qodef-st-title {
 
 /*-------------------------*/
 @media only screen and (max-width: 768px) {
+    .qodef-vertical-align-containers.header-rightleft {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
     .qodef-vertical-align-containers.header-rightleft {
         display: none;
     }
