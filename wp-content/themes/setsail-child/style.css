@@ -506,3 +506,16 @@ h1.qodef-st-title, h2.qodef-st-title {
         display: none;
     }
 }
+
+
+@media only screen and (min-width: 1200px) {
+    .qodef-no-space .qodef-outer-space {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .qodef-grid-list:not(.qodef-one-columns) .qodef-item-space {
+        float: none;
+        display: block;
+    }
+}
