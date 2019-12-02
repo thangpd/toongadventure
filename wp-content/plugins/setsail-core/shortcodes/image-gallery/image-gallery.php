@@ -210,7 +210,7 @@ class ImageGallery implements Lib\ShortcodeInterface
             'image_behavior'          => '',
             'custom_links'            => '',
             'custom_link_target'      => '_self',
-            'number_of_columns'       => 'three',
+            'number_of_columns'       => 'five',
             'space_between_items'     => 'normal',
             'number_of_visible_items' => '1',
             'slider_loop'             => 'yes',
