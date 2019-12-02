@@ -108,7 +108,7 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
                         <?php echo setsail_tours_get_tour_price_html(); ?>
                     </div>
                     <div class="qodef-tours-viewmore">
-                        <a href="<?php the_permalink() ?>"><?php echo __('VIEWTRIP', 'setsail-tours') ?></a>
+                        <a href="<?php echo setsail_tours_get_tour_tour_external_link(); ?>"><?php echo __('VIEWTRIP', 'setsail-tours') ?></a>
                     </div>
                 </div>
             </div>
