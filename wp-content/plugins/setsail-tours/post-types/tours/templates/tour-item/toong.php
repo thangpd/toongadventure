@@ -68,8 +68,6 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
                                     } else {
                                         $text_night = ($tour_duration - 1) . 'N';
                                     }
-
-
                                     echo $tour_duration . 'D<br>' . $text_night; ?>
                                 </div>
                                 <?php
