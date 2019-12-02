@@ -156,6 +156,9 @@ if ( ! function_exists('setsail_select_get_title_holder_styles')) {
         if ( ! empty($title_image) && $title_image_behavior !== 'hide') {
             $styles[] = 'background-size: cover;';
         }
+        if ( ! empty($title_image) && $title_image_behavior !== 'hide') {
+            $styles[] = 'background-position: center bottom;';
+        }
 
         return implode(';', $styles);
     }
