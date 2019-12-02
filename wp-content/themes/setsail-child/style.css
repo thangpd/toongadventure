@@ -74,7 +74,7 @@ Color text      #0b403b
     margin-left: 15px;
     position: relative;
     border-radius: 2px;
-    line-height:1;
+    line-height: 1;
 }
 
 .qodef-tours-type-toong .qodef-tours-viewmore a, .qodef-tours-tour-attributes-item a {
@@ -427,12 +427,12 @@ h1.qodef-st-title, h2.qodef-st-title {
     height: unset;
 }
 
-.qodef-sticky-header  .qodef-sticky-holder.qodef-menu-center {
+.qodef-sticky-header .qodef-sticky-holder.qodef-menu-center {
     background-color: #0b4041 !important;
 
 }
 
-.qodef-sticky-header  .qodef-sticky-holder a{
+.qodef-sticky-header .qodef-sticky-holder a {
     font-family: HelveticaNeue-CondensedBlack, sans-serif !important;;
     color: white !important;;
 }
@@ -444,8 +444,8 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 
 /* testimoinal SC*/
-.qodef-testimonials-holder .qodef-testimonial-text{
-    font-size:18px !important;
+.qodef-testimonials-holder .qodef-testimonial-text {
+    font-size: 18px !important;
 }
 
 
@@ -461,9 +461,17 @@ h1.qodef-st-title, h2.qodef-st-title {
         clear: unset
     }
 }
+
 .qodef-grid-list.qodef-five-columns .qodef-item-space:not(:first-child) {
     margin-left: -20px;
 }
+
 .qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(2n) {
     transform: translateY(-20px);
+}
+
+@media only screen and (max-width: 768px) {
+    .qodef-vertical-align-containers.header-rightleft {
+        display: none;
+    }
 }

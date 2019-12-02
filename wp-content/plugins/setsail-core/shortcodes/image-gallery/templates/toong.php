@@ -15,7 +15,7 @@ $rand = rand( 0, 1000 );
 						<?php if ( is_array( $image_size ) && count( $image_size ) ) :
 							echo setsail_select_generate_thumbnail( $image['image_id'], null, $image_size[0], $image_size[1] );
 						else:
-							echo wp_get_attachment_image( $image['image_id'], $image_size );
+							echo wp_get_attachment_image( $image['image_id'], $image_size,false,['class'=>'no-lazy'] );
 						endif; ?>
 					<?php if ( $image_behavior === 'lightbox' || $image_behavior === 'custom-link' ) { ?>
 						</a>
