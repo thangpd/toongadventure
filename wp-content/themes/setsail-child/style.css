@@ -447,3 +447,23 @@ h1.qodef-st-title, h2.qodef-st-title {
 .qodef-testimonials-holder .qodef-testimonial-text{
     font-size:18px !important;
 }
+
+
+/* image gallery SC*/
+@media only screen and (max-width: 1366px) {
+    .qodef-grid-list.qodef-five-columns .qodef-item-space {
+        width: 21.6%
+    }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1025px) {
+    .qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(4n+1) {
+        clear: unset
+    }
+}
+.qodef-grid-list.qodef-five-columns .qodef-item-space:not(:first-child) {
+    margin-left: -20px;
+}
+.qodef-grid-list.qodef-five-columns .qodef-item-space:nth-child(2n) {
+    transform: translateY(-20px);
+}
