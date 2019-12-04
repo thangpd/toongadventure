@@ -94,16 +94,6 @@ if ( ! function_exists('setsail_tours_info_section_map')) {
 
         setsail_select_create_meta_box_field(
             array(
-                'name'          => 'tour_level_of_difficult',
-                'type'          => 'select',
-                'default_value' => '1',
-                'options'       => array(1, 2, 3, 4, 5),
-                'label'         => esc_html__('Level of difficult', 'setsail-tours'),
-                'parent'        => $info_section_container
-            )
-        );
-        setsail_select_create_meta_box_field(
-            array(
                 'name'          => 'grading_tour',
                 'type'          => 'select',
                 'default_value' => '1',
@@ -142,56 +132,6 @@ if ( ! function_exists('setsail_tours_info_section_map')) {
                 'label'         => esc_html__('Custom Label', 'setsail-tours'),
                 'description'   => esc_html__('Define custom label which will show on tour lists and tour single pages',
                     'setsail-tours'),
-                'parent'        => $info_section_container
-            )
-        );
-
-        setsail_select_create_meta_box_field(
-            array(
-                'name'          => 'tour_info_min_years',
-                'type'          => 'text',
-                'default_value' => '',
-                'label'         => esc_html__('Minimum Years Required', 'setsail-tours'),
-                'parent'        => $info_section_container
-            )
-        );
-
-        setsail_select_create_meta_box_field(
-            array(
-                'name'          => 'tour_departure',
-                'type'          => 'text',
-                'default_value' => '',
-                'label'         => esc_html__('Departure/Return Location', 'setsail-tours'),
-                'parent'        => $info_section_container
-            )
-        );
-
-        setsail_select_create_meta_box_field(
-            array(
-                'name'          => 'tour_departure_time',
-                'type'          => 'text',
-                'default_value' => '',
-                'label'         => esc_html__('Departure Time', 'setsail-tours'),
-                'parent'        => $info_section_container
-            )
-        );
-
-        setsail_select_create_meta_box_field(
-            array(
-                'name'          => 'tour_return_time',
-                'type'          => 'text',
-                'default_value' => '',
-                'label'         => esc_html__('Return Time', 'setsail-tours'),
-                'parent'        => $info_section_container
-            )
-        );
-
-        setsail_select_create_meta_box_field(
-            array(
-                'name'          => 'tour_dress_code',
-                'type'          => 'text',
-                'default_value' => '',
-                'label'         => esc_html__('Dress Code', 'setsail-tours'),
                 'parent'        => $info_section_container
             )
         );

@@ -46,27 +46,6 @@ if ( ! function_exists('setsail_tours_get_grading_tour')) {
     }
 }
 
-if ( ! function_exists('setsail_tours_get_tour_level_of_difficult')) {
-    /**
-     * Returns duration for single tour
-     *
-     * @param int $tour_id
-     *
-     * @return string
-     */
-    function setsail_tours_get_tour_level_of_difficult($tour_id = null)
-    {
-        $tour_id = empty($tour_id) ? get_the_ID() : $tour_id;
-
-        $difficult = get_post_meta($tour_id, 'tour_level_of_difficult', true);
-
-        if ( ! $difficult) {
-            return 1;
-        }
-
-        return $difficult;
-    }
-}
 if ( ! function_exists('setsail_tours_get_tour_tour_external_link')) {
     /**
      * Returns duration for single tour

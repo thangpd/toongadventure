@@ -44,7 +44,7 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
                             <?php the_title(); ?>
                         </<?php echo esc_attr($title_tag); ?>>
                         </a>
-                        <?php $level_of_difficult = setsail_tours_get_tour_level_of_difficult();
+                        <?php $level_of_difficult = setsail_tours_get_grading_tour();
                         if ( ! empty($level_of_difficult)) {
                             ?>
                             <div class="qodef-tours-list-item-difficult-item">
