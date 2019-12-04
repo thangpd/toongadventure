@@ -469,6 +469,65 @@ h1.qodef-st-title, h2.qodef-st-title {
     transform: translateY(-20px);
 }
 
+.qodef-tours-dwt-holder .qodef-td-items {
+    padding: 5px;
+    margin: 0 15px;
+}
+
+.qodef-tours-dwt-holder .qodef-td-items:not(.destination) {
+    -webkit-box-shadow: 0 0 38px rgba(0,0,0,.3), 0 0 12px rgba(0,0,0,.22);
+    -moz-box-shadow: 0 0 38px rgba(0,0,0,.3), 0 0 12px rgba(0,0,0,.22);
+    box-shadow: 0 0 38px rgba(0,0,0,.3), 0 0 38px rgba(0,0,0,.22);
+}
+
+.qodef-tours-dwt-holder .qodef-td-items .qodef-tdi-content-holder {
+    position: initial;
+    width: auto;
+    height: auto;
+}
+
+.qodef-tours-dwt-holder .qodef-td-items.tour .qodef-tdi-image {
+    padding: 5px;
+}
+
+.qodef-tours-dwt-holder .qodef-td-items.tour .qodef-tdi-image:after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 99%;
+    background: url(https://toongadventure.com/wp-content/themes/setsail-child/assets/image/pattern.png) center/100% 100% no-repeat;
+    opacity: 1;
+}
+
+.qodef-tours-dwt-holder .qodef-td-items:not(.destination) .qodef-tdi-image img {
+    display: block;
+    max-height: 144px;
+}
+
+.qodef-tours-dwt-holder .qodef-td-items.destination .qodef-tdi-image img {
+    width: auto;
+    margin: auto;
+}
+
+.qodef-tours-dwt-holder .qodef-td-items.destination .qodef-tdi-image:before {
+    background: #fff;
+}
+
+.qodef-tours-dwt-holder .qodef-td-items .qodef-tdi-content-holder-inner {
+    padding: 10px;
+}
+
+.qodef-tours-dwt-holder .qodef-td-items .qodef-tdi-title,
+.qodef-tours-dwt-holder .qodef-td-items.tour .qodef-tdi-price-holder {
+    color: #0b403b;
+}
+
+.qodef-tours-dwt-holder .qodef-td-items.tour .qodef-tdi-title {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
 @media only screen and (max-width: 1024px) {
     .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space {
         transform: translate(0) !important;
