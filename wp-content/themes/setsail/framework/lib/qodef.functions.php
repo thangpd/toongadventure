@@ -1127,7 +1127,8 @@ if ( ! function_exists( 'setsail_select_get_formatted_font_family' ) ) {
 	 * @return mixed
 	 */
 	function setsail_select_get_formatted_font_family( $value ) {
-		return str_replace( '+', ' ', $value );
+
+		return str_replace( '+', ' ', $value ).' !important';
 	}
 }
 
@@ -1355,6 +1356,7 @@ if ( ! function_exists( 'setsail_select_get_typography_styles' ) ) {
 		if ( isset( $font_family ) && $font_family !== false && $font_family !== '-1' && $font_family !== '' ) {
 			$styles['font-family'] = setsail_select_get_formatted_font_family( $font_family );
 		}
+
 		if ( ! empty( $font_size ) ) {
 			if ( setsail_select_string_ends_with( $font_size, 'px' ) || setsail_select_string_ends_with( $font_size, 'em' ) ) {
 				$styles['font-size'] = $font_size;

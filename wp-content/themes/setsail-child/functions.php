@@ -19,8 +19,13 @@ function my_styles_method()
     $background_image     = setsail_select_options()->getOptionValue('footer_background_container');
     $image_pattern_toong  = get_stylesheet_directory_uri() . '/assets/image/toong_pattern.png';
     $image_pattern_toong2 = get_stylesheet_directory_uri() . '/assets/image/pattern.png';
-    $image_toong          = get_stylesheet_directory_uri() . '/assets/image/background.png';
-    $custom_css           = "
+//    $image_toong          = get_stylesheet_directory_uri() . '/assets/image/background.png';
+    $image_toong = setsail_select_options()->getOptionValue('tour_item_area_background_image');
+    if (empty($image_toong)) {
+        $image_toong = get_stylesheet_directory_uri() . '/assets/image/background.png';
+    }
+    $custom_css = "
+    
     .qodef-tours-type-toong .qodef-tours-gim-holder-inner{
         background: url({$image_toong }) center/100% 100%;
     }

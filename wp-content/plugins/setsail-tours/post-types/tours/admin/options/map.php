@@ -136,6 +136,15 @@ if ( ! function_exists( 'setsail_tours_tour_options_map' ) ) {
 				)
 			)
 		);
+		setsail_select_add_admin_field(
+			array(
+                'name'        => 'tour_item_area_background_image',
+                'type'        => 'image',
+                'label'       => esc_html__( 'Tour Item Background Image', 'setsail' ),
+                'description' => esc_html__( 'Choose an Image for Tour Area', 'setsail' ),
+                'parent'        => $settings_panel,
+			)
+		);
 		
 		setsail_select_add_admin_field(
 			array(

@@ -296,7 +296,6 @@ class CustomFont implements Lib\ShortcodeInterface {
 		if ( $params['font_family'] !== '' ) {
 			$styles[] = 'font-family: ' . $params['font_family'];
 		}
-		
 		if ( ! empty( $params['font_size'] ) ) {
 			if ( setsail_select_string_ends_with( $params['font_size'], 'px' ) || setsail_select_string_ends_with( $params['font_size'], 'em' ) ) {
 				$styles[] = 'font-size: ' . $params['font_size'];
