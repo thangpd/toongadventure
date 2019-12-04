@@ -132,15 +132,6 @@ Color text      #0b403b
     letter-spacing: 3px;
 }
 
-.qodef-tours-type-toong-2.qodef-tours-columns-4 .qodef-tours-masonry-item .qodef-tours-gim-holder-inner {
-    padding: 5px
-}
-
-.qodef-tours-type-toong-2.qodef-tours-columns-4 .qodef-tours-gim-image img {
-    max-height: 138px;
-}
-
-
 .qodef-ts-list-body .duration-item, .qodef-ts-list-body .qodef-item-reviews-average-rating, .qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item {
     font-size: 20px;
     color: #0b4041;
@@ -529,12 +520,24 @@ h1.qodef-st-title, h2.qodef-st-title {
     letter-spacing: 1px;
 }
 
-@media only screen and (max-width: 1024px) {
-    .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space {
-        transform: translate(0) !important;
-        margin-left: 0 !important;
-        clear: unset !important;
-        width: 20%;
+/*-------------------------*/
+
+@media only screen and (min-width: 1200px) {
+    .qodef-no-space .qodef-outer-space {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .qodef-grid-list:not(.qodef-one-columns) .qodef-item-space {
+        float: none;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .qodef-tours-dwt-holder .qodef-td-items:not(.destination) .qodef-tdi-image img {
+        max-height: 194px;
     }
 }
 
@@ -550,6 +553,27 @@ h1.qodef-st-title, h2.qodef-st-title {
     }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .qodef-vertical-align-containers.header-rightleft {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space {
+        transform: translate(0) !important;
+        margin-left: 0 !important;
+        clear: unset !important;
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .qodef-vertical-align-containers.header-rightleft {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space {
         width: 50%;
@@ -559,32 +583,5 @@ h1.qodef-st-title, h2.qodef-st-title {
 @media only screen and (max-width: 575px) {
     .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space {
         width: 100%;
-    }
-}
-
-/*-------------------------*/
-@media only screen and (max-width: 768px) {
-    .qodef-vertical-align-containers.header-rightleft {
-        display: none;
-    }
-}
-
-
-@media only screen and (min-width: 992px) and (max-width: 1024px) {
-    .qodef-vertical-align-containers.header-rightleft {
-        display: none;
-    }
-}
-
-
-@media only screen and (min-width: 1200px) {
-    .qodef-no-space .qodef-outer-space {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-    .qodef-grid-list:not(.qodef-one-columns) .qodef-item-space {
-        float: none;
-        display: block;
     }
 }
