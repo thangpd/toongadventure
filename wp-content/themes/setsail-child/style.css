@@ -52,7 +52,13 @@ Color text      #0b403b
     color: #0b403b;
 }
 
+.qodef-tours-type-toong-2.qodef-tours-columns-4 .qodef-tours-masonry-item .qodef-tours-gim-holder-inner {
+    padding: 5px
+}
 
+.qodef-tours-type-toong-2.qodef-tours-columns-4 .qodef-tours-gim-image img {
+    max-height: 148px;
+}
 .qodef-tours-type-toong .qodef-gim-title-and-price-holder .qodef-tours-item-price, .qodef-tours-type-toong .qodef-tours-tour-categories-item a .qodef-tour-cat-item-text {
     color: #0b403b;
 }
