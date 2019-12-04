@@ -31,10 +31,10 @@ function my_styles_method()
     }
     .qodef-tours-type-toong-2 .qodef-tours-gim-image:after {
     content: \"\";
-    top: 0;
-    left: 0;
-    width: 101%;
-    height: 101%;
+    top: -2px;
+    left: -2px;
+    width: 102%;
+    height: 102%;
     background: url({$image_pattern_toong2 }) center/100% 100% no-repeat;
     opacity: 1;
 }

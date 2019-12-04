@@ -244,6 +244,7 @@ Color text      #0b403b
     display: inline-block;
     float: right;
     width: 65px;
+    padding-top:10px;
 }
 
 
