@@ -132,6 +132,15 @@ Color text      #0b403b
     letter-spacing: 3px;
 }
 
+.qodef-tours-type-toong-2.qodef-tours-columns-4 .qodef-tours-masonry-item .qodef-tours-gim-holder-inner {
+    padding: 5px
+}
+
+.qodef-tours-type-toong-2.qodef-tours-columns-4 .qodef-tours-gim-image img {
+    max-height: 138px;
+}
+
+
 .qodef-ts-list-body .duration-item, .qodef-ts-list-body .qodef-item-reviews-average-rating, .qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item {
     font-size: 20px;
     color: #0b4041;

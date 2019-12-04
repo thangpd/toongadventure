@@ -33,10 +33,7 @@ function my_styles_method()
     background: url({$image_pattern_toong2 }) center/100% 100% no-repeat;
     opacity: 1;
 }
-/*
-    .qodef-tours-dwt-holder .qodef-td-items.destination .qodef-tdi-image{
-    border-radius: unset;
-    }*/
+
     .qodef-tours-dwt-holder .qodef-td-items.destination .qodef-tdi-image:after {
         content: \"\";
         top: 0;
