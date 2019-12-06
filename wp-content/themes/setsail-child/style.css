@@ -138,7 +138,7 @@ Color text      #0b403b
     letter-spacing: 3px;
 }
 
-.qodef-ts-list-body .duration-item, .qodef-ts-list-body .qodef-item-reviews-average-rating, .qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item {
+.qodef-ts-list-body .duration-item, .qodef-ts-list-body .qodef-item-reviews-average-rating, .qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item,.qodef-td-items.tour .qodef-tours-list-item-difficult-item {
     font-size: 20px;
     color: #0b4041;
     font-family: HelveticaNeue-CondensedBlack, sans-serif;
@@ -237,7 +237,7 @@ Color text      #0b403b
 
 /*end shortcode tourdes*/
 
-.qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder .qodef-tours-list-item-difficult-item {
+.qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder .qodef-tours-list-item-difficult-item,.qodef-td-items.tour .qodef-tours-list-item-difficult-item {
     display: inline-block;
     float: right;
     width: 65px;
@@ -250,13 +250,13 @@ Color text      #0b403b
 
 }
 
-.qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link {
+.qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link, .qodef-td-items.tour .qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link{
     display: inline-block;
 
     max-width: calc(100% - 65px);
 }
 
-.qodef-tours-type-toong-2 .qodef-tours-tour-difficult-item {
+.qodef-tours-type-toong-2 .qodef-tours-tour-difficult-item,.qodef-td-items.tour .qodef-tours-tour-difficult-item{
     display: inline-block;
 }
 
@@ -392,7 +392,7 @@ h1.qodef-st-title, h2.qodef-st-title {
     text-align: right;
 }
 
-.qodef-tours-type-toong-2 .qodef-tour-title {
+.qodef-tours-type-toong-2 .qodef-tour-title,.qodef-td-items.tour .qodef-tour-title {
     padding: 10px
 }
 

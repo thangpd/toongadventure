@@ -11,7 +11,7 @@ class DestinationWithTours implements ShortcodeInterface {
 	 */
 	public function __construct() {
 		$this->base = 'qodef_destination_with_tours';
-		
+        wp_enqueue_script( 'des-with-tour' );
 		add_action('vc_before_init', array($this, 'vcMap'));
 	}
 	

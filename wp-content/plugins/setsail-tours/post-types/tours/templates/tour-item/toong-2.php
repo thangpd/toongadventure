@@ -3,9 +3,6 @@ if ( ! isset($title_tag) || $title_tag == '') {
     $title_tag = 'h4';
 }
 
-if ( ! isset($reviews) && $reviews == 'yes') {
-    $reviews = 'yes';
-}
 
 $id              = get_the_ID();
 $image_size      = get_post_meta($id, 'tour_masonry_dimensions', true);

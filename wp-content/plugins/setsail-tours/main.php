@@ -93,12 +93,13 @@ if ( ! function_exists('setsail_tours_scripts')) {
         wp_enqueue_script('bloodhound',
             plugins_url(SETSAIL_TOURS_REL_PATH) . '/assets/js/modules/plugins/bloodhound.min.js', array('jquery'),
             false, true);
-        wp_enqueue_script('circle-process',
-            plugins_url(SETSAIL_TOURS_REL_PATH) . '/assets/js/circle-progress.min.js', array('jquery'),
-            false, true);
+
 
         wp_enqueue_script('setsail-tours-script', plugins_url(SETSAIL_TOURS_REL_PATH . '/assets/js/tours.min.js'),
             $array_deps_js, false, true);
+        wp_enqueue_script( 'des-with-tour', plugins_url( '/post-types/destinations/shortcodes/destination-with-tours/js/des-with-tour.js', __FILE__ ), $array_deps_js, '1.0.0', 'all' );
+
+
     }
 
     add_action('wp_enqueue_scripts', 'setsail_tours_scripts');

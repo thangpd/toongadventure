@@ -1,3 +1,5 @@
+
+
 <div class="qodef-tours-dwt-holder <?php echo esc_attr($holder_classes); ?>">
     <div class="qodef-td-inner qodef-outer-space">
         <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
@@ -26,7 +28,8 @@
                                         </div>
                                     </div>
                                 <?php } ?>
-                                <a class="qodef-tdi-link" href="<?php echo setsail_tours_get_destination_external_link_meta(); ?>"></a>
+                                <a class="qodef-tdi-link"
+                                   href="<?php echo setsail_tours_get_destination_external_link_meta(); ?>"></a>
                             </div>
                         </div>
                         <?php if ( ! empty($tour_items_id)) {
@@ -47,31 +50,46 @@
                                         <?php } ?>
                                         <div class="qodef-tdi-image">
                                             <?php echo get_the_post_thumbnail($tour_id, $thumb_size); ?>
-                                            <a class="qodef-tdi-link" href="<?php echo setsail_tours_get_tour_tour_external_link($tour_id); ?>"></a>
+                                            <a class="qodef-tdi-link"
+                                               href="<?php echo setsail_tours_get_tour_tour_external_link($tour_id); ?>"></a>
                                         </div>
 
-                                        <div class="qodef-tdi-content-holder">
+                                        <div class="qodef-tours-gim-content-holder">
                                             <div class="qodef-tdi-content-holder-outer">
-                                                <div class="qodef-tdi-content-holder-inner">
-                                                    <div class="qodef-tdi-title-holder">
-                                                        <div class="qodef-tdi-title"><?php echo get_the_title($tour_id); ?></div>
-                                                    </div>
+                                                <div class="qodef-gim-title-and-price-holder">
 
-                                                    <div class="qodef-tdi-rating-and-price-holder">
-                                                        <?php if ( ! empty(setsail_core_post_number_of_ratings($tour_id))) { ?>
-                                                            <div class="qodef-tdi-rating">
-                                                                <?php if (setsail_select_core_plugin_installed()) {
-                                                                    echo setsail_core_list_review_details('per-custom-criteria',
-                                                                        array(), 'h5', $tour_id);
-                                                                }
-                                                                ?>
+                                                    <a class="qodef-tours-toong-item-link"
+                                                       href="<?php echo setsail_tours_get_tour_tour_external_link(); ?>">
+                                                        <h4 class="qodef-tour-title">
+                                                            <?php echo get_the_title($tour_id); ?>
+                                                        </h4>
+                                                    </a>
+
+
+                                                    <?php $level_of_difficult = setsail_tours_get_grading_tour();
+                                                    if ( ! empty($level_of_difficult)) {
+                                                        ?>
+                                                        <div class="qodef-tours-list-item-difficult-item">
+                                                            <div class="qodef-tours-tour-difficult-item">
+                                                                <div class="difficult-text">
+                                                                    <?php echo __('Độ Khó', 'setsail-tours'); ?>
+                                                                </div>
+                                                                <div class="myLoading-indicator">
+                                                                    <div class="myLoading-indicator-circle-wrap">
+                                                                        <div class="mask full">
+                                                                            <div class="fill"></div>
+                                                                        </div>
+                                                                        <div class="mask half">
+                                                                            <div class="fill"></div>
+                                                                        </div>
+                                                                        <div class="inside-circle"
+                                                                             data-value="<?php echo $level_of_difficult ?>"></div>
+                                                                    </div>
+                                                                </div>
+
                                                             </div>
-                                                        <?php } ?>
-
-                                                    </div>
-                                                    <div class="qodef-tdi-price-holder">
-                                                        <?php echo setsail_tours_get_tour_price_html($tour_id); ?>
-                                                    </div>
+                                                        </div>
+                                                    <?php } ?>
                                                 </div>
                                             </div>
                                         </div>
@@ -95,3 +113,4 @@
         <?php endif; ?>
     </div>
 </div>
+
