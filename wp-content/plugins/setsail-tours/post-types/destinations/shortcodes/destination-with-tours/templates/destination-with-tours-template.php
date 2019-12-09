@@ -53,7 +53,6 @@
                                             <a class="qodef-tdi-link"
                                                href="<?php echo setsail_tours_get_tour_tour_external_link($tour_id); ?>"></a>
                                         </div>
-
                                         <div class="qodef-tours-gim-content-holder">
                                             <div class="qodef-tdi-content-holder-outer">
                                                 <div class="qodef-gim-title-and-price-holder">

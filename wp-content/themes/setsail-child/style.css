@@ -57,7 +57,7 @@ Color text      #0b403b
 }
 
 .qodef-tours-type-toong-2.qodef-tours-columns-4 .qodef-tours-gim-image img {
-    max-height: 148px;
+    max-height: 144px;
 }
 .qodef-tours-type-toong .qodef-gim-title-and-price-holder .qodef-tours-item-price, .qodef-tours-type-toong .qodef-tours-tour-categories-item a .qodef-tour-cat-item-text {
     color: #0b403b;
@@ -190,6 +190,11 @@ Color text      #0b403b
 
 .qodef-tours-type-toong .qodef-tours-masonry-item {
 
+}
+
+.qodef-tours-gim-image {
+    width: auto;
+    padding: 5px;
 }
 
 .qodef-tours-type-toong .qodef-tours-gim-image {
@@ -488,6 +493,12 @@ h1.qodef-st-title, h2.qodef-st-title {
     padding: 5px;
 }
 
+.qodef-tours-dwt-holder .qodef-td-items.tour .qodef-tdi-image:hover img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
 .qodef-tours-dwt-holder .qodef-td-items.tour .qodef-tdi-image:after {
     content: "";
     top: 0;
@@ -526,6 +537,13 @@ h1.qodef-st-title, h2.qodef-st-title {
     letter-spacing: 1px;
 }
 
+.qodef-tours-type-toong-2 .qodef-tours-gim-image:after {
+    top: 0!important;
+    left: 0!important;
+    width: 99%!important;
+    height: 99%!important;
+}
+
 /*-------------------------*/
 
 @media only screen and (min-width: 1200px) {
@@ -542,6 +560,7 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 
 @media only screen and (min-width: 1400px) {
+    .qodef-tours-type-toong-2.qodef-tours-columns-4 .qodef-tours-gim-image img,
     .qodef-tours-dwt-holder .qodef-td-items:not(.destination) .qodef-tdi-image img {
         max-height: 194px;
     }
