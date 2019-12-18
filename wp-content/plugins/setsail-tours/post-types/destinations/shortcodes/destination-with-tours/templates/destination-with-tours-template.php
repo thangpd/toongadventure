@@ -65,7 +65,7 @@
                                                     </a>
 
 
-                                                    <?php $level_of_difficult = setsail_tours_get_grading_tour();
+                                                    <?php $level_of_difficult = setsail_tours_get_grading_tour($tour_id);
                                                     if ( ! empty($level_of_difficult)) {
                                                         ?>
                                                         <div class="qodef-tours-list-item-difficult-item">
