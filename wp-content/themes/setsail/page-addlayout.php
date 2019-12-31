@@ -13,7 +13,11 @@ if ( ! empty($show_title_meta) && is_singular('page')) {
 setsail_select_get_title();
 get_template_part( 'slider' );
 do_action('setsail_select_action_before_main_content');
+
 ?>
+<style>
+
+</style>
 
     <div class="qodef-container qodef-default-page-template">
         <?php do_action( 'setsail_select_action_after_container_open' ); ?>
@@ -25,7 +29,7 @@ do_action('setsail_select_action_before_main_content');
                     <div <?php echo setsail_select_get_content_sidebar_class(); ?>>
 
                         <div class="vc_row wpb_row vc_row-fluid">
-                            <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid">
+                            <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid" style="position: relative; left: -336.5px; box-sizing: border-box; width: 1903px;">
                                 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12 vc_col-has-fill">
                                     <div class="vc_column-inner vc_custom_15752721750165">
                                         <div class="wpb_wrapper">
