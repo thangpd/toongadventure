@@ -95,7 +95,7 @@ if ( ! function_exists('setsail_tours_scripts')) {
             false, true);
 
 
-        wp_enqueue_script('setsail-tours-script', plugins_url(SETSAIL_TOURS_REL_PATH . '/assets/js/tours.min.js'),
+        wp_enqueue_script('setsail-tours-script', plugins_url(SETSAIL_TOURS_REL_PATH . '/assets/js/tours.js'),
             $array_deps_js, false, true);
         wp_enqueue_script( 'des-with-tour', plugins_url( '/post-types/destinations/shortcodes/destination-with-tours/js/des-with-tour.js', __FILE__ ), $array_deps_js, '1.0.0', 'all' );
 

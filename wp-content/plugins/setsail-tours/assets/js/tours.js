@@ -653,6 +653,8 @@
                         }
 
                         callback.call(this, response);
+                        window.grading_function();
+
                     }
                 });
             };

@@ -73,8 +73,8 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
                                 <?php
                                 ?>
                             </div>
-                            <?php if ($reviews === 'yes') {
-                                $setsail_tours_get_grading_tour = setsail_tours_get_grading_tour();
+                            <?php
+                                $setsail_tours_get_grading_tour = setsail_tours_get_grading_tour(get_the_ID());
                                 if ( ! empty($setsail_tours_get_grading_tour)) :
                                     ?>
                                     <div class="qodef-tours-list-item-duration-grade-item">
@@ -97,7 +97,7 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
                                         </div>
                                     </div>
                                 <?php endif;
-                            } ?></div>
+                           ?></div>
 
                     </div>
 
