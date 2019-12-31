@@ -24,18 +24,26 @@ do_action('setsail_select_action_before_main_content');
                 <div class="qodef-grid-row <?php echo esc_attr( $qodef_holder_classes ); ?>">
                     <div <?php echo setsail_select_get_content_sidebar_class(); ?>>
 
+                        <div class="vc_row wpb_row vc_row-fluid">
+                            <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid">
+                                <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12 vc_col-has-fill">
+                                    <div class="vc_column-inner vc_custom_15752721750165">
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_video_widget wpb_content_element vc_clearfix   vc_custom_1575265746388 vc_video-aspect-ratio-169 vc_video-el-width-80 vc_video-align-left">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_video_wrapper">
+                                                        <iframe title="Tour trekking ven biển | Trekking 8 Nàng Tiên | Tổ Ong Trips | VPBank" width="1100" height="619" src="https://www.youtube.com/embed/Bf2rLqLzMg8?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="introduction wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12">
 
-
-
-
-                        alsdjhfalkjsdhflajsdhflkajsdhflkjh
-
-
-
-
-
-
-
+                                </div>
+                            </div>
+                        </div>
 
                         <?php
                         do_action( 'setsail_select_action_page_after_content' );
