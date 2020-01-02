@@ -120,7 +120,17 @@ div[class*=vc_col-lg-] {
 .vc_custom_1575265746388 {
     margin-left: -8px !important;
 }
-
+.vc_reason-item {
+    background-color: #fff;
+    box-shadow: 0 0 5px #eee;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+.vc_col-inner .vc_col-title {
+    color: #03413b;
+    font-size: 24px;
+    font-weight: bold;
+}
 </style>
 
     <div class="qodef-container qodef-default-page-template">
@@ -148,9 +158,9 @@ div[class*=vc_col-lg-] {
                                     </div>
                                 </div>
                                 <div class="vc_column_container vc_col-sm-12 vc_col-lg-7 vc_col-md-12 vc_col-xs-12">
-                                    <div class="vc_row">
-                                        <div class="vc_col-lg-3">
-                                            <div class="vc_col-inner">
+                                    <div class="vc_row" style="display: flex; flex-wrap: wrap; justify-content: center">
+                                        <div class="vc_col-lg-4">
+                                            <div class="vc_col-inner vc_reason-item">
                                                 <span class="icon icon-pro"></span>
                                                 <div class="vc_col-title">
                                                     Chuyên nghiệp/ Professional
@@ -162,8 +172,8 @@ div[class*=vc_col-lg-] {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="vc_col-lg-3">
-                                            <div class="vc_col-inner">
+                                        <div class="vc_col-lg-4">
+                                            <div class="vc_col-inner vc_reason-item">
                                                 <span class="icon icon-unique"></span>
                                                 <div class="vc_col-title">
                                                     Trải nghiệm độc nhất/ Unique Experience
@@ -176,9 +186,9 @@ div[class*=vc_col-lg-] {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="vc_row">
-                                        <div class="vc_col-lg-3">
-                                            <div class="vc_col-inner">
+                                    <div class="vc_row" style="display: flex; flex-wrap: wrap; justify-content: center">
+                                        <div class="vc_col-lg-4">
+                                            <div class="vc_col-inner vc_reason-item">
                                                 <span class="icon icon-sustain"></span>
                                                 <div class="vc_col-title">
                                                     Bền vững/ Sustainability
@@ -190,8 +200,8 @@ div[class*=vc_col-lg-] {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="vc_col-lg-3">
-                                            <div class="vc_col-inner">
+                                        <div class="vc_col-lg-4">
+                                            <div class="vc_col-inner vc_reason-item">
                                                 <span class="icon icon-community"></span>
                                                 <div class="vc_col-title">
                                                     Cộng đồng/ Community
@@ -203,8 +213,8 @@ div[class*=vc_col-lg-] {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="vc_col-lg-3">
-                                            <div class="vc_col-inner">
+                                        <div class="vc_col-lg-4">
+                                            <div class="vc_col-inner vc_reason-item">
                                                 <span class="icon icon-safe"></span>
                                                 <div class="vc_col-title">
                                                     An toàn/ Safety
