@@ -16,7 +16,14 @@ do_action('setsail_select_action_before_main_content');
 
 ?>
 <style>
-
+.vc_custom_15752721750165 {
+    padding-top: 180px !important;
+    padding-bottom: 100px !important;
+    background-image: url(https://toongadventure.com/wp-content/uploads/2018/09/bg-video-reason.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
 </style>
 
     <div class="qodef-container qodef-default-page-template">
@@ -29,7 +36,7 @@ do_action('setsail_select_action_before_main_content');
                     <div <?php echo setsail_select_get_content_sidebar_class(); ?>>
 
                         <div class="vc_row wpb_row vc_row-fluid">
-                            <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid" >
+                            <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid" style="position: relative; left: -151px; box-sizing: border-box; width: 1332px;">
                                 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12 vc_col-has-fill">
                                     <div class="vc_column-inner vc_custom_15752721750165">
                                         <div class="wpb_wrapper">
@@ -44,7 +51,11 @@ do_action('setsail_select_action_before_main_content');
                                     </div>
                                 </div>
                                 <div class="introduction wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12">
+                                    <div class="vc_column-inner vc_custom_1575272162489">
+                                        <div class="wpb_wrapper">
 
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
