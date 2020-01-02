@@ -15,6 +15,7 @@ get_template_part( 'slider' );
 do_action('setsail_select_action_before_main_content');
 
 ?>
+<script src="https://toongadventure.com/wp-content/cache/autoptimize/js/autoptimize_353f46e79221bb355fc51859650923d7.js"></script>
 <style>
 .vc_custom_15752721750165 {
     padding-top: 180px !important;
