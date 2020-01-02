@@ -24,14 +24,6 @@ do_action('setsail_select_action_before_main_content');
     min-height: 1px;
     box-sizing: border-box;
 }
-.vc_custom_15752721750165 {
-    padding-top: 180px !important;
-    padding-bottom: 100px !important;
-    background-image: url(https://toongadventure.com/wp-content/uploads/2018/09/bg-video-reason.png) !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
 .vc_column_container>.vc_column-inner {
     box-sizing: border-box;
     padding-left: 15px;
@@ -59,6 +51,35 @@ do_action('setsail_select_action_before_main_content');
 .vc_row:after {
     clear: both;
 }
+.wpb_video_widget .wpb_wrapper {
+    position: relative;
+}
+.wpb_video_widget.vc_video-el-width-80 .wpb_wrapper {
+    width: 80%;
+}
+.wpb_video_widget.vc_video-align-left .wpb_wrapper {
+    float: left;
+}
+.wpb_video_widget .wpb_video_wrapper {
+    padding-top: 56.25%;
+    position: relative;
+    width: 100%;
+}
+.wpb_video_widget.vc_video-aspect-ratio-169 .wpb_video_wrapper {
+    padding-top: 56.25%;
+}
+.vc_custom_15752721750165 {
+    padding-top: 180px !important;
+    padding-bottom: 100px !important;
+    background-image: url(https://toongadventure.com/wp-content/uploads/2018/09/bg-video-reason.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.vc_custom_1575265746388 {
+    margin-left: -8px !important;
+}
+
 </style>
 
     <div class="qodef-container qodef-default-page-template">
