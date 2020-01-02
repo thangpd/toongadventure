@@ -21,6 +21,10 @@ div[class*=vc_col-lg-] {
     float: left;
     position: relative;
     min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 .vc_col-lg-4 {
@@ -95,8 +99,9 @@ div[class*=vc_col-lg-] {
     box-sizing: border-box;
 }
 .vc_custom_15752721750165 {
-    padding-top: 180px !important;
-    padding-bottom: 100px !important;
+    padding-top: 200px !important;
+    padding-bottom: 280px !important;
+    padding-right: 0 !important;
     background-image: url(https://toongadventure.com/wp-content/uploads/2018/09/bg-video-reason.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
