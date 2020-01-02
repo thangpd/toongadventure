@@ -27,6 +27,9 @@ div[class*=vc_col-lg-] {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.vc_col-lg-3 {
+    width: 25%;
+}
 .vc_col-lg-4 {
     width: 33.333333%;
 }
@@ -65,6 +68,10 @@ div[class*=vc_col-lg-] {
 }
 .vc_column-inner::after {
     clear: both;
+}
+.vc_row {
+    margin-left: -15px;
+    margin-right: -15px;
 }
 .vc_row:after, .vc_row:before {
     content: " ";
