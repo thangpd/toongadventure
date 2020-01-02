@@ -17,6 +17,13 @@ do_action('setsail_select_action_before_main_content');
 ?>
 <script src="https://toongadventure.com/wp-content/cache/autoptimize/js/autoptimize_353f46e79221bb355fc51859650923d7.js"></script>
 <style>
+.vc_col-lg-6 {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    box-sizing: border-box;
+}
 .vc_custom_15752721750165 {
     padding-top: 180px !important;
     padding-bottom: 100px !important;
@@ -24,6 +31,33 @@ do_action('setsail_select_action_before_main_content');
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+}
+.vc_column_container>.vc_column-inner {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+.vc_column-inner::after, .vc_column-inner::before {
+    content: " ";
+    display: table;
+}
+.vc_clearfix:after, .vc_clearfix:before {
+    content: " ";
+    display: table;
+}
+.vc_clearfix:after {
+    clear: both;
+}
+.vc_column-inner::after {
+    clear: both;
+}
+.vc_row:after, .vc_row:before {
+    content: " ";
+    display: table;
+}
+.vc_row:after {
+    clear: both;
 }
 </style>
 
@@ -37,7 +71,7 @@ do_action('setsail_select_action_before_main_content');
                     <div <?php echo setsail_select_get_content_sidebar_class(); ?>>
 
                         <div class="vc_row wpb_row vc_row-fluid">
-                            <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid" style="position: relative; left: -151px; box-sizing: border-box; width: 1332px;">
+                            <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid" style="position: relative; left: -166px; box-sizing: border-box; width: 1334px;">
                                 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12 vc_col-has-fill">
                                     <div class="vc_column-inner vc_custom_15752721750165">
                                         <div class="wpb_wrapper">
