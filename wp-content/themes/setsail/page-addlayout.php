@@ -17,12 +17,26 @@ do_action('setsail_select_action_before_main_content');
 ?>
 <script src="https://toongadventure.com/wp-content/cache/autoptimize/js/autoptimize_353f46e79221bb355fc51859650923d7.js"></script>
 <style>
-.vc_col-lg-6 {
-    width: 50%;
+div[class*=vc_col-lg-] {
     float: left;
     position: relative;
     min-height: 1px;
     box-sizing: border-box;
+}
+.vc_col-lg-4 {
+    width: 33.333333%;
+}
+.vc_col-lg-5 {
+    width: 41.666667%;
+}
+.vc_col-lg-6 {
+    width: 50%;
+}
+.vc_col-lg-7 {
+    width: 58.333333%;
+}
+.vc_col-lg-8 {
+    width: 66.666667%;
 }
 .vc_column_container>.vc_column-inner {
     box-sizing: border-box;
@@ -58,15 +72,27 @@ do_action('setsail_select_action_before_main_content');
     width: 80%;
 }
 .wpb_video_widget.vc_video-align-left .wpb_wrapper {
-    float: left;
+    float: right;
 }
 .wpb_video_widget .wpb_video_wrapper {
-    padding-top: 56.25%;
+    /*padding-top: 56.25%;*/
     position: relative;
     width: 100%;
 }
 .wpb_video_widget.vc_video-aspect-ratio-169 .wpb_video_wrapper {
-    padding-top: 56.25%;
+    /*padding-top: 56.25%;*/
+}
+.wpb_video_widget .wpb_wrapper iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .vc_custom_15752721750165 {
     padding-top: 180px !important;
@@ -93,7 +119,7 @@ do_action('setsail_select_action_before_main_content');
 
                         <div class="vc_row wpb_row vc_row-fluid">
                             <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid" style="position: relative; left: -166px; box-sizing: border-box; width: 1334px;">
-                                <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12 vc_col-has-fill">
+                                <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-5 vc_col-md-12 vc_col-xs-12 vc_col-has-fill">
                                     <div class="vc_column-inner vc_custom_15752721750165">
                                         <div class="wpb_wrapper">
                                             <div class="wpb_video_widget wpb_content_element vc_clearfix   vc_custom_1575265746388 vc_video-aspect-ratio-169 vc_video-el-width-80 vc_video-align-left">
@@ -106,7 +132,7 @@ do_action('setsail_select_action_before_main_content');
                                         </div>
                                     </div>
                                 </div>
-                                <div class="introduction wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12">
+                                <div class="introduction wpb_column vc_column_container vc_col-sm-12 vc_col-lg-7 vc_col-md-12 vc_col-xs-12">
                                     <div class="vc_column-inner vc_custom_1575272162489">
                                         <div class="wpb_wrapper">
 
