@@ -43,8 +43,8 @@ div[class*=vc_col-lg-] {
     width: 66.666667%;
 }
 .vc_column_container {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 .vc_column_container>.vc_column-inner {
     box-sizing: border-box;
@@ -111,7 +111,7 @@ div[class*=vc_col-lg-] {
     background-size: cover !important;
 }
 .vc_custom_1575265746388 {
-    margin-right: -8px !important;
+    margin-left: -8px !important;
 }
 
 </style>
@@ -140,10 +140,74 @@ div[class*=vc_col-lg-] {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="introduction wpb_column vc_column_container vc_col-sm-12 vc_col-lg-7 vc_col-md-12 vc_col-xs-12">
-                                    <div class="vc_column-inner vc_custom_1575272162489">
-                                        <div class="wpb_wrapper">
-
+                                <div class="vc_column_container vc_col-sm-12 vc_col-lg-7 vc_col-md-12 vc_col-xs-12">
+                                    <div class="vc_row">
+                                        <div class="vc_col-lg-3">
+                                            <div class="vc_col-inner">
+                                                <span class="icon icon-pro"></span>
+                                                <div class="vc_col-title">
+                                                    Chuyên nghiệp/ Professional
+                                                </div>
+                                                <div class="vc_col-content">
+                                                    - Đào tạo sơ cấp cứu sinh tồn tại bởi Survival Skill Vietnam.
+                                                    - Đào tạo kỹ năng thể thao mạo hiểm bởi chuyên gia leo núi Phan Thanh Nhiên.
+                                                    - Có kinh nghiệm 5 năm về kỹ năng sinh tồn.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vc_col-lg-3">
+                                            <div class="vc_col-inner">
+                                                <span class="icon icon-unique"></span>
+                                                <div class="vc_col-title">
+                                                    Trải nghiệm độc nhất/ Unique Experience
+                                                </div>
+                                                <div class="vc_col-content">
+                                                    - Đào tạo sơ cấp cứu sinh tồn tại bởi Survival Skill Vietnam.
+                                                    - Đào tạo kỹ năng thể thao mạo hiểm bởi chuyên gia leo núi Phan Thanh Nhiên.
+                                                    - Có kinh nghiệm 5 năm về kỹ năng sinh tồn.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vc_row">
+                                        <div class="vc_col-lg-3">
+                                            <div class="vc_col-inner">
+                                                <span class="icon icon-sustain"></span>
+                                                <div class="vc_col-title">
+                                                    Bền vững/ Sustainability
+                                                </div>
+                                                <div class="vc_col-content">
+                                                    - Đào tạo sơ cấp cứu sinh tồn tại bởi Survival Skill Vietnam.
+                                                    - Đào tạo kỹ năng thể thao mạo hiểm bởi chuyên gia leo núi Phan Thanh Nhiên.
+                                                    - Có kinh nghiệm 5 năm về kỹ năng sinh tồn.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vc_col-lg-3">
+                                            <div class="vc_col-inner">
+                                                <span class="icon icon-community"></span>
+                                                <div class="vc_col-title">
+                                                    Cộng đồng/ Community
+                                                </div>
+                                                <div class="vc_col-content">
+                                                    - Đào tạo sơ cấp cứu sinh tồn tại bởi Survival Skill Vietnam.
+                                                    - Đào tạo kỹ năng thể thao mạo hiểm bởi chuyên gia leo núi Phan Thanh Nhiên.
+                                                    - Có kinh nghiệm 5 năm về kỹ năng sinh tồn.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vc_col-lg-3">
+                                            <div class="vc_col-inner">
+                                                <span class="icon icon-safe"></span>
+                                                <div class="vc_col-title">
+                                                    An toàn/ Safety
+                                                </div>
+                                                <div class="vc_col-content">
+                                                    - Đào tạo sơ cấp cứu sinh tồn tại bởi Survival Skill Vietnam.
+                                                    - Đào tạo kỹ năng thể thao mạo hiểm bởi chuyên gia leo núi Phan Thanh Nhiên.
+                                                    - Có kinh nghiệm 5 năm về kỹ năng sinh tồn.
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
