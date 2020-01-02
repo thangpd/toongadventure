@@ -124,12 +124,36 @@ div[class*=vc_col-lg-] {
     background-color: #fff;
     box-shadow: 0 0 5px #eee;
     padding: 40px 20px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 .vc_col-inner .vc_col-title {
     color: #03413b;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
+    margin-bottom: 5px;
+}
+span.icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 20px;
+    top: -35px;
+    background-color: #faa342;
+}
+span.icon.icon-pro {
+    background: url(https://toongadventure.com/wp-content/uploads/2018/09/icon-pro.jpg) center no-repeat;
+}
+span.icon.icon-unique {
+    background: url(https://toongadventure.com/wp-content/uploads/2018/09/icon-unique.jpg) center no-repeat;
+}
+span.icon.icon-sustain {
+    background: url(https://toongadventure.com/wp-content/uploads/2018/09/icon-sustain.jpg) center no-repeat;
+}
+span.icon.icon-community {
+    background: url(https://toongadventure.com/wp-content/uploads/2018/09/icon-community.jpg) center no-repeat;
+}
+span.icon.icon-safe {
+    background: url(https://toongadventure.com/wp-content/uploads/2018/09/icon-safe.jpg) center no-repeat;
 }
 </style>
 
