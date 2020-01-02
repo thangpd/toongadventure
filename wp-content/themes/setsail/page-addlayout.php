@@ -122,9 +122,10 @@ div[class*=vc_col-lg-] {
 }
 .vc_reason-item {
     background-color: #fff;
-    box-shadow: 0 0 5px #eee;
+    box-shadow: 0 0 15px #dedede;
     padding: 40px 20px;
     margin-bottom: 60px;
+    position: relative;
 }
 .vc_col-inner .vc_col-title {
     color: #03413b;
@@ -136,7 +137,7 @@ span.icon {
     position: absolute;
     width: 70px;
     height: 70px;
-    right: 20px;
+    right: 15px;
     top: -35px;
     background-color: #faa342;
 }
