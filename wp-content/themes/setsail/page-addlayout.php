@@ -17,7 +17,7 @@ do_action('setsail_select_action_before_main_content');
 ?>
 <script src="https://toongadventure.com/wp-content/cache/autoptimize/js/autoptimize_353f46e79221bb355fc51859650923d7.js"></script>
 <style>
-div[class*=vc_col-lg-] {
+.ly-do div[class*=vc_col-lg-] {
     float: left;
     position: relative;
     min-height: 1px;
@@ -27,77 +27,77 @@ div[class*=vc_col-lg-] {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.vc_col-lg-3 {
+.ly-do .vc_col-lg-3 {
     width: 25%;
 }
-.vc_col-lg-4 {
+.ly-do .vc_col-lg-4 {
     width: 33.333333%;
 }
-.vc_col-lg-5 {
+.ly-do .vc_col-lg-5 {
     width: 41.666667%;
 }
-.vc_col-lg-6 {
+.ly-do .vc_col-lg-6 {
     width: 50%;
 }
-.vc_col-lg-7 {
+.ly-do .vc_col-lg-7 {
     width: 58.333333%;
 }
-.vc_col-lg-8 {
+.ly-do .vc_col-lg-8 {
     width: 66.666667%;
 }
-.vc_column_container {
+.ly-do .vc_column_container {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
-.vc_column_container>.vc_column-inner {
+.ly-do .vc_column_container>.vc_column-inner {
     box-sizing: border-box;
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
 }
-.vc_column-inner::after, .vc_column-inner::before {
+.ly-do .vc_column-inner::after, .vc_column-inner::before {
     content: " ";
     display: table;
 }
-.vc_clearfix:after, .vc_clearfix:before {
+.ly-do .vc_clearfix:after, .vc_clearfix:before {
     content: " ";
     display: table;
 }
-.vc_clearfix:after {
+.ly-do .vc_clearfix:after {
     clear: both;
 }
-.vc_column-inner::after {
+.ly-do .vc_column-inner::after {
     clear: both;
 }
-.vc_row {
+.ly-do .vc_row {
     margin-left: -15px;
     margin-right: -15px;
 }
-.vc_row:after, .vc_row:before {
+.ly-do .vc_row:after, .vc_row:before {
     content: " ";
     display: table;
 }
-.vc_row:after {
+.ly-do .vc_row:after {
     clear: both;
 }
-.wpb_video_widget .wpb_wrapper {
+.ly-do .wpb_video_widget .wpb_wrapper {
     position: relative;
 }
-.wpb_video_widget.vc_video-el-width-80 .wpb_wrapper {
+.ly-do .wpb_video_widget.vc_video-el-width-80 .wpb_wrapper {
     width: 80%;
 }
-.wpb_video_widget.vc_video-align-left .wpb_wrapper {
+.ly-do .wpb_video_widget.vc_video-align-left .wpb_wrapper {
     float: right;
 }
-.wpb_video_widget .wpb_video_wrapper {
+.ly-do .wpb_video_widget .wpb_video_wrapper {
     /*padding-top: 56.25%;*/
     position: relative;
     width: 100%;
 }
-.wpb_video_widget.vc_video-aspect-ratio-169 .wpb_video_wrapper {
+.ly-do .wpb_video_widget.vc_video-aspect-ratio-169 .wpb_video_wrapper {
     /*padding-top: 56.25%;*/
 }
-.wpb_video_widget .wpb_wrapper iframe {
+.ly-do .wpb_video_widget .wpb_wrapper iframe {
     width: 100%;
     height: 100%;
     display: block;
@@ -109,7 +109,7 @@ div[class*=vc_col-lg-] {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.vc_custom_15752721750165 {
+.ly-do .vc_custom_15752721750165 {
     padding-top: 200px !important;
     padding-bottom: 280px !important;
     background-image: url(https://toongadventure.com/wp-content/uploads/2018/09/bg-video-reason.png) !important;
@@ -117,23 +117,23 @@ div[class*=vc_col-lg-] {
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
-.vc_custom_1575265746388 {
+.ly-do .vc_custom_1575265746388 {
     margin-left: -8px !important;
 }
-.vc_reason-item {
+.ly-do .vc_reason-item {
     background-color: #fff;
     box-shadow: 0 0 15px #dedede;
     padding: 40px 20px;
     margin-bottom: 60px;
     position: relative;
 }
-.vc_col-inner .vc_col-title {
+.ly-do .vc_col-inner .vc_col-title {
     color: #03413b;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
 }
-span.icon {
+.ly-do span.icon {
     position: absolute;
     width: 70px;
     height: 70px;
@@ -141,19 +141,19 @@ span.icon {
     top: -35px;
     background-color: #faa342;
 }
-span.icon.icon-pro {
+.ly-do span.icon.icon-pro {
     background: url(https://toongadventure.com/wp-content/uploads/2018/09/icon-pro.jpg) center no-repeat;
 }
-span.icon.icon-unique {
+.ly-do span.icon.icon-unique {
     background: url(https://toongadventure.com/wp-content/uploads/2018/09/icon-unique.jpg) center no-repeat;
 }
-span.icon.icon-sustain {
+.ly-do span.icon.icon-sustain {
     background: url(https://toongadventure.com/wp-content/uploads/2018/09/icon-sustain.jpg) center no-repeat;
 }
-span.icon.icon-community {
+.ly-do span.icon.icon-community {
     background: url(https://toongadventure.com/wp-content/uploads/2018/09/icon-community.jpg) center no-repeat;
 }
-span.icon.icon-safe {
+.ly-do span.icon.icon-safe {
     background: url(https://toongadventure.com/wp-content/uploads/2018/09/icon-safe.jpg) center no-repeat;
 }
 </style>

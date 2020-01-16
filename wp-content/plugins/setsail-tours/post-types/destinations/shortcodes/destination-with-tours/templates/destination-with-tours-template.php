@@ -57,7 +57,7 @@
                                             <div class="qodef-tdi-content-holder-outer">
                                                 <div class="qodef-gim-title-and-price-holder">
 
-                                                    <a class="qodef-tours-toong-item-link"
+                                                    <a class="qodef-tours-toong-item-link toong-template"
                                                        href="<?php echo setsail_tours_get_tour_tour_external_link(); ?>">
                                                         <h4 class="qodef-tour-title">
                                                             <?php echo get_the_title($tour_id); ?>
