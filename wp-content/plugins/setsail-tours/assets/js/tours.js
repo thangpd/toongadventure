@@ -673,7 +673,7 @@
                         var originalText = loadMoreButton.text();
                         
                         loadMoreButton.text(loadingLabel);
-                        // resetFilter(listObject);
+                        resetFilter(listObject);
 
                         if(!loadingInProgress) {
                             loadingInProgress = true;
