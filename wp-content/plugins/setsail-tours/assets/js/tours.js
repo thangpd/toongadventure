@@ -673,7 +673,7 @@
                         var originalText = loadMoreButton.text();
                         
                         loadMoreButton.text(loadingLabel);
-                        resetFilter(listObject);
+                        // resetFilter(listObject);
 
                         if(!loadingInProgress) {
                             loadingInProgress = true;
@@ -691,6 +691,7 @@
                                         itemsHolder.isotope('appended', responseHTML).isotope('reloadItems');
                                         qodef.modules.tours.qodefToursGalleryAnimation();
                                     });
+                                    $('.qodef-tour-list-current-filter').trigger('click');
                                 } else {
                                     loadMoreButton.remove();
 
