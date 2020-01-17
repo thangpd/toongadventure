@@ -691,7 +691,6 @@
                                         itemsHolder.isotope('appended', responseHTML).isotope('reloadItems');
                                         qodef.modules.tours.qodefToursGalleryAnimation();
                                     });
-                                    $('.qodef-tour-list-current-filter').trigger('click');
                                 } else {
                                     loadMoreButton.remove();
 
