@@ -567,7 +567,7 @@
 
         var initList = function (listHolder) {
             listHolder.animate({opacity: 1});
-
+            console.log('ok init');
             resizeTourItems(listHolder);
 
             listObject = listHolder.isotope({
@@ -629,7 +629,7 @@
             var filters = listFeed.find('.qodef-tour-list-filter-item');
 
             var temp_curent = listFeed.find('.qodef-tour-list-current-filter');
-
+            temp_curent.addClass('myauris_temp_class');
             filters.removeClass('qodef-tour-list-current-filter');
 
             filters.eq(0).addClass('qodef-tour-list-current-filter');
@@ -637,7 +637,6 @@
             listFeed.find('.qodef-tours-list-holder-inner').isotope({
                 filter: '*'
             });
-            filter_tour(temp_curent, listFeed);
         };
 
         var initPagination = function (listObject) {
@@ -685,14 +684,13 @@
                         var originalText = loadMoreButton.text();
 
                         loadMoreButton.text(loadingLabel);
-                        console.log(listObject.find('.qodef-tour-list-filter-item.qodef-tour-list-current-filter'));
+                        listObject.addClass("loading");
                         resetFilter(listObject);
 
                         if (!loadingInProgress) {
                             loadingInProgress = true;
 
                             fetchData(function (response) {
-                                console.log(response.html);
                                 if (response.havePosts === true) {
                                     loadMoreButton.text(originalText);
 
@@ -703,7 +701,10 @@
                                     itemsHolder.waitForImages(function () {
                                         resizeTourItems(itemsHolder);
                                         itemsHolder.isotope('appended', responseHTML).isotope('reloadItems');
-                                        // qodef.modules.tours.qodefToursGalleryAnimation();
+                                        qodef.modules.tours.qodefToursGalleryAnimation();
+                                        filter_tour(listObject.find('.myauris_temp_class'), listObject);
+                                        listObject.removeClass("loading");
+
                                     });
                                 } else {
                                     loadMoreButton.remove();
