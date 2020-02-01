@@ -2,7 +2,6 @@ jQuery(document).ready(function ($) {
 
     window.grading_function = function () {
         let inside = $(document).find('.inside-circle');
-        console.log(inside);
         if (inside) {
             $.each(inside, function (index, value) {
                 let grading = $(this).data('value');
@@ -17,7 +16,6 @@ jQuery(document).ready(function ($) {
                 rotate(parent.find('.fill'), percent);
             })
         }
-        console.log('inside');
     }
     window.grading_function();
 
