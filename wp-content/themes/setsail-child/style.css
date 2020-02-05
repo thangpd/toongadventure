@@ -351,11 +351,15 @@ Color text      #0b403b
     z-index: 1;
 }
 
-.qodef-main-menu .menu-item-language,.qodef-main-menu .lang-item.menu-item  {
+.qodef-main-menu .menu-item-language, .qodef-main-menu .lang-item.menu-item {
     position: absolute;
     top: 0;
     left: 100%;
     white-space: nowrap;
+}
+
+.qodef-mobile-header .qodef-mobile-logo-wrapper a {
+    height: 51px !important;
 }
 
 .qodef-main-menu .menu-item-language:hover ul.sub-menu {
