@@ -65,9 +65,15 @@ add_action('wp_enqueue_scripts', 'my_styles_method');
 
 //do_action('slz_add_inline_style', $custom_css);
 
-
-
-
+if (!function_exists('tech365_filter_homepage_name')) {
+    function tech365_filter_homepage_name()
+    {
+        if (is_front_page()) {
+            return get_bloginfo('name', 'display');
+        }
+    }
+    add_filter('pre_get_document_title', 'tech365_filter_homepage_name', 20);
+}
 
 
 

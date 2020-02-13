@@ -9,3 +9,4 @@ wp-content/themes/setsail/assets/css/style_dynamic.css
 wp-content/themes/setsail/assets/css/style_dynamic_responsive.css
 
 \.htaccess
+wp-content/cache/autoptimize/css/*
