@@ -579,6 +579,59 @@ h1.qodef-st-title, h2.qodef-st-title {
 .qodef-tours-list-holder.loading .modal_loading {
     display: block;
 }
+/*contact form lien he toong*/
+body{
+    background-color:#595959;
+}
+.cf-lien-he{
+
+}
+.cf-lien-he li label{
+    display:none !important;
+}
+.cf-lien-he .btn-submit-cf{
+    text-align: center;
+
+}
+
+.cf-lien-he .btn-submit-cf input{
+    background-color:#DE7001;
+    font-size:15px;
+    width:auto;
+    border-radius:10px;
+    padding:7px 15px;
+
+}
+.cf-lien-he ol{
+    list-style: none;
+}
+.cf-lien-he input::placeholder{
+    color:white !important;
+    border: 1px solid white;
+    padding:10px;
+    border-radius:10px;
+}
+.cf-lien-he input.wpcf7-date::placeholder{
+    padding:10px;
+    border: 1px solid white;
+    border-radius:10px;
+
+}
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.cf-lien-he input[type="date"]{
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    margin:10px 16px;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 100%;
+}
 
 
 @media only screen and (min-width: 1200px) {
