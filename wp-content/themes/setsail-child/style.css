@@ -580,11 +580,8 @@ h1.qodef-st-title, h2.qodef-st-title {
     display: block;
 }
 /*contact form lien he toong*/
-body{
-    background-color:#595959;
-}
-.cf-lien-he{
-
+.cf-lien-he .wpcf7-form-control.wpcf7-text,.wpcf7-form-control.wpcf7-number,.wpcf7-form-control.wpcf7-date{
+    background-color:transparent;
 }
 .cf-lien-he li label{
     display:none !important;
@@ -625,12 +622,12 @@ body{
 }
 
 .cf-lien-he input[type="date"]{
-    border: 1px solid #c4c4c4;
+    border: 1px solid white;
     border-radius: 5px;
-    margin:10px 16px;
-    padding: 3px 5px;
+
+    padding: 5px 5px;
     box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
-    width: 100%;
+    width: 640px;
 }
 
 
