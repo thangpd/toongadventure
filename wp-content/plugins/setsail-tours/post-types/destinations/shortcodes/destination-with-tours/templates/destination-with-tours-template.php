@@ -1,9 +1,13 @@
-
+<?php
+if ($link_to_page != '#') {
+    $link_to_page = vc_build_link($link_to_page)['url'];
+}
+?>
 
 <div class="qodef-tours-dwt-holder <?php echo esc_attr($holder_classes); ?>">
     <div class="qodef-td-inner qodef-outer-space">
         <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
-            $destionation_id              = get_the_ID();
+            $destionation_id = get_the_ID();
             $destination_item_is_featured = get_post_meta($destionation_id, 'qodef_destination_item_is_featured_meta',
                 true);
             ?>
@@ -29,10 +33,10 @@
                                     </div>
                                 <?php } ?>
                                 <a class="qodef-tdi-link"
-                                   href="<?php echo setsail_tours_get_destination_external_link_meta(); ?>"></a>
+                                   href="<?php echo $link_to_page; ?>"></a>
                             </div>
                         </div>
-                        <?php if ( ! empty($tour_items_id)) {
+                        <?php if (!empty($tour_items_id)) {
 
                             $i = 1;
                             foreach ($tour_items_id as $tour_id => $tour_title) {
@@ -57,8 +61,8 @@
                                             <div class="qodef-tdi-content-holder-outer">
                                                 <div class="qodef-gim-title-and-price-holder">
 
-                                                    <a class="qodef-tours-toong-item-link"
-                                                       href="<?php echo setsail_tours_get_tour_tour_external_link(); ?>">
+                                                    <a class="qodef-tours-toong-item-link toong-template"
+                                                       href="<?php echo setsail_tours_get_tour_tour_external_link($tour_id); ?>">
                                                         <h4 class="qodef-tour-title">
                                                             <?php echo get_the_title($tour_id); ?>
                                                         </h4>
@@ -66,7 +70,7 @@
 
 
                                                     <?php $level_of_difficult = setsail_tours_get_grading_tour($tour_id);
-                                                    if ( ! empty($level_of_difficult)) {
+                                                    if (!empty($level_of_difficult)) {
                                                         ?>
                                                         <div class="qodef-tours-list-item-difficult-item">
                                                             <div class="qodef-tours-tour-difficult-item">

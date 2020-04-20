@@ -2,7 +2,7 @@
 
 /*** Child Theme Function  ***/
 
-if ( ! function_exists('setsail_select_child_theme_enqueue_scripts')) {
+if (!function_exists('setsail_select_child_theme_enqueue_scripts')) {
     function setsail_select_child_theme_enqueue_scripts()
     {
         $parent_style = 'setsail-select-default-style';
@@ -16,8 +16,8 @@ if ( ! function_exists('setsail_select_child_theme_enqueue_scripts')) {
 
 function my_styles_method()
 {
-    $background_image     = setsail_select_options()->getOptionValue('footer_background_container');
-    $image_pattern_toong  = get_stylesheet_directory_uri() . '/assets/image/toong_pattern.png';
+    $background_image = setsail_select_options()->getOptionValue('footer_background_container');
+    $image_pattern_toong = get_stylesheet_directory_uri() . '/assets/image/toong_pattern.png';
     $image_pattern_toong2 = get_stylesheet_directory_uri() . '/assets/image/pattern.png';
 //    $image_toong          = get_stylesheet_directory_uri() . '/assets/image/background.png';
     $image_toong = setsail_select_options()->getOptionValue('tour_item_area_background_image');
@@ -65,7 +65,15 @@ add_action('wp_enqueue_scripts', 'my_styles_method');
 
 //do_action('slz_add_inline_style', $custom_css);
 
-
+if (!function_exists('tech365_filter_homepage_name')) {
+    function tech365_filter_homepage_name()
+    {
+        if (is_front_page()) {
+            return get_bloginfo('name', 'display');
+        }
+    }
+    add_filter('pre_get_document_title', 'tech365_filter_homepage_name', 20);
+}
 
 
 

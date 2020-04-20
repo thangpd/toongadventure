@@ -1,4 +1,5 @@
 <div <?php setsail_tours_class_attribute($list_classes); ?>>
+    <div class="modal_loading"><!-- Place at bottom of page --></div>
     <?php if ($query->have_posts()) : ?>
         <?php if ($display_load_more_data) : ?>
             <div class="qodef-tours-list-pagination-data">
@@ -42,6 +43,7 @@
         <?php endif; ?>
 
         <div class="qodef-tours-list-holder-inner qodef-tours-row-inner-holder qodef-outer-space">
+
             <div class="qodef-tours-list-grid-sizer"></div>
             <?php $caller->getToursQueryTemplate($params); ?>
         </div>

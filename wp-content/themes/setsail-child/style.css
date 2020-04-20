@@ -59,6 +59,7 @@ Color text      #0b403b
 .qodef-tours-type-toong-2.qodef-tours-columns-4 .qodef-tours-gim-image img {
     max-height: 144px;
 }
+
 .qodef-tours-type-toong .qodef-gim-title-and-price-holder .qodef-tours-item-price, .qodef-tours-type-toong .qodef-tours-tour-categories-item a .qodef-tour-cat-item-text {
     color: #0b403b;
 }
@@ -138,7 +139,7 @@ Color text      #0b403b
     letter-spacing: 3px;
 }
 
-.qodef-ts-list-body .duration-item, .qodef-ts-list-body .qodef-item-reviews-average-rating, .qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item,.qodef-td-items.tour .qodef-tours-list-item-difficult-item {
+.qodef-ts-list-body .duration-item, .qodef-ts-list-body .qodef-item-reviews-average-rating, .qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item, .qodef-td-items.tour .qodef-tours-list-item-difficult-item {
     font-size: 20px;
     color: #0b4041;
     font-family: HelveticaNeue-CondensedBlack, sans-serif;
@@ -242,11 +243,11 @@ Color text      #0b403b
 
 /*end shortcode tourdes*/
 
-.qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder .qodef-tours-list-item-difficult-item,.qodef-td-items.tour .qodef-tours-list-item-difficult-item {
+.qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder .qodef-tours-list-item-difficult-item, .qodef-td-items.tour .qodef-tours-list-item-difficult-item {
     display: inline-block;
     float: right;
     width: 65px;
-    padding-top:10px;
+    padding-top: 10px;
 }
 
 
@@ -255,13 +256,13 @@ Color text      #0b403b
 
 }
 
-.qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link, .qodef-td-items.tour .qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link{
+.qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link, .qodef-td-items.tour .qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link {
     display: inline-block;
 
     max-width: calc(100% - 65px);
 }
 
-.qodef-tours-type-toong-2 .qodef-tours-tour-difficult-item,.qodef-td-items.tour .qodef-tours-tour-difficult-item{
+.qodef-tours-type-toong-2 .qodef-tours-tour-difficult-item, .qodef-td-items.tour .qodef-tours-tour-difficult-item {
     display: inline-block;
 }
 
@@ -350,11 +351,15 @@ Color text      #0b403b
     z-index: 1;
 }
 
-.qodef-main-menu .menu-item-language {
+.qodef-main-menu .menu-item-language, .qodef-main-menu .lang-item.menu-item {
     position: absolute;
     top: 0;
     left: 100%;
     white-space: nowrap;
+}
+
+.qodef-mobile-header .qodef-mobile-logo-wrapper a {
+    height: 51px !important;
 }
 
 .qodef-main-menu .menu-item-language:hover ul.sub-menu {
@@ -380,7 +385,7 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 
 .qodef-vertical-align-containers.header-rightleft .qodef-logo-wrapper a {
-    max-height: 60px;
+    max-height: 51px !important;
 }
 
 .f-36 .qodef-st-title {
@@ -397,12 +402,12 @@ h1.qodef-st-title, h2.qodef-st-title {
     text-align: right;
 }
 
-.qodef-tours-type-toong-2 .qodef-tour-title,.qodef-td-items.tour .qodef-tour-title {
+.qodef-tours-type-toong-2 .qodef-tour-title, .qodef-td-items.tour .qodef-tour-title {
     padding: 10px
 }
 
 .qodef-footer-column-2.widget_media_image a:first-child {
-    max-width: 86%;
+    max-width: 51%;
 }
 
 .qodef-footer-column-3.widget_custom_html h5 {
@@ -478,9 +483,9 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 
 .qodef-tours-dwt-holder .qodef-td-items:not(.destination) {
-    -webkit-box-shadow: 0 0 38px rgba(0,0,0,.3), 0 0 12px rgba(0,0,0,.22);
-    -moz-box-shadow: 0 0 38px rgba(0,0,0,.3), 0 0 12px rgba(0,0,0,.22);
-    box-shadow: 0 0 38px rgba(0,0,0,.3), 0 0 38px rgba(0,0,0,.22);
+    -webkit-box-shadow: 0 0 38px rgba(0, 0, 0, .3), 0 0 12px rgba(0, 0, 0, .22);
+    -moz-box-shadow: 0 0 38px rgba(0, 0, 0, .3), 0 0 12px rgba(0, 0, 0, .22);
+    box-shadow: 0 0 38px rgba(0, 0, 0, .3), 0 0 38px rgba(0, 0, 0, .22);
 }
 
 .qodef-tours-dwt-holder .qodef-td-items .qodef-tdi-content-holder {
@@ -538,13 +543,93 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 
 .qodef-tours-type-toong-2 .qodef-tours-gim-image:after {
-    top: 0!important;
-    left: 0!important;
-    width: 99%!important;
-    height: 99%!important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 99% !important;
+    height: 99% !important;
 }
 
 /*-------------------------*/
+
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal_loading {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 1) url('https://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+.qodef-tours-list-holder.loading .modal_loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+.qodef-tours-list-holder.loading .modal_loading {
+    display: block;
+}
+
+/*contact form lien he toong*/
+.cf-lien-he .wpcf7-form-control.wpcf7-text, .wpcf7-form-control.wpcf7-number, .wpcf7-form-control.wpcf7-date {
+    background-color: transparent;
+}
+
+.cf-lien-he li label {
+    display: none !important;
+}
+
+.cf-lien-he .btn-submit-cf {
+    text-align: center;
+
+}
+
+.cf-lien-he .btn-submit-cf input {
+    background-color: #DE7001 !important;
+    font-size: 15px;
+    width: auto;
+    border-radius: 10px;
+    padding: 7px 15px;
+
+}
+
+.cf-lien-he ol {
+    list-style: none;
+}
+.cf-lien-he input{
+    color: white !important;
+    border: 1px solid white !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.cf-lien-he input[type="date"] {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px 5px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/*-------------------------- contacform - end -------------------------*/
 
 @media only screen and (min-width: 1200px) {
     .qodef-no-space .qodef-outer-space {

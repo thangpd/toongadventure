@@ -25,7 +25,7 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
                 <?php echo setsail_select_icon_collections()->renderIcon('icon_star', 'font_elegant'); ?>
             </div>
         <?php } ?>
-        <a class="qodef-tours-toong-item-link" href="<?php echo setsail_tours_get_tour_tour_external_link(); ?>">
+        <a class="qodef-tours-toong-item-link toong2-link" href="<?php echo setsail_tours_get_tour_tour_external_link(); ?>">
             <div class="qodef-tours-gim-image">
                 <?php echo setsail_tours_get_tour_image_html($image_dimension, true); ?>
             </div>
@@ -36,7 +36,7 @@ $item_is_featured = get_post_meta(get_the_ID(), 'qodef_tour_item_is_featured_met
 
                 <div class="qodef-tours-gim-content-inner">
                     <div class="qodef-gim-title-and-price-holder">
-                        <a class="qodef-tours-toong-item-link" href="<?php echo setsail_tours_get_tour_tour_external_link(); ?>">
+                        <a class="qodef-tours-toong-item-link toong2-link" href="<?php echo setsail_tours_get_tour_tour_external_link(); ?>">
                             <<?php echo esc_attr($title_tag); ?> class="qodef-tour-title">
                             <?php the_title(); ?>
                         </<?php echo esc_attr($title_tag); ?>>

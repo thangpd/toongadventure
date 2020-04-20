@@ -396,7 +396,8 @@ if ( ! function_exists( 'setsail_core_set_open_graph_meta' ) ) {
 			<meta property="og:title" content="<?php echo esc_html( $title ); ?>"/>
 			<meta property="og:description" content="<?php echo esc_html( $description ); ?>"/>
 			<meta property="og:image" content="<?php echo esc_url( $image ); ?>"/>
-		
+			<meta property="og:image:secure_url" content="<?php echo esc_url( $image ); ?>"/>
+
 		<?php }
 	}
 	
