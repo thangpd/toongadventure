@@ -1,5 +1,4 @@
 <?php
 
-include_once SETSAIL_CORE_SHORTCODES_PATH . '/accordions/functions.php';
-include_once SETSAIL_CORE_SHORTCODES_PATH . '/accordions/accordion.php';
-include_once SETSAIL_CORE_SHORTCODES_PATH . '/accordions/accordion-tab.php';
+include_once SETSAIL_CORE_SHORTCODES_PATH . '/hivegallery/functions.php';
+include_once SETSAIL_CORE_SHORTCODES_PATH . '/hivegallery/hivegallery.php';

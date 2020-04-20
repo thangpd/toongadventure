@@ -1,13 +1,13 @@
 <?php
-namespace SetSailCore\CPT\Shortcodes\Hivegallery;
+namespace SetSailCore\CPT\Shortcodes\Slicksyncing;
 
 use SetSailCore\Lib;
 
-class Hivegallery implements Lib\ShortcodeInterface {
+class Slicksyncing implements Lib\ShortcodeInterface {
 	private $base;
 	
 	function __construct() {
-		$this->base = 'qodef_hivegallery';
+		$this->base = 'qodef_slicksyncing';
 		add_action( 'vc_before_init', array( $this, 'vcMap' ) );
 	}
 	
@@ -19,11 +19,11 @@ class Hivegallery implements Lib\ShortcodeInterface {
 		if ( function_exists( 'vc_map' ) ) {
 			vc_map(
 				array(
-					'name'                    => esc_html__( 'Hivegallery', 'setsail-core' ),
+					'name'                    => esc_html__( 'Slicksyncing', 'setsail-core' ),
 					'base'                    => $this->base,
 					'content_element'         => true,
 					'category'                => esc_html__( 'by SETSAIL', 'setsail-core' ),
-					'icon'                    => 'icon-wpb-hivegallery extended-custom-icon',
+					'icon'                    => 'icon-wpb-slicksyncing extended-custom-icon',
 					'show_settings_on_create' => true,
 					'js_view'                 => 'VcColumnView',
 					'params'                  => array(
@@ -38,7 +38,7 @@ class Hivegallery implements Lib\ShortcodeInterface {
 							'param_name' => 'style',
 							'heading'    => esc_html__( 'Style', 'setsail-core' ),
 							'value'      => array(
-								esc_html__( 'Hivegallery', 'setsail-core' ) => 'hivegallery',
+								esc_html__( 'Slicksyncing', 'setsail-core' ) => 'slicksyncing',
 								esc_html__( 'Toggle', 'setsail-core' )    => 'toggle'
 							)
 						),
@@ -71,7 +71,7 @@ class Hivegallery implements Lib\ShortcodeInterface {
 		$default_atts = array(
 			'custom_class'    => '',
 			'title'           => '',
-			'style'           => 'hivegallery',
+			'style'           => 'slicksyncing',
 			'layout'          => 'boxed',
 			'background_skin' => ''
 		);
@@ -80,7 +80,7 @@ class Hivegallery implements Lib\ShortcodeInterface {
 		$params['holder_classes'] = $this->getHolderClasses( $params );
 		$params['content']        = $content;
 		
-		$output = setsail_core_get_shortcode_module_template_part( 'templates/hivegallery-holder-template', 'hivegallery', '', $params );
+		$output = setsail_core_get_shortcode_module_template_part( 'templates/slicksyncing-holder-template', 'slicksyncing', '', $params );
 		
 		return $output;
 	}
@@ -89,7 +89,7 @@ class Hivegallery implements Lib\ShortcodeInterface {
 		$holder_classes = array( 'qodef-ac-default' );
 		
 		$holder_classes[] = ! empty( $params['custom_class'] ) ? esc_attr( $params['custom_class'] ) : '';
-		$holder_classes[] = $params['style'] == 'toggle' ? 'qodef-toggle' : 'qodef-hivegallery';
+		$holder_classes[] = $params['style'] == 'toggle' ? 'qodef-toggle' : 'qodef-slicksyncing';
 		$holder_classes[] = ! empty( $params['layout'] ) ? 'qodef-ac-' . esc_attr( $params['layout'] ) : '';
 		$holder_classes[] = ! empty( $params['background_skin'] ) ? 'qodef-' . esc_attr( $params['background_skin'] ) . '-skin' : '';
 		
