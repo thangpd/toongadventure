@@ -1,7 +1,7 @@
 <?php
 include_once get_template_directory() . '/theme-includes.php';
 
-if ( ! function_exists('setsail_select_styles')) {
+if (!function_exists('setsail_select_styles')) {
     /**
      * Function that includes theme's core styles
      */
@@ -14,6 +14,7 @@ if ( ! function_exists('setsail_select_styles')) {
         wp_enqueue_style('setsail-select-default-style', SELECT_ROOT . '/style.css');
         wp_enqueue_style('setsail-select-modules', SELECT_ASSETS_ROOT . '/css/modules.css',
             $modules_css_deps_array);
+        wp_enqueue_style('bootstrap', SELECT_ASSETS_ROOT . '/bootstrap/css/bootstrap.css');
 
         setsail_select_icon_collections()->enqueueStyles();
 
@@ -35,7 +36,7 @@ if ( ! function_exists('setsail_select_styles')) {
         //define files after which style dynamic needs to be included. It should be included last so it can override other files
         $style_dynamic_deps_array = apply_filters('setsail_select_filter_style_dynamic_deps', array());
 
-        if (file_exists(SELECT_ROOT_DIR . '/assets/css/style_dynamic.css') && setsail_select_is_css_folder_writable() && ! is_multisite()) {
+        if (file_exists(SELECT_ROOT_DIR . '/assets/css/style_dynamic.css') && setsail_select_is_css_folder_writable() && !is_multisite()) {
             wp_enqueue_style('setsail-select-style-dynamic', SELECT_ASSETS_ROOT . '/css/style_dynamic.css',
                 $style_dynamic_deps_array,
                 filemtime(SELECT_ROOT_DIR . '/assets/css/style_dynamic.css')); //it must be included after woocommerce styles so it can override it
@@ -59,7 +60,7 @@ if ( ! function_exists('setsail_select_styles')) {
             }
 
             //include proper styles
-            if (file_exists(SELECT_ROOT_DIR . '/assets/css/style_dynamic_responsive.css') && setsail_select_is_css_folder_writable() && ! is_multisite()) {
+            if (file_exists(SELECT_ROOT_DIR . '/assets/css/style_dynamic_responsive.css') && setsail_select_is_css_folder_writable() && !is_multisite()) {
                 wp_enqueue_style('setsail-select-style-dynamic-responsive',
                     SELECT_ASSETS_ROOT . '/css/style_dynamic_responsive.css', array(),
                     filemtime(SELECT_ROOT_DIR . '/assets/css/style_dynamic_responsive.css'));
@@ -76,41 +77,41 @@ if ( ! function_exists('setsail_select_styles')) {
     add_action('wp_enqueue_scripts', 'setsail_select_styles');
 }
 
-if ( ! function_exists('setsail_select_google_fonts_styles')) {
+if (!function_exists('setsail_select_google_fonts_styles')) {
     /**
      * Function that includes google fonts defined anywhere in the theme
      */
     function setsail_select_google_fonts_styles()
     {
         $font_simple_field_array = setsail_select_options()->getOptionsByType('fontsimple');
-        if ( ! (is_array($font_simple_field_array) && count($font_simple_field_array) > 0)) {
+        if (!(is_array($font_simple_field_array) && count($font_simple_field_array) > 0)) {
             $font_simple_field_array = array();
         }
 
         $font_field_array = setsail_select_options()->getOptionsByType('font');
-        if ( ! (is_array($font_field_array) && count($font_field_array) > 0)) {
+        if (!(is_array($font_field_array) && count($font_field_array) > 0)) {
             $font_field_array = array();
         }
 
         $available_font_options = array_merge($font_simple_field_array, $font_field_array);
 
         $google_font_weight_array = setsail_select_options()->getOptionValue('google_font_weight');
-        if ( ! empty($google_font_weight_array)) {
+        if (!empty($google_font_weight_array)) {
             $google_font_weight_array = array_slice(setsail_select_options()->getOptionValue('google_font_weight'), 1);
         }
 
         $font_weight_str = '300,400,500,600,700,800';
-        if ( ! empty($google_font_weight_array) && $google_font_weight_array !== '') {
+        if (!empty($google_font_weight_array) && $google_font_weight_array !== '') {
             $font_weight_str = implode(',', $google_font_weight_array);
         }
 
         $google_font_subset_array = setsail_select_options()->getOptionValue('google_font_subset');
-        if ( ! empty($google_font_subset_array)) {
+        if (!empty($google_font_subset_array)) {
             $google_font_subset_array = array_slice(setsail_select_options()->getOptionValue('google_font_subset'), 1);
         }
 
         $font_subset_str = 'latin-ext';
-        if ( ! empty($google_font_subset_array) && $google_font_subset_array !== '') {
+        if (!empty($google_font_subset_array) && $google_font_subset_array !== '') {
             $font_subset_str = implode(',', $google_font_subset_array);
         }
 
@@ -134,17 +135,17 @@ if ( ! function_exists('setsail_select_google_fonts_styles')) {
             //is font set and not set to default and not empty?
             $font_option_value = setsail_select_options()->getOptionValue($font_option);
 
-            if (setsail_select_is_font_option_valid($font_option_value) && ! setsail_select_is_native_font($font_option_value)) {
+            if (setsail_select_is_font_option_valid($font_option_value) && !setsail_select_is_native_font($font_option_value)) {
                 $font_option_string = $font_option_value . ':' . $font_weight_str;
 
-                if ( ! in_array(str_replace('+', ' ', $font_option_value),
-                        $default_font_family) && ! in_array($font_option_string, $fonts_array)) {
+                if (!in_array(str_replace('+', ' ', $font_option_value),
+                        $default_font_family) && !in_array($font_option_string, $fonts_array)) {
                     $fonts_array[] = $font_option_string;
                 }
             }
         }
 
-        $fonts_array         = array_diff($fonts_array, array('-1:' . $font_weight_str));
+        $fonts_array = array_diff($fonts_array, array('-1:' . $font_weight_str));
         $google_fonts_string = implode('|', $fonts_array);
 
         $protocol = is_ssl() ? 'https:' : 'http:';
@@ -153,7 +154,7 @@ if ( ! function_exists('setsail_select_google_fonts_styles')) {
         if (count($fonts_array) > 0) {
 
             //include all checked fonts
-            $fonts_full_list      = $default_font_string . '|' . str_replace('+', ' ', $google_fonts_string);
+            $fonts_full_list = $default_font_string . '|' . str_replace('+', ' ', $google_fonts_string);
             $fonts_full_list_args = array(
                 'family' => urlencode($fonts_full_list),
                 'subset' => urlencode($font_subset_str),
@@ -166,7 +167,7 @@ if ( ! function_exists('setsail_select_google_fonts_styles')) {
 
         } else {
             //include default google font that theme is using
-            $default_fonts_args          = array(
+            $default_fonts_args = array(
                 'family' => urlencode($default_font_string),
                 'subset' => urlencode($font_subset_str),
             );
@@ -179,7 +180,7 @@ if ( ! function_exists('setsail_select_google_fonts_styles')) {
     add_action('wp_enqueue_scripts', 'setsail_select_google_fonts_styles');
 }
 
-if ( ! function_exists('setsail_select_scripts')) {
+if (!function_exists('setsail_select_scripts')) {
     /**
      * Function that includes all necessary scripts
      */
@@ -194,6 +195,7 @@ if ( ! function_exists('setsail_select_scripts')) {
         wp_enqueue_script('wp-mediaelement');
 
         // 3rd party JavaScripts that we used in our theme
+        wp_enqueue_script('bootstrap', SELECT_ASSETS_ROOT . '/bootstrap/js/bootstrap.js', array('jquery'), 4.4);
         wp_enqueue_script('appear', SELECT_ASSETS_ROOT . '/js/modules/plugins/jquery.appear.js', array('jquery'), false,
             true);
         wp_enqueue_script('modernizr', SELECT_ASSETS_ROOT . '/js/modules/plugins/modernizr.min.js', array('jquery'),
@@ -243,20 +245,20 @@ if ( ! function_exists('setsail_select_scripts')) {
         }
 
         //include google map api script
-        $google_maps_api_key          = setsail_select_options()->getOptionValue('google_maps_api_key');
-        $google_maps_extensions       = '';
+        $google_maps_api_key = setsail_select_options()->getOptionValue('google_maps_api_key');
+        $google_maps_extensions = '';
         $google_maps_extensions_array = apply_filters('setsail_select_filter_google_maps_extensions_array', array());
 
-        if ( ! empty($google_maps_extensions_array)) {
+        if (!empty($google_maps_extensions_array)) {
             $google_maps_extensions .= '&libraries=';
             $google_maps_extensions .= implode(',', $google_maps_extensions_array);
         }
 
-        if ( ! empty($google_maps_api_key)) {
+        if (!empty($google_maps_api_key)) {
             wp_enqueue_script('setsail-select-google-map-api',
                 '//maps.googleapis.com/maps/api/js?key=' . esc_attr($google_maps_api_key) . $google_maps_extensions,
                 array(), false, true);
-            if ( ! empty($google_maps_extensions_array) && is_array($google_maps_extensions_array)) {
+            if (!empty($google_maps_extensions_array) && is_array($google_maps_extensions_array)) {
                 wp_enqueue_script('geocomplete', SELECT_ASSETS_ROOT . '/js/modules/plugins/jquery.geocomplete.min.js',
                     array('jquery', 'setsail-select-google-map-api'), false, true);
             }
@@ -281,10 +283,10 @@ if ( ! function_exists('setsail_select_scripts')) {
             wp_enqueue_script('wp-color-picker', admin_url('js/color-picker.min.js'), array('iris'), false, 1);
 
             $colorpicker_l10n = array(
-                'clear'         => esc_html__('Clear', 'setsail'),
+                'clear' => esc_html__('Clear', 'setsail'),
                 'defaultString' => esc_html__('Default', 'setsail'),
-                'pick'          => esc_html__('Select Color', 'setsail'),
-                'current'       => esc_html__('Current Color', 'setsail'),
+                'pick' => esc_html__('Select Color', 'setsail'),
+                'current' => esc_html__('Current Color', 'setsail'),
             );
 
             wp_localize_script('wp-color-picker', 'wpColorPickerL10n', $colorpicker_l10n);
@@ -300,7 +302,7 @@ if ( ! function_exists('setsail_select_scripts')) {
     add_action('wp_enqueue_scripts', 'setsail_select_scripts');
 }
 
-if ( ! function_exists('setsail_select_theme_setup')) {
+if (!function_exists('setsail_select_theme_setup')) {
     /**
      * Function that adds various features to theme. Also defines image sizes that are used in a theme
      */
@@ -336,7 +338,7 @@ if ( ! function_exists('setsail_select_theme_setup')) {
     add_action('after_setup_theme', 'setsail_select_theme_setup');
 }
 
-if ( ! function_exists('setsail_select_enqueue_editor_customizer_styles')) {
+if (!function_exists('setsail_select_enqueue_editor_customizer_styles')) {
     /**
      * Enqueue supplemental block editor styles
      */
@@ -350,7 +352,7 @@ if ( ! function_exists('setsail_select_enqueue_editor_customizer_styles')) {
     add_action('enqueue_block_editor_assets', 'setsail_select_enqueue_editor_customizer_styles');
 }
 
-if ( ! function_exists('setsail_select_enqueue_editor_customizer_blocks_styles')) {
+if (!function_exists('setsail_select_enqueue_editor_customizer_blocks_styles')) {
     /**
      * Enqueue block editor styles
      */
@@ -363,7 +365,7 @@ if ( ! function_exists('setsail_select_enqueue_editor_customizer_blocks_styles')
     add_action('enqueue_block_editor_assets', 'setsail_select_enqueue_editor_customizer_blocks_styles');
 }
 
-if ( ! function_exists('setsail_select_is_responsive_on')) {
+if (!function_exists('setsail_select_is_responsive_on')) {
     /**
      * Checks whether responsive mode is enabled in theme options
      * @return bool
@@ -374,7 +376,7 @@ if ( ! function_exists('setsail_select_is_responsive_on')) {
     }
 }
 
-if ( ! function_exists('setsail_select_rgba_color')) {
+if (!function_exists('setsail_select_rgba_color')) {
     /**
      * Function that generates rgba part of css color property
      *
@@ -389,14 +391,14 @@ if ( ! function_exists('setsail_select_rgba_color')) {
             $rgba_color = '';
 
             $rgb_color_array = setsail_select_hex2rgb($color);
-            $rgba_color      .= 'rgba(' . implode(', ', $rgb_color_array) . ', ' . $transparency . ')';
+            $rgba_color .= 'rgba(' . implode(', ', $rgb_color_array) . ', ' . $transparency . ')';
 
             return $rgba_color;
         }
     }
 }
 
-if ( ! function_exists('setsail_select_header_meta')) {
+if (!function_exists('setsail_select_header_meta')) {
     /**
      * Function that echoes meta data if our seo is enabled
      */
@@ -414,7 +416,7 @@ if ( ! function_exists('setsail_select_header_meta')) {
     add_action('setsail_select_action_header_meta', 'setsail_select_header_meta');
 }
 
-if ( ! function_exists('setsail_select_user_scalable_meta')) {
+if (!function_exists('setsail_select_user_scalable_meta')) {
     /**
      * Function that outputs user scalable meta if responsiveness is turned on
      * Hooked to setsail_select_action_header_meta action
@@ -432,7 +434,7 @@ if ( ! function_exists('setsail_select_user_scalable_meta')) {
     add_action('setsail_select_action_header_meta', 'setsail_select_user_scalable_meta');
 }
 
-if ( ! function_exists('setsail_select_smooth_page_transitions')) {
+if (!function_exists('setsail_select_smooth_page_transitions')) {
     /**
      * Function that outputs smooth page transitions html if smooth page transitions functionality is turned on
      * Hooked to setsail_select_action_after_body_tag action
@@ -457,7 +459,7 @@ if ( ! function_exists('setsail_select_smooth_page_transitions')) {
     add_action('setsail_select_action_after_body_tag', 'setsail_select_smooth_page_transitions', 10);
 }
 
-if ( ! function_exists('setsail_select_back_to_top_button')) {
+if (!function_exists('setsail_select_back_to_top_button')) {
     /**
      * Function that outputs back to top button html if back to top functionality is turned on
      * Hooked to setsail_select_action_after_wrapper_inner action
@@ -474,7 +476,7 @@ if ( ! function_exists('setsail_select_back_to_top_button')) {
     add_action('setsail_select_action_after_wrapper_inner', 'setsail_select_back_to_top_button', 30);
 }
 
-if ( ! function_exists('setsail_select_get_page_id')) {
+if (!function_exists('setsail_select_get_page_id')) {
     /**
      * Function that returns current page / post id.
      * Checks if current page is woocommerce page and returns that id if it is.
@@ -502,7 +504,7 @@ if ( ! function_exists('setsail_select_get_page_id')) {
     }
 }
 
-if ( ! function_exists('setsail_select_get_multisite_blog_id')) {
+if (!function_exists('setsail_select_get_multisite_blog_id')) {
     /**
      * Check is multisite and return blog id
      *
@@ -516,7 +518,7 @@ if ( ! function_exists('setsail_select_get_multisite_blog_id')) {
     }
 }
 
-if ( ! function_exists('setsail_select_is_default_wp_template')) {
+if (!function_exists('setsail_select_is_default_wp_template')) {
     /**
      * Function that checks if current page archive page, search, 404 or default home blog page
      * @return bool
@@ -533,7 +535,7 @@ if ( ! function_exists('setsail_select_is_default_wp_template')) {
     }
 }
 
-if ( ! function_exists('setsail_select_has_shortcode')) {
+if (!function_exists('setsail_select_has_shortcode')) {
     /**
      * Function that checks whether shortcode exists on current page / post
      *
@@ -551,7 +553,7 @@ if ( ! function_exists('setsail_select_has_shortcode')) {
             if ($content == '') {
                 //take content from current post
                 $page_id = setsail_select_get_page_id();
-                if ( ! empty($page_id)) {
+                if (!empty($page_id)) {
                     $current_post = get_post($page_id);
 
                     if (is_object($current_post) && property_exists($current_post, 'post_content')) {
@@ -570,7 +572,7 @@ if ( ! function_exists('setsail_select_has_shortcode')) {
     }
 }
 
-if ( ! function_exists('setsail_select_get_unique_page_class')) {
+if (!function_exists('setsail_select_get_unique_page_class')) {
     /**
      * Returns unique page class based on post type and page id
      *
@@ -607,7 +609,7 @@ if ( ! function_exists('setsail_select_get_unique_page_class')) {
     }
 }
 
-if ( ! function_exists('setsail_select_page_custom_style')) {
+if (!function_exists('setsail_select_page_custom_style')) {
     /**
      * Function that print custom page style
      */
@@ -628,7 +630,7 @@ if ( ! function_exists('setsail_select_page_custom_style')) {
     add_action('wp_enqueue_scripts', 'setsail_select_page_custom_style');
 }
 
-if ( ! function_exists('setsail_select_print_custom_js')) {
+if (!function_exists('setsail_select_print_custom_js')) {
     /**
      * Prints out custom css from theme options
      */
@@ -636,7 +638,7 @@ if ( ! function_exists('setsail_select_print_custom_js')) {
     {
         $custom_js = setsail_select_options()->getOptionValue('custom_js');
 
-        if ( ! empty($custom_js)) {
+        if (!empty($custom_js)) {
             wp_add_inline_script('setsail-select-modules', $custom_js);
         }
     }
@@ -644,7 +646,7 @@ if ( ! function_exists('setsail_select_print_custom_js')) {
     add_action('wp_enqueue_scripts', 'setsail_select_print_custom_js');
 }
 
-if ( ! function_exists('setsail_select_get_global_variables')) {
+if (!function_exists('setsail_select_get_global_variables')) {
     /**
      * Function that generates global variables and put them in array so they could be used in the theme
      */
@@ -652,15 +654,15 @@ if ( ! function_exists('setsail_select_get_global_variables')) {
     {
         $global_variables = array();
 
-        $global_variables['qodefAddForAdminBar']      = is_admin_bar_showing() ? 32 : 0;
+        $global_variables['qodefAddForAdminBar'] = is_admin_bar_showing() ? 32 : 0;
         $global_variables['qodefElementAppearAmount'] = -100;
-        $global_variables['qodefAjaxUrl']             = esc_url(admin_url('admin-ajax.php'));
-        $global_variables['sliderNavPrevArrow']       = 'icon-arrows-left';
-        $global_variables['sliderNavNextArrow']       = 'icon-arrows-right';
-        $global_variables['ppExpand']                 = esc_html__('Expand the image', 'setsail');
-        $global_variables['ppNext']                   = esc_html__('Next', 'setsail');
-        $global_variables['ppPrev']                   = esc_html__('Previous', 'setsail');
-        $global_variables['ppClose']                  = esc_html__('Close', 'setsail');
+        $global_variables['qodefAjaxUrl'] = esc_url(admin_url('admin-ajax.php'));
+        $global_variables['sliderNavPrevArrow'] = 'icon-arrows-left';
+        $global_variables['sliderNavNextArrow'] = 'icon-arrows-right';
+        $global_variables['ppExpand'] = esc_html__('Expand the image', 'setsail');
+        $global_variables['ppNext'] = esc_html__('Next', 'setsail');
+        $global_variables['ppPrev'] = esc_html__('Previous', 'setsail');
+        $global_variables['ppClose'] = esc_html__('Close', 'setsail');
 
         $global_variables = apply_filters('setsail_select_filter_js_global_variables', $global_variables);
 
@@ -672,7 +674,7 @@ if ( ! function_exists('setsail_select_get_global_variables')) {
     add_action('wp_enqueue_scripts', 'setsail_select_get_global_variables');
 }
 
-if ( ! function_exists('setsail_select_per_page_js_variables')) {
+if (!function_exists('setsail_select_per_page_js_variables')) {
     /**
      * Outputs global JS variable that holds page settings
      */
@@ -688,7 +690,7 @@ if ( ! function_exists('setsail_select_per_page_js_variables')) {
     add_action('wp_enqueue_scripts', 'setsail_select_per_page_js_variables');
 }
 
-if ( ! function_exists('setsail_select_content_elem_style_attr')) {
+if (!function_exists('setsail_select_content_elem_style_attr')) {
     /**
      * Defines filter for adding custom styles to content HTML element
      */
@@ -700,7 +702,7 @@ if ( ! function_exists('setsail_select_content_elem_style_attr')) {
     }
 }
 
-if ( ! function_exists('setsail_select_core_plugin_installed')) {
+if (!function_exists('setsail_select_core_plugin_installed')) {
     /**
      * Function that checks if Select Core plugin installed
      * @return bool
@@ -711,7 +713,7 @@ if ( ! function_exists('setsail_select_core_plugin_installed')) {
     }
 }
 
-if ( ! function_exists('setsail_select_is_woocommerce_installed')) {
+if (!function_exists('setsail_select_is_woocommerce_installed')) {
     /**
      * Function that checks if Woocommerce plugin installed
      * @return bool
@@ -722,7 +724,7 @@ if ( ! function_exists('setsail_select_is_woocommerce_installed')) {
     }
 }
 
-if ( ! function_exists('setsail_select_visual_composer_installed')) {
+if (!function_exists('setsail_select_visual_composer_installed')) {
     /**
      * Function that checks if Visual Composer plugin installed
      * @return bool
@@ -733,7 +735,7 @@ if ( ! function_exists('setsail_select_visual_composer_installed')) {
     }
 }
 
-if ( ! function_exists('setsail_select_revolution_slider_installed')) {
+if (!function_exists('setsail_select_revolution_slider_installed')) {
     /**
      * Function that checks if Revolution Slider plugin installed
      * @return bool
@@ -744,7 +746,7 @@ if ( ! function_exists('setsail_select_revolution_slider_installed')) {
     }
 }
 
-if ( ! function_exists('setsail_select_contact_form_7_installed')) {
+if (!function_exists('setsail_select_contact_form_7_installed')) {
     /**
      * Function that checks if Contact Form 7 plugin installed
      * @return bool
@@ -755,7 +757,7 @@ if ( ! function_exists('setsail_select_contact_form_7_installed')) {
     }
 }
 
-if ( ! function_exists('setsail_select_is_wpml_installed')) {
+if (!function_exists('setsail_select_is_wpml_installed')) {
     /**
      * Function that checks if WPML plugin installed
      * @return bool
@@ -766,7 +768,7 @@ if ( ! function_exists('setsail_select_is_wpml_installed')) {
     }
 }
 
-if ( ! function_exists('setsail_select_is_wp_gutenberg_installed')) {
+if (!function_exists('setsail_select_is_wp_gutenberg_installed')) {
     /**
      * Function that checks if WordPress 5.x with Gutenberg editor installed
      *
@@ -778,7 +780,7 @@ if ( ! function_exists('setsail_select_is_wp_gutenberg_installed')) {
     }
 }
 
-if ( ! function_exists('setsail_select_is_gutenberg_plugin_installed')) {
+if (!function_exists('setsail_select_is_gutenberg_plugin_installed')) {
     /**
      * Function that checks if Gutenberg plugin installed
      *
@@ -790,14 +792,14 @@ if ( ! function_exists('setsail_select_is_gutenberg_plugin_installed')) {
     }
 }
 
-if ( ! function_exists('setsail_select_get_module_part')) {
+if (!function_exists('setsail_select_get_module_part')) {
     function setsail_select_get_module_part($module)
     {
         return $module;
     }
 }
 
-if ( ! function_exists('setsail_select_max_image_width_srcset')) {
+if (!function_exists('setsail_select_max_image_width_srcset')) {
     /**
      * Set max width for srcset to 1920
      *
@@ -812,7 +814,7 @@ if ( ! function_exists('setsail_select_max_image_width_srcset')) {
 }
 
 
-if ( ! function_exists('setsail_select_has_dashboard_shortcodes')) {
+if (!function_exists('setsail_select_has_dashboard_shortcodes')) {
     /**
      * Function that checks if current page has at least one of dashboard shortcodes added
      * @return bool
