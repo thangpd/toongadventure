@@ -1,0 +1,22 @@
+.qodef-news-holder {
+    padding-top :15px;
+}
+.qodef-title-post-news {
+    font-family: "HelveticaNeue-CondensedBlack", sans-serif;
+    font-size: 24px;
+    line-height: 1.15em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0b403b;
+    margin-top: 10px;
+    text-align: center;
+}
+.qodef-excerpt-post-news{
+    color: #0b403b;
+    font-size: 14px;
+    font-weight: 500;
+}
+.qodef-news-image-port img{
+    max-height: 250px;
+}
