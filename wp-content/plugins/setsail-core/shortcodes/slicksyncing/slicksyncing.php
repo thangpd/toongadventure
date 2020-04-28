@@ -66,8 +66,15 @@ class Slicksyncing implements Lib\ShortcodeInterface {
 			);
 		}
 	}
-	
-	public function render( $atts, $content = null ) {
+    public function enqueue_scripts()
+    {
+        wp_enqueue_script('slicksyncing_js');
+        wp_enqueue_style('slicksyncing_css');
+    }
+
+    public function render($atts, $content = null)
+    {
+        $this->enqueue_scripts();
 		$default_atts = array(
 			'custom_class'    => '',
 			'title'           => '',
