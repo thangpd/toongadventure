@@ -1,10 +1,9 @@
 .experience {
     background-position: center top;
-    background-size: contain;
-    background-repeat: repeat-x;
+    padding-bottom: 50px;
 }
 
-.experience h2.experience-title {
+.experience .experience-title {
     margin: 0;
     padding: 12px 60px;
     display: inline-block;
