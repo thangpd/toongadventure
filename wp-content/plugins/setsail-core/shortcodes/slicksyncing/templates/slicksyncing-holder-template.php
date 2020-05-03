@@ -19,7 +19,7 @@
         width: 20%;
     }
     .adventure-level {
-        background-position: center top;
+        background-position: center top!important;
         top: -62px;
         padding-top: 65px;
         padding-bottom: 140px;
