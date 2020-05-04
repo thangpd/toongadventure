@@ -60,7 +60,7 @@ if (!function_exists('setsail_core_set_hivegallery_assets')) {
     function setsail_core_set_hivegallery_assets()
     {
         wp_register_script('hivegallery_js', plugins_url('/assets/js/hivegallery.js', __FILE__), array('jquery'), '1.0', true);
-        wp_register_style('hivegallery_css', plugins_url('/assets/css/hivegallery.css', __FILE__), []);
+        wp_register_style('hivegallery_css', plugins_url('/assets/css/hivegallery.css', __FILE__), ['bootstrap']);
     }
 
     add_filter('init', 'setsail_core_set_hivegallery_assets');

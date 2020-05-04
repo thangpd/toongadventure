@@ -1,0 +1,60 @@
+
+.shortcode-team-user {
+    background-color: #0b403b;
+}
+.shortcode-team-user-image{
+    margin-top : 10px;
+}
+.shortcode-team-user-image img{
+    border-radius: 50%!important;
+    padding: 20px;
+    height: 240px;
+    width: 240px;
+}
+
+.hortcode-team-user-info-job {
+    color: white;
+    font-family: "HelveticaNeue-CondensedBlack", sans-serif;
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+.hortcode-team-user-info-name{
+    color: white;
+    font-family: "HelveticaNeue-CondensedBlack", sans-serif;
+    font-size: 30px;
+    line-height: 1.15em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+
+@media all and (max-width: 768px) {
+    .hortcode-team-user-des{
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .hortcode-team-user-des{
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+}

@@ -43,8 +43,15 @@ class News implements Lib\ShortcodeInterface {
 			);
 		}
 	}
+
+	public function enqueue_scripts()
+    {
+        wp_enqueue_script('news_js');
+        wp_enqueue_style('news_css');
+    }
 	
 	public function render( $atts, $content = null ) {
+        $this->enqueue_scripts();
 		$default_atts = array(
 			'port_id_1'           => '',
 			'port_id_2'           => '',
