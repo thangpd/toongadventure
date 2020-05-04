@@ -15,6 +15,7 @@ if (!function_exists('setsail_select_styles')) {
         wp_enqueue_style('setsail-select-modules', SELECT_ASSETS_ROOT . '/css/modules.css',
             $modules_css_deps_array);
         wp_enqueue_style('bootstrap', SELECT_ASSETS_ROOT . '/bootstrap/css/bootstrap.css');
+        wp_enqueue_style('slick', SELECT_ASSETS_ROOT . '/slick/slick.css');
 
         setsail_select_icon_collections()->enqueueStyles();
 
@@ -196,6 +197,7 @@ if (!function_exists('setsail_select_scripts')) {
 
         // 3rd party JavaScripts that we used in our theme
         wp_enqueue_script('bootstrap', SELECT_ASSETS_ROOT . '/bootstrap/js/bootstrap.js', array('jquery'), 4.4);
+        wp_enqueue_script('slick', SELECT_ASSETS_ROOT . '/slick/slick.js', array('jquery'), 4.4);
         wp_enqueue_script('appear', SELECT_ASSETS_ROOT . '/js/modules/plugins/jquery.appear.js', array('jquery'), false,
             true);
         wp_enqueue_script('modernizr', SELECT_ASSETS_ROOT . '/js/modules/plugins/modernizr.min.js', array('jquery'),
