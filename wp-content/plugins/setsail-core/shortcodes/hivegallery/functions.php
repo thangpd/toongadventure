@@ -1,10 +1,5 @@
 <?php
 
-if (class_exists('WPBakeryShortCodesContainer')) {
-    class WPBakeryShortCode_Qodef_Hivegallery extends WPBakeryShortCodesContainer
-    {
-    }
-}
 
 if (!function_exists('setsail_core_add_hivegallery_shortcodes')) {
     function setsail_core_add_hivegallery_shortcodes($shortcodes_class_name)
@@ -20,7 +15,8 @@ if (!function_exists('setsail_core_add_hivegallery_shortcodes')) {
 
     add_filter('setsail_core_filter_add_vc_shortcode', 'setsail_core_add_hivegallery_shortcodes');
 }
-
+//[qodef_shortcode_team user_attach_image="7192" user_job="Job" user_name="Name" user_des="Nếu bạn đam mê du lịch nhất là du lịch mạo hiểm mà chưa từng trải nghiệm Trekking Tà Năng thì đó quả là một thiếu sót rất lớn.Nếu bạn đam mê du lịch nhất là du lịch mạo hiểm mà chưa từng trải nghiệm Trekking Tà Năng thì đó quả là một thiếu sót rất lớn.Nếu bạn đam mê du lịch nhất là du lịch mạo hiểm mà chưa từng trải nghiệm Trekking Tà Năng thì đó quả là một thiếu sót rất lớn.
+//Nếu bạn đam mê du lịch nhất là du lịch mạo hiểm mà chưa từng trải nghiệm Trekking Tà Năng thì đó quả là một thiếu sót rất lớn."]
 if (!function_exists('setsail_core_set_hivegallery_custom_style_for_vc_shortcodes')) {
     /**
      * Function that set custom css style for hivegallery shortcode
