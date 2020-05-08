@@ -33,6 +33,15 @@ class IconWithText implements Lib\ShortcodeInterface {
 								'heading'     => esc_html__( 'Custom CSS Class', 'setsail-core' ),
 								'description' => esc_html__( 'Style particular content element differently - add a class name and refer to it in custom CSS', 'setsail-core' )
 							),
+                            array(
+                                'type' => 'dropdown',
+                                'param_name' => 'style',
+                                'heading' => esc_html__('Style', 'setsail-core'),
+                                'value' => array(
+                                    esc_html__('Style 1', 'setsail-core') => 'style-1',
+                                    esc_html__('Style 2', 'setsail-core') => 'style-2',
+                                ),
+                            ),
 							array(
 								'type'        => 'dropdown',
 								'param_name'  => 'type',
@@ -238,8 +247,15 @@ class IconWithText implements Lib\ShortcodeInterface {
 			);
 		}
 	}
-	
-	public function render( $atts, $content = null ) {
+    public function enqueue_scripts()
+    {
+        wp_enqueue_script('iconwithtext_js');
+        wp_enqueue_style('iconwithtext_css');
+    }
+
+    public function render($atts, $content = null)
+    {
+        $this->enqueue_scripts();
 		$default_atts = array(
 			'custom_class'                => '',
 			'type'                        => 'icon-left',
