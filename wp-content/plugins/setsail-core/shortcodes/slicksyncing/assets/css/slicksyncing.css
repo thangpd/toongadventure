@@ -2,8 +2,9 @@
     margin: 0;
     padding: 12px 60px;
     display: inline-block;
-    background: url("./wp-content/plugins/setsail-core/assets/img/adventure-level-title-bg.png") left/contain no-repeat;
+    background: url(../../../../assets/img/adventure-level-title-bg.png) left/contain no-repeat;
     color: #013f3a;
+    text-transform: uppercase;
 }
 
 div[class*=qodef-grid-col-] {
@@ -21,7 +22,7 @@ div[class*=qodef-grid-col-] {
 
 .adventure-level {
     background-position: center top !important;
-    top: -62px;
+    margin-top: -62px;
     padding-top: 65px;
     padding-bottom: 140px;
 }

@@ -9,6 +9,7 @@
     display: inline-block;
     background: url(../../../../assets/img/experience-title-bg.png) left/contain no-repeat;
     color: #013f3a;
+    text-transform: uppercase;
 }
 
 .experience-wrapper .hive-grid {

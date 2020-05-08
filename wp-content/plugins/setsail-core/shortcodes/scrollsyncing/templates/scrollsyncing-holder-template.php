@@ -38,6 +38,26 @@
         background: #6f6f6f
     }
 
+    .scrollsyncing {
+        background-position: top center!important;
+        margin-top: -98px;
+        padding-top: 98px;
+        padding-bottom: 86px;
+    }
+
+    .scrollsyncing .vc_column-inner {
+        padding-top: 0!important;
+    }
+
+    .qodef-scrollsyncing-title {
+        margin: 0;
+        padding: 12px 60px;
+        display: inline-block;
+        background: url(../../../assets/img/scrollsyncing-title-bg.png) left/contain no-repeat;
+        color: #013f3a;
+        text-transform: uppercase;
+    }
+
     .scrollsyncing .qodef-grid-col:nth-child(1) .bg-white {
         padding: 20px 0 20px 20px;
     }
@@ -170,19 +190,28 @@
     .scrollsyncing .qodef-grid-col:nth-child(2) .item .col-item .title-section {
         font-weight: 900;
         color: #0b4041;
+        padding-left: 20px;
     }
 
-    .scrollsyncing .qodef-grid-col:nth-child(2) .item .col-item:nth-child(1) .col-body {
+    .scrollsyncing .qodef-grid-col:nth-child(2) .item.about .col-item:nth-child(1) .col-body li {
+        list-style: none;
+    }
+
+    .scrollsyncing .qodef-grid-col:nth-child(2) .item.about .col-item:nth-child(1) .col-body li strong {
+        color: #0b4041;
+    }
+
+    .scrollsyncing .qodef-grid-col:nth-child(2) .item:not(.about) .col-item:nth-child(1) .col-body {
         border-left: 1px solid #363636;
         padding-left: 20px;
     }
 
-    .scrollsyncing .qodef-grid-col:nth-child(2) .item .col-item:nth-child(1) .col-body > * {
+    .scrollsyncing .qodef-grid-col:nth-child(2) .item:not(.about) .col-item:nth-child(1) .col-body > * {
         position: relative;
         padding-bottom: 20px;
     }
 
-    .scrollsyncing .qodef-grid-col:nth-child(2) .item .col-item:nth-child(1) .col-body > *:after {
+    .scrollsyncing .qodef-grid-col:nth-child(2) .item:not(.about) .col-item:nth-child(1) .col-body > *:after {
         top: 5px;
         left: calc(-20px - 6px);
         font-size: 16px;
@@ -194,6 +223,16 @@
         border-radius: 100%;
         color: #0b4041;
         background-color: #0b4041;
+    }
+
+    @media only screen and (max-width: 575px) {
+        .scrollsyncing {
+            padding-left: 0px!important;
+            padding-right: 0px!important;
+        }
+        .scrollsyncing .qodef-grid-col-4 {
+            display: none;
+        }
     }
 </style>
 <div class="qodef-scrollsyncing-holder <?php echo esc_attr($holder_classes); ?> clearfix">
@@ -222,7 +261,21 @@
         <div class="qodef-grid-col qodef-grid-col-8">
             <div class="bg-white">
                 <div class="v-scrollbar" id="js-scrollbar">
-                    <div class="item flex-container" id="schedule-0" data-id="alich-0">
+                    <div class="item flex-container about" id="schedule-0" data-id="alich-0">
+                        <div class="col-item">
+                            <h3 class="col-header h4 title-section p-bot-2">Giới thiệu chung</h3>
+                            <div class="col-body">
+                                <ul>
+                                    <li><strong>Thời lượng tour:</strong> 2 Ngày 1 Đêm</li>
+                                    <li><strong>Lịch hoạt đông:</strong> Tháng 3 - Tháng 11</li>
+                                    <li><strong>Level:</strong> 1 - Nhẹ nhàng</li>
+                                    <li><strong>Số khách:</strong> 15 người (tỉ lệ hỗ trợ 4 khách: 1 guide)</li>
+                                    <li><strong>Quãng đường:</strong> 14km trekking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex-container" id="schedule-1" data-id="alich-1">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 1: TPHCM -
                                 BONDOWOSO</h3>
@@ -237,7 +290,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item flex-container" id="schedule-1" data-id="alich-1">
+                    <div class="item flex-container" id="schedule-2" data-id="alich-2">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 2: RANU PANE</h3>
                             <div class="col-body">
@@ -250,7 +303,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item flex-container" id="schedule-2" data-id="alich-2">
+                    <div class="item flex-container" id="schedule-3" data-id="alich-3">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 3: KALIMATI</h3>
                             <div class="col-body">
@@ -265,7 +318,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item flex-container" id="schedule-3" data-id="alich-3">
+                    <div class="item flex-container" id="schedule-4" data-id="alich-4">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 4: HỒ KUMBOLO</h3>
                             <div class="col-body">
@@ -278,7 +331,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item flex-container" id="schedule-4" data-id="alich-4">
+                    <div class="item flex-container" id="schedule-5" data-id="alich-6">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 5: SURABAYA</h3>
                             <div class="col-body">
@@ -290,7 +343,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item flex-container" id="schedule-5" data-id="alich-5">
+                    <div class="item flex-container" id="schedule-6" data-id="alich-6">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 6: SURABAYA -
                                 TPHCM</h3>
@@ -305,7 +358,7 @@
     </div>
 </div>
 <script>
-    $(function () {
+    /*$(function () {
         $('#smoothscroll li').on('click', function () {
             var n = $(this).data('id'),
                 t = $('#' + n)[0],
@@ -330,5 +383,5 @@
                     offset: "20%"
                 })
         });
-    })
+    })*/
 </script>
