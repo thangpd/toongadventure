@@ -126,13 +126,19 @@
         color: #fff;
     }
 
+    .scrollsyncing .qodef-grid-col:nth-child(1) .bg-white li.active span:nth-child(2),
+    .scrollsyncing .qodef-grid-col:nth-child(1) .bg-white li:hover span:nth-child(2) {
+        background-color: #faac48;
+        color: #0b4041;
+    }
+
     .scrollsyncing .qodef-grid-col:nth-child(1) .bg-white li.active span:nth-child(1),
     .scrollsyncing .qodef-grid-col:nth-child(1) .bg-white li:hover span:nth-child(1) {
         border-color: #0b4041;
     }
 
     .scrollsyncing .qodef-grid-col:nth-child(2) .bg-white {
-        background-color: #f7f7f7!important;
+        background-color: #f7f7f7 !important;
     }
 
     .scrollsyncing .qodef-grid-col:nth-child(2) .bg-white .v-scrollbar {
@@ -175,7 +181,8 @@
         position: relative;
         padding-bottom: 20px;
     }
-    .scrollsyncing .qodef-grid-col:nth-child(2) .item .col-item:nth-child(1) .col-body>*:after {
+
+    .scrollsyncing .qodef-grid-col:nth-child(2) .item .col-item:nth-child(1) .col-body > *:after {
         top: 5px;
         left: calc(-20px - 6px);
         font-size: 16px;
@@ -215,7 +222,7 @@
         <div class="qodef-grid-col qodef-grid-col-8">
             <div class="bg-white">
                 <div class="v-scrollbar" id="js-scrollbar">
-                    <div class="item flex-container" id="lich-0" data-id="alich-0">
+                    <div class="item flex-container" id="schedule-0" data-id="alich-0">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 1: TPHCM -
                                 BONDOWOSO</h3>
@@ -230,7 +237,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item flex-container" id="lich-1" data-id="alich-1">
+                    <div class="item flex-container" id="schedule-1" data-id="alich-1">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 2: RANU PANE</h3>
                             <div class="col-body">
@@ -243,7 +250,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item flex-container" id="lich-2" data-id="alich-2">
+                    <div class="item flex-container" id="schedule-2" data-id="alich-2">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 3: KALIMATI</h3>
                             <div class="col-body">
@@ -258,7 +265,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item flex-container" id="lich-3" data-id="alich-3">
+                    <div class="item flex-container" id="schedule-3" data-id="alich-3">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 4: HỒ KUMBOLO</h3>
                             <div class="col-body">
@@ -271,7 +278,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item flex-container" id="lich-4" data-id="alich-4">
+                    <div class="item flex-container" id="schedule-4" data-id="alich-4">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 5: SURABAYA</h3>
                             <div class="col-body">
@@ -283,7 +290,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item flex-container" id="lich-5" data-id="alich-5">
+                    <div class="item flex-container" id="schedule-5" data-id="alich-5">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 6: SURABAYA -
                                 TPHCM</h3>
@@ -297,3 +304,31 @@
         </div>
     </div>
 </div>
+<script>
+    $(function () {
+        $('#smoothscroll li').on('click', function () {
+            var n = $(this).data('id'),
+                t = $('#' + n)[0],
+                i = t.offsetTop;
+            $("#smoothscroll li").removeClass("active");
+            $(this).addClass("active");
+            scrollTo($('#js-scrollbar')[0], i - 30, 100)
+        })
+        $("#js-scrollbar .item").each(function () {
+            var n = $(this).attr("id"),
+                t = $(this).data("id"),
+                i = document.getElementById(t),
+                r = i.offsetTop,
+                u = new Waypoint({
+                    element: document.getElementById(n),
+                    handler: function () {
+                        $("#smoothscroll li").removeClass("active");
+                        $("#smoothscroll").find("li[data-id='" + n + "']").addClass("active");
+                        scrollTo(document.getElementById("smoothscroll"), r - 100, 100)
+                    },
+                    context: document.getElementById("js-scrollbar"),
+                    offset: "20%"
+                })
+        });
+    })
+</script>

@@ -1,165 +1,169 @@
-.experience {
-    background-position: center top;
-    background-size: contain;
-    background-repeat: repeat-x;
-}
-
-.experience h2.experience-title {
+.qodef-slicksyncing-title {
     margin: 0;
     padding: 12px 60px;
     display: inline-block;
-    background: url(../../../../assets/img/experience-title-bg.png) left/contain no-repeat;
+    background: url("./wp-content/plugins/setsail-core/assets/img/adventure-level-title-bg.png") left/contain no-repeat;
     color: #013f3a;
 }
 
-.experience-wrapper .hive-grid {
-    padding: 60px 0 135px;
-}
-
-.hive-grid .grid {
-    display: grid;
-    width: auto;
-    -webkit-box-pack: center;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, 260px);
-    grid-template-rows: repeat(auto-fit, minmax(315px, 315px));
-    grid-auto-rows: 315px;
-}
-
-.block {
+div[class*=qodef-grid-col-] {
     position: relative;
-    height: 260px;
-    background-color: #0b4041;
-    grid-column: 2 span;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 35px;
-    -webkit-transition: clip-path 300ms, background-color 300ms, -webkit-clip-path 300ms;
-    transition: clip-path 300ms, background-color 300ms, -webkit-clip-path 300ms;
+    float: left;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
 }
 
-.grid .block {
-    -webkit-clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-    clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+.qodef-grid-col-20per {
+    width: 20%;
 }
 
-.grid .block img {
-    max-width: unset;
+.adventure-level {
+    background-position: center top !important;
+    top: -62px;
+    padding-top: 65px;
+    padding-bottom: 140px;
 }
 
-.grid .title {
+.adventure-level .single-box {
+    color: #de6527;
+    font-weight: 600;
+    padding: 20px 0;
     text-align: center;
-    margin-bottom: 60px;
-    position: relative;
-    font-weight: 900;
-    font-size: 13px;
     text-transform: uppercase;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.grid .title:before, .grid .title:after {
+.adventure-level .qodef-grid-col-20per:nth-child(even) .single-box {
+    color: #013f3a;
+}
+
+.adventure-level .single-box .col-title {
+    position: relative;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.adventure-level .single-box .col-title:after {
     content: "";
     position: absolute;
+    top: auto;
     left: 50%;
-    background-color: #0b4041;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #de6527;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
-.grid .title:before {
-    bottom: -15px;
-    width: 13px;
-    height: 13px;
-    border-radius: 10px;
+.adventure-level .qodef-grid-col-20per:nth-child(even) .single-box .col-title:after {
+    background-color: #013f3a;
 }
 
-.grid .title:after {
-    bottom: -55px;
-    width: 2px;
-    height: 50px;
-}
-
-.grid-2 .title {
-    margin-top: 60px;
+.adventure-level .single-box .col-content p {
     margin-bottom: 0;
+    font-size: .8rem;
 }
 
-.grid-2 .title:before {
-    bottom: auto;
-    top: -15px
+.level-slide {
+    padding-top: 1.5rem;
 }
 
-.grid-2 .title:after {
-    bottom: auto;
-    top: -55px
+.level-slide .slide-title {
+    margin-bottom: .8rem;
+    color: #013f3a;
+}
+
+.level-slide .slide-title span {
+    display: block;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.level-slide .slide-title span:nth-child(1) {
+    padding-bottom: .3rem
+}
+
+.level-slide .slide-title span:nth-child(1):after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 120px;
+    height: 6px;
+    background-color: #fbad48;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.slide-content li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: .6rem;
+    list-style: none;
+}
+
+.slide-content li:before, .slide-content li:after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+}
+
+.slide-content li:before {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    left: 0;
+    top: 6px;
+}
+
+.slide-content li:after {
+    width: 10px;
+    height: 10px;
+    background: #adadad;
+    left: 2px;
+    top: 8px;
 }
 
 @media only screen and (max-width: 575px) {
-    #experience {
+    .qodef-grid-col-phone-33per {
+        width: 33.33%;
+    }
+
+    .adventure-level {
         padding-left: 0px !important;
         padding-right: 0px !important;
+        -webkit-background-size: cover;
+        background-size: cover;
     }
 
-    .experience {
-        background-repeat: repeat;
+    .adventure-level .vc_column-inner {
+        padding-top: 0 !important;
     }
 
-    .qodef-hivegallery {
-        text-align: center;
-    }
-
-    .experience h2.experience-title {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .experience-wrapper .hive-grid {
-        padding: 30px 0 85px;
-    }
-
-    .hive-grid .grid {
-        grid-template-rows: repeat(auto-fit, minmax(305px, 305px));
-        grid-auto-rows: 305px;
-    }
-}
-
-/* start css demo */
-@media only screen and (max-width: 575px) {
-    .qodef-content .qodef-content-inner > .qodef-container > .qodef-container-inner {
-        padding-top: 0;
-    }
-
-    .qodef-title-holder {
-        display: none;
-    }
-
-    .hive-grid .grid {
-        grid-template-columns: repeat(auto-fit, 115px);
-        grid-template-rows: repeat(auto-fit, minmax(215px, 215px));
-        grid-auto-rows: 215px;
-    }
-
-    .block {
-        height: 115px;
-    }
-
-    .grid .title {
-        font-size: 11px;
-        height: 60px;
+    .adventure-level .qodef-grid-row .qodef-grid-row {
         display: flex;
-        align-items: flex-end;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .grid.grid-2 .title {
-        align-items: flex-start;
+    .adventure-level .single-box {
+        padding: 10px 0;
+    }
+
+    .adventure-level .single-box .col-title,
+    .adventure-level .single-box .col-content p {
+        font-size: .7rem;
     }
 }
-
-/* end css demo */
