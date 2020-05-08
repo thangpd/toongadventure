@@ -26,3 +26,16 @@ if ( ! function_exists( 'setsail_core_set_icon_with_text_icon_class_name_for_vc_
 	
 	add_filter( 'setsail_core_filter_add_vc_shortcodes_custom_icon_class', 'setsail_core_set_icon_with_text_icon_class_name_for_vc_shortcodes' );
 }
+
+
+if (!function_exists('setsail_core_set_iconwithtext_assets')) {
+    /**
+     * Function that set custom icon class name for iconwithtext shortcode to set our icon for Visual Composer shortcodes panel
+     */
+    function setsail_core_set_iconwithtext_assets()
+    {
+        wp_register_style('iconwithtext_css', plugins_url('/assets/css/icon-with-text.css', __FILE__), ['bootstrap']);
+    }
+
+    add_filter('init', 'setsail_core_set_icon-with-text_assets');
+}
