@@ -26,19 +26,36 @@ class Hivegallery implements Lib\ShortcodeInterface
                 array(
                     'name' => esc_html__('Hivegallery', 'setsail-core'),
                     'base' => $this->base,
-                    'content_element' => true,
                     'category' => esc_html__('by SETSAIL', 'setsail-core'),
                     'icon' => 'icon-wpb-hivegallery extended-custom-icon',
-                    'show_settings_on_create' => true,
-                    'js_view' => 'VcColumnView',
                     'params' => array(
+                        array(
+                            'type' => 'param_group',
+                            'value' => '',
+                            'param_name' => 'image_list',
+                            // Note params is mapped inside param-group:
+                            'params' => array(
+                                array(
+                                    'type' => 'attach_image',
+                                    'value' => '',
+                                    'heading' => 'Choose your image',
+                                    'param_name' => 'image',
+                                ),
+                                array(
+                                    'type' => 'textfield',
+                                    'value' => '',
+                                    'heading' => 'Type your text herer.',
+                                    'param_name' => 'text',
+                                ),
+                            )
+                        ),
                         array(
                             'type' => 'textfield',
                             'param_name' => 'custom_class',
                             'heading' => esc_html__('Custom CSS Class', 'setsail-core'),
                             'description' => esc_html__('Style particular content element differently - add a class name and refer to it in custom CSS', 'setsail-core')
                         ),
-                        array(
+                        /*array(
                             'type' => 'dropdown',
                             'param_name' => 'style',
                             'heading' => esc_html__('Style', 'setsail-core'),
@@ -46,26 +63,8 @@ class Hivegallery implements Lib\ShortcodeInterface
                                 esc_html__('Hivegallery', 'setsail-core') => 'hivegallery',
                                 esc_html__('Toggle', 'setsail-core') => 'toggle'
                             )
-                        ),
-                        array(
-                            'type' => 'dropdown',
-                            'param_name' => 'layout',
-                            'heading' => esc_html__('Layout', 'setsail-core'),
-                            'value' => array(
-                                esc_html__('Boxed', 'setsail-core') => 'boxed',
-                                esc_html__('Simple', 'setsail-core') => 'simple'
-                            )
-                        ),
-                        array(
-                            'type' => 'dropdown',
-                            'param_name' => 'background_skin',
-                            'heading' => esc_html__('Background Skin', 'setsail-core'),
-                            'value' => array(
-                                esc_html__('Default', 'setsail-core') => '',
-                                esc_html__('White', 'setsail-core') => 'white'
-                            ),
-                            'dependency' => array('element' => 'layout', 'value' => array('boxed'))
-                        )
+                        ),*/
+                        // params group
                     )
                 )
             );
@@ -83,10 +82,10 @@ class Hivegallery implements Lib\ShortcodeInterface
         $this->enqueue_scripts();
         $default_atts = array(
             'custom_class' => '',
-            'title' => '',
-            'style' => 'hivegallery',
-            'layout' => 'boxed',
-            'background_skin' => ''
+            'image_list' => [],
+//            'style' => 'hivegallery',
+//            'layout' => 'boxed',
+//            'background_skin' => ''
         );
         $params = shortcode_atts($default_atts, $atts);
 

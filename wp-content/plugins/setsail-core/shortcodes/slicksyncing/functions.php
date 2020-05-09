@@ -1,10 +1,5 @@
 <?php
 
-if (class_exists('WPBakeryShortCodesContainer')) {
-    class WPBakeryShortCode_Qodef_Slicksyncing extends WPBakeryShortCodesContainer
-    {
-    }
-}
 
 if (!function_exists('setsail_core_add_slicksyncing_shortcodes')) {
     function setsail_core_add_slicksyncing_shortcodes($shortcodes_class_name)

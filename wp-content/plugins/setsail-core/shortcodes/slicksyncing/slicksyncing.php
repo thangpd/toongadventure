@@ -21,11 +21,8 @@ class Slicksyncing implements Lib\ShortcodeInterface {
 				array(
 					'name'                    => esc_html__( 'Slicksyncing', 'setsail-core' ),
 					'base'                    => $this->base,
-					'content_element'         => true,
 					'category'                => esc_html__( 'by SETSAIL', 'setsail-core' ),
 					'icon'                    => 'icon-wpb-slicksyncing extended-custom-icon',
-					'show_settings_on_create' => true,
-					'js_view'                 => 'VcColumnView',
 					'params'                  => array(
 						array(
 							'type'        => 'textfield',
