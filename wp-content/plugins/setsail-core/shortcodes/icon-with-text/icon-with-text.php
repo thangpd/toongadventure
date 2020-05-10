@@ -45,6 +45,7 @@ class IconWithText implements Lib\ShortcodeInterface
                                 'value' => array(
                                     esc_html__('Style 1', 'setsail-core') => 'style-1',
                                     esc_html__('Style 2', 'setsail-core') => 'style-2',
+                                    esc_html__('Style 3', 'setsail-core') => 'style-3',
                                 ),
                             ),
                             array(
@@ -376,6 +377,7 @@ class IconWithText implements Lib\ShortcodeInterface
         $holderClasses[] = !empty($params['custom_class']) ? esc_attr($params['custom_class']) : '';
         $holderClasses[] = !empty($params['type']) ? 'qodef-iwt-' . $params['type'] : '';
         $holderClasses[] = !empty($params['icon_size']) ? 'qodef-iwt-' . str_replace('qodef-', '', $params['icon_size']) : '';
+        $holderClasses[] = !empty($params['style']) ? $params['style']: 'style-1';
 
         return $holderClasses;
     }
