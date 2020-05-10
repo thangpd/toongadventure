@@ -1,3 +1,6 @@
+<?php
+
+?>
 <div class="qodef-slicksyncing-holder <?php echo esc_attr($holder_classes); ?> clearfix">
     <h2 class="qodef-slicksyncing-title">
         Cấp độ mạo hiểm

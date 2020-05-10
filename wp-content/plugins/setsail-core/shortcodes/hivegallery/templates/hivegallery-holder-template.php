@@ -27,9 +27,6 @@ if (!empty($params['image_list'])) {
     foreach ($image_list as $item) {
         $image = wp_get_attachment_image_src($item['image'], 'large');
         if ($count <= count($image_list) / 2) {
-            echo '<pre>';
-            print_r(count($image_list) / 2);
-            echo '</pre>';
             $str_item['grid1'] .= sprintf($format_item_1, $item['text'], $image[0]);
         } else {
             $str_item['grid2'] .= sprintf($format_item_2, $item['text'], $image[0]);

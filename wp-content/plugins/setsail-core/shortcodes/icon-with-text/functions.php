@@ -37,5 +37,5 @@ if (!function_exists('setsail_core_set_iconwithtext_assets')) {
         wp_register_style('iconwithtext_css', plugins_url('/assets/css/icon-with-text.css', __FILE__), ['bootstrap']);
     }
 
-    add_filter('init', 'setsail_core_set_icon-with-text_assets');
+    add_filter('init', 'setsail_core_set_iconwithtext_assets');
 }
