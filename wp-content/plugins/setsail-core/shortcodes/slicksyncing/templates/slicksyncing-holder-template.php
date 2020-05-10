@@ -1,8 +1,5 @@
-<?php echo '<pre>';
-print_r($params);
-echo '</pre>';
+<?php
 
-die;
 ?>
 <div class="qodef-slicksyncing-holder <?php echo esc_attr($holder_classes); ?> clearfix">
     <h2 class="qodef-slicksyncing-title">
