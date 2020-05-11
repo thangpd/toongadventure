@@ -45,7 +45,8 @@ class Slicksyncing implements Lib\ShortcodeInterface
                             )
                         ),
                         array(
-                            'type' => 'textarea_raw_html',
+                            'type' => 'textarea_html',
+                            'height' => '200',
                             'param_name' => 'text_1',
                             'heading' => esc_html__('Title', 'setsail-core'),
                             'group' => 'Level 1'
