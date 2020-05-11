@@ -2,7 +2,7 @@
     margin: 0;
     padding: 12px 60px;
     display: inline-block;
-    background: url(../../../../assets/img/adventure-level-title-bg.png) left/contain no-repeat;
+    background: url(../../../customheader/assets/img/adventure-level-title-bg.png) left/contain no-repeat;
     color: #013f3a;
     text-transform: uppercase;
 }

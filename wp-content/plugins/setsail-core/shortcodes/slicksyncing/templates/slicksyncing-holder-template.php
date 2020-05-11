@@ -18,11 +18,11 @@
 */
 
 ?>
-
+<h2 class="qodef-slicksyncing-title">
+    Cấp độ mạo hiểm sdfgsd sdfgs dfg sdfg sdf
+</h2>
 <div class="qodef-slicksyncing-holder <?php echo esc_attr($holder_classes); ?> clearfix">
-    <h2 class="qodef-slicksyncing-title">
-        Cấp độ mạo hiểm
-    </h2>
+
     <div class="qodef-grid-row">
         <div class="qodef-grid-col-8" style="padding-top: 1rem">
             <img src="<?php echo plugin_dir_url(__DIR__); ?>/assets/img/5-level-bg.png" alt="5-level">

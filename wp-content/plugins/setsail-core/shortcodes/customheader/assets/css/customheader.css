@@ -1,0 +1,7 @@
+.qodef-slicksyncing-title {
+    margin: 0;
+    display: inline-block;
+    background: url(../img/adventure-level-title-bg.png) left/contain no-repeat;
+    color: #013f3a;
+    text-transform: uppercase;
+}
