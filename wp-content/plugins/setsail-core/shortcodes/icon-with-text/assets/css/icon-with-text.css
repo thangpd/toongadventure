@@ -1,11 +1,27 @@
-.style-1 .qodef-iwt-icon {
-    background: url(http://localhost/toongadventure/wp-content/uploads/2018/09/layer_icon.png) top/100% no-repeat;
+.prepare h2 {
+    margin: 0 0 2rem;
+    padding: 12px 60px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.prepare.icon-with-text-1 h2 {
+    background: url("../../../../assets/img/icon-with-text-1-bg.png") left/contain no-repeat;
+}
+
+.prepare.icon-with-text-1-1 h2 {
+    background: url("../../../../assets/img/icon-with-text-1-1-bg.png") left/contain no-repeat;
+}
+
+.qodef-iwt.style-1 .qodef-iwt-icon {
+    background: url("../../../../assets/img/layer_icon.png") top/100% no-repeat;
     width: 178px;
     height: 210px;
+    margin: auto;
     text-align: center;
 }
 
-.style-1 .qodef-iwt .qodef-iwt-icon a {
+.qodef-iwt.style-1 .qodef-iwt-icon a {
     display: block;
     width: 178px;
     height: 178px;
@@ -13,9 +29,133 @@
     white-space: nowrap;
 }
 
-.style-1 .qodef-iwt .qodef-iwt-icon a:before {
+.qodef-iwt.style-1 .qodef-iwt-icon a:before {
     content: " ";
     display: inline-block;
     vertical-align: middle;
     height: 100%;
+}
+
+.qodef-iwt.style-1 .qodef-iwt-icon a:hover {
+    text-decoration: none;
+}
+
+.qodef-iwt.style-1 .qodef-iwt-icon img {
+    backface-visibility: hidden;
+    display: inline-block!important;
+    vertical-align: middle;
+    max-width: 128px;
+    max-height: 128px;
+    margin-left: -4px;
+}
+
+.qodef-iwt.style-2 {
+    background: #fff;
+    border-radius: 0.7rem;
+    box-shadow: 0px 0px 10px 3px #0003;
+    overflow: hidden;
+}
+
+.qodef-iwt.style-2 .qodef-iwt-icon {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: .63rem 0;
+}
+
+.qodef-iwt.style-2 .qodef-iwt-content {
+    padding: .7rem;
+    background: #0e433b;
+    color: #fff;
+    text-align: center;
+}
+
+.qodef-iwt.style-2 .qodef-iwt-content h5.qodef-iwt-title {
+    color: #fff;
+}
+.qodef-iwt.style-2 .qodef-iwt-title-text {
+    font-size: 18px;
+    height: 84px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.qodef-iwt.style-2 .qodef-iwt-text {
+    font-size: 14px;
+    margin-top: 1rem;
+    height: 126px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+@media only screen and (min-width: 768px) {
+    .d-none-md {
+        display: none!important;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .d-none-sm {
+        display: none!important;
+    }
+
+    .prepare h2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .prepare .vc_column-inner {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .prepare .vc_column-inner .wpb_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .qodef-content .qodef-content-inner > .qodef-container > .qodef-container-inner {
+        padding: 0;
+    }
+
+    .qodef-iwt.style-1 .qodef-iwt-icon {
+        width: 135px;
+        height: 160px;
+    }
+
+    .qodef-iwt.style-1 .qodef-iwt-icon a {
+        width: 135px;
+        height: 135px;
+    }
+
+    .qodef-iwt.style-1 .qodef-iwt-icon img {
+        max-width: 98px;
+        max-height: 98px;
+    }
+
+    .prepare.icon-with-text-1 .qodef-iwt.style-1 {
+        width: 50%;
+        float: left;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .prepare .qodef-iwt.qodef-iwt-icon-top .qodef-iwt-content {
+        padding-top: 10px;
+    }
+
+    .prepare .qodef-iwt .qodef-iwt-title-text {
+        font-size: 14px;
+    }
+
+    .prepare .qodef-iwt .qodef-iwt-text {
+        font-size: 12px;
+    }
 }
