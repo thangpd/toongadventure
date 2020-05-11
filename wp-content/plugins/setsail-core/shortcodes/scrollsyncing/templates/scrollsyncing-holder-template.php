@@ -39,10 +39,10 @@
     }
 
     .scrollsyncing {
-        background-position: top center!important;
+        background-position: bottom center!important;
         margin-top: -98px;
         padding-top: 98px;
-        padding-bottom: 105px;
+        padding-bottom: 135px;
         /*background-color: #000;*/
         z-index: 2;
     }
@@ -52,7 +52,7 @@
     }
 
     .qodef-scrollsyncing-title {
-        margin: 0;
+        margin: 0 0 2rem;
         padding: 12px 60px;
         display: inline-block;
         background: url("./wp-content/plugins/setsail-core/assets/img/scrollsyncing-title-bg.png") left/contain no-repeat;
@@ -62,6 +62,7 @@
 
     .scrollsyncing .qodef-grid-col:nth-child(1) .bg-white {
         padding: 20px 0 20px 20px;
+        background-color: #f7f7f7 !important;
     }
 
     .scrollsyncing .qodef-grid-col:nth-child(1) .bg-white ul {
@@ -115,7 +116,6 @@
         z-index: 2;
         cursor: pointer;
         display: block;
-        background-color: #fff;
     }
 
     .scrollsyncing .qodef-grid-col:nth-child(1) .bg-white li span:nth-child(1) {
@@ -127,6 +127,7 @@
         border-radius: 100px;
         line-height: 55px;
         margin-right: 15px;
+        background-color: #fff;
     }
 
     .scrollsyncing .qodef-grid-col:nth-child(1) .bg-white li:nth-child(1) span:nth-child(1) {
@@ -165,7 +166,7 @@
 
     .scrollsyncing .qodef-grid-col:nth-child(2) .bg-white .v-scrollbar {
         overflow-y: auto;
-        height: 675px;
+        height: 655px;
         scroll-behavior: smooth;
     }
 
@@ -234,10 +235,6 @@
         }
         .scrollsyncing .qodef-grid-col-4 {
             display: none;
-        }
-
-        .qodef-scrollsyncing-title {
-            margin-bottom: 2rem;
         }
     }
 </style>

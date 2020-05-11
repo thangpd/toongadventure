@@ -1,164 +1,161 @@
-.experience {
-    background-position: center top!important;
-    padding-bottom: 50px;
-}
-
-.experience .experience-title {
-    margin: 0;
+.prepare h2 {
+    margin: 0 0 2rem;
     padding: 12px 60px;
     display: inline-block;
-    background: url(../../../../assets/img/experience-title-bg.png) left/contain no-repeat;
-    color: #013f3a;
-}
-
-.experience-wrapper .hive-grid {
-    padding: 60px 0 135px;
-}
-
-.hive-grid .grid {
-    display: grid;
-    width: auto;
-    -webkit-box-pack: center;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, 260px);
-    grid-template-rows: repeat(auto-fit, minmax(315px, 315px));
-    grid-auto-rows: 315px;
-}
-
-.block {
-    position: relative;
-    height: 260px;
-    background-color: #0b4041;
-    grid-column: 2 span;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 35px;
-    -webkit-transition: clip-path 300ms, background-color 300ms, -webkit-clip-path 300ms;
-    transition: clip-path 300ms, background-color 300ms, -webkit-clip-path 300ms;
-}
-
-.grid .block {
-    -webkit-clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-    clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-}
-
-.grid .block img {
-    max-width: unset;
-}
-
-.grid .title {
-    text-align: center;
-    margin-bottom: 60px;
-    position: relative;
-    font-weight: 900;
-    font-size: 13px;
     text-transform: uppercase;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.grid .title:before, .grid .title:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    background-color: #0b4041;
-    transform: translateX(-50%);
+.prepare.icon-with-text-1 h2 {
+    background: url("../../../../assets/img/icon-with-text-1-bg.png") left/contain no-repeat;
 }
 
-.grid .title:before {
-    bottom: -15px;
-    width: 13px;
-    height: 13px;
-    border-radius: 10px;
+.prepare.icon-with-text-1-1 h2 {
+    background: url("../../../../assets/img/icon-with-text-1-1-bg.png") left/contain no-repeat;
 }
 
-.grid .title:after {
-    bottom: -55px;
-    width: 2px;
-    height: 50px;
+.qodef-iwt.style-1 .qodef-iwt-icon {
+    background: url("../../../../assets/img/layer_icon.png") top/100% no-repeat;
+    width: 178px;
+    height: 210px;
+    margin: auto;
+    text-align: center;
 }
 
-.grid-2 .title {
-    margin-top: 60px;
-    margin-bottom: 0;
+.qodef-iwt.style-1 .qodef-iwt-icon a {
+    display: block;
+    width: 178px;
+    height: 178px;
+    text-align: center;
+    white-space: nowrap;
 }
 
-.grid-2 .title:before {
-    bottom: auto;
-    top: -15px
+.qodef-iwt.style-1 .qodef-iwt-icon a:before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
 }
 
-.grid-2 .title:after {
-    bottom: auto;
-    top: -55px
+.qodef-iwt.style-1 .qodef-iwt-icon a:hover {
+    text-decoration: none;
+}
+
+.qodef-iwt.style-1 .qodef-iwt-icon img {
+    backface-visibility: hidden;
+    display: inline-block!important;
+    vertical-align: middle;
+    max-width: 128px;
+    max-height: 128px;
+    margin-left: -4px;
+}
+
+.qodef-iwt.style-2 {
+    background: #fff;
+    border-radius: 0.7rem;
+    box-shadow: 0px 0px 10px 3px #0003;
+    overflow: hidden;
+}
+
+.qodef-iwt.style-2 .qodef-iwt-icon {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: .63rem 0;
+}
+
+.qodef-iwt.style-2 .qodef-iwt-content {
+    padding: .7rem;
+    background: #0e433b;
+    color: #fff;
+    text-align: center;
+}
+
+.qodef-iwt.style-2 .qodef-iwt-content h5.qodef-iwt-title {
+    color: #fff;
+}
+.qodef-iwt.style-2 .qodef-iwt-title-text {
+    font-size: 18px;
+    height: 84px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.qodef-iwt.style-2 .qodef-iwt-text {
+    font-size: 14px;
+    margin-top: 1rem;
+    height: 126px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+@media only screen and (min-width: 768px) {
+    .d-none-md {
+        display: none!important;
+    }
 }
 
 @media only screen and (max-width: 575px) {
-    #experience {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+    .d-none-sm {
+        display: none!important;
     }
 
-    .experience {
-        background-repeat: repeat;
-    }
-
-    .qodef-hivegallery {
-        text-align: center;
-    }
-
-    .experience h2.experience-title {
+    .prepare h2 {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .experience-wrapper .hive-grid {
-        padding: 30px 0 85px;
+    .prepare .vc_column-inner {
+        padding: 0;
+        margin-bottom: 2rem;
     }
 
-    .hive-grid .grid {
-        grid-template-rows: repeat(auto-fit, minmax(305px, 305px));
-        grid-auto-rows: 305px;
-    }
-}
-
-/* start css demo */
-@media only screen and (max-width: 575px) {
-    .qodef-content .qodef-content-inner > .qodef-container > .qodef-container-inner {
-        padding-top: 0;
-    }
-
-    .qodef-title-holder {
-        display: none;
-    }
-
-    .hive-grid .grid {
-        grid-template-columns: repeat(auto-fit, 115px);
-        grid-template-rows: repeat(auto-fit, minmax(215px, 215px));
-        grid-auto-rows: 215px;
-    }
-
-    .block {
-        height: 115px;
-    }
-
-    .grid .title {
-        font-size: 11px;
-        height: 60px;
+    .prepare .vc_column-inner .wpb_wrapper {
         display: flex;
-        align-items: flex-end;
+        flex-wrap: wrap;
     }
 
-    .grid.grid-2 .title {
-        align-items: flex-start;
+    .qodef-content .qodef-content-inner > .qodef-container > .qodef-container-inner {
+        padding: 0;
+    }
+
+    .qodef-iwt.style-1 .qodef-iwt-icon {
+        width: 135px;
+        height: 160px;
+    }
+
+    .qodef-iwt.style-1 .qodef-iwt-icon a {
+        width: 135px;
+        height: 135px;
+    }
+
+    .qodef-iwt.style-1 .qodef-iwt-icon img {
+        max-width: 98px;
+        max-height: 98px;
+    }
+
+    .prepare.icon-with-text-1 .qodef-iwt.style-1 {
+        width: 50%;
+        float: left;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .prepare .qodef-iwt.qodef-iwt-icon-top .qodef-iwt-content {
+        padding-top: 10px;
+    }
+
+    .prepare .qodef-iwt .qodef-iwt-title-text {
+        font-size: 14px;
+    }
+
+    .prepare .qodef-iwt .qodef-iwt-text {
+        font-size: 12px;
     }
 }
-
-/* end css demo */
