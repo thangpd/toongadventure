@@ -129,14 +129,11 @@ div[class*=qodef-grid-col-] {
     top: 6px;
 }
 
-.slide-content li:after {
-    width: 10px;
-    height: 10px;
-    background: #adadad;
-    left: 2px;
-    top: 8px;
-}
 
+/*slide slick nav-for*/
+.qodef-slicksyncing-holder .item { cursor: pointer; }
+
+/*slide slick nav-for*/
 @media only screen and (max-width: 575px) {
     .qodef-grid-col-phone-33per {
         width: 33.33%;
