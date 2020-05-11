@@ -1,5 +1,22 @@
 <?php
 
+/*          'text_1' => '',
+            'des_1' => '',
+            'text_list_1' => [],
+            'text_2' => '',
+            'des_2' => '',
+            'text_list_2' => [],
+            'text_3' => '',
+            'des_3' => '',
+            'text_list_3' => [],
+            'text_4' => '',
+            'des_4' => '',
+            'text_list_4' => [],
+            'text_5' => '',
+            'des_5' => '',
+            'text_list_5' => [],
+*/
+
 ?>
 <div class="qodef-slicksyncing-holder <?php echo esc_attr($holder_classes); ?> clearfix">
     <h2 class="qodef-slicksyncing-title">
@@ -9,16 +26,14 @@
         <div class="qodef-grid-col-8" style="padding-top: 1rem">
             <img src="./wp-content/plugins/setsail-core/assets/img/5-level-bg.png" alt="5-level">
 
-            <div class="qodef-grid-row">
+            <div class="qodef-grid-row slider-single">
                 <?php for ($i = 1; $i <= 5; $i++) { ?>
-                    <div class="qodef-grid-col-20per qodef-grid-col-phone-33per">
-                        <div class="single-box">
+                    <div class="item qodef-grid-col-20per qodef-grid-col-phone-33per"
+                         data-slick-index="<?php echo $i - 1 ?>">
+                        <div class="single-box ">
                             <div class="col-title">level <?php echo $i ?></div>
                             <div class="col-content">
-                                <p>8 nang tien</p>
-                                <p>lao than</p>
-                                <p>fansipan</p>
-                                <p>ta nang - phan dung</p>
+                                <?php echo esc_attr($params['text_' . $i]); ?>
                             </div>
                         </div>
                     </div>
@@ -26,91 +41,31 @@
             </div>
         </div>
         <div class="qodef-grid-col-4">
-            <div class="level-slide">
-                <div class="slide-item">
+            <div class="level-slide slider-nav">
+                <?php $format = '<div class="slide-item slick-slide" >
                     <div class="slide-title">
-                        <span>Level 1</span>
-                        <span>Nhẹ nhàng</span>
+                        <span>Level %1$s</span>
+                        <span>%2$s</span>
                     </div>
                     <div class="slide-content">
                         <ul>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
+                        %3$s                      
                         </ul>
                     </div>
-                </div>
-                <div class="slide-item">
-                    <div class="slide-title">
-                        <span>Level 2</span>
-                        <span>Nhẹ nhàng</span>
-                    </div>
-                    <div class="slide-content">
-                        <ul>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="slide-item">
-                    <div class="slide-title">
-                        <span>Level 3</span>
-                        <span>Nhẹ nhàng</span>
-                    </div>
-                    <div class="slide-content">
-                        <ul>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                            <li>
-                                Dành cho những bạn mới trekking lần đầu
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                </div>'; ?>
+                <?php
+                for ($i = 1; $i <= 5; $i++) {
+                    $item = '';
+                    if (!empty($params['text_list_' . $i])) {
+                        $parsed = vc_param_group_parse_atts($params['text_list_' . $i]);
+                        foreach ($parsed as $val) {
+                            $item .= sprintf('<li>%1$s</li>', $val['text']);
+                        }
+                    }
+                    printf($format, $i, $params['des_' . $i], $item, $i - 1);
+                }
+                ?>
             </div>
         </div>
     </div>
 </div>
-<script>
-    $('.level-slide').slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: false,
-        pauseOnHover: true,
-    });
-</script>
