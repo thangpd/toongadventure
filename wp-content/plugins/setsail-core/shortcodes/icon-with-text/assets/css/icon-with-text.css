@@ -1,4 +1,4 @@
-.prepare h2 {
+.prepare h2, .cost-promo h2, .news-shortcode h2 {
     margin: 0 0 2rem;
     padding: 12px 60px;
     display: inline-block;
@@ -11,6 +11,29 @@
 
 .prepare.icon-with-text-1-1 h2 {
     background: url("../../../../assets/img/icon-with-text-1-1-bg.png") left/contain no-repeat;
+}
+
+.prepare.icon-with-text-2 {
+    background-repeat: no-repeat;
+}
+
+.prepare.icon-with-text-2 h2 {
+    background: url("../../../../assets/img/icon-with-text-2-bg.png") left/contain no-repeat;
+    margin-bottom: 72px;
+}
+
+.prepare.icon-with-text-3 h2 {
+    background: url("../../../../assets/img/icon-with-text-3-bg.png") left/contain no-repeat;
+    margin-bottom: 72px;
+}
+
+.cost-promo h2 {
+    background: url("../../../../assets/img/cost-promo-bg.png") left/contain no-repeat;
+}
+
+.news-shortcode h2 {
+    background: url("../../../../assets/img/cost-promo-bg.png") left/contain no-repeat;
+    margin-bottom: 55px;
 }
 
 .qodef-iwt.style-1 .qodef-iwt-icon {
@@ -92,6 +115,29 @@
     display: -webkit-box;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
+}
+
+.qodef-iwt.style-3 .qodef-iwt-title-text {
+    color: #05433b;
+    font-size: 20px;
+    text-transform: uppercase;
+    height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.qodef-iwt.style-3 .qodef-iwt-text {
+    font-size: 16px;
+}
+
+#your-prepare > .wpb_column > .vc_column-inner,
+#note-join > .wpb_column > .vc_column-inner,
+#why-choose-us > .wpb_column > .vc_column-inner,
+#news-shortcode > .wpb_column > .vc_column-inner {
+    padding: 0!important;
 }
 
 @media only screen and (min-width: 768px) {
