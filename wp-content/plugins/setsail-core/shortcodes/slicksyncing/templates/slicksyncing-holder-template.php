@@ -34,7 +34,7 @@
                         <div class="single-box ">
                             <div class="col-title">level <?php echo $i ?></div>
                             <div class="col-content">
-                                <?php echo esc_attr($params['text_' . $i]); ?>
+                                <?php echo ($params['text_' . $i]); ?>
                             </div>
                         </div>
                     </div>
