@@ -45,7 +45,8 @@ class Slicksyncing implements Lib\ShortcodeInterface
                             )
                         ),
                         array(
-                            'type' => 'textfield',
+                            'type' => 'textarea_html',
+                            'height' => '200',
                             'param_name' => 'text_1',
                             'heading' => esc_html__('Title', 'setsail-core'),
                             'group' => 'Level 1'
@@ -71,7 +72,7 @@ class Slicksyncing implements Lib\ShortcodeInterface
                             )
                         ),
                         array(
-                            'type' => 'textfield',
+                            'type' => 'textarea_raw_html',
                             'param_name' => 'text_2',
                             'heading' => esc_html__('Title', 'setsail-core'),
                             'group' => 'Level 2'
@@ -97,7 +98,7 @@ class Slicksyncing implements Lib\ShortcodeInterface
                             )
                         ),
                         array(
-                            'type' => 'textfield',
+                            'type' => 'textarea_raw_html',
                             'param_name' => 'text_3',
                             'heading' => esc_html__('Title', 'setsail-core'),
                             'group' => 'Level 3'
@@ -122,7 +123,7 @@ class Slicksyncing implements Lib\ShortcodeInterface
                                 ),
                             )
                         ), array(
-                            'type' => 'textfield',
+                            'type' => 'textarea_raw_html',
                             'param_name' => 'text_4',
                             'heading' => esc_html__('Title', 'setsail-core'),
                             'group' => 'Level 4'
@@ -147,7 +148,7 @@ class Slicksyncing implements Lib\ShortcodeInterface
                                 ),
                             )
                         ), array(
-                            'type' => 'textfield',
+                            'type' => 'textarea_raw_html',
                             'param_name' => 'text_5',
                             'heading' => esc_html__('Title', 'setsail-core'),
                             'group' => 'Level 5'
