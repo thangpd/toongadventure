@@ -25,7 +25,7 @@
 			</<?php echo esc_attr($title_tag); ?>>
 		<?php } ?>
 		<?php if(!empty($text)) { ?>
-			<p class="qodef-iwt-text" <?php setsail_select_inline_style($text_styles); ?>><?php echo esc_html($text); ?></p>
+			<p class="qodef-iwt-text" <?php setsail_select_inline_style($text_styles); ?>><?php echo ($text); ?></p>
 		<?php } ?>
 	</div>
 </div>
