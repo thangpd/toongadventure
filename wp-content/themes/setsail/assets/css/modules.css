@@ -306,7 +306,7 @@ html {
 }
 
 body {
-    font-family: "HelveticaNeue-Thin", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 14px;
     line-height: 1.714285714285714em;
     letter-spacing:1px;
@@ -318,7 +318,6 @@ body {
 }
 
 h1 {
-    font-family: "HelveticaNeue-CondensedBlack", sans-serif;
     letter-spacing:2px;
     font-size: 50px;
     line-height: 1.092307692307692em;
@@ -326,7 +325,6 @@ h1 {
 }
 
 h2 {
-    font-family: "HelveticaNeue-CondensedBlack", sans-serif;
     font-size: 37px;
     line-height: 1.15em;
     font-weight: 600;
@@ -365,6 +363,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: "Roboto Condensed", sans-serif;
     color: #212121;
     margin: 25px 0;
 }

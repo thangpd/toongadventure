@@ -8,12 +8,11 @@ if (!function_exists('setsail_select_styles')) {
     function setsail_select_styles()
     {
 
-        $modules_css_deps_array = apply_filters('setsail_select_filter_modules_css_deps', array());
 
         //include theme's core styles
         wp_enqueue_style('setsail-select-default-style', SELECT_ROOT . '/style.css');
         wp_enqueue_style('setsail-select-modules', SELECT_ASSETS_ROOT . '/css/modules.css',
-            $modules_css_deps_array);
+            array('bootstrap'));
         wp_enqueue_style('bootstrap', SELECT_ASSETS_ROOT . '/bootstrap/css/bootstrap.css');
         wp_enqueue_style('slick', SELECT_ASSETS_ROOT . '/slick/slick.css');
 
@@ -120,7 +119,8 @@ if (!function_exists('setsail_select_google_fonts_styles')) {
         $default_font_family = array(
             'Poppins',
             'Catamaran',
-            'Satisfy'
+            'Satisfy',
+            'Roboto Condensed',
         );
 
         $modified_default_font_family = array();
