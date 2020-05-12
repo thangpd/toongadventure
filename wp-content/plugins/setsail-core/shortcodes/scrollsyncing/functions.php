@@ -1,9 +1,5 @@
 <?php
 
-if ( class_exists( 'WPBakeryShortCodesContainer' ) ) {
-	class WPBakeryShortCode_Qodef_Scrollsyncing extends WPBakeryShortCodesContainer {}
-}
-
 if ( ! function_exists( 'setsail_core_add_scrollsyncing_shortcodes' ) ) {
 	function setsail_core_add_scrollsyncing_shortcodes( $shortcodes_class_name ) {
 		$shortcodes = array(
@@ -46,4 +42,18 @@ if ( ! function_exists( 'setsail_core_set_scrollsyncing_icon_class_name_for_vc_s
 	}
 	
 	add_filter( 'setsail_core_filter_add_vc_shortcodes_custom_icon_class', 'setsail_core_set_scrollsyncing_icon_class_name_for_vc_shortcodes' );
+}
+
+
+if (!function_exists('setsail_core_set_scrollsyncing_assets')) {
+    /**
+     * Function that set custom icon class name for scrollsyncing shortcode to set our icon for Visual Composer shortcodes panel
+     */
+    function setsail_core_set_scrollsyncing_assets()
+    {
+        wp_register_script('scrollsyncing_js', plugins_url('/assets/js/scrollsyncing.js', __FILE__), array('jquery'), '1.0', true);
+        wp_register_style('scrollsyncing_css', plugins_url('/assets/css/scrollsyncing.css', __FILE__), ['bootstrap']);
+    }
+
+    add_filter('init', 'setsail_core_set_scrollsyncing_assets');
 }

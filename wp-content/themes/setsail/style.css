@@ -42,3 +42,25 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
     src: url('assets/fonts/myriadpro-cond.otf');
     font-weight: normal;
 }
+
+.cf-hanh-trinh{
+    padding:40px;
+    background-color:#013f3a;
+}
+.cf-hanh-trinh h1{
+    color:white;
+    font-weight:bold;
+    font-size:2em;
+}
+.cf-hanh-trinh ol li{
+    list-style: none;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.cf-hanh-trinh .wpcf7-form-control.wpcf7-number,.cf-hanh-trinh .wpcf7-form-control.wpcf7-text, .cf-hanh-trinh .wpcf7-submit {.
+color: #fff;
+    background-color: rgba(2, 106, 100, 0.75) !important;
+}
+.cf-hanh-trinh .wpcf7-submit:hover{
+    background-color: rgba(2, 106, 100, 1) !important;
+}
