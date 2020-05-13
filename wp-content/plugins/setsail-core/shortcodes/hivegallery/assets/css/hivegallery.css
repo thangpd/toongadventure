@@ -110,10 +110,35 @@
     background-color: #fbac47;
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .hive-grid .grid {
+        grid-template-columns: repeat(auto-fit, 215px);
+        grid-template-rows: repeat(auto-fit, minmax(290px, 290px));
+        grid-auto-rows: 315px;
+    }
+
+    .block {
+        height: 215px;
+    }
+
+    .grid .title {
+        font-size: 12px;
+        height: 48px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .grid.grid-2 .title {
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     #experience {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        padding-top: 30px !important;
+        text-align: center;
     }
 
     .experience {
@@ -124,9 +149,13 @@
         text-align: center;
     }
 
-    .experience h2.experience-title {
+    /*.experience h2.experience-title {
         padding-left: 20px;
         padding-right: 20px;
+    }*/
+
+    .experience .qodef-slicksyncing-title {
+        margin-bottom: 2rem
     }
 
     .experience-wrapper .hive-grid {
@@ -134,8 +163,24 @@
     }
 
     .hive-grid .grid {
-        grid-template-rows: repeat(auto-fit, minmax(305px, 305px));
-        grid-auto-rows: 305px;
+        grid-template-columns: repeat(auto-fit, 215px);
+        grid-template-rows: repeat(auto-fit, minmax(290px, 290px));
+        grid-auto-rows: 315px;
+    }
+
+    .block {
+        height: 215px;
+    }
+
+    .grid .title {
+        font-size: 12px;
+        height: 48px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .grid.grid-2 .title {
+        align-items: flex-start;
     }
 }
 
@@ -150,25 +195,25 @@
     }
 
     .hive-grid .grid {
-        grid-template-columns: repeat(auto-fit, 115px);
-        grid-template-rows: repeat(auto-fit, minmax(215px, 215px));
-        grid-auto-rows: 215px;
+        grid-template-columns: repeat(auto-fit, 105px);
+        grid-template-rows: repeat(auto-fit, minmax(195px, 195px));
+        grid-auto-rows: 195px;
     }
 
     .block {
-        height: 115px;
+        height: 105px;
     }
 
     .grid .title {
         font-size: 11px;
-        height: 60px;
+        /*height: 60px;
         display: flex;
-        align-items: flex-end;
+        align-items: flex-end;*/
     }
 
-    .grid.grid-2 .title {
+    /*.grid.grid-2 .title {
         align-items: flex-start;
-    }
+    }*/
 }
 
 /* end css demo */

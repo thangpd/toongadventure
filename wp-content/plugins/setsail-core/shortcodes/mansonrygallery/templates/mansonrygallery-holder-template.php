@@ -47,6 +47,12 @@
         color: #fbad48;
     }
 
+    @media only screen and (max-width: 768px) {
+        .mansonry-gallery .qodef-grid-col-4 img {
+            width: 100%;
+        }
+    }
+
     @media only screen and (max-width: 575px) {
         .mansonry-gallery {
             padding-top: 180px;
@@ -63,24 +69,18 @@
     <div class="qodef-mansonrygallery-title">
         Bộ sưu tập
     </div>
-    <div class="qodef-grid-no-gutter">
-        <div class="banner-full">
+    <div class="vc_row wpb_row vc_inner vc_row-fluid qodef-grid-no-gutter">
+        <div class="wpb_column vc_column_container vc_col-sm-12 banner-full">
             <a href="#"><img src="./wp-content/plugins/setsail-core/assets/img/gallery-img-full.png" alt="img"></a>
         </div>
-        <div class="qodef-grid-col-4">
-            <a href="#">
-                <img src="./wp-content/plugins/setsail-core/assets/img/gallery-img2.jpg" alt="img">
-            </a>
+        <div class="wpb_column vc_column_container vc_col-sm-4 banner-full">
+            <a href="#"><img src="./wp-content/plugins/setsail-core/assets/img/gallery-img2.jpg" alt="img"></a>
         </div>
-        <div class="qodef-grid-col-4">
-            <a href="#">
-                <img src="./wp-content/plugins/setsail-core/assets/img/gallery-img3.jpg" alt="img">
-            </a>
+        <div class="wpb_column vc_column_container vc_col-sm-4 banner-full">
+            <a href="#"><img src="./wp-content/plugins/setsail-core/assets/img/gallery-img3.jpg" alt="img"></a>
         </div>
-        <div class="qodef-grid-col-4">
-            <a href="#">
-                <img src="./wp-content/plugins/setsail-core/assets/img/gallery-img4.jpg" alt="img">
-            </a>
+        <div class="wpb_column vc_column_container vc_col-sm-4 banner-full">
+            <a href="#"><img src="./wp-content/plugins/setsail-core/assets/img/gallery-img4.jpg" alt="img"></a>
         </div>
     </div>
 </div>
