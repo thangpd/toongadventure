@@ -39,6 +39,7 @@ class IconWithText implements Lib\ShortcodeInterface {
 								'param_name' => 'style',
 								'heading'    => esc_html__( 'Style', 'setsail-core' ),
 								'value'      => array(
+									esc_html__( 'None', 'setsail-core' ) => '',
 									esc_html__( 'Style 1', 'setsail-core' ) => 'style-1',
 									esc_html__( 'Style 2', 'setsail-core' ) => 'style-2',
 									esc_html__( 'Style 3', 'setsail-core' ) => 'style-3',
@@ -262,7 +263,7 @@ class IconWithText implements Lib\ShortcodeInterface {
 		$this->enqueue_scripts();
 		$default_atts = array(
 			'custom_class'                => '',
-			'style'                       => 'style-1',
+			'style'                       => '',
 			'type'                        => 'icon-left',
 			'custom_icon'                 => '',
 			'icon_type'                   => 'qodef-normal',
@@ -309,8 +310,7 @@ class IconWithText implements Lib\ShortcodeInterface {
 			return setsail_core_get_shortcode_module_template_part( 'templates/iwt', 'icon-with-text', $params['type'], $params );
 		}
 	}
-
-	private function getIconParameters( $params ) {
+private function getIconParameters( $params ) {
 		$params_array = array();
 
 		if ( empty( $params['custom_icon'] ) ) {
