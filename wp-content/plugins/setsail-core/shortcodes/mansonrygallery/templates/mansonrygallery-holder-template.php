@@ -13,10 +13,10 @@
         content: "";
         position: absolute;
         left: 0;
-        top: 0;
+        top: -58px;
         width: 100%;
-        height: 230px;
-        background: url("./wp-content/plugins/setsail-core/assets/img/gallery-bg-top2.png") right top no-repeat;
+        height: 285px;
+        background: url("./wp-content/plugins/setsail-core/assets/img/gallery-bg-top3.png") right top no-repeat;
         z-index: 1;
     }
 
@@ -45,6 +45,7 @@
         font-size: 2rem;
         font-weight: 900;
         color: #fbad48;
+        text-transform: uppercase;
     }
 
     @media only screen and (max-width: 768px) {
@@ -71,16 +72,16 @@
     </div>
     <div class="vc_row wpb_row vc_inner vc_row-fluid qodef-grid-no-gutter">
         <div class="wpb_column vc_column_container vc_col-sm-12 banner-full">
-            <a href="#"><img src="./wp-content/plugins/setsail-core/assets/img/gallery-img-full.png" alt="img"></a>
+            <a href="#"><img class="w-100" src="./wp-content/plugins/setsail-core/assets/img/gallery-img-full.png" alt="img"></a>
         </div>
         <div class="wpb_column vc_column_container vc_col-sm-4 banner-full">
-            <a href="#"><img src="./wp-content/plugins/setsail-core/assets/img/gallery-img2.jpg" alt="img"></a>
+            <a href="#"><img class="w-100" src="./wp-content/plugins/setsail-core/assets/img/gallery-img2.jpg" alt="img"></a>
         </div>
         <div class="wpb_column vc_column_container vc_col-sm-4 banner-full">
-            <a href="#"><img src="./wp-content/plugins/setsail-core/assets/img/gallery-img3.jpg" alt="img"></a>
+            <a href="#"><img class="w-100" src="./wp-content/plugins/setsail-core/assets/img/gallery-img3.jpg" alt="img"></a>
         </div>
         <div class="wpb_column vc_column_container vc_col-sm-4 banner-full">
-            <a href="#"><img src="./wp-content/plugins/setsail-core/assets/img/gallery-img4.jpg" alt="img"></a>
+            <a href="#"><img class="w-100" src="./wp-content/plugins/setsail-core/assets/img/gallery-img4.jpg" alt="img"></a>
         </div>
     </div>
 </div>

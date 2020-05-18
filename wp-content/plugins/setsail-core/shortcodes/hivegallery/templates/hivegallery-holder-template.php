@@ -5,16 +5,20 @@ if (!empty($params['image_list'])) {
                     <div class="title">
                         %1$s
                     </div>
-                    <div class="block">
-                        <img src="%2$s"
-                             alt="">
-                    </div>
+                    <div class="drop-shadow">
+                        <div class="block">
+                            <img src="%2$s"
+                                 alt="">
+                        </div>
+                    </div>                    
                 </div>
             ';
     $format_item_2 = '    <div class="block-inner">
-                    <div class="block">
-                        <img src="%2$s"
-                             alt="">
+                    <div class="drop-shadow">
+                        <div class="block">
+                            <img src="%2$s"
+                                 alt="">
+                        </div>
                     </div>
                     <div class="title">
                         %1$s

@@ -90,7 +90,8 @@ div[class*=qodef-grid-col-] {
 }
 
 .level-slide .slide-title span:nth-child(1) {
-    padding-bottom: .3rem
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
 }
 
 .level-slide .slide-title span:nth-child(1):after {

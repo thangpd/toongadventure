@@ -1,4 +1,3 @@
-
 <div class="qodef-scrollsyncing-holder <?php echo esc_attr($holder_classes); ?> clearfix">
 
     <div class="qodef-grid-row">
@@ -93,7 +92,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item flex-container" id="schedule-5" data-id="alich-6">
+                    <div class="item flex-container" id="schedule-5" data-id="alich-5">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 5: SURABAYA</h3>
                             <div class="col-body">
@@ -102,15 +101,6 @@
                                         hương lên đỉnh Bromo </strong>- điểm kết cho hành trình chinh phục "bộ ba núi
                                     lửa".</p>
                                 <p>Di chuyển về khách sạn gần sân bay Surabaya, tổng kết chuyến đi cùng IGo Lead.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item flex-container" id="schedule-6" data-id="alich-6">
-                        <div class="col-item">
-                            <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 6: SURABAYA -
-                                TPHCM</h3>
-                            <div class="col-body">
-                                <p>Di chuyển ra sân bay Surabaya, khởi hành về Việt Nam.</p>
                             </div>
                         </div>
                     </div>
