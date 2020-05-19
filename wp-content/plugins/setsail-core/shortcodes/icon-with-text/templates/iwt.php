@@ -29,3 +29,4 @@
         <p class="qodef-iwt-text" <?php setsail_select_inline_style( $text_styles ); ?>><?php echo esc_html( $text ); ?></p>
 	<?php } ?>
 </div>
+</div>

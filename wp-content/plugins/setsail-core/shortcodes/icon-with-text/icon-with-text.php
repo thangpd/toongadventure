@@ -374,7 +374,7 @@ private function getIconParameters( $params ) {
 		$holderClasses[] = ! empty( $params['custom_class'] ) ? esc_attr( $params['custom_class'] ) : '';
 		$holderClasses[] = ! empty( $params['type'] ) ? 'qodef-iwt-' . $params['type'] : '';
 		$holderClasses[] = ! empty( $params['icon_size'] ) ? 'qodef-iwt-' . str_replace( 'qodef-', '', $params['icon_size'] ) : '';
-		$holderClasses[] = ! empty( $params['style'] ) ? $params['style'] : 'style-1';
+		$holderClasses[] = ! empty( $params['style'] ) ? $params['style'] : '';
 
 		return $holderClasses;
 	}
