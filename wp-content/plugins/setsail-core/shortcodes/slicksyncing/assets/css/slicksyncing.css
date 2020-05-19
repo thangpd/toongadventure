@@ -90,7 +90,8 @@ div[class*=qodef-grid-col-] {
 }
 
 .level-slide .slide-title span:nth-child(1) {
-    padding-bottom: .3rem
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
 }
 
 .level-slide .slide-title span:nth-child(1):after {
@@ -133,20 +134,42 @@ div[class*=qodef-grid-col-] {
 /*slide slick nav-for*/
 .qodef-slicksyncing-holder .item { cursor: pointer; }
 
+@media only screen and (max-width: 1024px) {
+    .scrollsyncing .qodef-grid-col-4 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .adventure-level {
+        padding: 90px 0 !important;
+    }
+
+    .adventure-level .qodef-grid-col-8,
+    .adventure-level .qodef-grid-col-4 {
+        float: none;
+    }
+
+    .adventure-level .qodef-grid-col-4 {
+        max-width: 343px;
+        margin: auto;
+    }
+
+    .qodef-slicksyncing-title {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+}
+
 /*slide slick nav-for*/
 @media only screen and (max-width: 575px) {
     .qodef-grid-col-phone-33per {
         width: 33.33%;
     }
 
-    .qodef-slicksyncing-title {
-        padding-left: 58px;
-        padding-right: 58px;
-    }
-
     .adventure-level {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+        padding: 120px 0 90px !important;
+        margin-top: -54px !important;
         -webkit-background-size: cover;
         background-size: cover;
     }

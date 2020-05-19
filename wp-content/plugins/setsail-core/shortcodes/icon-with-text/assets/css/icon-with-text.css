@@ -65,7 +65,7 @@
 
 .qodef-iwt.style-1 .qodef-iwt-icon img {
     backface-visibility: hidden;
-    display: inline-block!important;
+    display: inline-block !important;
     vertical-align: middle;
     max-width: 128px;
     max-height: 128px;
@@ -96,6 +96,7 @@
 .qodef-iwt.style-2 .qodef-iwt-content h5.qodef-iwt-title {
     color: #fff;
 }
+
 .qodef-iwt.style-2 .qodef-iwt-title-text {
     font-size: 18px;
     height: 84px;
@@ -122,6 +123,7 @@
     font-size: 20px;
     text-transform: uppercase;
     height: 48px;
+    line-height: 1.2;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -130,38 +132,138 @@
 }
 
 .qodef-iwt.style-3 .qodef-iwt-text {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #your-prepare > .wpb_column > .vc_column-inner,
 #note-join > .wpb_column > .vc_column-inner,
 #why-choose-us > .wpb_column > .vc_column-inner,
 #news-shortcode > .wpb_column > .vc_column-inner {
-    padding: 0!important;
+    padding: 0 !important;
 }
 
-@media only screen and (min-width: 768px) {
-    .d-none-md {
-        display: none!important;
+/*.d-block {
+    display: block!important;
+}
+
+.d-flex {
+    display: flex!important;
+}
+
+.d-none {
+    display: none!important;
+}*/
+
+@media only screen and (min-width: 992px) {
+    .d-block-lg {
+        display: block !important;
+    }
+
+    .d-flex-lg {
+        display: flex !important;
+    }
+
+    .d-none-lg {
+        display: none !important;
     }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    #your-prepare .qodef-iwt.style-1 .qodef-iwt-icon {
+        width: 100%;
+        height: 190px;
+    }
+
+    #your-prepare .qodef-iwt.style-1 .qodef-iwt-icon a {
+        width: 100%;
+        height: 162px
+    }
+
+    #your-prepare .qodef-iwt.style-1 .qodef-iwt-icon img {
+        width: 108px;
+        height: 108px;
+    }
+
+    #cost-promo .title-right .vc_custom_heading {
+        font-size: 3rem!important;
+        text-align: center!important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .d-block-md {
+        display: block !important;
+    }
+
+    .d-flex-md {
+        display: flex !important;
+    }
+
+    .d-none-md {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cost-promo h2 {
+        padding: 12px 40px;
+    }
+
+    #cost-promo .title-right .vc_custom_heading {
+        font-size: 3rem!important;
+        text-align: center!important;
+    }
+
+}
+
 @media only screen and (max-width: 575px) {
+    .d-block-sm {
+        display: block !important;
+    }
+
+    .d-flex-sm {
+        display: flex !important;
+    }
+
     .d-none-sm {
-        display: none!important;
+        display: none !important;
+    }
+
+    #your-prepare {
+        margin-top: 0 !important;
+        padding-top: 90px !important;
+    }
+
+    #why-choose-us {
+        padding-top: 150px !important;
+        padding-bottom: 90px !important;
+        margin-top: -180px !important;
+    }
+
+    #cost-promo {
+        margin-top: 0 !important
     }
 
     .prepare h2 {
         padding-left: 20px;
         padding-right: 20px;
+        margin-bottom: 2rem !important;
     }
 
-    .prepare .vc_column-inner {
+    .prepare.icon-with-text-2 h2 {
+        font-size: 1.8rem !important;
+    }
+
+    .prepare .wpb_column > .vc_column-inner {
         padding: 0;
         margin-bottom: 2rem;
     }
 
-    .prepare .vc_column-inner .wpb_wrapper {
+    .prepare .wpb_column > .vc_column-inner:last-child {
+        margin-bottom: 0
+    }
+
+    .prepare .wpb_column .vc_column-inner .wpb_wrapper {
         display: flex;
         flex-wrap: wrap;
     }
@@ -199,9 +301,30 @@
 
     .prepare .qodef-iwt .qodef-iwt-title-text {
         font-size: 14px;
+        height: auto;
+        text-overflow: unset;
+        -webkit-line-clamp: unset;
     }
 
     .prepare .qodef-iwt .qodef-iwt-text {
         font-size: 12px;
+        height: auto;
+        text-overflow: unset;
+        -webkit-line-clamp: unset;
+    }
+
+    .qodef-iwt.qodef-iwt-icon-top.style-3:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .qodef-iwt.style-3 .qodef-iwt-title-text {
+        height: auto;
+        text-overflow: unset;
+        -webkit-line-clamp: unset;
+    }
+
+    #cost-promo .title-right .vc_custom_heading {
+        font-size: 2rem !important;
+        text-align: center !important;
     }
 }
