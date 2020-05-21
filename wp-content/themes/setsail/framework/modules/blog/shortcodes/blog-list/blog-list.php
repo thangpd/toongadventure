@@ -1,27 +1,34 @@
 <?php
+
 namespace SetSailCore\CPT\Shortcodes\BlogList;
 
 use SetSailCore\Lib;
 
 class BlogList implements Lib\ShortcodeInterface {
 	private $base;
-	
+
 	function __construct() {
 		$this->base = 'qodef_blog_list';
-		
-		add_action('vc_before_init', array($this,'vcMap'));
-		
+
+		add_action( 'vc_before_init', array( $this, 'vcMap' ) );
+
 		//Category filter
-		add_filter( 'vc_autocomplete_qodef_blog_list_category_callback', array( &$this, 'blogCategoryAutocompleteSuggester', ), 10, 1 ); // Get suggestion(find). Must return an array
-		
+		add_filter( 'vc_autocomplete_qodef_blog_list_category_callback', array(
+			&$this,
+			'blogCategoryAutocompleteSuggester',
+		), 10, 1 ); // Get suggestion(find). Must return an array
+
 		//Category render
-		add_filter( 'vc_autocomplete_qodef_blog_list_category_render', array( &$this, 'blogCategoryAutocompleteRender', ), 10, 1 ); // Get suggestion(find). Must return an array
+		add_filter( 'vc_autocomplete_qodef_blog_list_category_render', array(
+			&$this,
+			'blogCategoryAutocompleteRender',
+		), 10, 1 ); // Get suggestion(find). Must return an array
 	}
-	
+
 	public function getBase() {
 		return $this->base;
 	}
-	
+
 	public function vcMap() {
 		vc_map(
 			array(
@@ -53,7 +60,10 @@ class BlogList implements Lib\ShortcodeInterface {
 						'param_name' => 'number_of_columns',
 						'heading'    => esc_html__( 'Number of Columns', 'setsail' ),
 						'value'      => array_flip( setsail_select_get_number_of_columns_array( true ) ),
-						'dependency' => array( 'element' => 'type', 'value' => array( 'standard', 'masonry', 'simple' ) )
+						'dependency' => array(
+							'element' => 'type',
+							'value'   => array( 'standard', 'masonry', 'simple' )
+						)
 					),
 					array(
 						'type'        => 'dropdown',
@@ -61,7 +71,10 @@ class BlogList implements Lib\ShortcodeInterface {
 						'heading'     => esc_html__( 'Space Between Items', 'setsail' ),
 						'value'       => array_flip( setsail_select_get_space_between_items_array() ),
 						'save_always' => true,
-						'dependency'  => array( 'element' => 'type', 'value'   => array( 'standard', 'masonry', 'simple' ) )
+						'dependency'  => array(
+							'element' => 'type',
+							'value'   => array( 'standard', 'masonry', 'simple' )
+						)
 					),
 					array(
 						'type'        => 'dropdown',
@@ -84,10 +97,10 @@ class BlogList implements Lib\ShortcodeInterface {
 						'description' => esc_html__( 'Enter one category slug (leave empty for showing all categories)', 'setsail' )
 					),
 					array(
-						'type'       => 'dropdown',
-						'param_name' => 'image_size',
-						'heading'    => esc_html__( 'Image Size', 'setsail' ),
-						'value'      => array(
+						'type'        => 'dropdown',
+						'param_name'  => 'image_size',
+						'heading'     => esc_html__( 'Image Size', 'setsail' ),
+						'value'       => array(
 							esc_html__( 'Original', 'setsail' )  => 'full',
 							esc_html__( 'Square', 'setsail' )    => 'setsail_select_image_square',
 							esc_html__( 'Landscape', 'setsail' ) => 'setsail_select_image_landscape',
@@ -118,7 +131,10 @@ class BlogList implements Lib\ShortcodeInterface {
 						'param_name'  => 'excerpt_length',
 						'heading'     => esc_html__( 'Text Length', 'setsail' ),
 						'description' => esc_html__( 'Number of words', 'setsail' ),
-						'dependency'  => Array( 'element' => 'type', 'value'   => array( 'standard', 'masonry', 'simple' ) ),
+						'dependency'  => Array(
+							'element' => 'type',
+							'value'   => array( 'standard', 'masonry', 'simple' )
+						),
 						'group'       => esc_html__( 'Post Info', 'setsail' )
 					),
 					array(
@@ -126,7 +142,23 @@ class BlogList implements Lib\ShortcodeInterface {
 						'param_name' => 'post_info_image',
 						'heading'    => esc_html__( 'Enable Post Info Image', 'setsail' ),
 						'value'      => array_flip( setsail_select_get_yes_no_select_array( false, true ) ),
-						'dependency' => Array( 'element' => 'type', 'value'   => array( 'standard', 'masonry' ) ),
+						'dependency' => Array( 'element' => 'type', 'value' => array( 'standard', 'masonry' ) ),
+						'group'      => esc_html__( 'Post Info', 'setsail' )
+					),
+					array(
+						'type'       => 'dropdown',
+						'param_name' => 'post_info_date',
+						'heading'    => esc_html__( 'Enable Post Info Date', 'setsail' ),
+						'value'      => array_flip( setsail_select_get_yes_no_select_array( false, true ) ),
+						'dependency' => Array( 'element' => 'type', 'value' => array( 'standard', 'masonry' ) ),
+						'group'      => esc_html__( 'Post Info', 'setsail' )
+					),
+					array(
+						'type'       => 'dropdown',
+						'param_name' => 'post_info_comment',
+						'heading'    => esc_html__( 'Enable Post Info Comment', 'setsail' ),
+						'value'      => array_flip( setsail_select_get_yes_no_select_array( false, true ) ),
+						'dependency' => Array( 'element' => 'type', 'value' => array( 'standard', 'masonry' ) ),
 						'group'      => esc_html__( 'Post Info', 'setsail' )
 					),
 					array(
@@ -145,7 +177,7 @@ class BlogList implements Lib\ShortcodeInterface {
 			)
 		);
 	}
-	
+
 	public function render( $atts, $content = null ) {
 		$default_atts = array(
 			'type'                => 'standard',
@@ -160,51 +192,53 @@ class BlogList implements Lib\ShortcodeInterface {
 			'title_transform'     => '',
 			'excerpt_length'      => '40',
 			'post_info_image'     => 'yes',
+			'post_info_date'      => 'no',
+			'post_info_comment'   => 'no',
 			'pagination_type'     => 'no-pagination',
 			'widget_simple'       => 'no'
 		);
 		$params       = shortcode_atts( $default_atts, $atts );
-		
+
 		$queryArray             = $this->generateQueryArray( $params );
 		$query_result           = new \WP_Query( $queryArray );
 		$params['query_result'] = $query_result;
-		
+
 		$params['holder_data']    = $this->getHolderData( $params );
 		$params['holder_classes'] = $this->getHolderClasses( $params, $default_atts );
 		$params['module']         = 'list';
-		
+
 		$params['max_num_pages'] = $query_result->max_num_pages;
 		$params['paged']         = isset( $query_result->query['paged'] ) ? $query_result->query['paged'] : 1;
-		
+
 		$params['this_object'] = $this;
-		
+
 		$params['type'] = $params['widget_simple'] === 'yes' ? 'simple-widget' : $params['type'];
-		
+
 		ob_start();
-		
+
 		setsail_select_get_module_template_part( 'shortcodes/blog-list/holder', 'blog', $params['type'], $params );
-		
+
 		$html = ob_get_contents();
-		
+
 		ob_end_clean();
-		
+
 		return $html;
 	}
-	
+
 	public function getHolderClasses( $params, $default_atts ) {
 		$holderClasses = array();
-		
+
 		$holderClasses[] = ! empty( $params['type'] ) ? 'qodef-bl-' . $params['type'] : 'qodef-bl-' . $default_atts['type'];
 		$holderClasses[] = ! empty( $params['number_of_columns'] ) ? 'qodef-' . $params['number_of_columns'] . '-columns' : 'qodef-' . $default_atts['number_of_columns'] . '-columns';
 		$holderClasses[] = ! empty( $params['space_between_items'] ) ? 'qodef-' . $params['space_between_items'] . '-space' : 'qodef-' . $default_atts['space_between_items'] . '-space';
 		$holderClasses[] = ! empty( $params['pagination_type'] ) ? 'qodef-bl-pag-' . $params['pagination_type'] : 'qodef-bl-pag-' . $default_atts['pagination_type'];
-		
+
 		return implode( ' ', $holderClasses );
 	}
-	
+
 	public function getHolderData( $params ) {
 		$dataString = '';
-		
+
 		if ( get_query_var( 'paged' ) ) {
 			$paged = get_query_var( 'paged' );
 		} elseif ( get_query_var( 'page' ) ) {
@@ -212,26 +246,26 @@ class BlogList implements Lib\ShortcodeInterface {
 		} else {
 			$paged = 1;
 		}
-		
+
 		$query_result = $params['query_result'];
-		
+
 		$params['max_num_pages'] = $query_result->max_num_pages;
-		
+
 		if ( ! empty( $paged ) ) {
 			$params['next-page'] = $paged + 1;
 		}
-		
+
 		foreach ( $params as $key => $value ) {
 			if ( $key !== 'query_result' && $value !== '' ) {
 				$new_key = str_replace( '_', '-', $key );
-				
+
 				$dataString .= ' data-' . $new_key . '=' . esc_attr( str_replace( ' ', '', $value ) );
 			}
 		}
-		
+
 		return $dataString;
 	}
-	
+
 	public function generateQueryArray( $params ) {
 		$queryArray = array(
 			'post_status'    => 'publish',
@@ -241,27 +275,27 @@ class BlogList implements Lib\ShortcodeInterface {
 			'posts_per_page' => $params['number_of_posts'],
 			'post__not_in'   => get_option( 'sticky_posts' )
 		);
-		
+
 		if ( ! empty( $params['category'] ) ) {
 			$queryArray['category_name'] = $params['category'];
 		}
-		
+
 		if ( ! empty( $params['next_page'] ) ) {
 			$queryArray['paged'] = $params['next_page'];
 		} else {
 			$query_array['paged'] = 1;
 		}
-		
+
 		return $queryArray;
 	}
-	
+
 	public function getTitleStyles( $params ) {
 		$styles = array();
-		
+
 		if ( ! empty( $params['title_transform'] ) ) {
 			$styles[] = 'text-transform: ' . $params['title_transform'];
 		}
-		
+
 		return implode( ';', $styles );
 	}
 
@@ -274,11 +308,11 @@ class BlogList implements Lib\ShortcodeInterface {
 	 */
 	public function blogCategoryAutocompleteSuggester( $query ) {
 		global $wpdb;
-		$post_meta_infos       = $wpdb->get_results( $wpdb->prepare( "SELECT a.slug AS slug, a.name AS category_title
+		$post_meta_infos = $wpdb->get_results( $wpdb->prepare( "SELECT a.slug AS slug, a.name AS category_title
 					FROM {$wpdb->terms} AS a
 					LEFT JOIN ( SELECT term_id, taxonomy  FROM {$wpdb->term_taxonomy} ) AS b ON b.term_id = a.term_id
 					WHERE b.taxonomy = 'category' AND a.name LIKE '%%%s%%'", stripslashes( $query ) ), ARRAY_A );
-		
+
 		$results = array();
 		if ( is_array( $post_meta_infos ) && ! empty( $post_meta_infos ) ) {
 			foreach ( $post_meta_infos as $value ) {
@@ -288,10 +322,10 @@ class BlogList implements Lib\ShortcodeInterface {
 				$results[]     = $data;
 			}
 		}
-		
+
 		return $results;
 	}
-	
+
 	/**
 	 * Find blog category by slug
 	 * @since 4.4
@@ -306,25 +340,25 @@ class BlogList implements Lib\ShortcodeInterface {
 			// get portfolio category
 			$category = get_term_by( 'slug', $query, 'category' );
 			if ( is_object( $category ) ) {
-				
-				$category_slug = $category->slug;
+
+				$category_slug  = $category->slug;
 				$category_title = $category->name;
-				
+
 				$category_title_display = '';
 				if ( ! empty( $category_title ) ) {
 					$category_title_display = esc_html__( 'Category', 'setsail' ) . ': ' . $category_title;
 				}
-				
+
 				$data          = array();
 				$data['value'] = $category_slug;
 				$data['label'] = $category_title_display;
-				
+
 				return ! empty( $data ) ? $data : false;
 			}
-			
+
 			return false;
 		}
-		
+
 		return false;
 	}
 }
