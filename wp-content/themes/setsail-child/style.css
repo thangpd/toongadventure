@@ -725,5 +725,10 @@ h1.qodef-st-title, h2.qodef-st-title {
     .qodef-container-inner, .qodef-grid, .qodef-row-grid-section {
         width: 340px;
     }
+
+    .about-3value {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
 }
 
