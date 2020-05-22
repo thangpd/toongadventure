@@ -1,38 +1,74 @@
 .shortcode-team-user.style-1 .shortcode-team-user-image {
-    display:block;
+    display: block;
     text-align: center;
 }
-.shortcode-team-user.style-1 .hortcode-team-user-des{
-    display:block;
+
+.shortcode-team-user.style-1 .hortcode-team-user-des {
+    display: block;
     text-align: center;
-    padding-bottom:40px;
+}
+
+.style-1 .hortcode-team-user-des {
+    padding-bottom: 40px;
     margin: 0px 40px 0 40px;
 }
+
 .shortcode-team-user {
     background-color: #0b403b;
 }
-.shortcode-team-user-image{
-    padding-top : 10px;
+
+.shortcode-team-user.style-1 .shortcode-team-user-image {
+    padding-top: 10px;
 }
-.shortcode-team-user-image img{
+
+.shortcode-team-user.style-1 .shortcode-team-user-image img {
     border-radius: 50%;
     padding: 20px;
     height: 240px;
     width: 240px;
 }
+.shortcode-team-user.style-2 .shortcode-team-user-image img {
+    padding: 20px;
+    height: auto;
+    max-width: 100%;
+}
 
-.hortcode-team-user-info-job {
+.shortcode-team-user.style-2 .shortcode-team-user-image {
+    display: block;
+}
+
+.shortcode-team-user.style-2 .hortcode-team-user-info {
+    display: block;
+}
+
+.shortcode-team-user.style-2 .holder-col-1 {
+    display: inline-block;
+    padding: 30px;
+    width: 30%;
+}
+.shortcode-team-user.style-2{
+    display:flex;
+}
+.shortcode-team-user.style-2 .holder-col-2 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 60px;
+    width: 70%;
+}
+
+
+.shortcode-team-user .hortcode-team-user-info-job {
     color: white;
-    font-family: "HelveticaNeue-CondensedBlack", sans-serif;
     font-size: 21px;
     letter-spacing: 1px;
     margin-top: 10px;
     padding-top: 10px;
     text-align: center;
+    font-weight:bold;
 }
-.hortcode-team-user-info-name{
+
+.shortcode-team-user .hortcode-team-user-info-name {
     color: white;
-    font-family: "HelveticaNeue-CondensedBlack", sans-serif;
     font-size: 30px;
     line-height: 1.15em;
     font-weight: 600;
@@ -42,22 +78,49 @@
     text-align: center;
 }
 
-.hortcode-team-user-des{
+.shortcode-team-user .hortcode-team-user-des {
     color: white;
     font-size: 14px;
     font-weight: 500;
 }
 
 @media all and (max-width: 768px) {
-    .hortcode-team-user-des{
+    .shortcode-team-user .hortcode-team-user-des {
         color: white;
         font-size: 14px;
         font-weight: 500;
     }
+    .shortcode-team-user .hortcode-team-user-info-job{
+        font-size:17px;
+    }
+    .shortcode-team-user .hortcode-team-user-info-name{
+        font-size:21px;
+    }
+    .shortcode-team-user.style-2 .holder-col-1{
+        padding: 65px 0 0 30px;
+    }
+    .shortcode-team-user.style-2 .shortcode-team-user-image img{
+        padding:unset;
+    }
 }
 
 @media all and (max-width: 468px) {
-    .hortcode-team-user-des{
+    .shortcode-team-user .hortcode-team-user-info-job{
+        font-size:17px;
+    }
+    .shortcode-team-user.style-2{
+        display:block;
+    }
+    .shortcode-team-user.style-2 .holder-col-1{
+        display:block;
+        width:auto;
+    }
+    .shortcode-team-user.style-2 .holder-col-2{
+        display:block;
+        width:auto;
+        padding: 0 0 40px 0;
+    }
+    .shortcode-team-user .hortcode-team-user-des {
         color: white;
         font-size: 14px;
         font-weight: 500;
