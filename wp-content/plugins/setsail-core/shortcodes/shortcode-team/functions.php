@@ -1,10 +1,5 @@
 <?php
 
-if ( class_exists( 'WPBakeryShortCodesContainer' ) ) {
-	class WPBakeryShortCode_Qodef_shortcode_team extends WPBakeryShortCodesContainer {}
-}
-
-
 if ( ! function_exists( 'setsail_core_add_shortcode_team_shortcodes' ) ) {
 	function setsail_core_add_shortcode_team_shortcodes( $shortcodes_class_name ) {
 		$shortcodes = array(

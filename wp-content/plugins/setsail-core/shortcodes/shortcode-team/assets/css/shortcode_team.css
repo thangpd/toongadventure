@@ -1,12 +1,21 @@
-
+.shortcode-team-user.style-1 .shortcode-team-user-image {
+    display:block;
+    text-align: center;
+}
+.shortcode-team-user.style-1 .hortcode-team-user-des{
+    display:block;
+    text-align: center;
+    padding-bottom:40px;
+    margin: 0px 40px 0 40px;
+}
 .shortcode-team-user {
     background-color: #0b403b;
 }
 .shortcode-team-user-image{
-    margin-top : 10px;
+    padding-top : 10px;
 }
 .shortcode-team-user-image img{
-    border-radius: 50%!important;
+    border-radius: 50%;
     padding: 20px;
     height: 240px;
     width: 240px;
@@ -33,21 +42,21 @@
     text-align: center;
 }
 
-
+.hortcode-team-user-des{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
 
 @media all and (max-width: 768px) {
     .hortcode-team-user-des{
         color: white;
         font-size: 14px;
         font-weight: 500;
-        margin-top: 10px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
     }
 }
 
-@media all and (min-width: 768px) {
+@media all and (max-width: 468px) {
     .hortcode-team-user-des{
         color: white;
         font-size: 14px;
