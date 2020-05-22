@@ -4,6 +4,7 @@
 			<li class="qodef-masonry-grid-sizer"></li>
 			<li class="qodef-masonry-grid-gutter"></li>
 			<?php
+
 			if ( $query_result->have_posts() ):
 				while ( $query_result->have_posts() ) : $query_result->the_post();
 					setsail_select_get_module_template_part( 'shortcodes/blog-list/layout-collections/post', 'blog', $type, $params );
