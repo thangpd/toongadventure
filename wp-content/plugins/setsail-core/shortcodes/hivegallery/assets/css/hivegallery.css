@@ -17,7 +17,7 @@
 }
 
 .drop-shadow {
-    filter: drop-shadow(4px 4px 3px #262626);
+    filter: drop-shadow(2px 1px 3px #262626);
 }
 
 .hive-grid .grid {
@@ -25,14 +25,14 @@
     width: auto;
     -webkit-box-pack: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, 260px);
-    grid-template-rows: repeat(auto-fit, minmax(315px, 315px));
-    grid-auto-rows: 315px;
+    grid-template-columns: repeat(auto-fit, 190px);
+    grid-template-rows: repeat(auto-fit, minmax(263px, 263px));
+    grid-auto-rows: 263px;
 }
 
 .block {
     position: relative;
-    height: 256px;
+    height: 190px;
     background-color: #0b4041;
     grid-column: 2 span;
     display: -webkit-box;
@@ -51,8 +51,8 @@
 .grid .block {
     /*-webkit-clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
     clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);*/
-    -webkit-clip-path: polygon(50% 0, 98% 22%, 98% 78%, 50% 100%, 2% 78%, 2% 22%);
-    clip-path: polygon(50% 0, 98% 22%, 98% 78%, 50% 100%, 2% 78%, 2% 22%);
+    -webkit-clip-path: polygon(50% 0, 96% 25%, 96% 75%, 50% 100%, 4% 75%, 4% 25%);
+    clip-path: polygon(50% 0, 96% 25%, 96% 75%, 50% 100%, 4% 75%, 4% 25%);
 }
 
 .grid .block img {
@@ -64,11 +64,16 @@
     margin-bottom: 60px;
     position: relative;
     font-weight: 900;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.grid .title {
+    display: flex;
+    align-items: flex-end;
 }
 
 .grid .title:before, .grid .title:after {
@@ -90,10 +95,6 @@
     bottom: -55px;
     width: 2px;
     height: 50px;
-}
-
-.grid-1 .title {
-
 }
 
 .grid-2 .title {
@@ -118,13 +119,6 @@
 .hive-grid .block-inner:hover .title:before,
 .hive-grid .block-inner:hover .title:after {
     background-color: #fbac47;
-}
-
-.grid .title {
-    font-size: 12px;
-    height: 48px;
-    display: flex;
-    align-items: flex-end;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {

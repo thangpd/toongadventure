@@ -38,16 +38,16 @@
 
 .qodef-iwt.style-1 .qodef-iwt-icon {
     background: url("../../../../assets/img/layer_icon.png") top/100% no-repeat;
-    width: 178px;
-    height: 210px;
+    width: 100%;
+    height: 172px;
     margin: auto;
     text-align: center;
 }
 
 .qodef-iwt.style-1 .qodef-iwt-icon a {
     display: block;
-    width: 178px;
-    height: 178px;
+    width: 100%;
+    height: 146px;
     text-align: center;
     white-space: nowrap;
 }
@@ -67,8 +67,8 @@
     backface-visibility: hidden;
     display: inline-block !important;
     vertical-align: middle;
-    max-width: 128px;
-    max-height: 128px;
+    max-width: 70%;
+    max-height: 70%;
     margin-left: -4px;
 }
 
@@ -170,6 +170,12 @@
     display: none!important;
 }*/
 
+@media only screen and (min-width: 1200px) {
+    .hidden-desktop {
+        display: none !important;
+    }
+}
+
 @media only screen and (min-width: 992px) {
     .d-block-lg {
         display: block !important;
@@ -182,27 +188,35 @@
     .d-none-lg {
         display: none !important;
     }
+
+    #why-choose-us .qodef-iwt-icon img {
+        width: calc(122px * 8 / 10);
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
-    #your-prepare .qodef-iwt.style-1 .qodef-iwt-icon {
-        width: 100%;
-        height: 190px;
+    .hidden-tablet {
+        display: none !important;
     }
 
-    #your-prepare .qodef-iwt.style-1 .qodef-iwt-icon a {
+    .qodef-iwt.style-1 .qodef-iwt-icon {
         width: 100%;
-        height: 162px
+        height: 265px;
+    }
+
+    .qodef-iwt.style-1 .qodef-iwt-icon a {
+        width: 100%;
+        height: 225px
     }
 
     #your-prepare .qodef-iwt.style-1 .qodef-iwt-icon img {
-        width: 108px;
-        height: 108px;
+        /*width: 108px;
+        height: 108px;*/
     }
 
     #cost-promo .title-right .vc_custom_heading {
-        font-size: 3rem!important;
-        text-align: center!important;
+        font-size: 3rem !important;
+        text-align: center !important;
     }
 }
 
@@ -221,15 +235,28 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .qodef-iwt.style-1 .qodef-iwt-icon {
+        height: 200px;
+    }
+
+    #your-prepare .vc_empty_space {
+        height: 40px !important;
+    }
+
     .cost-promo h2 {
         padding: 12px 40px;
     }
 
     #cost-promo .title-right .vc_custom_heading {
-        font-size: 3rem!important;
-        text-align: center!important;
+        font-size: 3rem !important;
+        text-align: center !important;
     }
+}
 
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .hidden-tablet {
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -243,6 +270,14 @@
 
     .d-none-sm {
         display: none !important;
+    }
+
+    .hidden-mobile {
+        display: none !important;
+    }
+
+    .qodef-iwt.style-1 .qodef-iwt-icon a {
+        height: 170px;
     }
 
     #your-prepare {
@@ -304,8 +339,8 @@
     }
 
     .prepare.icon-with-text-1 .qodef-iwt.style-1 {
-        width: 50%;
-        float: left;
+        /*width: 50%;*/
+        /*float: left;*/
         position: relative;
         padding-left: 15px;
         padding-right: 15px;

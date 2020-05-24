@@ -21,6 +21,13 @@
     max-height: 250px;
 }
 
+@media only screen and (min-width: 992px) {
+    #news-shortcode {
+        padding-left: 30px;
+        padding-right: 30p;
+    }
+}
+
 @media only screen and (max-width: 575px) {
     #news-shortcode {
         padding-left: 0!important;
