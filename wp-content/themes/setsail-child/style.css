@@ -510,7 +510,7 @@ h1.qodef-st-title, h2.qodef-st-title {
     left: 0;
     width: 99%;
     height: 99%;
-    background: url(https://toongadventure.com/wp-content/themes/setsail-child/assets/image/pattern.png) center/100% 100% no-repeat;
+    background: url('assets/image/pattern.png') center/100% 100% no-repeat;
     opacity: 1;
 }
 

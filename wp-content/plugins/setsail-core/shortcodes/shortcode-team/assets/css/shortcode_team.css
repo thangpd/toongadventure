@@ -27,8 +27,12 @@
     height: 240px;
     width: 240px;
 }
+
+.shortcode-team-user-image {
+    text-align: center;
+}
+
 .shortcode-team-user.style-2 .shortcode-team-user-image img {
-    padding: 20px;
     height: auto;
     max-width: 100%;
 }
@@ -43,12 +47,14 @@
 
 .shortcode-team-user.style-2 .holder-col-1 {
     display: inline-block;
-    padding: 30px;
+    padding: 30px 0 0 30px;
     width: 30%;
 }
-.shortcode-team-user.style-2{
-    display:flex;
+
+.shortcode-team-user.style-2 {
+    display: flex;
 }
+
 .shortcode-team-user.style-2 .holder-col-2 {
     display: inline-block;
     vertical-align: top;
@@ -64,7 +70,7 @@
     margin-top: 10px;
     padding-top: 10px;
     text-align: center;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .shortcode-team-user .hortcode-team-user-info-name {
@@ -84,46 +90,96 @@
     font-weight: 500;
 }
 
+.shortcode-team-user.style-2 .shortcode-team-user-image {
+    border-radius: 50%;
+    overflow: hidden;
+    max-height: 300px;
+    max-width: 300px;
+    margin-left: 30px;
+}
+
+@media all and (max-width: 1025px) {
+    .shortcode-team-user .hortcode-team-user-info-job {
+        font-size: 17px;
+    }
+
+    .shortcode-team-user .hortcode-team-user-info-name {
+        font-size: 21px;
+    }
+
+    .shortcode-team-user.style-2 .shortcode-team-user-image {
+        border-radius: 50%;
+        overflow: hidden;
+        max-height: 200px;
+        max-width: 200px;
+        margin-left: unset;
+    }
+}
+
 @media all and (max-width: 768px) {
     .shortcode-team-user .hortcode-team-user-des {
         color: white;
         font-size: 14px;
         font-weight: 500;
     }
-    .shortcode-team-user .hortcode-team-user-info-job{
-        font-size:17px;
+
+    .shortcode-team-user .hortcode-team-user-info-job {
+        font-size: 14px;
     }
-    .shortcode-team-user .hortcode-team-user-info-name{
-        font-size:21px;
+
+    .shortcode-team-user .hortcode-team-user-info-name {
+        font-size: 21px;
     }
-    .shortcode-team-user.style-2 .holder-col-1{
+
+    .shortcode-team-user.style-2 .holder-col-1 {
         padding: 65px 0 0 30px;
+        width: 40%;
     }
-    .shortcode-team-user.style-2 .shortcode-team-user-image img{
-        padding:unset;
+
+    .shortcode-team-user.style-2 .holder-col-2 {
+        width: 60%;
+    }
+
+    .shortcode-team-user.style-2 .shortcode-team-user-image img {
+        border-radius: 0;
+        padding: unset;
+        width: 100%;
+        height: auto;
     }
 }
 
 @media all and (max-width: 468px) {
-    .shortcode-team-user.style-2 .shortcode-team-user-image img{
-        padding:20px;
+    .shortcode-team-user.style-2 .shortcode-team-user-image img {
+        padding: 20px;
+
     }
-    .shortcode-team-user .hortcode-team-user-info-job{
-        font-size:17px;
+    .shortcode-team-user.style-2 .shortcode-team-user-image {
+         border-radius: unset;
+         overflow: unset;
+         max-height: unset;
+         max-width: unset;
+         margin-left: unset;
     }
-    .shortcode-team-user.style-2{
-        display:block;
+    .shortcode-team-user .hortcode-team-user-info-job {
+        font-size: 14px;
     }
-    .shortcode-team-user.style-2 .holder-col-1{
-        display:block;
-        width:auto;
-        padding:0;
+
+    .shortcode-team-user.style-2 {
+        display: block;
     }
-    .shortcode-team-user.style-2 .holder-col-2{
-        display:block;
-        width:auto;
+
+    .shortcode-team-user.style-2 .holder-col-1 {
+        display: block;
+        width: auto;
+        padding: 0;
+    }
+
+    .shortcode-team-user.style-2 .holder-col-2 {
+        display: block;
+        width: auto;
         padding: 0 0 40px 0;
     }
+
     .shortcode-team-user .hortcode-team-user-des {
         color: white;
         font-size: 14px;

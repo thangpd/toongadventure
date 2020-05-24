@@ -134,6 +134,22 @@
 .qodef-iwt.style-3 .qodef-iwt-text {
     font-size: 14px;
 }
+.qodef-iwt-icon-medium img{
+    width:90px;
+}
+.qodef-iwt-icon-tiny img{
+    width:60px;
+}
+.qodef-iwt-icon-small img{
+    width:80px;
+}
+.qodef-iwt-icon-large img{
+    width: 100px;
+}
+
+.qodef-iwt-icon-huge img{
+    width:120px;
+}
 
 #your-prepare > .wpb_column > .vc_column-inner,
 #note-join > .wpb_column > .vc_column-inner,
