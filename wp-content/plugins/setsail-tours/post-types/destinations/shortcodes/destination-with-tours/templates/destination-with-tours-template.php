@@ -45,7 +45,7 @@ if ($link_to_page != '#') {
                                     $tour_item_is_featured = get_post_meta($tour_id, 'qodef_tour_item_is_featured_meta',
                                         true);
                                     ?>
-                                    <div class="qodef-td-items tour">
+                                    <div class="qodef-td-items tour <?php echo $i==3?'dis-none':''; ?>">
                                         <?php if ($tour_item_is_featured === 'yes') { ?>
                                             <div class="qodef-tour-has-featured-mark">
                                                 <?php echo setsail_select_icon_collections()->renderIcon('icon_star',

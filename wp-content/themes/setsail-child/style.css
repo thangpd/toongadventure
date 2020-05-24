@@ -253,12 +253,12 @@ Color text      #0b403b
 
 .qodef-tours-type-toong-2 a.qodef-tours-toong-item-link {
     display: inline-block;
-
+    text-decoration: none !important;
 }
 
 .qodef-tours-type-toong-2 .qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link, .qodef-td-items.tour .qodef-gim-title-and-price-holder a.qodef-tours-toong-item-link {
     display: inline-block;
-
+    text-decoration: none !important;
     max-width: calc(100% - 65px);
 }
 
@@ -514,6 +514,8 @@ h1.qodef-st-title, h2.qodef-st-title {
     opacity: 1;
 }
 
+
+
 .qodef-tours-dwt-holder .qodef-td-items:not(.destination) .qodef-tdi-image img {
     display: block;
     max-height: 144px;
@@ -629,13 +631,14 @@ h1.qodef-st-title, h2.qodef-st-title {
     box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
+
 /*.introduction .wpb_text_column.wpb_content_element{
 	width:90%;
 	padding-left:16px;
 }
 */
-.introduction .image-introduction .vc_single_image-wrapper{
-    width:450px;
+.introduction .image-introduction .vc_single_image-wrapper {
+    width: 450px;
 }
 
 .d-flex {
@@ -649,10 +652,12 @@ h1.qodef-st-title, h2.qodef-st-title {
 .justify-center {
     justify-content: center !important;
 }
-.ly-do .vc_col-title{
-    font-size:17px;
-    font-weight:700;
+
+.ly-do .vc_col-title {
+    font-size: 17px;
+    font-weight: 700;
 }
+
 .ly-do .wpb_video_widget .wpb_wrapper iframe {
     width: 100%;
     height: 100%;
@@ -665,10 +670,12 @@ h1.qodef-st-title, h2.qodef-st-title {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 .ly-do .vc_inner > div[class*=vc_col] {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 .ly-do .vc_inner .vc_column-inner {
     background-color: #fff;
     box-shadow: 0 0 15px #dedede;
@@ -676,12 +683,14 @@ h1.qodef-st-title, h2.qodef-st-title {
     margin-bottom: 60px;
     position: relative;
 }
+
 .ly-do .vc_inner .vc_col-inner .vc_col-title {
     color: #03413b;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
 }
+
 .ly-do span.icon {
     position: absolute;
     width: 50px;
@@ -693,18 +702,23 @@ h1.qodef-st-title, h2.qodef-st-title {
     background-size: 50px;
     background-repeat: no-repeat;
 }
+
 .ly-do span.icon.icon-pro {
     background-image: url(https://toongadventure.vn/wp-content/themes/setsail-child/assets/image/icon/icon-community.jpg);
 }
+
 .ly-do span.icon.icon-unique {
     background-image: url(https://toongadventure.vn/wp-content/themes/setsail-child/assets/image/icon/icon-unique.jpg);
 }
+
 .ly-do span.icon.icon-sustain {
     background-image: url(https://toongadventure.vn/wp-content/themes/setsail-child/assets/image/icon/icon-sustain.jpg);
 }
+
 .ly-do span.icon.icon-community {
     background-image: url(https://toongadventure.vn/wp-content/themes/setsail-child/assets/image/icon/icon-community.jpg);
 }
+
 .ly-do span.icon.icon-safe {
     background-image: url(https://toongadventure.vn/wp-content/themes/setsail-child/assets/image/icon/icon-safe.jpg);
 }
@@ -780,6 +794,9 @@ h1.qodef-st-title, h2.qodef-st-title {
     .qodef-container-inner, .qodef-grid, .qodef-row-grid-section {
         width: 640px;
     }
+    .qodef-td-items.tour.dis-none {
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -813,22 +830,23 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 
 
-
-
-@media(max-width:769px){
-    .introduction .vc_column-inner:first-child{
-        padding-left: 30px!important;
-        padding-right: 30px!important;
+@media (max-width: 769px) {
+    .introduction .vc_column-inner:first-child {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
     }
 }
-@media(max-width:480px){
+
+@media (max-width: 480px) {
     .icon-doitac .wpb_wrapper {
         flex-wrap: wrap;
     }
-    .ly-do .vc_video .vc_column-inner{
-        height:500px;
+
+    .ly-do .vc_video .vc_column-inner {
+        height: 500px;
     }
-    .vc_video >div {
+
+    .vc_video > div {
         padding-top: 20px !important;
         padding-bottom: 20px !important;
         margin-bottom: 60px;
@@ -837,7 +855,8 @@ h1.qodef-st-title, h2.qodef-st-title {
     .vc_rs-video {
         margin: 0 !important;
     }
-    .vc_rs-video >div {
-        width: 100%!important;
+
+    .vc_rs-video > div {
+        width: 100% !important;
     }
 }
