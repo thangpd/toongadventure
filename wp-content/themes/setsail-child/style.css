@@ -515,7 +515,6 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 
 
-
 .qodef-tours-dwt-holder .qodef-td-items:not(.destination) .qodef-tdi-image img {
     display: block;
     max-height: 144px;
@@ -794,6 +793,7 @@ h1.qodef-st-title, h2.qodef-st-title {
     .qodef-container-inner, .qodef-grid, .qodef-row-grid-section {
         width: 640px;
     }
+
     .qodef-td-items.tour.dis-none {
         display: none !important;
     }
@@ -827,6 +827,36 @@ h1.qodef-st-title, h2.qodef-st-title {
         padding-left: 30px !important;
         padding-right: 30px !important;
     }
+
+    .qodef-tours-dwt-holder .qodef-td-items {
+        padding: 0;
+        margin: 0 5px;
+    }
+    .qodef-td-items.tour .qodef-tour-title{
+        padding:5px;
+    }
+    .qodef-td-items.tour h4.qodef-tour-title{
+        font-size:10px;
+    }
+    .qodef-td-items.tour .qodef-tours-list-item-difficult-item{
+        font-size:10px;
+        padding-top:0;
+    }
+    .myLoading-indicator{
+        font-size:3px;
+    }
+    .myLoading-indicator-circle-wrap{
+        width: 6em;
+        height: 6em;
+    }
+    .myLoading-indicator-circle-wrap .mask,.myLoading-indicator-circle-wrap .fill{
+        width:6em;
+        height:6em;
+    }
+    .myLoading-indicator-circle-wrap .inside-circle{
+        font-size:13px;
+    }
+
 }
 
 

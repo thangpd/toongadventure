@@ -152,13 +152,13 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .qodef-tours-dwt-holder .qodef-td-item-inner {
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
   }
   .qodef-tours-dwt-holder .qodef-td-items {
     width: 50%;
   }
   .qodef-tours-dwt-holder .qodef-td-items:nth-child(1), .qodef-tours-dwt-holder .qodef-td-items:nth-child(2) {
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
   }
 }
 
@@ -180,7 +180,7 @@
     transform: translateX(20%);
   }
   .qodef-tours-dwt-holder .qodef-outer-space .qodef-item-space .qodef-td-item-inner {
-    flex-direction: column !important;
+    /*flex-direction: column;*/
   }
 }
 
