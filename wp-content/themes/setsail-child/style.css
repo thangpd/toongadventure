@@ -879,7 +879,9 @@ h1.qodef-st-title, h2.qodef-st-title {
     .icon-doitac .wpb_wrapper {
         flex-wrap: wrap;
     }
-
+    .qodef-normal-space .qodef-outer-space{
+        margin: 30px -15px;
+    }
     .ly-do .vc_video .vc_column-inner {
         height: 500px;
     }

@@ -39,7 +39,7 @@
 .qodef-iwt.style-1 .qodef-iwt-icon {
     background: url("../../../../assets/img/layer_icon.png") top/100% no-repeat;
     width: 100%;
-    height: 172px;
+    height: 190px;
     margin: auto;
     text-align: center;
 }
@@ -135,20 +135,20 @@
 .qodef-iwt.style-3 .qodef-iwt-text {
     font-size: 14px;
 }
-.qodef-iwt-icon-medium img{
+.style-3.qodef-iwt-icon-medium img{
     width:90px;
 }
-.qodef-iwt-icon-tiny img{
+.style-3.qodef-iwt-icon-tiny img{
     width:60px;
 }
-.qodef-iwt-icon-small img{
+.style-3.qodef-iwt-icon-small img{
     width:80px;
 }
-.qodef-iwt-icon-large img{
+.style-3.qodef-iwt-icon-large img{.qodef-iwt.style-1 .qodef-iwt-icon
     width: 100px;
 }
 
-.qodef-iwt-icon-huge img{
+.style-3.qodef-iwt-icon-huge img{
     width:120px;
 }
 
