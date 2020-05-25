@@ -78,7 +78,9 @@
     box-shadow: 0px 0px 10px 3px #0003;
     overflow: hidden;
 }
-
+.qodef-iwt.qodef-iwt-icon-top .qodef-iwt-content{
+    padding: 9px 0 0;
+}
 .qodef-iwt.style-2 .qodef-iwt-icon {
     display: block;
     width: 100%;
@@ -122,7 +124,6 @@
     color: #05433b;
     font-size: 20px;
     text-transform: uppercase;
-    height: 48px;
     line-height: 1.2;
     overflow: hidden;
     text-overflow: ellipsis;

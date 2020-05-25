@@ -822,6 +822,13 @@ h1.qodef-st-title, h2.qodef-st-title {
     .qodef-container-inner, .qodef-grid, .qodef-row-grid-section {
         width: 340px;
     }
+    .qodef-tours-dwt-holder .qodef-td-items.tour .qodef-tdi-image {
+        margin-bottom:-5px;
+    }
+    .qodef-tours-gim-content-holder .difficult-text{
+        margin-bottom:-5px;
+    }
+
 
     .about-3value {
         padding-left: 30px !important;
@@ -844,6 +851,7 @@ h1.qodef-st-title, h2.qodef-st-title {
     }
     .myLoading-indicator{
         font-size:3px;
+        margin-bottom:-5px;
     }
     .myLoading-indicator-circle-wrap{
         width: 6em;
