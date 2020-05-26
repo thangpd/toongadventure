@@ -16,7 +16,7 @@
         top: -58px;
         width: 100%;
         height: 285px;
-        background: url("./wp-content/plugins/setsail-core/assets/img/gallery-bg-top3.png") right top no-repeat;
+        background: url("<?php echo plugin_dir_url(__DIR__); ?>/assets/img/gallery-bg-top3.png") right top no-repeat;
         z-index: 1;
     }
 
@@ -27,7 +27,7 @@
         bottom: 0;
         width: 100%;
         height: 120px;
-        background: url("./wp-content/plugins/setsail-core/assets/img/mansonry-gallery-bg-bottom.png") left bottom no-repeat;
+        background: url("<?php echo plugin_dir_url(__DIR__); ?>/assets/img/mansonry-gallery-bg-bottom.png") left bottom no-repeat;
         z-index: 1;
     }
 
@@ -72,16 +72,16 @@
     </div>
     <div class="vc_row wpb_row vc_inner vc_row-fluid qodef-grid-no-gutter">
         <div class="wpb_column vc_column_container vc_col-sm-12 banner-full">
-            <a href="#"><img class="w-100" src="./wp-content/plugins/setsail-core/assets/img/gallery-img-full.png" alt="img"></a>
+            <a href="#"><img class="w-100" src="<?php echo plugin_dir_url(__DIR__); ?>/assets/img/gallery-img-full.png" alt="img"></a>
         </div>
         <div class="wpb_column vc_column_container vc_col-sm-4 banner-full">
-            <a href="#"><img class="w-100" src="./wp-content/plugins/setsail-core/assets/img/gallery-img2.jpg" alt="img"></a>
+            <a href="#"><img class="w-100" src="<?php echo plugin_dir_url(__DIR__); ?>/assets/img/gallery-img2.jpg" alt="img"></a>
         </div>
         <div class="wpb_column vc_column_container vc_col-sm-4 banner-full">
-            <a href="#"><img class="w-100" src="./wp-content/plugins/setsail-core/assets/img/gallery-img3.jpg" alt="img"></a>
+            <a href="#"><img class="w-100" src="<?php echo plugin_dir_url(__DIR__); ?>/assets/img/gallery-img3.jpg" alt="img"></a>
         </div>
         <div class="wpb_column vc_column_container vc_col-sm-4 banner-full">
-            <a href="#"><img class="w-100" src="./wp-content/plugins/setsail-core/assets/img/gallery-img4.jpg" alt="img"></a>
+            <a href="#"><img class="w-100" src="<?php echo plugin_dir_url(__DIR__); ?>/assets/img/gallery-img4.jpg" alt="img"></a>
         </div>
     </div>
 </div>
