@@ -36,7 +36,7 @@ if (!function_exists('setsail_select_styles')) {
         //define files after which style dynamic needs to be included. It should be included last so it can override other files
         $style_dynamic_deps_array = apply_filters('setsail_select_filter_style_dynamic_deps', array());
 
-        if (file_exists(SELECT_ROOT_DIR . '/assets/css/style_dynamic.css') && setsail_select_is_css_folder_writable() && !is_multisite()) {
+        /*if (file_exists(SELECT_ROOT_DIR . '/assets/css/style_dynamic.css') && setsail_select_is_css_folder_writable() && !is_multisite()) {
             wp_enqueue_style('setsail-select-style-dynamic', SELECT_ASSETS_ROOT . '/css/style_dynamic.css',
                 $style_dynamic_deps_array,
                 filemtime(SELECT_ROOT_DIR . '/assets/css/style_dynamic.css')); //it must be included after woocommerce styles so it can override it
@@ -45,7 +45,7 @@ if (!function_exists('setsail_select_styles')) {
                 SELECT_ASSETS_ROOT . '/css/style_dynamic_ms_id_' . setsail_select_get_multisite_blog_id() . '.css',
                 $style_dynamic_deps_array,
                 filemtime(SELECT_ROOT_DIR . '/assets/css/style_dynamic_ms_id_' . setsail_select_get_multisite_blog_id() . '.css')); //it must be included after woocommerce styles so it can override it
-        }
+        }*/
 
         //is responsive option turned on?
         if (setsail_select_is_responsive_on()) {
