@@ -723,6 +723,19 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 
 
+/*your prepare*/
+.your-prepare-col-1 .vc_column-inner {
+    padding-right: 0 !important;
+}
+
+.your-prepare-col-2 .vc_column-inner {
+    padding-left: 0 !important;
+}
+
+#your-prepare {
+    background-position: top !important;
+}
+
 /*-------------------------- contacform - end -------------------------*/
 
 
@@ -822,11 +835,13 @@ h1.qodef-st-title, h2.qodef-st-title {
     .qodef-container-inner, .qodef-grid, .qodef-row-grid-section {
         width: 340px;
     }
+
     .qodef-tours-dwt-holder .qodef-td-items.tour .qodef-tdi-image {
-        margin-bottom:-5px;
+        margin-bottom: -5px;
     }
-    .qodef-tours-gim-content-holder .difficult-text{
-        margin-bottom:-5px;
+
+    .qodef-tours-gim-content-holder .difficult-text {
+        margin-bottom: -5px;
     }
 
 
@@ -839,30 +854,37 @@ h1.qodef-st-title, h2.qodef-st-title {
         padding: 0;
         margin: 0 5px;
     }
-    .qodef-td-items.tour .qodef-tour-title{
-        padding:5px;
+
+    .qodef-td-items.tour .qodef-tour-title {
+        padding: 5px;
     }
-    .qodef-td-items.tour h4.qodef-tour-title{
-        font-size:10px;
+
+    .qodef-td-items.tour h4.qodef-tour-title {
+        font-size: 10px;
     }
-    .qodef-td-items.tour .qodef-tours-list-item-difficult-item{
-        font-size:10px;
-        padding-top:0;
+
+    .qodef-td-items.tour .qodef-tours-list-item-difficult-item {
+        font-size: 10px;
+        padding-top: 0;
     }
-    .myLoading-indicator{
-        font-size:3px;
-        margin-bottom:-5px;
+
+    .myLoading-indicator {
+        font-size: 3px;
+        margin-bottom: -5px;
     }
-    .myLoading-indicator-circle-wrap{
+
+    .myLoading-indicator-circle-wrap {
         width: 6em;
         height: 6em;
     }
-    .myLoading-indicator-circle-wrap .mask,.myLoading-indicator-circle-wrap .fill{
-        width:6em;
-        height:6em;
+
+    .myLoading-indicator-circle-wrap .mask, .myLoading-indicator-circle-wrap .fill {
+        width: 6em;
+        height: 6em;
     }
-    .myLoading-indicator-circle-wrap .inside-circle{
-        font-size:13px;
+
+    .myLoading-indicator-circle-wrap .inside-circle {
+        font-size: 13px;
     }
 
 }
@@ -879,9 +901,11 @@ h1.qodef-st-title, h2.qodef-st-title {
     .icon-doitac .wpb_wrapper {
         flex-wrap: wrap;
     }
-    .qodef-normal-space .qodef-outer-space{
+
+    .qodef-normal-space .qodef-outer-space {
         margin: 30px -15px;
     }
+
     .ly-do .vc_video .vc_column-inner {
         height: 500px;
     }
