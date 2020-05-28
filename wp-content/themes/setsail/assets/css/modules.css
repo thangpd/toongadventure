@@ -14032,7 +14032,7 @@ aside.qodef-sidebar .widget_icl_lang_sel_widget .wpml-ls-legacy-dropdown-click,
    ========================================================================== */
 
 .qodef-page-header {
-    position: relative;
+    position: absolute;
     display: inline-block;
     width: 100%;
     vertical-align: middle;
