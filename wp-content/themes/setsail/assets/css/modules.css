@@ -20081,6 +20081,9 @@ nav.qodef-fullscreen-menu > ul > li.qodef-active-item > a:after {
     background-position: center;
     background-size: cover;
 }
+#toong-prepare .qodef-elements-holder .qodef-eh-item {
+    vertical-align: top;
+}
 
 .qodef-elements-holder .qodef-eh-item.qodef-vertical-alignment-top {
     vertical-align: top;
