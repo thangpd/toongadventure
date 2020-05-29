@@ -25,7 +25,6 @@ class IconWithText implements Lib\ShortcodeInterface {
 					'base'                      => $this->base,
 					'icon'                      => 'icon-wpb-icon-with-text extended-custom-icon',
 					'category'                  => esc_html__( 'by SETSAIL', 'setsail-core' ),
-					'allowed_container_element' => 'vc_row',
 					'params'                    => array_merge(
 						array(
 							array(
@@ -39,7 +38,7 @@ class IconWithText implements Lib\ShortcodeInterface {
 								'param_name' => 'style',
 								'heading'    => esc_html__( 'Style', 'setsail-core' ),
 								'value'      => array(
-									esc_html__( 'None', 'setsail-core' ) => '',
+									esc_html__( 'None', 'setsail-core' )    => '',
 									esc_html__( 'Style 1', 'setsail-core' ) => 'style-1',
 									esc_html__( 'Style 2', 'setsail-core' ) => 'style-2',
 									esc_html__( 'Style 3', 'setsail-core' ) => 'style-3',
@@ -310,7 +309,8 @@ class IconWithText implements Lib\ShortcodeInterface {
 			return setsail_core_get_shortcode_module_template_part( 'templates/iwt', 'icon-with-text', $params['type'], $params );
 		}
 	}
-private function getIconParameters( $params ) {
+
+	private function getIconParameters( $params ) {
 		$params_array = array();
 
 		if ( empty( $params['custom_icon'] ) ) {

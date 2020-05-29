@@ -27,7 +27,7 @@
     margin-bottom: 72px;
 }
 
-.cost-promo h2 {
+.qodef-iwt .cost-promo h2 {
     background: url("../../../../assets/img/cost-promo-bg.png") left/contain no-repeat;
 }
 
@@ -273,7 +273,7 @@
         height: 40px !important;
     }
 
-    .cost-promo h2 {
+    .qodef-iwt .cost-promo h2 {
         padding: 12px 40px;
     }
 
@@ -366,6 +366,9 @@
     .qodef-iwt.style-1 .qodef-iwt-icon img {
         max-width: 98px;
         max-height: 98px;
+    }
+    #toong-prepare h2.vc_custom_heading{
+        margin:0 0 2rem 0!important;
     }
 
     .prepare.icon-with-text-1 .qodef-iwt.style-1 {

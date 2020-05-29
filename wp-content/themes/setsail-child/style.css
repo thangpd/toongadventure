@@ -735,7 +735,8 @@ h1.qodef-st-title, h2.qodef-st-title {
 #your-prepare {
     background-position: top !important;
 }
-#your-prepare h2.vc_custom_heading{
+
+#your-prepare h2.vc_custom_heading {
     margin: 0 0 2rem 8rem;
 }
 
@@ -746,13 +747,102 @@ h1.qodef-st-title, h2.qodef-st-title {
 #news-shortcode.vc_row {
     background-position: top !important;
 }
+
 #note-join.vc_row {
     background-position: top !important;
 }
 
-#toong-prepare h2.vc_custom_heading{
+#toong-prepare h2.vc_custom_heading {
     margin: 0 0 2rem 8rem;
 }
+
+
+/*----------------------- Thông tin cần lưu ý------------------------ */
+.thong-tin-luu-y {
+    padding: 10px 20px 40px 20px;
+    width: 100%;
+    display: block;
+}
+
+.thong-tin-luu-y h3 {
+    color: #05433b;
+    font-weight: 600;
+}
+
+.thong-tin-luu-y .col-list {
+    padding-left: 10px;
+}
+
+.thong-tin-luu-y ul {
+    padding-left: 10px;
+}
+
+.thong-tin-luu-y li {
+    list-style: none;
+}
+
+.thong-tin-luu-y .col-list-1 li i {
+    padding: 5px;
+    color: green;
+    font-size: 13px;
+}
+
+.thong-tin-luu-y .col-list-2 li i {
+    padding: 5px;
+    color: red;
+    font-size: 13px;
+}
+
+.thong-tin-luu-y span {
+
+}
+
+.thong-tin-luu-y .col-list-1 {
+    width: 60%;
+    display: inline-block;
+    float: left;
+}
+
+.thong-tin-luu-y .col-list-2 {
+    display: inline-block;
+
+}
+
+.thong-tin-luu-y .xheader {
+    font-weight: bold;
+    color: #05433b;
+    font-size: 18px;
+}
+
+.thong-tin-luu-y a.btn-hoan-huy {
+    background-color: orange;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    color: #05433b;
+}
+
+
+/*----------------- thông tin cần lưu ý end*/
+@media only screen and (min-width:768px) and (max-width:1025px){
+    #cost-promo .qodef-slicksyncing-title {
+        background-size: 300px 100px;
+    }
+}
+@media only screen and (max-width:768px){
+    #thong-tin-hiden-mobile{
+        display:none;
+    }
+    #cost-promo .qodef-slicksyncing-title {
+        background-size: 300px 100px;
+        font-size: 30px;
+    }
+    #cost-promo .custom-head-money{
+        font-size: 30px !important;
+    }
+
+}
+
 /*-------------------------- contacform - end -------------------------*/
 
 
@@ -845,6 +935,12 @@ h1.qodef-st-title, h2.qodef-st-title {
 @media only screen and (max-width: 575px) {
     .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space {
         width: 100%;
+    }
+    #experience .qodef-slicksyncing-title{
+        background-size: 350px 110px;
+    }
+    #toong-prepare .your-prepare-col-1{
+        display:flex;
     }
 }
 
