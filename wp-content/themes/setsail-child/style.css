@@ -746,6 +746,9 @@ h1.qodef-st-title, h2.qodef-st-title {
 #news-shortcode.vc_row {
     background-position: top !important;
 }
+#note-join.vc_row {
+    background-position: top !important;
+}
 
 #toong-prepare h2.vc_custom_heading{
     margin: 0 0 2rem 8rem;

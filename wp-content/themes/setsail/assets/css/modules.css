@@ -14801,7 +14801,7 @@ aside.qodef-sidebar .widget_icl_lang_sel_widget .wpml-ls-legacy-dropdown-click,
 }
 
 .qodef-page-header .qodef-fixed-wrapper.fixed .qodef-menu-area {
-    background-color: #fff;
+    background-color: unset;
 }
 
 /* ==========================================================================
