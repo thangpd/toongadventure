@@ -804,6 +804,7 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 
 .thong-tin-luu-y .col-list-2 {
+    width:40%;
     display: inline-block;
 
 }
