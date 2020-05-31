@@ -167,11 +167,22 @@ div[class*=qodef-grid-col-] {
         width: 33.33%;
     }
 
+    .qodef-slicksyncing-title {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .adventure-level {
         padding: 120px 0 90px !important;
         margin-top: -54px !important;
         -webkit-background-size: cover;
         background-size: cover;
+    }
+
+    .adventure-level .qodef-slicksyncing-title {
+        display: block;
+        background-position: center;
+        text-align: center;
     }
 
     .adventure-level .vc_column-inner {

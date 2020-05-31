@@ -10,12 +10,12 @@ display: block;
 text-align: center;
 }
 
-.shortcode-team-user.style-1 .hortcode-team-user-des {
+.shortcode-team-user.style-1 .shortcode-team-user-des {
 display: block;
 text-align: center;
 }
 
-.style-1 .hortcode-team-user-des {
+.style-1 .shortcode-team-user-des {
 padding-bottom: 40px;
 margin: 0px 40px 0 40px;
 }
@@ -47,7 +47,7 @@ margin: 0px 40px 0 40px;
     display: block;
 }
 
-.shortcode-team-user.style-2 .hortcode-team-user-info {
+.shortcode-team-user.style-2 .shortcode-team-user-info {
     display: block;
 }
 
@@ -69,7 +69,7 @@ margin: 0px 40px 0 40px;
 }
 
 
-.shortcode-team-user .hortcode-team-user-info-job {
+.shortcode-team-user .shortcode-team-user-info-job {
     color: white;
     font-size: 17px;
     letter-spacing: 1px;
@@ -79,7 +79,7 @@ margin: 0px 40px 0 40px;
     font-weight: bold;
 }
 
-.shortcode-team-user .hortcode-team-user-info-name {
+.shortcode-team-user .shortcode-team-user-info-name {
     color: white;
     font-size: 30px;
     line-height: 1.15em;
@@ -90,7 +90,7 @@ margin: 0px 40px 0 40px;
     text-align: center;
 }
 
-.shortcode-team-user .hortcode-team-user-des {
+.shortcode-team-user .shortcode-team-user-des {
     color: white;
     font-size: 14px;
     font-weight: 500;
@@ -105,11 +105,11 @@ margin: 0px 40px 0 40px;
 }
 
 @media all and (max-width: 1025px) {
-    .shortcode-team-user .hortcode-team-user-info-job {
+    .shortcode-team-user .shortcode-team-user-info-job {
         font-size: 17px;
     }
 
-    .shortcode-team-user .hortcode-team-user-info-name {
+    .shortcode-team-user .shortcode-team-user-info-name {
         font-size: 21px;
     }
 
@@ -122,18 +122,62 @@ margin: 0px 40px 0 40px;
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
 @media all and (max-width: 768px) {
-    .shortcode-team-user .hortcode-team-user-des {
+    .news-shortcode h2 + .vc_row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .news-shortcode h2 + .vc_row .vc_column_container {
+        order: 1;
+    }
+
+    .news-shortcode h2 + .vc_row .vc_column_container:nth-child(2) {
+        order: 0;
+        margin-bottom: 2rem;
+    }
+
+    .shortcode-team-user.style-1 {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 1rem;
+    }
+
+    .shortcode-team-user.style-1 .shortcode-team-user_top {
+        width: 40%
+    }
+
+    .shortcode-team-user.style-1 .shortcode-team-user-image {
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+        overflow: unset;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+
+    .shortcode-team-user.style-1 .shortcode-team-user_bottom {
+        width: 60%
+    }
+
+    .shortcode-team-user .shortcode-team-user-des {
         color: white;
         font-size: 14px;
         font-weight: 500;
+        padding-bottom: 0;
+        margin: 0 0 0 1rem;
     }
 
-    .shortcode-team-user .hortcode-team-user-info-job {
+    .shortcode-team-user .shortcode-team-user-info-job {
         font-size: 14px;
     }
 
-    .shortcode-team-user .hortcode-team-user-info-name {
+    .shortcode-team-user .shortcode-team-user-info-name {
         font-size: 21px;
     }
 
@@ -166,7 +210,7 @@ margin: 0px 40px 0 40px;
          max-width: unset;
          margin-left: unset;
     }
-    .shortcode-team-user .hortcode-team-user-info-job {
+    .shortcode-team-user .shortcode-team-user-info-job {
         font-size: 14px;
     }
 
@@ -186,7 +230,7 @@ margin: 0px 40px 0 40px;
         padding: 0 0 40px 0;
     }
 
-    .shortcode-team-user .hortcode-team-user-des {
+    .shortcode-team-user .shortcode-team-user-des {
         color: white;
         font-size: 14px;
         font-weight: 500;

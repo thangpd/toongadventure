@@ -938,10 +938,36 @@ h1.qodef-st-title, h2.qodef-st-title {
         width: 100%;
     }
     #experience .qodef-slicksyncing-title{
-        background-size: 350px 110px;
+        /*background-size: 350px 110px;*/
+        font-size: 1.6rem;
     }
     #toong-prepare .your-prepare-col-1{
         display:flex;
+    }
+
+    .news-shortcode h2 + .vc_row {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .shortcode-team-user.style-1 {
+        display: block !important;
+    }
+
+    .shortcode-team-user.style-1 .shortcode-team-user_top,
+    .shortcode-team-user.style-1 .shortcode-team-user_bottom {
+        width: 100% !important;
+    }
+
+    .shortcode-team-user.style-1 .shortcode-team-user-image {
+        height: 310px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .qodef-page-footer {
+        margin-top: -360px;
     }
 }
 

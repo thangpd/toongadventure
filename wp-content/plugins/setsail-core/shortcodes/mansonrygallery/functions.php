@@ -47,3 +47,15 @@ if ( ! function_exists( 'setsail_core_set_mansonrygallery_icon_class_name_for_vc
 	
 	add_filter( 'setsail_core_filter_add_vc_shortcodes_custom_icon_class', 'setsail_core_set_mansonrygallery_icon_class_name_for_vc_shortcodes' );
 }
+
+if (!function_exists('setsail_core_set_mansonrygallery_assets')) {
+    /**
+     * Function that set custom icon class name for scrollsyncing shortcode to set our icon for Visual Composer shortcodes panel
+     */
+    function setsail_core_set_mansonrygallery_assets()
+    {
+        wp_register_style('mansonrygallery_css', plugins_url('/assets/css/mansonrygallery.css', __FILE__), ['bootstrap']);
+    }
+
+    add_filter('init', 'setsail_core_set_mansonrygallery_assets');
+}

@@ -73,15 +73,11 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
     list-style: none;
@@ -230,6 +226,20 @@
     background-color: #0b4041;
 }
 
+@media only screen and (max-width: 768px) {
+    #scrollsyncing {
+        padding-bottom: 100px!important;
+    }
+
+    .scrollsyncing .qodef-grid-col:nth-child(2) .item:first-child {
+        margin-top: 40px;
+    }
+
+    .scrollsyncing .qodef-grid-col:nth-child(2) .item:last-child {
+        margin-bottom: 40px;
+    }
+}
+
 @media only screen and (max-width: 575px) {
     .scrollsyncing {
         padding-left: 0 !important;
@@ -238,6 +248,13 @@
         -webkit-background-size: cover;
         background-size: cover;
     }
+
+    #scrollsyncing .qodef-slicksyncing-title{
+        display: block;
+        background-position: center;
+        text-align: center;
+    }
+
     .scrollsyncing .qodef-grid-col-4 {
         display: none;
     }

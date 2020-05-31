@@ -67,6 +67,8 @@
     backface-visibility: hidden;
     display: inline-block !important;
     vertical-align: middle;
+    width: auto;
+    height: auto;
     max-width: 70%;
     max-height: 70%;
     margin-left: -4px;
@@ -185,24 +187,31 @@
 
     .qodef-iwt.style-1 .qodef-iwt-icon a {
         height: 150px;
-       /* padding-top: 10px;*/
+        /* padding-top: 10px;*/
     }
 
     .style-1 .qodef-iwt.qodef-iwt-icon-top .qodef-iwt-content {
         padding: 0 0 0;
     }
 }
+
 @media only screen and (min-width: 1500px) {
-    .qodef-iwt.style-1 .qodef-iwt-icon a{
-        height: 170px;
-    }
-    .qodef-iwt.style-1 .qodef-iwt-icon{
+    .qodef-iwt.style-1 .qodef-iwt-icon {
         height: 206px;
     }
+
+    .qodef-iwt.style-1 .qodef-iwt-icon a {
+        height: 170px;
+    }
 }
+
 @media only screen and (min-width: 1200px) {
     .hidden-desktop {
         display: none !important;
+    }
+
+    .qodef-iwt.style-1 .qodef-iwt-icon a {
+        height: 143px;
     }
 }
 
@@ -264,22 +273,109 @@
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
 @media only screen and (max-width: 768px) {
+    div[class*=your-prepare-col-] .qodef-eh-item {
+        margin-bottom: 1.75rem;
+    }
+
+    #toong-prepare .your-prepare-col-1 .qodef-eh-item:first-child,
+    #toong-prepare .your-prepare-col-2 .qodef-eh-item:last-child {
+        display: none;
+    }
+
+
+    #why-choose-us {
+        padding-top: 120px!important;
+    }
+
     .qodef-iwt.style-1 .qodef-iwt-icon {
         height: 200px;
+        background-size: auto 100%;
     }
+
+    .qodef-iwt.style-1 .qodef-iwt-icon a {
+        height: 172px;
+    }
+
+    .prepare h2, .cost-promo h2, .news-shortcode h2 {
+        display: block;
+        background-position: center!important;
+        margin-left: 0!important;
+        margin-bottom: 2rem;
+        width: 100%;
+        text-align: center!important;
+    }
+
+    /*.news-shortcode h2 {
+        display: block;
+        background-position: center;
+        text-align: center!important;
+        margin-bottom: 2rem;
+    }*/
 
     #your-prepare .vc_empty_space {
         height: 40px !important;
+    }
+
+    #cost-promo {
+        margin-top: 0!important;
+        padding: 50px 15px 240px!important;
+    }
+
+    #cost-promo .vc_empty_space {
+        height: 1rem!important;
     }
 
     .qodef-iwt .cost-promo h2 {
         padding: 12px 40px;
     }
 
+    #cost-promo .title-left {
+        text-align: center !important;
+    }
+
+    #cost-promo .title-left h2 {
+        background: url("../../../../assets/img/icon-with-text-3-bg.png") left/contain no-repeat;
+        margin-bottom: 1rem;
+    }
+
     #cost-promo .title-right .vc_custom_heading {
         font-size: 3rem !important;
         text-align: center !important;
+    }
+
+    #cost-promo .qodef-eh-item {
+        width: 50%;
+        margin-bottom: 1rem;
+        padding: 0 15px;
+        position: relative;
+    }
+
+    #cost-promo .qodef-eh-item:nth-child(2) {
+        margin-top: 90px
+    }
+    #cost-promo .qodef-eh-item:nth-child(3) {
+        margin-top: -90px
+    }
+
+    #cost-promo .cf-hanh-trinh {
+        padding: 1rem;
+    }
+
+    #cost-promo .cf-hanh-trinh h1 {
+        font-size: 1.75em;
+        margin: 0;
+    }
+
+    #cost-promo .cf-hanh-trinh ol li {
+        padding-top: 0;
+    }
+
+    #why-choose-us {
+        padding-bottom: 120px!important;
     }
 }
 
@@ -313,16 +409,24 @@
     #your-prepare {
         margin-top: 0 !important;
         padding-top: 90px !important;
+        padding-bottom: 40px!important;
     }
 
     #why-choose-us {
-        padding-top: 150px !important;
-        padding-bottom: 90px !important;
         margin-top: -180px !important;
+        padding-top: 100px !important;
+        padding-bottom: 90px !important;
+        padding-left: 0!important;
+        padding-right: 0!important;
     }
 
     #cost-promo {
         margin-top: 0 !important
+    }
+
+    #note-join {
+        margin-top: 0!important;
+        padding-top: 30px!important;
     }
 
     .prepare h2 {
@@ -367,8 +471,9 @@
         max-width: 98px;
         max-height: 98px;
     }
-    #toong-prepare h2.vc_custom_heading{
-        margin:0 0 2rem 0!important;
+
+    #toong-prepare h2.vc_custom_heading {
+        margin: 0 0 2rem 0;
     }
 
     .prepare.icon-with-text-1 .qodef-iwt.style-1 {
@@ -407,8 +512,28 @@
         -webkit-line-clamp: unset;
     }
 
+    .cost-promo h2 {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.7rem!important;
+    }
+
     #cost-promo .title-right .vc_custom_heading {
         font-size: 2rem !important;
         text-align: center !important;
+    }
+
+    #note-join .vc_column_container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #why-choose-us div[class*=vc_col-]{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 1rem;
+    }
+    #why-choose-us .d-flex-mb {
+        display: flex!important;
     }
 }
