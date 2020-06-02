@@ -71,7 +71,7 @@
 }
 
 @media only screen and (max-width: 575px) {
-    .mansonry-gallery {
+    /*.mansonry-gallery {
         padding-top: 180px;
     }
 
@@ -84,5 +84,30 @@
         padding: 0;
         margin-top: -65px;
         text-align: center;
+    }*/
+    .mansonry-gallery {
+        padding-top: 130px;
+        margin-top: -50px;
+    }
+
+    .mansonry-gallery:before {
+        top: 0;
+        background-position: left -120px;
+        height: 110px
+    }
+
+    .mansonry-gallery:after {
+        bottom: -85px;
+    }
+
+    .mansonry-gallery .qodef-mansonrygallery-title {
+        left: 0;
+        padding: 0 1rem 0;
+        margin-top: -85px;
+        text-align: right;
+    }
+
+    .mansonry-gallery .qodef-mansonrygallery-title + .vc_row.vc_inner {
+        margin-top: -70px;
     }
 }

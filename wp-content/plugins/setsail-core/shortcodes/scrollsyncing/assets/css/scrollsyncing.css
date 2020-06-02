@@ -229,6 +229,7 @@
 @media only screen and (max-width: 768px) {
     #scrollsyncing {
         padding-bottom: 100px!important;
+        margin-top: 0 !important;
     }
 
     .scrollsyncing .qodef-grid-col:nth-child(2) .item:first-child {
@@ -244,7 +245,6 @@
     .scrollsyncing {
         padding-left: 0 !important;
         padding-right: 0 !important;
-        margin-top: 0 !important;
         -webkit-background-size: cover;
         background-size: cover;
     }

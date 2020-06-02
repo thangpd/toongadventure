@@ -941,9 +941,6 @@ h1.qodef-st-title, h2.qodef-st-title {
         /*background-size: 350px 110px;*/
         font-size: 1.6rem;
     }
-    #toong-prepare .your-prepare-col-1{
-        display:flex;
-    }
 
     .news-shortcode h2 + .vc_row {
         padding-left: 15px !important;
