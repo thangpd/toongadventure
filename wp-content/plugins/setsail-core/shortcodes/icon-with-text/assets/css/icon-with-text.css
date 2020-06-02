@@ -251,6 +251,14 @@
     .qodef-iwt.style-1 .qodef-iwt-icon a {
         height: 127px;
     }
+
+    #your-prepare .qodef-iwt.style-1 .qodef-iwt-icon {
+        height: 175px;
+    }
+
+    #your-prepare .qodef-iwt.style-1 .qodef-iwt-icon a {
+        height: 150px;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
