@@ -252,11 +252,11 @@
         height: 127px;
     }
 
-    #your-prepare .qodef-iwt.style-1 .qodef-iwt-icon {
+     .qodef-iwt.style-1 .qodef-iwt-icon {
         height: 175px;
     }
 
-    #your-prepare .qodef-iwt.style-1 .qodef-iwt-icon a {
+     .qodef-iwt.style-1 .qodef-iwt-icon a {
         height: 150px;
     }
 }
@@ -285,7 +285,7 @@
     }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1599px) {
     .qodef-iwt.style-1 .qodef-iwt-icon {
         height: 205px;
     }
