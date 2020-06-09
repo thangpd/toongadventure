@@ -92,6 +92,7 @@ class ToursRegister implements Lib\PostTypeInterface {
                     'title',
                     'thumbnail',
                     'page-attributes',
+
                 ),
                 'menu_icon'     => $menuIcon
             )

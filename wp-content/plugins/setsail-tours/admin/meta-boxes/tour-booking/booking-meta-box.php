@@ -81,5 +81,5 @@ if ( ! function_exists( 'setsail_tours_map_booking_meta' ) ) {
 		);
 	}
 	
-//	add_action( 'setsail_select_action_meta_boxes_map', 'setsail_tours_map_booking_meta', 10 );
+	add_action( 'setsail_select_action_meta_boxes_map', 'setsail_tours_map_booking_meta', 10 );
 }

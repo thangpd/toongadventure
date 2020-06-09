@@ -23,7 +23,7 @@ if ( ! function_exists('setsail_tours_general_cpt_meta_boxes')) {
         );
     }
 
-//    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_general_cpt_meta_boxes');
+    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_general_cpt_meta_boxes');
 }
 
 if ( ! function_exists('setsail_tours_info_section_map')) {
@@ -62,16 +62,25 @@ if ( ! function_exists('setsail_tours_info_section_map')) {
                 )
             )
         );
-
-        setsail_select_create_meta_box_field(
-            array(
-                'name'          => 'tour_external_link',
-                'type'          => 'text',
-                'default_value' => '',
-                'label'         => esc_html__('External Link', 'setsail-tours'),
-                'parent'        => $info_section_container
-            )
-        );
+	    setsail_select_create_meta_box_field(
+		    array(
+			    'name'          => 'tour_external_link',
+			    'type'          => 'text',
+			    'default_value' => '',
+			    'label'         => esc_html__('External Link', 'setsail-tours'),
+			    'parent'        => $info_section_container
+		    )
+	    );
+	    setsail_select_create_meta_box_field(
+		    array(
+			    'name'          => 'grading_tour',
+			    'type'          => 'select',
+			    'default_value' => '1',
+			    'options'       => array(1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5),
+			    'label'         => esc_html__('Grading Tour', 'setsail-tours'),
+			    'parent'        => $info_section_container
+		    )
+	    );
         setsail_select_create_meta_box_field(
             array(
                 'name'          => 'tour_price',
@@ -92,16 +101,7 @@ if ( ! function_exists('setsail_tours_info_section_map')) {
             )
         );
 
-        setsail_select_create_meta_box_field(
-            array(
-                'name'          => 'grading_tour',
-                'type'          => 'select',
-                'default_value' => '1',
-                'options'       => array(1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5),
-                'label'         => esc_html__('Grading Tour', 'setsail-tours'),
-                'parent'        => $info_section_container
-            )
-        );
+
 
         setsail_select_create_meta_box_field(
             array(
@@ -135,7 +135,55 @@ if ( ! function_exists('setsail_tours_info_section_map')) {
                 'parent'        => $info_section_container
             )
         );
+	    setsail_select_create_meta_box_field(
+		    array(
+			    'name'          => 'tour_info_min_years',
+			    'type'          => 'text',
+			    'default_value' => '',
+			    'label'         => esc_html__( 'Minimum Years Required', 'setsail-tours' ),
+			    'parent'        => $info_section_container
+		    )
+	    );
 
+	    setsail_select_create_meta_box_field(
+		    array(
+			    'name'          => 'tour_departure',
+			    'type'          => 'text',
+			    'default_value' => '',
+			    'label'         => esc_html__( 'Departure/Return Location', 'setsail-tours' ),
+			    'parent'        => $info_section_container
+		    )
+	    );
+
+	    setsail_select_create_meta_box_field(
+		    array(
+			    'name'          => 'tour_departure_time',
+			    'type'          => 'text',
+			    'default_value' => '',
+			    'label'         => esc_html__( 'Departure Time', 'setsail-tours' ),
+			    'parent'        => $info_section_container
+		    )
+	    );
+
+	    setsail_select_create_meta_box_field(
+		    array(
+			    'name'          => 'tour_return_time',
+			    'type'          => 'text',
+			    'default_value' => '',
+			    'label'         => esc_html__( 'Return Time', 'setsail-tours' ),
+			    'parent'        => $info_section_container
+		    )
+	    );
+
+	    setsail_select_create_meta_box_field(
+		    array(
+			    'name'          => 'tour_dress_code',
+			    'type'          => 'text',
+			    'default_value' => '',
+			    'label'         => esc_html__( 'Dress Code', 'setsail-tours' ),
+			    'parent'        => $info_section_container
+		    )
+	    );
         $masonry_section_container = setsail_select_add_admin_container(
             array(
                 'type'   => 'container',
@@ -240,7 +288,7 @@ if ( ! function_exists('setsail_tours_tour_plan_section_map')) {
         );
     }
 
-//    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_tour_plan_section_map');
+    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_tour_plan_section_map');
 }
 
 if ( ! function_exists('setsail_tours_location_section_map')) {
@@ -349,7 +397,7 @@ if ( ! function_exists('setsail_tours_location_section_map')) {
         );
     }
 
-//    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_location_section_map');
+    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_location_section_map');
 }
 
 if ( ! function_exists('setsail_tours_gallery_section_map')) {
@@ -433,7 +481,7 @@ if ( ! function_exists('setsail_tours_review_section_map')) {
         );
     }
 
-//    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_review_section_map');
+    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_review_section_map');
 }
 
 if ( ! function_exists('setsail_tours_custom_section_1_map')) {
@@ -492,7 +540,7 @@ if ( ! function_exists('setsail_tours_custom_section_1_map')) {
         );
     }
 
-//    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_custom_section_1_map');
+    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_custom_section_1_map');
 }
 
 if ( ! function_exists('setsail_tours_custom_section_2_map')) {
@@ -551,5 +599,5 @@ if ( ! function_exists('setsail_tours_custom_section_2_map')) {
         );
     }
 
-//    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_custom_section_2_map');
+    add_action('setsail_select_action_meta_boxes_map', 'setsail_tours_custom_section_2_map');
 }
