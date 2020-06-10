@@ -193,7 +193,6 @@ if(!function_exists('setsail_tours_is_tour_bookable')) {
 	 */
 	function setsail_tours_is_tour_bookable($tour_id = null) {
 		$tour_id = is_null($tour_id) ? get_the_ID() : $tour_id;
-
 	    $tour_periods = TourTimeStorage::getInstance()->getTourDates($tour_id);
 
 	    return is_array($tour_periods) && count($tour_periods);

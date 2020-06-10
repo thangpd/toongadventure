@@ -281,10 +281,10 @@ class BookingHandler {
 			if(empty($request['user_email']) || !filter_var($request['user_email'], FILTER_VALIDATE_EMAIL)) {
 				$validation->messages[] = $this->labels['email'];
 			}
-
+/*
 			if(empty($request['user_confirm_email']) || $request['user_confirm_email'] !== $request['user_email']) {
 				$validation->messages[] = $this->labels['confirmEmail'];
-			}
+			}*/
 		}
 
 		$dateInt = strtotime($request['date']);
@@ -377,7 +377,7 @@ class BookingHandler {
 		if(is_singular('tour-item')) {
 			$deps = array('jquery', 'underscore');
 
-			wp_enqueue_script('qodef-tour-booking', plugins_url(SETSAIL_TOURS_REL_PATH.'/assets/js/tour-booking.js'), $deps, false, true);
+			wp_enqueue_script('qodef-tour-booking', plugins_url(SETSAIL_TOURS_REL_PATH.'/assets/js/tour-booking-temp.js'), $deps, false, true);
 		}
 	}
 

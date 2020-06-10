@@ -30,31 +30,39 @@ class BookingForm implements ShortcodeInterface {
 	}
 
 	public function vcMap() {
-		vc_map( array(
-			'name'                      => esc_html__( 'Booking Form', 'setsail-tours' ),
-			'base'                      => $this->base,
-			'category'                  => esc_html__( 'by SETSAIL TOURS', 'setsail-tours' ),
-			'icon'                      => 'icon-wpb-booking-form extended-custom-tours-icon',
-			'allowed_container_element' => 'vc_row',
-			'params'                    =>
-				array(
-					'type'        => 'dropdown',
-					'heading'     => esc_html__( 'Booking Form Type', 'setsail-tours' ),
-					'param_name'  => 'tour_type',
-					'value'       => array(
-						esc_html__( 'Standard', 'setsail-tours' )                 => 'standard',
-						esc_html__( 'To Ong', 'setsail-tours' )                   => 'toong',
-						esc_html__( 'To Ong Layout 2', 'setsail-tours' )          => 'toong-2',
-						esc_html__( 'Gallery', 'setsail-tours' )                  => 'gallery',
-						esc_html__( 'Gallery Simple', 'setsail-tours' )           => 'gallery-simple',
-						esc_html__( 'Gallery With Description', 'setsail-tours' ) => 'gallery-with-description',
-						esc_html__( 'Masonry', 'setsail-tours' )                  => 'masonry',
+		try {
+
+			vc_map( array(
+				'name'     => esc_html__( 'Booking Form', 'setsail-tours' ),
+				'base'     => $this->base,
+				'category' => esc_html__( 'by SETSAIL TOURS', 'setsail-tours' ),
+				'params'   =>
+					array(
+						'type'        => 'dropdown',
+						'heading'     => esc_html__( 'Booking Form Type', 'setsail-tours' ),
+						'param_name'  => 'tour_type',
+						'value'       => array(
+							esc_html__( 'Standard', 'setsail-tours' )                 => 'standard',
+							esc_html__( 'To Ong', 'setsail-tours' )                   => 'toong',
+							esc_html__( 'To Ong Layout 2', 'setsail-tours' )          => 'toong-2',
+							esc_html__( 'Gallery', 'setsail-tours' )                  => 'gallery',
+							esc_html__( 'Gallery Simple', 'setsail-tours' )           => 'gallery-simple',
+							esc_html__( 'Gallery With Description', 'setsail-tours' ) => 'gallery-with-description',
+							esc_html__( 'Masonry', 'setsail-tours' )                  => 'masonry',
+						),
+						'admin_label' => true,
+						'save_always' => true,
+						'description' => esc_html__( 'Default value is Standard', 'setsail-tours' ),
 					),
-					'admin_label' => true,
-					'save_always' => true,
-					'description' => esc_html__( 'Default value is Standard', 'setsail-tours' ),
-				),
-		) );
+			) );
+		} catch ( \Exception $exception ) {
+			throw( new \Exception( 'error booking form' ) );
+		}
+	}
+
+	public function enqueue_scripts() {
+		wp_enqueue_script( 'hivegallery_js' );
+		wp_enqueue_style( 'hivegallery_css' );
 	}
 
 	/**
@@ -65,13 +73,15 @@ class BookingForm implements ShortcodeInterface {
 	 *
 	 * @return string
 	 */
+
+
 	public function render( $atts, $content = null ) {
+		$this->enqueue_scripts();
 		$args = array(
 			'load_more_text' => ''
 		);
 
 		$params = shortcode_atts( $args, $atts );
-
 		return setsail_tours_get_tour_module_template_part( 'booking-form/templates/booking-form-holder', 'tours',
 			'shortcodes', '', $params );
 	}
