@@ -4,28 +4,28 @@ extract($tour_sections);
 
 <article class="qodef-tour-item-wrapper qodef-tabs qodef-horizontal qodef-tab-text">
 
-    <ul class="qodef-tabs-nav clearfix">
-        <?php foreach($tour_sections as $section) {
+    <!--<ul class="qodef-tabs-nav clearfix">
+        <?php /*foreach($tour_sections as $section) {
 
-            if($section['value'] === 'yes') { ?>
+            if($section['value'] === 'yes') { */?>
 
                 <li class="qodef-tour-nav-item">
 
-                    <a href="<?php echo esc_attr($section['id']) ?>">
+                    <a href="<?php /*echo esc_attr($section['id']) */?>">
 
-                        <span class="qodef-tour-nav-section-icon <?php echo esc_attr($section['icon']) ?>"></span>
+                        <span class="qodef-tour-nav-section-icon <?php /*echo esc_attr($section['icon']) */?>"></span>
 
 						<span class="qodef-tour-nav-section-title">
-							<?php echo esc_html($section['title']) ?>
+							<?php /*echo esc_html($section['title']) */?>
 						</span>
 
                     </a>
                 </li>
 
-            <?php }
+            <?php /*}
 
-        }; ?>
-    </ul>
+        }; */?>
+    </ul>-->
 
 
     <?php if($show_info_section['value'] === 'yes') { ?>
@@ -33,35 +33,35 @@ extract($tour_sections);
         <div class="qodef-tour-item-section qodef-information-section qodef-tab-container" id="<?php echo esc_attr($show_info_section['id']) ?>">
 
 	        <div class="qodef-grid-row qodef-grid-large-gutter">
-		        <div class="qodef-grid-col-9">
-			        <?php setsail_tours_get_tour_info_part('tour-info-parts/title'); ?>
+<!--		        <div class="qodef-grid-col-9">-->
+<!--			        --><?php //setsail_tours_get_tour_info_part('tour-info-parts/title'); ?>
 			        <?php setsail_tours_get_tour_info_part('tour-info-parts/content'); ?>
 
 			        <div class="qodef-tour-item-short-info">
-				        <?php setsail_tours_get_tour_info_part('tour-info-parts/years'); ?>
-				        <?php setsail_tours_get_tour_info_part('tour-info-parts/categories'); ?>
+<!--				        --><?php //setsail_tours_get_tour_info_part('tour-info-parts/years'); ?>
+<!--				        --><?php //setsail_tours_get_tour_info_part('tour-info-parts/categories'); ?>
 			        </div>
 
-			        <?php setsail_tours_get_tour_info_part('tour-info-parts/main-info'); ?>
-			        <?php setsail_tours_get_tour_info_part('tour-info-parts/gallery'); ?>
-		        </div>
-		        <div class="qodef-grid-col-3">
+<!--			        --><?php //setsail_tours_get_tour_info_part('tour-info-parts/main-info'); ?>
+<!--			        --><?php //setsail_tours_get_tour_info_part('tour-info-parts/gallery'); ?>
+<!--		        </div>-->
+		        <!--<div class="qodef-grid-col-3">
 			        <aside class="qodef-sidebar">
 				        <div class="widget qodef-tours-booking-form-holder">
-					        <?php if(setsail_tours_is_tour_bookable()) : ?>
-						        <?php echo setsail_tours_get_tour_module_template_part('single/booking-form', 'tours', 'templates', '', $params); ?>
-					        <?php endif; ?>
+					        <?php /*if(setsail_tours_is_tour_bookable()) : */?>
+						        <?php /*echo setsail_tours_get_tour_module_template_part('single/booking-form', 'tours', 'templates', '', $params); */?>
+					        <?php /*endif; */?>
 				        </div>
 
-				        <?php dynamic_sidebar('tour-single-sidebar'); ?>
+				        <?php /*dynamic_sidebar('tour-single-sidebar'); */?>
 			        </aside>
-		        </div>
+		        </div>-->
 	        </div>
         </div>
 
     <?php } ?>
 
-    <?php if($show_plan_section['value'] === 'yes') { ?>
+    <?php if($show_plan_section['value'] === 'yes' && false) { ?>
 
         <div class="qodef-tour-item-section qodef-plan-section qodef-tab-container" id="<?php echo esc_attr($show_plan_section['id']) ?>">
 
@@ -87,7 +87,7 @@ extract($tour_sections);
 
     <?php } ?>
 
-    <?php if($show_location_section['value'] === 'yes') { ?>
+    <?php if($show_location_section['value'] === 'yes' && false) { ?>
 
         <div class="qodef-tour-item-section qodef-location-section qodef-tab-container" id="<?php echo esc_attr($show_location_section['id']) ?>">
 	        <div class="qodef-grid-row qodef-grid-large-gutter">
@@ -112,7 +112,7 @@ extract($tour_sections);
 
     <?php } ?>
 
-    <?php if($show_gallery_section['value'] === 'yes') { ?>
+    <?php if($show_gallery_section['value'] === 'yes' && false) { ?>
 
         <div class="qodef-tour-item-section qodef-gallery-section qodef-tab-container" id="<?php echo esc_attr($show_gallery_section['id']) ?>">
 	        <div class="qodef-grid-row qodef-grid-large-gutter">
@@ -137,7 +137,7 @@ extract($tour_sections);
 
     <?php } ?>
 
-    <?php if($show_review_section['value'] === 'yes') { ?>
+    <?php if($show_review_section['value'] === 'yes' && false) { ?>
 
         <div class="qodef-tour-item-section qodef-reviews-section qodef-tab-container" id="<?php echo esc_attr($show_review_section['id']) ?>">
 	        <div class="qodef-grid-row qodef-grid-large-gutter">
@@ -162,7 +162,7 @@ extract($tour_sections);
 
     <?php } ?>
 
-    <?php if($show_custom_section_1['value'] === 'yes') { ?>
+    <?php if($show_custom_section_1['value'] === 'yes' && false) { ?>
 
         <div class="qodef-tour-item-section qodef-custom-section qodef-tab-container" id="<?php echo esc_attr($show_custom_section_1['id']) ?>">
 	        <div class="qodef-grid-row qodef-grid-large-gutter">
@@ -187,7 +187,7 @@ extract($tour_sections);
 
     <?php } ?>
 
-    <?php if($show_custom_section_2['value'] === 'yes') { ?>
+    <?php if($show_custom_section_2['value'] === 'yes' && false) { ?>
 
         <div class="qodef-tour-item-section qodef-custom-2-section qodef-tab-container" id="<?php echo esc_attr($show_custom_section_2['id']) ?>">
 	        <div class="qodef-grid-row qodef-grid-large-gutter">
