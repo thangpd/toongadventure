@@ -58,9 +58,17 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
     padding-bottom:15px;
 }
 .cf-hanh-trinh .wpcf7-form-control.wpcf7-number,.cf-hanh-trinh .wpcf7-form-control.wpcf7-text, .cf-hanh-trinh .wpcf7-submit {.
-color: #fff;
+    color: #fff;
     background-color: rgba(2, 106, 100, 0.75) !important;
 }
-.cf-hanh-trinh .wpcf7-submit:hover{
+.cf-hanh-trinh input[type="submit"]:hover{
     background-color: rgba(2, 106, 100, 1) !important;
+}
+
+.cf-hanh-trinh input[type="number"], .cf-hanh-trinh input[type="text"], .cf-hanh-trinh input[type="submit"] {
+    color: #fff;
+    background-color: rgba(2, 106, 100, 0.75) !important;
+}
+.qodef-tour-booking-field-holder{
+    margin:40px 0;
 }
