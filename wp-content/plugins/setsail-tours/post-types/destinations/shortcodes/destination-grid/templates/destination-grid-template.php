@@ -20,10 +20,7 @@
 							<div class="qodef-tdi-text">
 								<div class="qodef-tdi-text-inner">
 									<?php if( $destination_type === 'with-desc' ) { ?>
-									<<?php
-
-
-                                    echo esc_attr( $title_tag ); ?> class="qodef-tdi-title"><?php the_title(); ?></<?php echo esc_attr( $title_tag ); ?>>
+									<<?php echo esc_attr( $title_tag ); ?> class="qodef-tdi-title"><?php the_title(); ?></<?php echo esc_attr( $title_tag ); ?>>
 								
 									<span class="qodef-tours-item-price-holder">
 										<?php if ( ! empty( $min_max_price ) ) {?>

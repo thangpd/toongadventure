@@ -8,7 +8,7 @@ Version: 1.0.1
 
 require_once 'load.php';
 
-define('SETSAIL_TOURS_MAIN_FILE_PATH', __FILE__);
+define( 'SETSAIL_TOURS_MAIN_FILE_PATH', __FILE__ );
 
 use SetSailTours\Admin\MetaBoxes\TourBooking\TourTimeStorage;
 use SetSailTours\CPT;
@@ -17,7 +17,7 @@ use SetSailTours\CPT\Tours\Lib\PageTemplater;
 use SetSailTours\CPT\Tours\Lib\TourSearch;
 use SetSailTours\DatabaseSetup\TablesSetup;
 
-add_action('after_setup_theme', array(CPT\PostTypesRegister::getInstance(), 'register'));
+add_action( 'after_setup_theme', array( CPT\PostTypesRegister::getInstance(), 'register' ) );
 
 TablesSetup::getInstance()->initialize();
 TourTimeStorage::getInstance()->initialize();

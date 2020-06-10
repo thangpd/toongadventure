@@ -1,30 +1,16 @@
-# Copyright (C) 2019 Select Themes
-# This file is distributed under the same license as the SetSail Tours plugin.
+# Copyright (C) 2019 SetSail Tours
+# This file is distributed under the same license as the SetSail Tours package.
 msgid ""
 msgstr ""
 "Project-Id-Version: SetSail Tours 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/setsail-tours\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-05-03 12:49:51+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-08-29T15:56:47+02:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.3.0\n"
-"X-Domain: setsail-tours\n"
-
-#. Plugin Name of the plugin
-msgid "SetSail Tours"
-msgstr ""
-
-#. Description of the plugin
-msgid "Plugin that adds tours post types needed by theme"
-msgstr ""
-
-#. Author of the plugin
-msgid "Select Themes"
-msgstr ""
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: admin/booking-dashboard/booking-dashboard.php:39
 #: admin/booking-dashboard/booking-table.php:17
@@ -335,6 +321,7 @@ msgstr ""
 
 #: post-types/destinations/shortcodes/destination-grid/destination-grid.php:51
 #: post-types/destinations/shortcodes/destinations-slider-full-screen/destinations-slider-full-screen.php:55
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:73
 #: post-types/tours/shortcodes/tours-list/tours-list.php:114
 msgid "Space Between Items"
 msgstr ""
@@ -581,26 +568,32 @@ msgid "Number Of Visible Items"
 msgstr ""
 
 #: post-types/destinations/shortcodes/destinations-slider-full-screen/destinations-slider-full-screen.php:42
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:61
 msgid "One"
 msgstr ""
 
 #: post-types/destinations/shortcodes/destinations-slider-full-screen/destinations-slider-full-screen.php:43
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:62
 msgid "Two"
 msgstr ""
 
 #: post-types/destinations/shortcodes/destinations-slider-full-screen/destinations-slider-full-screen.php:44
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:63
 msgid "Three"
 msgstr ""
 
 #: post-types/destinations/shortcodes/destinations-slider-full-screen/destinations-slider-full-screen.php:45
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:64
 msgid "Four"
 msgstr ""
 
 #: post-types/destinations/shortcodes/destinations-slider-full-screen/destinations-slider-full-screen.php:46
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:65
 msgid "Five"
 msgstr ""
 
 #: post-types/destinations/shortcodes/destinations-slider-full-screen/destinations-slider-full-screen.php:47
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:66
 msgid "Six"
 msgstr ""
 
@@ -1425,6 +1418,7 @@ msgid "Show Only Tours with Listed IDs"
 msgstr ""
 
 #: post-types/tours/profile/dashboard-functions.php:15
+#: post-types/tours/profile/templates/my-bookings.php:2
 msgid "My Bookings"
 msgstr ""
 
@@ -1483,6 +1477,34 @@ msgstr ""
 msgid "Tours Carousel"
 msgstr ""
 
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:59
+msgid "Number Of Visible Reviews"
+msgstr ""
+
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:75
+msgid "Tiny - 10"
+msgstr ""
+
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:76
+msgid "Small - 20"
+msgstr ""
+
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:77
+msgid "Normal - 30"
+msgstr ""
+
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:78
+msgid "Medium - 40"
+msgstr ""
+
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:79
+msgid "Large - 50"
+msgstr ""
+
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:80
+msgid "Huge - 60"
+msgstr ""
+
 #: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:98
 #: post-types/tours/shortcodes/tours-list/tours-list.php:133
 msgid "Enable Reviews"
@@ -1510,6 +1532,10 @@ msgstr ""
 #: post-types/tours/tax-custom-fields.php:64
 #: post-types/tours/tax-custom-fields.php:97
 msgid "Yes"
+msgstr ""
+
+#: post-types/tours/shortcodes/tours-carousel/tours-carousel.php:109
+msgid "Enable Pagination"
 msgstr ""
 
 #: post-types/tours/shortcodes/tours-filter/templates/tours-filters-holder.php:32
@@ -2015,4 +2041,15 @@ msgstr ""
 
 #: post-types/tours/widgets/tour-list-widget/tour-list.php:34
 msgid "Leave empty for all or use comma for list"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "SetSail Tours"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Plugin that adds tours post types needed by theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Select Themes"
 msgstr ""
