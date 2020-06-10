@@ -75,8 +75,12 @@ if ( ! function_exists('setsail_tours_scripts')) {
             $array_deps_js[]             = 'setsail-select-modules';
         }
 
-        wp_enqueue_style('setsail-tours-style', plugins_url(SETSAIL_TOURS_REL_PATH . '/assets/css/tours.min.css'),
-            $array_deps_css);
+        wp_enqueue_style('setsail-tours-style', plugins_url(SETSAIL_TOURS_REL_PATH . '/assets/css/tours.min.css'),$array_deps_css);
+	    if ( is_singular( 'tour-item' ) ) {
+		    // conditional content/code
+		    wp_enqueue_style('setsail-tours-single', plugins_url(SETSAIL_TOURS_REL_PATH . '/post-types/tours/assets/css/tour-single.css'),$array_deps_css);
+
+	    }
         if (function_exists('setsail_select_is_responsive_on') && setsail_select_is_responsive_on()) {
             wp_enqueue_style('setsail-tours-responsive-style',
                 plugins_url(SETSAIL_TOURS_REL_PATH . '/assets/css/tours-responsive.min.css'),
