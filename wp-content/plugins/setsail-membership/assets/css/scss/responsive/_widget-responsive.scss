@@ -1,0 +1,78 @@
+/* Login/Register widget - start
+   ========================================================================== */
+
+/* User logged in */
+
+.qodef-login-register-widget {
+	
+	&.qodef-user-not-logged-in {
+		
+		@include ipad-landscape {
+			
+			.qodef-login-opener {
+				height: 46px;
+				width: 46px;
+				color: #fff;
+			}
+		}
+	}
+    
+    &.qodef-user-logged-in {
+    
+        @include ipad-landscape {
+            
+            .qodef-logged-in-user {
+                display: inline-block;
+        
+                .qodef-logged-in-user-inner {
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding: 0;
+                    background-color: transparent;
+	
+	                > span {
+		
+		                span {
+			                display: none;
+		                }
+		                
+		                img {
+			                margin: 0;
+		                }
+	                }
+                }
+            }
+            
+            .qodef-login-dropdown {
+	            position: absolute;
+                display: none;
+                margin: 0 -15px;
+                padding: 8px 16px 10px 15px;
+	            top: calc(100% + 21px);
+	            right: 0;
+	            min-width: 115px;
+                background-color: $second-main-color;
+	            box-shadow: $menu-drop-down-box-shadow;
+	            box-sizing: border-box;
+        
+                li {
+                    margin: 15px 0;
+            
+                    a {
+	                    font-size: 13px;
+	                    font-weight: 500;
+	                    letter-spacing: .01em;
+	                    color: #fff;
+                    }
+                }
+        
+                &.qodef-active {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/* Login/Register widget - end
+   ========================================================================== */
