@@ -735,6 +735,9 @@ h1.qodef-st-title, h2.qodef-st-title {
 #your-prepare {
     background-position: top !important;
 }
+#toong-prepare {
+    background-position: top !important;
+}
 
 #your-prepare h2.vc_custom_heading {
     margin: 0 0 2rem 8rem;

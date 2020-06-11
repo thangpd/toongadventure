@@ -55,14 +55,14 @@ if ( $link_to_page != '#' ) {
                                         <div class="qodef-tdi-image">
 											<?php echo get_the_post_thumbnail( $tour_id, $thumb_size ); ?>
                                             <a class="qodef-tdi-link"
-                                               href="<?php the_permalink()//echo setsail_tours_get_tour_tour_external_link($tour_id); ?>"></a>
+                                               href="<?php echo get_the_permalink($tour_id)//echo setsail_tours_get_tour_tour_external_link($tour_id); ?>"></a>
                                         </div>
                                         <div class="qodef-tours-gim-content-holder">
                                             <div class="qodef-tdi-content-holder-outer">
                                                 <div class="qodef-gim-title-and-price-holder">
 
                                                     <a class="qodef-tours-toong-item-link toong-template"
-                                                       href="<?php the_permalink();//setsail_tours_get_tour_tour_external_link( $tour_id ); ?>">
+                                                       href="<?php echo get_the_permalink($tour_id);//setsail_tours_get_tour_tour_external_link( $tour_id ); ?>">
                                                         <h4 class="qodef-tour-title">
 															<?php echo get_the_title( $tour_id ); ?>
                                                         </h4>

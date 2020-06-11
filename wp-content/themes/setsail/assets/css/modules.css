@@ -644,7 +644,7 @@ blockquote cite {
 }
 
 .qodef-page-content-is-boxed.qodef-content-overlapping .qodef-content .qodef-content-inner > .qodef-container > .qodef-container-inner {
-    /*margin-top: -80px;*/
+    margin-top: -10px;
 }
 
 @media only screen and (max-width: 480px) {
