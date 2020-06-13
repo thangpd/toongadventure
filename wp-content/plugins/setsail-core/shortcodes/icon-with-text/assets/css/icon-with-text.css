@@ -668,7 +668,7 @@
 
     #toong-prepare .qodef-iwt.style-1 .qodef-iwt-icon {
         background-size: 100%;
-        height: 110px;
+        height: 130px;
     }
 
     #toong-prepare .qodef-iwt.style-1 .qodef-iwt-icon a {
@@ -742,5 +742,14 @@
 
     #cost-promo .thong-tin-luu-y h3 {
         margin: .5rem 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 376px) {
+    #toong-prepare .qodef-iwt.style-1 .qodef-iwt-icon {
+        background-size: 100%;
+        height: 110px;
     }
 }
