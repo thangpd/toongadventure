@@ -735,6 +735,7 @@ h1.qodef-st-title, h2.qodef-st-title {
 #your-prepare {
     background-position: top !important;
 }
+
 #toong-prepare {
     background-position: top !important;
 }
@@ -807,7 +808,7 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 
 .thong-tin-luu-y .col-list-2 {
-    width:40%;
+    width: 40%;
     display: inline-block;
 
 }
@@ -828,20 +829,23 @@ h1.qodef-st-title, h2.qodef-st-title {
 
 
 /*----------------- thông tin cần lưu ý end*/
-@media only screen and (min-width:768px) and (max-width:1025px){
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
     #cost-promo .qodef-slicksyncing-title {
         background-size: 300px 100px;
     }
 }
-@media only screen and (max-width:768px){
-    #thong-tin-hiden-mobile{
-        display:none;
+
+@media only screen and (max-width: 768px) {
+    #thong-tin-hiden-mobile {
+        display: none;
     }
+
     #cost-promo .qodef-slicksyncing-title {
         background-size: 300px 100px;
         font-size: 30px;
     }
-    #cost-promo .custom-head-money{
+
+    #cost-promo .custom-head-money {
         font-size: 30px !important;
     }
 
@@ -940,7 +944,8 @@ h1.qodef-st-title, h2.qodef-st-title {
     .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space {
         width: 100%;
     }
-    #experience .qodef-slicksyncing-title{
+
+    #experience .qodef-slicksyncing-title {
         /*background-size: 350px 110px;*/
         font-size: 1.6rem;
     }
@@ -966,8 +971,12 @@ h1.qodef-st-title, h2.qodef-st-title {
         border-radius: 50%;
     }
 
-    .qodef-page-footer {
+    .tour-item-template-default .qodef-page-footer {
         margin-top: -360px;
+    }
+
+    #price-tour.vc_custom_heading {
+        font-size: 3.5rem !important;
     }
 }
 
@@ -1025,6 +1034,10 @@ h1.qodef-st-title, h2.qodef-st-title {
 
     .myLoading-indicator-circle-wrap .inside-circle {
         font-size: 13px;
+    }
+
+    .tour-item-template-default .qodef-page-footer {
+        margin-top: -465px;
     }
 
 }
