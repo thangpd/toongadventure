@@ -1,25 +1,7 @@
 <?php
-/*echo '<pre>';
-echo '$main_header';
-print_r( $main_header );
-echo '</pre>';
-echo '<pre>';
-echo '$sub_header';
-print_r( $sub_header );
-echo '</pre>';
-echo '<pre>';
-echo '$header_textfield';
-print_r( $header_textfield );
-echo '</pre>';
+
 $vc_param_group_parse_atts = vc_param_group_parse_atts( $day_list );
-echo '<pre>';
-echo '$vc_param_group_parse_atts';
-print_r( $vc_param_group_parse_atts );
-echo '</pre>';
-echo '<pre>';
-echo '$vc_param_group_parse_atts[0][\'detail_list\']';
-print_r( vc_param_group_parse_atts( $vc_param_group_parse_atts[0]['detail_list'] ) );
-echo '</pre>';*/
+
 /*'main_header'      => '',
 			'sub_header'       => '',
 			'header_textfield' => '',
@@ -37,7 +19,8 @@ echo '</pre>';*/
             <div class="bg-white">
                 <ul class="col-body ul-schedule" id="smoothscroll">
 					<?php for ( $i = - 1; $i < count( $vc_param_group_parse_atts ); $i ++ ) { ?>
-                        <li class="<?= $i == - 1 ? 'active' : '' ?>" data-id="schedule-<?= $i+1 ?>" id="alich-<?= $i+1 ?>">
+                        <li class="<?= $i == - 1 ? 'active' : '' ?>" data-id="schedule-<?= $i + 1 ?>"
+                            id="alich-<?= $i + 1 ?>">
 							<?php if ( $i == - 1 ) { ?>
                                 <span><?php echo $main_header ?></span>
                                 <span>Địa điểm xuất phát</span>
@@ -56,6 +39,8 @@ echo '</pre>';*/
                 <div class="v-scrollbar" id="js-scrollbar">
 					<?php for ( $i = - 1; $i <= count( $vc_param_group_parse_atts ); $i ++ ) { ?>
 						<?php
+						?>
+						<?php
 						if ( $i == - 1 ) { ?>
                             <div class="item flex-container about" id="schedule-<?= $i + 1 ?>"
                                  data-id="alich-<?= $i + 1 ?>">
@@ -68,13 +53,13 @@ echo '</pre>';*/
                                 </div>
                             </div>
 						<?php } else { ?>
-                            <div class="item flex-container" id="schedule-<?= $i+1 ?>" data-id="alich-<?= $i+1 ?>">
+                            <div class="item flex-container" id="schedule-<?= $i + 1 ?>" data-id="alich-<?= $i + 1 ?>">
                                 <div class="col-item">
                                     <h3 class="col-header h4 title-section p-bot-2"><?= $vc_param_group_parse_atts[ $i ]['title'] ?></h3>
                                     <div class="col-body">
 										<?php $detail_list = vc_param_group_parse_atts( $vc_param_group_parse_atts[ $i ]['detail_list'] );
 
-										if ( is_array( $detail_list ) ) :
+										if ( is_array( $detail_list ) ):
 											for ( $y = 0; $y < count( $detail_list ); $y ++ ) :
 												?>
                                                 <p><?php echo $detail_list[ $y ]['detail'] ?></p>
