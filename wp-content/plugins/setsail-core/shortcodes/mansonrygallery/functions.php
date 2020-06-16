@@ -1,7 +1,6 @@
 <?php
 
 if ( class_exists( 'WPBakeryShortCodesContainer' ) ) {
-	class WPBakeryShortCode_Qodef_Mansonrygallery extends WPBakeryShortCodesContainer {}
 }
 
 if ( ! function_exists( 'setsail_core_add_mansonrygallery_shortcodes' ) ) {
