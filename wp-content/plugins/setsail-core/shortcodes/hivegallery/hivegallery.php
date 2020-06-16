@@ -55,16 +55,6 @@ class Hivegallery implements Lib\ShortcodeInterface
                             'heading' => esc_html__('Custom CSS Class', 'setsail-core'),
                             'description' => esc_html__('Style particular content element differently - add a class name and refer to it in custom CSS', 'setsail-core')
                         ),
-                        /*array(
-                            'type' => 'dropdown',
-                            'param_name' => 'style',
-                            'heading' => esc_html__('Style', 'setsail-core'),
-                            'value' => array(
-                                esc_html__('Hivegallery', 'setsail-core') => 'hivegallery',
-                                esc_html__('Toggle', 'setsail-core') => 'toggle'
-                            )
-                        ),*/
-                        // params group
                     )
                 )
             );

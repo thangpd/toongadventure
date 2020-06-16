@@ -29,7 +29,9 @@
     grid-template-rows: repeat(auto-fit, minmax(263px, 263px));
     grid-auto-rows: 263px;
 }
-
+.hive-grid .block img{
+    width:200%;
+}
 .block {
     position: relative;
     height: 190px;

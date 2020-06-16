@@ -1,20 +1,52 @@
-<div class="qodef-scrollsyncing-holder <?php echo esc_attr($holder_classes); ?> clearfix">
+<?php
+echo '<pre>';
+echo '$main_header';
+print_r( $main_header );
+echo '</pre>';
+echo '<pre>';
+echo '$sub_header';
+print_r( $sub_header );
+echo '</pre>';
+echo '<pre>';
+echo '$header_textfield';
+print_r( $header_textfield );
+echo '</pre>';
+$vc_param_group_parse_atts = vc_param_group_parse_atts( $day_list );
+echo '<pre>';
+echo '$vc_param_group_parse_atts';
+print_r( $vc_param_group_parse_atts );
+echo '</pre>';
+echo '<pre>';
+echo '$vc_param_group_parse_atts[0][\'detail_list\']';
+print_r( vc_param_group_parse_atts( $vc_param_group_parse_atts[0]['detail_list'] ) );
+echo '</pre>';
+/*'main_header'      => '',
+			'sub_header'       => '',
+			'header_textfield' => '',
+			'day_list'         => '',
+			'custom_class'     => '',
+			'style'            => 'scrollsyncing',*/
+
+
+?>
+
+<div class="qodef-scrollsyncing-holder <?php echo esc_attr( $holder_classes ); ?> clearfix">
 
     <div class="qodef-grid-row">
         <div class="qodef-grid-col qodef-grid-col-4">
             <div class="bg-white">
                 <ul class="col-body ul-schedule" id="smoothscroll">
-                    <?php for ($i = 0; $i <= 5; $i++) { ?>
-                        <li class="<?= $i == 0 ? 'active' : '' ?>" data-id="schedule-<?= $i ?>" id="alich-<?= $i ?>">
-                            <?php if ($i == 0) { ?>
-                                <span>Xuất phát</span>
+					<?php for ( $i = - 1; $i < count( $vc_param_group_parse_atts ); $i ++ ) { ?>
+                        <li class="<?= $i == - 1 ? 'active' : '' ?>" data-id="schedule-<?= $i+1 ?>" id="alich-<?= $i+1 ?>">
+							<?php if ( $i == - 1 ) { ?>
+                                <span><?php echo $main_header ?></span>
                                 <span>Địa điểm xuất phát</span>
-                            <?php } else { ?>
-                                <span>Ngày <?= $i ?></span>
-                                <span>Địa điểm <?= $i ?></span>
-                            <?php } ?>
+							<?php } else { ?>
+                                <span>Ngày <?= $i + 1 ?></span>
+                                <span><?= $vc_param_group_parse_atts[ $i ]['diadiem'] ?></span>
+							<?php } ?>
                         </li>
-                    <?php } ?>
+					<?php } ?>
                 </ul>
             </div>
         </div>
@@ -22,20 +54,38 @@
         <div class="qodef-grid-col qodef-grid-col-8">
             <div class="bg-white">
                 <div class="v-scrollbar" id="js-scrollbar">
-                    <div class="item flex-container about" id="schedule-0" data-id="alich-0">
-                        <div class="col-item">
-                            <h3 class="col-header h4 title-section p-bot-2">Giới thiệu chung</h3>
-                            <div class="col-body">
-                                <ul>
-                                    <li><strong>Thời lượng tour:</strong> 2 Ngày 1 Đêm</li>
-                                    <li><strong>Lịch hoạt đông:</strong> Tháng 3 - Tháng 11</li>
-                                    <li><strong>Level:</strong> 1 - Nhẹ nhàng</li>
-                                    <li><strong>Số khách:</strong> 15 người (tỉ lệ hỗ trợ 4 khách: 1 guide)</li>
-                                    <li><strong>Quãng đường:</strong> 14km trekking</li>
-                                </ul>
+					<?php for ( $i = - 1; $i <= count( $vc_param_group_parse_atts ); $i ++ ) { ?>
+						<?php
+						if ( $i == - 1 ) { ?>
+                            <div class="item flex-container about" id="schedule-<?= $i + 1 ?>"
+                                 data-id="alich-<?= $i + 1 ?>">
+                                <div class="col-item">
+                                    <h3 class="col-header h4 title-section p-bot-2"><?php echo $sub_header ?></h3>
+                                    <div class="col-body">
+
+										<?php echo $header_textfield ?>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+						<?php } else { ?>
+                            <div class="item flex-container" id="schedule-<?= $i+1 ?>" data-id="alich-<?= $i+1 ?>">
+                                <div class="col-item">
+                                    <h3 class="col-header h4 title-section p-bot-2"><?= $vc_param_group_parse_atts[ $i ]['title'] ?></h3>
+                                    <div class="col-body">
+										<?php $detail_list = vc_param_group_parse_atts( $vc_param_group_parse_atts[ $i ]['detail_list'] );
+
+										if ( is_array( $detail_list ) ) :
+											for ( $y = 0; $y < count( $detail_list ); $y ++ ) :
+												?>
+                                                <p><?php echo $detail_list[ $y ]['detail'] ?></p>
+											<?php endfor;
+										endif; ?>
+                                    </div>
+                                </div>
+                            </div>
+						<?php } ?>
+					<?php } ?>
+                    <!--
                     <div class="item flex-container" id="schedule-1" data-id="alich-1">
                         <div class="col-item">
                             <h3 class="col-header h4 title-section p-bot-2">Ng&#224;y 1: TPHCM -
@@ -103,7 +153,7 @@
                                 <p>Di chuyển về khách sạn gần sân bay Surabaya, tổng kết chuyến đi cùng IGo Lead.</p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
