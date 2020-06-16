@@ -1,5 +1,5 @@
 <?php
-echo '<pre>';
+/*echo '<pre>';
 echo '$main_header';
 print_r( $main_header );
 echo '</pre>';
@@ -19,7 +19,7 @@ echo '</pre>';
 echo '<pre>';
 echo '$vc_param_group_parse_atts[0][\'detail_list\']';
 print_r( vc_param_group_parse_atts( $vc_param_group_parse_atts[0]['detail_list'] ) );
-echo '</pre>';
+echo '</pre>';*/
 /*'main_header'      => '',
 			'sub_header'       => '',
 			'header_textfield' => '',
