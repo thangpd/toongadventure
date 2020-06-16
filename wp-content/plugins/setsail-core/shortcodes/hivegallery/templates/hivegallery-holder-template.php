@@ -7,7 +7,7 @@ if ( ! empty( $params['image_list'] ) ) {
                     </div>
                     <div class="drop-shadow">
                         <div class="block">
-                            <img src="%2$s"
+                            <img src="%2$s" %3$s
                                  alt="">
                         </div>
                     </div>                    
@@ -16,7 +16,7 @@ if ( ! empty( $params['image_list'] ) ) {
 	$format_item_2     = '    <div class="block-inner">
                     <div class="drop-shadow">
                         <div class="block">
-                            <img src="%2$s"
+                            <img src="%2$s" %3$s
                                  alt="">
                         </div>
                     </div>
@@ -32,11 +32,17 @@ if ( ! empty( $params['image_list'] ) ) {
 	$str_item['grid2'] = '';
 	foreach ( $image_list as $item ) {
 		$image = wp_get_attachment_image_src( $item['image'], 'large' );
-		if ( $count <= count( $image_list ) / 2 ) {
-			$str_item['grid1'] .= sprintf( $format_item_1, $item['text'], $image[0] );
+		if ( isset( $item['image_size'] ) ) {
+			$width = 'width="' . $item['image_size'] . '"';
 		} else {
-			$str_item['grid2'] .= sprintf( $format_item_2, $item['text'], $image[0] );
+			$width = 'width="100%"';;
 		}
+		if ( $count <= count( $image_list ) / 2 ) {
+			$str_item['grid1'] .= sprintf( $format_item_1, $item['text'], $image[0], $width );
+		} else {
+			$str_item['grid2'] .= sprintf( $format_item_2, $item['text'], $image[0], $width );
+		}
+
 		$count ++;
 	}
 	$print = sprintf( $format, $str_item['grid1'], $str_item['grid2'] );
@@ -51,3 +57,6 @@ if ( ! empty( $params['image_list'] ) ) {
         </div>
     </div>
 </div>
+
+
+
