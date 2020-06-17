@@ -23,9 +23,14 @@ $vc_param_group_parse_atts = vc_param_group_parse_atts( $day_list );
                             id="alich-<?= $i + 1 ?>">
 							<?php if ( $i == - 1 ) { ?>
                                 <span><?php echo $main_header ?></span>
-                                <span>Địa điểm xuất phát</span>
-							<?php } else { ?>
-                                <span>Ngày <?= $i + 1 ?></span>
+                                <span><?php echo $submain_header ?></span>
+							<?php } elseif ( $i == 0 ) {
+								?>
+                                <span>Xuất phát</span>
+                                <span><?= $vc_param_group_parse_atts[ $i ]['diadiem'] ?></span>
+								<?php
+							} else { ?>
+                                <span>Ngày <?= $i?></span>
                                 <span><?= $vc_param_group_parse_atts[ $i ]['diadiem'] ?></span>
 							<?php } ?>
                         </li>

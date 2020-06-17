@@ -30,13 +30,19 @@ class Scrollsyncing implements Lib\ShortcodeInterface {
 						array(
 							'type'        => 'textfield',
 							'param_name'  => 'main_header',
-							'heading'     => esc_html__( 'Xuất Phát', 'setsail-core' ),
+							'heading'     => esc_html__( 'Tìm hiểu', 'setsail-core' ),
+							'description' => esc_html__( '', 'setsail-core' )
+						),
+						array(
+							'type'        => 'textfield',
+							'param_name'  => 'submain_header',
+							'heading'     => esc_html__( 'Tiêu đề ( Thông tin chung cột trái )', 'setsail-core' ),
 							'description' => esc_html__( '', 'setsail-core' )
 						),
 						array(
 							'type'        => 'textfield',
 							'param_name'  => 'sub_header',
-							'heading'     => esc_html__( 'Tiêu đề thông tin chung', 'setsail-core' ),
+							'heading'     => esc_html__( 'Tiêu đề thông tin chung ( cột phải )', 'setsail-core' ),
 							'description' => esc_html__( '', 'setsail-core' )
 						),
 						array(
@@ -111,6 +117,7 @@ class Scrollsyncing implements Lib\ShortcodeInterface {
 		$this->enqueue_scripts();
 		$default_atts = array(
 			'main_header'      => '',
+			'submain_header'   => '',
 			'sub_header'       => '',
 			'header_textfield' => '',
 			'day_list'         => '',
