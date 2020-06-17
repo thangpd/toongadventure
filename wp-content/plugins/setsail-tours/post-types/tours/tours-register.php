@@ -68,7 +68,7 @@ class ToursRegister implements Lib\PostTypeInterface {
         $menuPosition = 11;
         $menuIcon     = 'dashicons-palmtree';
 	    
-        $slug = $this->base;
+        $slug = 'tour';
 
         register_post_type($this->base,
             array(
