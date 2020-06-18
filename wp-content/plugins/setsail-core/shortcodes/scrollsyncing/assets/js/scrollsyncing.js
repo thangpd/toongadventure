@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     'use strict';
 
     $("#smoothscroll li").on("click", function () {
@@ -17,19 +17,23 @@
     $("#js-scrollbar .item").each(function () {
         var n = $(this).attr("id"),
             t = $(this).data("id"),
-            i = $('#' + t),
-            r = i[0].offsetTop,
-            u = new Waypoint({
-                element: $('#' + n),
-                handler: function () {
-                    $("#smoothscroll li").removeClass("active");
-                    $("#smoothscroll").find("li[data-id='" + n + "']").addClass("active");
-                    $('#smoothscroll').stop().animate({
-                        scrollTop: r - 100
-                    }, 100)
-                },
-                context: $("#js-scrollbar"),
-                offset: "20%"
-            })
+            i = $('#' + t);
+        console.log(i[0]);
+        var r = 0;
+        if (!i[0] === undefined) {
+            r = (i[0].offsetTop);
+        }
+        var u = new Waypoint({
+            element: $('#' + n),
+            handler: function () {
+                $("#smoothscroll li").removeClass("active");
+                $("#smoothscroll").find("li[data-id='" + n + "']").addClass("active");
+                $('#smoothscroll').stop().animate({
+                    scrollTop: r - 100
+                }, 100)
+            },
+            context: $("#js-scrollbar"),
+            offset: "20%"
+        })
     });
 })(jQuery);

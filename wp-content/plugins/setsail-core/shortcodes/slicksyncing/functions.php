@@ -63,10 +63,10 @@ if ( ! function_exists( 'setsail_core_set_slicksyncing_assets' ) ) {
 if ( ! function_exists( 'setsail_core_slicksyncing_get_grading_tour' ) && defined( 'SETSAIL_TOURS_MAIN_FILE_PATH' ) ) {
 	function setsail_core_slicksyncing_get_grading_tour() {
 		$res = [];
-		if ( $_GET['data'] ) {
-			$res['level'] = setsail_tours_get_grading_tour( $_GET['data'] );
+		if ( $_GET['id_tour'] ) {
+			$res['level'] = setsail_tours_get_grading_tour( $_GET['id_tour'] );
 			$res['level'] -= 1;
-			$res['data']  = ( $_GET['data'] );
+			$res['data']  = ( $_GET['id_tour'] );
 		}
 		echo json_encode( $res );
 
