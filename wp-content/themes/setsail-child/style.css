@@ -931,6 +931,10 @@ h1.qodef-st-title, h2.qodef-st-title {
     .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space {
         width: 50%;
     }
+    #note-join h2+div.vc_row, #why-choose-us .d-flex-mb{
+        display: flex!important;
+        flex-wrap: wrap!important;
+    }
 }
 
 
