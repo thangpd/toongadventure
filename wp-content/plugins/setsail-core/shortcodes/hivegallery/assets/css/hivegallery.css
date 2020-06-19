@@ -221,7 +221,7 @@
         align-items: flex-start;
     }*/
 }
-@media only screen and (max-width: 321px) {
+@media only screen and (max-width: 361px) {
 
     .hive-grid .grid {
         grid-template-columns: repeat(auto-fit, 85px);
