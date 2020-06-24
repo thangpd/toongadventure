@@ -1080,4 +1080,8 @@ h1.qodef-st-title, h2.qodef-st-title {
     .vc_rs-video > div {
         width: 100% !important;
     }
+	
+	#note-join .vc_col-xs-6, #why-choose-us .vc_col-xs-6 {
+		width: 49%;
+	}
 }
