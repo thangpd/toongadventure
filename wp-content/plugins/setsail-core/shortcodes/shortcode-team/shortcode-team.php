@@ -82,7 +82,7 @@ class ShortcodeTeam implements Lib\ShortcodeInterface {
 		$params['user_job']          = ! empty( $params['user_job'] ) ? $params['user_job'] : '';
 		$params['user_name']         = ! empty( $params['user_name'] ) ? $params['user_name'] : '';
 		$params['user_des']          = ! empty( $params['user_des'] ) ? $params['user_des'] : '';
-		$params['hoder_class']       = $this->getHolderClasses( $params );
+		$params['holder_classes']       = $this->getHolderClasses( $params );
 		if ( $params['style'] == 'style-1' ) {
 			$output = setsail_core_get_shortcode_module_template_part( 'templates/shortcode-team-holder-template', 'shortcode-team', '', $params );
 		} else {
