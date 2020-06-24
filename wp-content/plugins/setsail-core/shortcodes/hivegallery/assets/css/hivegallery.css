@@ -222,13 +222,11 @@
     }*/
 }
 @media only screen and (max-width: 361px) {
-
     .hive-grid .grid {
         grid-template-columns: repeat(auto-fit, 100px);
         grid-template-rows: repeat(auto-fit, minmax(195px, 195px));
         grid-auto-rows: 195px;
     }
-
 }
 
 /* end css demo */
