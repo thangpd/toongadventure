@@ -91,7 +91,7 @@ class Hivegallery implements Lib\ShortcodeInterface {
 		$holder_classes = array( 'qodef-ac-default' );
 
 		$holder_classes[] = ! empty( $params['custom_class'] ) ? esc_attr( $params['custom_class'] ) : '';
-		$holder_classes[] = $params['style'] == 'toggle' ? 'qodef-toggle' : 'qodef-hivegallery';
+		$holder_classes[] = ! empty( $params['style'] ) && $params['style'] == 'toggle' ? 'qodef-toggle' : 'qodef-hivegallery';
 		$holder_classes[] = ! empty( $params['layout'] ) ? 'qodef-ac-' . esc_attr( $params['layout'] ) : '';
 		$holder_classes[] = ! empty( $params['background_skin'] ) ? 'qodef-' . esc_attr( $params['background_skin'] ) . '-skin' : '';
 

@@ -837,6 +837,25 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 
 
+
+/*cost-promo*/
+#cost-promo .qodef-elements-holder .qodef-eh-item {
+    vertical-align: top
+}
+#cost-promo .qodef-iwt-icon{
+    height:120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cost-promo .qodef-iwt-icon img {
+    width: auto!important;
+    height: auto!important;
+    max-height: 100px;
+    max-width: 120px;
+}
+
 /*----------------- thông tin cần lưu ý end*/
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
     #cost-promo .qodef-slicksyncing-title {

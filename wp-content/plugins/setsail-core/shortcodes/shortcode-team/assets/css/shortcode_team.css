@@ -2,22 +2,23 @@
     background-color: #0b403b;
 }
 
-.shortcode-team-user.style-1{
-    text-align:center;
+.shortcode-team-user.style-1 {
+    text-align: center;
 }
+
 .shortcode-team-user.style-1 .shortcode-team-user-image {
-display: block;
-text-align: center;
+    display: block;
+    text-align: center;
 }
 
 .shortcode-team-user.style-1 .shortcode-team-user-des {
-display: block;
-text-align: center;
+    display: block;
+    text-align: justify;
 }
 
 .style-1 .shortcode-team-user-des {
-padding-bottom: 40px;
-margin: 0px 40px 0 40px;
+    padding-bottom: 40px;
+    margin: 0px 40px 0 40px;
 }
 
 
@@ -100,8 +101,12 @@ margin: 0px 40px 0 40px;
     border-radius: 50%;
     overflow: hidden;
     max-height: 300px;
+    width: 220px;
     max-width: 300px;
-    margin-left: 30px;
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 17px;
+    height: 220px;
 }
 
 @media all and (max-width: 1025px) {
@@ -199,7 +204,7 @@ margin: 0px 40px 0 40px;
 }
 
 @media only screen and (max-width: 575px) {
-    #news-shortcode h2 + .vc_row .vc_column_container>.vc_column-inner {
+    #news-shortcode h2 + .vc_row .vc_column_container > .vc_column-inner {
         padding: 0
     }
 
@@ -225,13 +230,17 @@ margin: 0px 40px 0 40px;
         padding: 20px;
 
     }
+
     .shortcode-team-user.style-2 .shortcode-team-user-image {
-         border-radius: unset;
-         overflow: unset;
-         max-height: unset;
-         max-width: unset;
-         margin-left: unset;
+        border-radius: unset;
+        overflow: unset;
+        max-height: unset;
+        max-width: unset;
+        margin-left: unset;
+        width: unset;
+        height: unset;
     }
+
     .shortcode-team-user .shortcode-team-user-info-job {
         font-size: 14px;
     }
