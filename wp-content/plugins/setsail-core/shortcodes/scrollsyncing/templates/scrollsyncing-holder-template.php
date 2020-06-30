@@ -30,7 +30,7 @@ $vc_param_group_parse_atts = vc_param_group_parse_atts( $day_list );
                                 <span><?= $vc_param_group_parse_atts[ $i ]['diadiem'] ?></span>
 								<?php
 							} else { ?>
-                                <span>Ngày <?= $i?></span>
+                                <span>Ngày <?= $i ?></span>
                                 <span><?= $vc_param_group_parse_atts[ $i ]['diadiem'] ?></span>
 							<?php } ?>
                         </li>
@@ -60,11 +60,11 @@ $vc_param_group_parse_atts = vc_param_group_parse_atts( $day_list );
 						<?php } else { ?>
                             <div class="item flex-container" id="schedule-<?= $i + 1 ?>" data-id="alich-<?= $i + 1 ?>">
                                 <div class="col-item">
-                                    <h3 class="col-header h4 title-section p-bot-2"><?= $vc_param_group_parse_atts[ $i ]['title'] ?></h3>
+                                    <h3 class="col-header h4 title-section p-bot-2"><?php echo ! empty( $vc_param_group_parse_atts[ $i ]['title'] ) ? $vc_param_group_parse_atts[ $i ]['title'] : ''; ?></h3>
                                     <div class="col-body">
-										<?php $detail_list = vc_param_group_parse_atts( $vc_param_group_parse_atts[ $i ]['detail_list'] );
+										<?php $detail_list = isset( $vc_param_group_parse_atts[ $i ]['detail_list'] ) ? vc_param_group_parse_atts( $vc_param_group_parse_atts[ $i ]['detail_list'] ) : [];
 
-										if ( is_array( $detail_list ) ):
+										if ( is_array( $detail_list ) && !empty($detail_list) ):
 											for ( $y = 0; $y < count( $detail_list ); $y ++ ) :
 												?>
                                                 <p><?php echo $detail_list[ $y ]['detail'] ?></p>
