@@ -837,21 +837,21 @@ h1.qodef-st-title, h2.qodef-st-title {
 }
 
 
-
 /*cost-promo*/
 #cost-promo .qodef-elements-holder .qodef-eh-item {
     vertical-align: top
 }
-#cost-promo .qodef-iwt-icon{
-    height:120px;
+
+#cost-promo .qodef-iwt-icon {
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #cost-promo .qodef-iwt-icon img {
-    width: auto!important;
-    height: auto!important;
+    width: auto !important;
+    height: auto !important;
     max-height: 100px;
     max-width: 120px;
 }
@@ -1088,7 +1088,7 @@ h1.qodef-st-title, h2.qodef-st-title {
     /*ly do nen chon to ong trangchu*/
     /*shortcode team trangchu*/
     .shortcode-team-trangchu {
-
+        padding: 0 !important;
     }
 
     .shortcode-team-trangchu .shortcode-team-user.style-2 .holder-col-1 {
@@ -1117,6 +1117,7 @@ h1.qodef-st-title, h2.qodef-st-title {
     /*our-team-trangchu*/
     .our-team-trangchu {
         display: flex;
+        padding: 0 !important;
     }
 
     .our-team-trangchu .wpb_column.vc_column_container.vc_col-sm-4 {
@@ -1126,8 +1127,8 @@ h1.qodef-st-title, h2.qodef-st-title {
     /*our-team-trangchu*/
     /*icon-doitac*/
     .icon-doitac .qodef-iwt.clearfix.qodef-iwt-icon-top.qodef-iwt-icon-medium {
-        width:14%;
-        padding:2px;
+        width: 14%;
+        padding: 2px;
     }
 
     /*icon-doitac*/
