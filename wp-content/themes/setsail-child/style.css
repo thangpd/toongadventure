@@ -827,6 +827,15 @@ h1.qodef-st-title, h2.qodef-st-title {
     color: #05433b;
 }
 
+/*shotcode team trangchu*/
+
+.shortcode-team-trangchu .shortcode-team-user .shortcode-team-user-des {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+
 
 /*----------------- thông tin cần lưu ý end*/
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
@@ -931,9 +940,10 @@ h1.qodef-st-title, h2.qodef-st-title {
     .qodef-ig-toong-type.qodef-grid-list.qodef-five-columns .qodef-item-space {
         width: 50%;
     }
-    #note-join h2+div.vc_row, #why-choose-us .d-flex-mb{
-        display: flex!important;
-        flex-wrap: wrap!important;
+
+    #note-join h2 + div.vc_row, #why-choose-us .d-flex-mb {
+        display: flex !important;
+        flex-wrap: wrap !important;
     }
 }
 
@@ -1044,6 +1054,66 @@ h1.qodef-st-title, h2.qodef-st-title {
         margin-top: -465px;
     }
 
+
+    /*ly do nen chon to ong trangchu*/
+    .ly-do-nen-chon {
+
+    }
+
+    .ly-do-nen-chon .vc_row.wpb_row.vc_inner.vc_row-fluid {
+        display: flex;
+
+    }
+
+
+    /*ly do nen chon to ong trangchu*/
+    /*shortcode team trangchu*/
+    .shortcode-team-trangchu {
+
+    }
+
+    .shortcode-team-trangchu .shortcode-team-user.style-2 .holder-col-1 {
+        display: inline-block;
+        width: 40%;
+    }
+
+    /*
+        .shortcode-team-trangchu .shortcode-team-user.style-2 .holder-col-2 .shortcode-team-user-des {
+            font-size:
+        }*/
+    .shortcode-team-trangchu .shortcode-team-user.style-2 .holder-col-2 {
+        display: inline-block;
+        width: 60%;
+    }
+
+    .shortcode-team-trangchu .shortcode-team-user.style-2 {
+        display: flex;
+    }
+
+    .shortcode-team-trangchu .shortcode-team-user .shortcode-team-user-des {
+        font-size: 14px;
+    }
+
+    /*shortcode team trangchu*/
+    /*our-team-trangchu*/
+    .our-team-trangchu {
+        display: flex;
+    }
+
+    .our-team-trangchu .wpb_column.vc_column_container.vc_col-sm-4 {
+
+    }
+
+    /*our-team-trangchu*/
+    /*icon-doitac*/
+    .icon-doitac .qodef-iwt.clearfix.qodef-iwt-icon-top.qodef-iwt-icon-medium {
+        width:14%;
+        padding:2px;
+    }
+
+    /*icon-doitac*/
+
+
 }
 
 
@@ -1080,8 +1150,8 @@ h1.qodef-st-title, h2.qodef-st-title {
     .vc_rs-video > div {
         width: 100% !important;
     }
-	
-	#note-join .vc_col-xs-6, #why-choose-us .vc_col-xs-6 {
-		width: 49%;
-	}
+
+    #note-join .vc_col-xs-6, #why-choose-us .vc_col-xs-6 {
+        width: 49%;
+    }
 }
