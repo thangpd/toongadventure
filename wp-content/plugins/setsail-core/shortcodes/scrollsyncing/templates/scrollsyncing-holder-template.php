@@ -27,11 +27,11 @@ $vc_param_group_parse_atts = vc_param_group_parse_atts( $day_list );
 							<?php } elseif ( $i == 0 ) {
 								?>
                                 <span>Xuất phát</span>
-                                <span><?= $vc_param_group_parse_atts[ $i ]['diadiem'] ?></span>
+                                <span><?= !empty($vc_param_group_parse_atts[ $i ]['diadiem'])?$vc_param_group_parse_atts[ $i ]['diadiem']:'' ?></span>
 								<?php
 							} else { ?>
                                 <span>Ngày <?= $i ?></span>
-                                <span><?= $vc_param_group_parse_atts[ $i ]['diadiem'] ?></span>
+                                <span><?= !empty($vc_param_group_parse_atts[ $i ]['diadiem'])?$vc_param_group_parse_atts[ $i ]['diadiem']:'' ?></span>
 							<?php } ?>
                         </li>
 					<?php } ?>

@@ -1,7 +1,6 @@
 <?php
 $custom_unique_class = wp_unique_id( 'custom_header' );
 
-
 ?>
 
 <div class="qodef-custom-header-holder <?php echo esc_attr( $holder_classes ); ?> <?php echo $custom_unique_class ?> clearfix">
