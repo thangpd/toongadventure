@@ -50,9 +50,8 @@ function my_styles_method() {
             background-image: url({$background_image });
             background-color:unset!important;
             background-repeat: no-repeat, repeat;
-            padding-top:150px;
             padding-bottom:150px;
-            background-position: top;
+            background-position: top left;
             background-size: cover;
     }";
 
