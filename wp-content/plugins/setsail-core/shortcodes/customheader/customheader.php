@@ -63,13 +63,7 @@ class Customheader implements Lib\ShortcodeInterface {
 							'description' => esc_html__( 'Font size', 'setsail-core' ),
 							'value'       => '',
 						),
-						array(
-							'type'        => 'textfield',
-							'param_name'  => 'padding',
-							'heading'     => esc_html__( 'Padding Header', 'setsail-core' ),
-							'description' => esc_html__( 'Top-Right-Bottom-Left', 'setsail-core' ),
-							'value'       => '12px 111px 12px 111px',
-						),
+
 						array(
 							'type'        => 'textfield',
 							'param_name'  => 'bg-size',

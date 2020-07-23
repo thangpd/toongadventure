@@ -13,7 +13,6 @@ $custom_unique_class = wp_unique_id( 'custom_header' );
 
 <?php
 $custom_css = '.qodef-slicksyncing-title.' . $custom_unique_class . ' {
-    padding: ' . $params['padding'] . ';
     background-size: ' . $params['bg-size'] . ';
     font-size: ' . $params['font-size'] . ';
     
