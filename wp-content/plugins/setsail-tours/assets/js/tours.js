@@ -158,7 +158,7 @@
                         } else {
                             price_el.html(res.price_new);
                             price_el_old.html(res.price);
-                            price_el_old.css('display','block')
+                            price_el_old.css('display', 'block')
                         }
                     }
                 }
@@ -583,11 +583,16 @@
 
     $(window).load(qodefOnWindowLoad);
 
+
+
     /*
      All functions to be called on $(window).load() should be in this function
      */
     function qodefOnWindowLoad() {
         toursList().init();
+        let $qodef = $(document).find('.qodef-tour-list-filter-item[data-type="tour-category-mien-nam"]');
+        console.log($qodef)
+        $qodef.find('a').click();
     }
 
     function themeInstalled() {
@@ -654,6 +659,7 @@
                 e.stopPropagation();
 
                 filter_tour($(this), listFeed);
+
             });
         };
 
@@ -782,6 +788,7 @@
                         initPagination($(this));
                     });
                 }
+
             }
         }
     }
