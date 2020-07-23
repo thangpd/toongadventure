@@ -32,6 +32,37 @@ class Customheader implements Lib\ShortcodeInterface {
 							'heading'     => esc_html__( 'Text', 'setsail-core' ),
 							'description' => esc_html__( '', 'setsail-core' ),
 						),
+
+						array(
+							'type'       => 'dropdown',
+							'param_name' => 'tag',
+							'heading'    => esc_html__( 'Tag', 'setsail-core' ),
+							'value'      => array(
+								esc_html__( 'h2', 'setsail-core' ) => 'h2',
+								esc_html__( 'h1', 'setsail-core' ) => 'h1',
+								esc_html__( 'h3', 'setsail-core' ) => 'h3',
+								esc_html__( 'h4', 'setsail-core' ) => 'h4',
+								esc_html__( 'h5', 'setsail-core' ) => 'h5',
+								esc_html__( 'h6', 'setsail-core' ) => 'h6',
+							)
+						),
+						array(
+							'type'       => 'dropdown',
+							'param_name' => 'text_align',
+							'heading'    => esc_html__( 'Text Align', 'setsail-core' ),
+							'value'      => array(
+								esc_html__( 'left', 'setsail-core' )   => 'left',
+								esc_html__( 'center', 'setsail-core' ) => 'center',
+								esc_html__( 'right', 'setsail-core' )  => 'right',
+							)
+						),
+						array(
+							'type'        => 'textfield',
+							'param_name'  => 'font_size',
+							'heading'     => esc_html__( 'Font Size', 'setsail-core' ),
+							'description' => esc_html__( 'Font size', 'setsail-core' ),
+							'value'       => '',
+						),
 						array(
 							'type'        => 'textfield',
 							'param_name'  => 'padding',
@@ -72,6 +103,9 @@ class Customheader implements Lib\ShortcodeInterface {
 			'bg-size'      => '500px 60px',
 			'padding'      => '12px 111px 12px 111px',
 			'text'         => '',
+			'tag'          => 'h2',
+			'text_align'   => 'left',
+			'font-size'    => '37px',
 //            'style' => 'customheader',
 //            'layout' => 'boxed',
 //            'background_skin' => ''
