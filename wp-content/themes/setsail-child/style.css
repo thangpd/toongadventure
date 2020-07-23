@@ -137,6 +137,7 @@ Color text      #0b403b
     font-weight: 100;
     color: #0b403b;
     letter-spacing: 3px;
+    display:block;
 }
 
 .qodef-ts-list-body .duration-item, .qodef-ts-list-body .qodef-item-reviews-average-rating, .qodef-tours-type-toong-2 .qodef-tours-list-item-difficult-item, .qodef-td-items.tour .qodef-tours-list-item-difficult-item {
@@ -166,6 +167,7 @@ Color text      #0b403b
     padding: 11px 5px 4px 8px;
     border-radius: 6px;
     margin-top: 3px;
+    max-height: 47px;
 }
 
 
