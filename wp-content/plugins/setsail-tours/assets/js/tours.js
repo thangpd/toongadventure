@@ -138,7 +138,8 @@
     }
 
     function qodefTourPriceSingleTemplate() {
-        var price_el = $(document).find('#cost-promo #price-tour')
+        var price_el_old = $(document).find('#cost-promo #price-old-tour')
+        var price_el = $(document).find('#cost-promo #price-new-tour')
         var id_tour = $('.qodef-container').data('id_tour')
 
         if (price_el.length !== 0) {
@@ -151,7 +152,14 @@
                 success: function (res) {
                     console.log(res);
                     if (res.price !== undefined) {
-                        price_el.html(res.price);
+                        console.log(res.price_new)
+                        if (res.price_new == false) {
+                            price_el.html(res.price);
+                        } else {
+                            price_el.html(res.price_new);
+                            price_el_old.html(res.price);
+                            price_el_old.css('display','block')
+                        }
                     }
                 }
 

@@ -309,8 +309,10 @@ if ( ! function_exists( 'dep365_get_price_single_tour_ajax' ) ) {
 //		setsail_tours_get_tour_price
 		$res = [];
 		if ( isset( $_GET['id_tour'] ) ) {
-			$res['price'] = setsail_tours_get_tour_price( ! empty( $_GET['id_tour'] ) ? $_GET['id_tour'] : null, true );
-			$res['data']  = $_GET['id_tour'];
+			$res['price']                          = setsail_tours_get_tour_price( ! empty( $_GET['id_tour'] ) ? $_GET['id_tour'] : null, true );
+			$setsail_tours_get_tour_discount_price = setsail_tours_get_tour_discount_price( ! empty( $_GET['id_tour'] ) ? $_GET['id_tour'] : null, true );
+			$res['price_new']                      = $setsail_tours_get_tour_discount_price;
+			$res['data']                           = $_GET['id_tour'];
 		}
 
 		echo json_encode( $res );

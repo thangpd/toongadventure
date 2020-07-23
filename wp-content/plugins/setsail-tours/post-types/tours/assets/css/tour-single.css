@@ -1,4 +1,9 @@
-.qodef-page-footer{
-    margin-top:-360px;
+.qodef-page-footer {
+    margin-top: -360px;
 
+}
+
+#price-old-tour {
+    text-decoration: line-through;
+    display:none;
 }
