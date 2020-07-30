@@ -64,14 +64,14 @@ class Customheader implements Lib\ShortcodeInterface {
 							'value'       => '',
 						),
 
-						array(
+						/*array(
 							'type'        => 'textfield',
 							'param_name'  => 'bg-size',
 							'heading'     => esc_html__( 'Background Size', 'setsail-core' ),
 							'description' => esc_html__( 'Width-Height', 'setsail-core' ),
 							'value'       => '500px 60px',
 
-						),
+						),*/
 						array(
 							'type'        => 'textfield',
 							'param_name'  => 'custom_class',
