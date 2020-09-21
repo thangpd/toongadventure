@@ -118,9 +118,7 @@
     }
 
     .qodef-tours-list-item-duration-item {
-        padding: 5px !important;
-        /*font-size: 10px !important;*/
-
+        padding: 15px !important;
     }
 
     .qodef-ts-list-body .duration-text, .qodef-ts-list-body .grade-text, .qodef-tours-price .from-price, .qodef-tours-list-item-attributes-item, .qodef-ts-list-body .duration-item, .qodef-ts-list-body .grade-text {
@@ -138,8 +136,18 @@
     .qodef-tours-list-item-attributes-item {
         font-size: 13px !important;
     }
-    .qodef-tours-gim-content-holder .difficult-text{
-        font-size:13px;
+
+    .qodef-tours-gim-content-holder .difficult-text {
+        font-size: 13px;
+    }
+
+    .qodef-normal-space .qodef-outer-space .qodef-item-space {
+        padding: 0 4px;
+        margin: 0 0 40px;
+    }
+
+    .qodef-tours-list-item-duration-grade-item {
+        padding: 17px !important;
     }
 
 }
