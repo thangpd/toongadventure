@@ -203,9 +203,16 @@ Color text      #0b403b
 .qodef-tours-type-toong .qodef-tours-gim-image {
 
 }
-
+/*
 .qodef-tours-type-toong li.qodef-tour-list-filter-item {
-    margin: 0 !important;
+    margin: 1px 0 !important;
+}*/
+
+@media only screen and (max-width:426px){
+
+    .qodef-tours-type-toong li.qodef-tour-list-filter-item {
+        margin: 1px 0 !important;
+    }
 }
 
 .qodef-tours-type-toong li.qodef-tour-list-filter-item a {
@@ -237,7 +244,8 @@ Color text      #0b403b
 }
 
 .qodef-tours-type-toong .qodef-tour-list-filter-item.qodef-tour-list-current-filter a {
-    border-color: #23a9af;
+    /*border-color: #23a9af;*/
+    border:none;
     background-color: #23a9af;
     color: #fff;
 }

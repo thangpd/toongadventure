@@ -99,7 +99,7 @@ class Customheader implements Lib\ShortcodeInterface {
 			'text'         => '',
 			'tag'          => 'h2',
 			'text_align'   => 'left',
-			'font-size'    => '37px',
+			'font_size'    => '37px',
 //            'style' => 'customheader',
 //            'layout' => 'boxed',
 //            'background_skin' => ''

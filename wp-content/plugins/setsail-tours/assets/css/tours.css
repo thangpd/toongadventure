@@ -567,6 +567,17 @@
   padding: 17px 35px;
 }
 
+@media only screen and (max-width: 426px) {
+  .qodef-tours-list-holder .qodef-tours-list-filter-holder ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .qodef-tours-list-holder .qodef-tours-list-filter-holder ul li {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: block;
+  }
+}
 @media only screen and (max-width: 680px) {
   .qodef-tours-dwt-holder .qodef-td-items .qodef-tdi-content-holder-inner {
     padding: 18px 20px;
@@ -1139,7 +1150,7 @@
 
 .qodef-tours-list-holder .qodef-tours-list-filter-holder ul li {
   display: inline-block;
-  margin: 0 13px;
+  margin: 0 4px;
 }
 
 .qodef-tours-list-holder .qodef-tours-list-filter-holder ul li a {
